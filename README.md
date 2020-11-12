@@ -1,1 +1,1 @@
-# Richard236.github.io
+# Olympic Visualizations
