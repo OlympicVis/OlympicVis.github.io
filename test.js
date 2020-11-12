@@ -17,7 +17,7 @@ yScale = d3.scaleLinear()
         .range([chartHeight, 0]);
 
 
-d3.csv('head_athlete_events.csv', dataPreprocessor).then(function(data) {
+d3.csv('small_athlete_events.csv', dataPreprocessor).then(function(data) {
     longMedalCount = getMedalCount(data);
     xScale.domain(longMedalCount.map(function(d) { return d.medalType; }));
     yScale.domain([0, d3.max(longMedalCount, function(d) { return d.medalCount; })]);
