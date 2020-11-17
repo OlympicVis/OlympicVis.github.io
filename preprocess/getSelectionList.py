@@ -7,7 +7,7 @@ parser.add_argument('-dt', '--data_type', help='5k or all')
 args = parser.parse_args()
 data_type = args.data_type
 
-print("Preparing %s datast..."%data_type)
+print("Preparing %s dataset..."%data_type)
 df = pd.read_csv('../data/%s_slim_athlete_events.csv'%data_type)
 # drop non-medalists
 df = df[df['Medal']!='N']
