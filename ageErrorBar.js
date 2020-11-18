@@ -99,7 +99,9 @@ function ageErrorBar(data) {
     end_year = 0
     maxAge = 0
     minAge = 1000
+    var parseDate = d3.timeParse("%Y");
     data.forEach((entry) => {
+
       if (entry["maxAge"] > maxAge) {
         maxAge = entry["maxAge"]
       }
@@ -112,15 +114,21 @@ function ageErrorBar(data) {
       if (entry["Year"] > end_year) {
         end_year = entry["Year"]
       }
+      //parse year
+      entry["Year"] = parseDate(entry["Year"]);
     });
 
-    var x = d3.scaleLinear()
+    //var x = d3.scaleLinear()
+    //      .range([0, width])
+    //      .domain([start_year-1, end_year+1]);
+    var x = d3.scaleTime()
           .range([0, width])
-          .domain([start_year-1, end_year+1]);
+          .domain([parseDate(start_year-1), parseDate(end_year+1)]);
+    //console.log(x);
     
     svg.append("g")
           .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x).tickSizeOuter(0).tickFormat(d3.format('d')));
+          .call(d3.axisBottom(x));
 
     var y = d3.scaleLinear()
           .range([ height, 0 ])
@@ -131,39 +139,45 @@ function ageErrorBar(data) {
       .call(d3.axisLeft(y).tickFormat(d3.format('d')));
 
     //check whether the mapping preserve the order
-    medalTypes = ['Gold', 'Silver', 'Bronze', 'None']
+    medalTypes = ['Gold', 'Silver', 'Bronze']
     var color = d3.scaleOrdinal()
       .domain(medalTypes)
       //medal colors
-      .range(['#FFD700', '#DCDCDC', '#ED9B4D', '#000000']);
+      .range(['#FFD700', '#DCDCDC', '#ED9B4D']);
 
     //avoid collision
     //var medalPos = {'Gold': -1, 'Silver': -0.4, 'Bronze':0.3, 'None':1};
     //console.log(data);
 
     nonData = data.filter((entry) => entry['Medal']==='None');
-      
+    //filter out zeros
+    //goodData = data.filter((entry) => (entry['minAge']!==0 && entry['maxAge']!==0));
     var lines = svg.selectAll('line.error')
       .data(nonData);
+
+    //console.log(goodData);
   
     lines.enter()
       .append('line')
       .attr('class', 'error')
       .attr('stroke-width', 1)
     .merge(lines)
-      .attr('stroke', function(d) {return color(d.Medal)})
+      .attr('stroke', 'black')
       .attr('x1', function(d) { return x(d.Year); })
       .attr('x2', function(d) { return x(d.Year); })
       .attr('y1', function(d) { return y(d.maxAge); })
       .attr('y2', function(d) { return y(d.minAge); });
     
+
+    //only show medal data
+    medalData = data.filter((entry) => entry['Medal']!=='None');
     var points = svg.selectAll('circle.point')
-      .data(data);
+      .data(medalData);
   
     points.enter()
       .append('circle')
       .attr('class', 'point')
-      .attr('r', 5)
+      .attr('r', 6)
     .merge( points )
         .attr('fill', function(d) {return color(d.Medal)})
         .attr('cx', function(d) { //console.log(d.Year+medalPos[d.Medal]); 
