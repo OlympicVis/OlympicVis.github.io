@@ -11,30 +11,43 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
         if (d.Sex == 'F') {
             d.Records = -1 * d.Records;
         }
-        //age_group_ls.push(d.Age);
     });
-    //console.log(data);
+    //take user input
     newdata = data.filter(function (elem) {
-        //&& (elem.Sport==="Basketball")
-        return (elem.Year === 2016) && (elem.Income === 'H') && (elem.Medal === 'Gold');
+        return (elem.Year === 2014);
     });
 
     var age_group_ls = [];
     newdata.forEach(d => {
         age_group_ls.push(d.Age);
     });
-    
     var age_group = [...new Set(age_group_ls)].sort();
-    
-    var chart = tornadoChart(age_group);
-    d3.select("#lowIncomeSvg")
-      .datum(newdata)
-      .call(chart);
-})
+    //var medal_range = d3.extent(data, function(d) { return d.Records; });
 
+    //income grid
+    income_ls = ["L", "LM", "UM", "H"]
+    //console.log(newdata);
+    //levelData = newdata.filter(function (elem) {
+    //    return (elem.Income === "L")
+    //});
+    //console.log(levelData);
+    for (var i in income_ls) {
+        levelData = newdata.filter(function (elem) {
+            return (elem.Income === income_ls[i])
+        });
+        //console.log(levelData);
+        var chart = tornadoChart(age_group);
+        d3.select("#income-plot")
+        .append("svg")
+        .attr("id", income_ls[i])
+        .datum(levelData)
+        .call(chart);
+    }
+})
+//here we use the same x and y axis
 function tornadoChart(age_group) {
     var margin = {top: 20, right: 30, bottom: 40, left: 100},
-      width = 550 - margin.left - margin.right,
+      width = 250 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
   
     var x = d3.scaleLinear()
@@ -44,9 +57,8 @@ function tornadoChart(age_group) {
           .range([0, height])
           .padding(0.1)
           .round(0.1);
-  
-    var xAxis = d3.axisBottom(x)
-        .ticks(7).tickFormat(function (d) {
+
+    var xAxis = d3.axisBottom(x).tickFormat(function (d) {
             if (d < 0) {
                 d = -d;
             };
@@ -66,12 +78,12 @@ function tornadoChart(age_group) {
       selection.each(function(data) {
   
         x.domain(d3.extent(data, function(d) { return d.Records; })).nice();
+        xAxisTicks = x.ticks(7)
+            .filter(tick => Number.isInteger(tick));
+        xAxis.tickValues(xAxisTicks);
         //y.domain(data.map(function(d) { return d.Age; }));
+        //x.domain(medal_range);
         y.domain(age_group);
-        //console.log(data);
-        //console.log(y(20));
-        //console.log(y(24));
-        //console.log(y(32));
   
         var minRecords = Math.min.apply(Math, data.map(function(o){return o.Records;}))
         yAxis.tickPadding(Math.abs(x(minRecords) - x(0)) + 10);

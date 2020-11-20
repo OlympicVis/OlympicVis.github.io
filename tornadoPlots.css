@@ -16,3 +16,9 @@ fill: none;
 stroke: #000;
 shape-rendering: crispEdges;
 }
+
+.svg {
+  width: 20%;
+  float: left;
+  padding: 20px;
+} 
