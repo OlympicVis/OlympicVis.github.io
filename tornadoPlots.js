@@ -36,7 +36,7 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
             return (elem.Income === income_ls[i])
         });
         //console.log(levelData);
-        var chart = tornadoChart(age_group);
+        var chart = tornadoChart(age_group, income_ls[i]);
         d3.select("#income-plot")
         .append("svg")
         .attr("id", income_ls[i])
@@ -45,7 +45,11 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
     }
 })
 //here we use the same x and y axis
-function tornadoChart(age_group) {
+function tornadoChart(age_group, income_label) {
+    var tooltip = d3.select("#income-plot")
+    .append("div")
+    .attr("class", "toolTip")
+    .attr("id", income_label);
     var margin = {top: 20, right: 30, bottom: 40, left: 100},
       width = 250 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
@@ -96,20 +100,23 @@ function tornadoChart(age_group) {
             .attr("x", function(d) { return x(Math.min(0, d.Records)); })
             .attr("y", function(d) { return y(d.Age); })
             .attr("width", function(d) { return Math.abs(x(d.Records) - x(0)); })
-            .attr("height", y.bandwidth());
-  
-      /*
-        bar.enter().append('text')
-            .attr("text-anchor", "middle")
-            .attr("x", function(d,i) {
-                return x(Math.min(0, d.Records)) + (Math.abs(x(d.Records) - x(0)) / 2);
+            .attr("height", y.bandwidth())
+            .on("mouseover", function(d){
+                tooltip
+                  .style("left", d3.event.pageX + "px")
+                  .style("top", d3.event.pageY + "px")
+                  .style("display", "inline-block")
+                  .html(d.Sex === 'M'? "<div style='background-color:#9BCCF5'><p>Gender: " + d.Sex + "</p><p>Age: " + d.Age + "</p><p>Medals: " + Math.abs(d.Records) + "</p></div>": 
+                  "<div style='background-color:pink'><p>Gender: " + d.Sex + "</p><p>Age: " + d.Age + "</p><p>Medals: " + Math.abs(d.Records) + "</p></div>"
+                    //if (d.data.Sex === 'F') {
+                    //    return "<div style='color:#9BCCF5'><p>Gender: " + d.data.Sex + "</p><p>Age: " + d.data.Age + "</p><p>Medals: " + Math.abs(d.data.Records) + "</p></div>";
+                    //}
+                    //else {
+                    //    return "<div style='color:pink'><p>Gender: " + d.data.Sex + "</p><p>Age: " + d.data.Age + "</p><p>Medals: " + Math.abs(d.data.Records) + "</p></div>";
+                    //}
+                  )
             })
-            .attr("y", function(d,i) {
-                return y(d.Age) + (y.bandwidth() / 2);
-            })
-            .attr("dy", ".35em")
-            .text(function (d) { return d.Records; })
-          */
+            .on("mouseout", function(d){ tooltip.style("display", "none");});
   
         svg.append("g")
             .attr("class", "x axis")

@@ -22,3 +22,12 @@ shape-rendering: crispEdges;
   float: left;
   padding: 20px;
 } 
+
+.toolTip {
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  border: 2px solid gainsboro;
+  padding: 0px;
+}
