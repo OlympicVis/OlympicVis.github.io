@@ -83,14 +83,16 @@ window.onload = function() {
 
 function ageDotLine(data) {
     d3.select("#ageDotLinesvg").remove();
-    console.log(data);
+    d3.selectAll(".ageDotToolTip").remove();
+    //console.log(data);
     //e.g. [
 		//{"Year": 1996, "Medal": Gold, "minAge":17, "maxAge":31, "medianAge":21}, 
     //{"Year": 2000, "Medal": Silver, "minAge":17, "maxAge":31, "medianAge":21}] 
     
-    var margin = {top: 10, right: 30, bottom: 20, left: 50},
+    var margin = {top: 10, right: 30, bottom: 50, left: 50},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
+    var parseDate = d3.timeParse("%Y");
 
     var svg = d3.select("#ageDotLine")
       .append("svg")
@@ -100,13 +102,25 @@ function ageDotLine(data) {
       .append("g")
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
+      
+    //tooltip
+    //var tooltip = d3.select("#float-container")
+    //.append("div")
+    //.attr("class", "ageDotToolTip");
+    var tooltip = d3.tip()
+    .attr("class", "d3-tip")
+    .html(function(d) {
+        //console.log(d);
+        //return "tooltip";
+        return "Year: "+ d.Year.getFullYear() +"<br>Medal: "+d.Medal +"<br>Median Age: "+d.medianAge;
+    });
+    svg.call(tooltip);
     
     //find x and y axis domain
     start_year = 2020
     end_year = 0
     maxAge = 0
     minAge = 1000
-    var parseDate = d3.timeParse("%Y");
     data.forEach((entry) => {
 
       if (entry["maxAge"] > maxAge) {
@@ -132,6 +146,11 @@ function ageDotLine(data) {
           .range([0, width])
           .domain([parseDate(start_year-1), parseDate(end_year+1)]);
     //console.log(x);
+      //x label
+    svg.append('text')
+    .attr('class', 'label')
+    .attr('transform','translate(200, 380)')
+    .text('Year');
     
     svg.append("g")
           .attr("transform", "translate(0," + height + ")")
@@ -144,6 +163,12 @@ function ageDotLine(data) {
     //  .filter(tick => Number.isInteger(tick));
     svg.append("g")
       .call(d3.axisLeft(y).tickFormat(d3.format('d')));
+    
+     //y label
+    svg.append('text')
+    .attr('class', 'label')
+    .attr('transform','translate(-40,200) rotate(270)')
+    .text('Age');
 
     //check whether the mapping preserve the order
     medalTypes = ['Gold', 'Silver', 'Bronze']
@@ -180,6 +205,7 @@ function ageDotLine(data) {
     medalData = data.filter((entry) => entry['Medal']!=='None');
     var points = svg.selectAll('circle.point')
       .data(medalData);
+    //console.log(d3.event.pageX, d3.event.pageY);
   
     points.enter()
       .append('circle')
@@ -190,6 +216,8 @@ function ageDotLine(data) {
         .attr('cx', function(d) { //console.log(d.Year+medalPos[d.Medal]); 
           return x(d.Year); })
         .attr('cy', function(d) { return y(d.medianAge); })
+        .on('mouseover', tooltip.show)
+        .on("mouseout", tooltip.hide);
   
 }
 
@@ -218,7 +246,7 @@ function stackedBar(data) {
   var groups = age_ls;
   var subgroups = ['Gold', 'Silver', 'Bronze'];
 
-  var margin = {top: 10, right: 30, bottom: 20, left: 50},
+  var margin = {top: 10, right: 30, bottom: 50, left: 50},
   width = 460 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
@@ -230,6 +258,20 @@ function stackedBar(data) {
     .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
+
+   //tooltip
+   //var tooltip = d3.select("#float-container")
+   // .append("div")
+   // .attr("class", "stackedBarToolTip");
+  var tooltip = d3.tip()
+    .attr("class", "d3-tip")
+    .html(function(d) {
+         //return "tooltip";
+        return "Age: "+d.data.Age+"<br>Gold: "+d.data.Gold +"<br>Silver: "+d.data.Silver + "<br>Bronze: "+d.data.Bronze;
+    });
+  svg.call(tooltip);
+
+
   //axis
   var x = d3.scaleBand()
         .range([0, width])
@@ -239,6 +281,11 @@ function stackedBar(data) {
   svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).tickSizeOuter(0));
+  //x label
+  svg.append('text')
+        .attr('class', 'label')
+        .attr('transform','translate(200, 380)')
+        .text('Age');
   
   var y = d3.scaleLinear()
         .range([ height, 0 ])
@@ -246,6 +293,12 @@ function stackedBar(data) {
   
   yAxisTicks = y.ticks()
     .filter(tick => Number.isInteger(tick));
+
+  //y label
+  svg.append('text')
+  .attr('class', 'label')
+  .attr('transform','translate(-40,200) rotate(270)')
+  .text('Medals');
 
   svg.append("g")
     .call(d3.axisLeft(y).tickValues(yAxisTicks).tickFormat(d3.format('d')));
@@ -282,4 +335,6 @@ function stackedBar(data) {
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width",x.bandwidth())
+        .on('mouseover', tooltip.show)
+        .on("mouseout", tooltip.hide);
 }

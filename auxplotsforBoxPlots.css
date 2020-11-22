@@ -1,10 +1,21 @@
+.float-child {
+    width: 40%;
+    float: left;
+}
+
 .float-container {
     border: 3px solid #fff;
     padding: 20px;
 }
 
-.float-child {
-    width: 40%;
-    float: left;
-    padding: 20px;
-} 
+.d3-tip {
+    border: 2px solid steelblue;
+    background-color: white;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
