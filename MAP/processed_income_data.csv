@@ -1,0 +1,7195 @@
+Code,Country,Year,Income
+AFG,Afghanistan,1987,L
+AFG,Afghanistan,1988,L
+AFG,Afghanistan,1989,L
+AFG,Afghanistan,1990,L
+AFG,Afghanistan,1991,L
+AFG,Afghanistan,1992,L
+AFG,Afghanistan,1993,L
+AFG,Afghanistan,1994,L
+AFG,Afghanistan,1995,L
+AFG,Afghanistan,1996,L
+AFG,Afghanistan,1997,L
+AFG,Afghanistan,1998,L
+AFG,Afghanistan,1999,L
+AFG,Afghanistan,2000,L
+AFG,Afghanistan,2001,L
+AFG,Afghanistan,2002,L
+AFG,Afghanistan,2003,L
+AFG,Afghanistan,2004,L
+AFG,Afghanistan,2005,L
+AFG,Afghanistan,2006,L
+AFG,Afghanistan,2007,L
+AFG,Afghanistan,2008,L
+AFG,Afghanistan,2009,L
+AFG,Afghanistan,2010,L
+AFG,Afghanistan,2011,L
+AFG,Afghanistan,2012,L
+AFG,Afghanistan,2013,L
+AFG,Afghanistan,2014,L
+AFG,Afghanistan,2015,L
+AFG,Afghanistan,2016,L
+AFG,Afghanistan,2017,L
+AFG,Afghanistan,2018,L
+AFG,Afghanistan,2019,L
+ALB,Albania,1987,NA
+ALB,Albania,1988,NA
+ALB,Albania,1989,NA
+ALB,Albania,1990,LM
+ALB,Albania,1991,LM
+ALB,Albania,1992,LM
+ALB,Albania,1993,L
+ALB,Albania,1994,L
+ALB,Albania,1995,L
+ALB,Albania,1996,LM
+ALB,Albania,1997,L
+ALB,Albania,1998,LM
+ALB,Albania,1999,LM
+ALB,Albania,2000,LM
+ALB,Albania,2001,LM
+ALB,Albania,2002,LM
+ALB,Albania,2003,LM
+ALB,Albania,2004,LM
+ALB,Albania,2005,LM
+ALB,Albania,2006,LM
+ALB,Albania,2007,LM
+ALB,Albania,2008,LM
+ALB,Albania,2009,UM
+ALB,Albania,2010,UM
+ALB,Albania,2011,LM
+ALB,Albania,2012,UM
+ALB,Albania,2013,UM
+ALB,Albania,2014,UM
+ALB,Albania,2015,UM
+ALB,Albania,2016,UM
+ALB,Albania,2017,UM
+ALB,Albania,2018,UM
+ALB,Albania,2019,UM
+DZA,Algeria,1987,UM
+DZA,Algeria,1988,UM
+DZA,Algeria,1989,LM
+DZA,Algeria,1990,LM
+DZA,Algeria,1991,LM
+DZA,Algeria,1992,LM
+DZA,Algeria,1993,LM
+DZA,Algeria,1994,LM
+DZA,Algeria,1995,LM
+DZA,Algeria,1996,LM
+DZA,Algeria,1997,LM
+DZA,Algeria,1998,LM
+DZA,Algeria,1999,LM
+DZA,Algeria,2000,LM
+DZA,Algeria,2001,LM
+DZA,Algeria,2002,LM
+DZA,Algeria,2003,LM
+DZA,Algeria,2004,LM
+DZA,Algeria,2005,LM
+DZA,Algeria,2006,LM
+DZA,Algeria,2007,LM
+DZA,Algeria,2008,UM
+DZA,Algeria,2009,UM
+DZA,Algeria,2010,UM
+DZA,Algeria,2011,UM
+DZA,Algeria,2012,UM
+DZA,Algeria,2013,UM
+DZA,Algeria,2014,UM
+DZA,Algeria,2015,UM
+DZA,Algeria,2016,UM
+DZA,Algeria,2017,UM
+DZA,Algeria,2018,UM
+DZA,Algeria,2019,LM
+ASM,American Samoa,1987,H
+ASM,American Samoa,1988,H
+ASM,American Samoa,1989,H
+ASM,American Samoa,1990,UM
+ASM,American Samoa,1991,UM
+ASM,American Samoa,1992,UM
+ASM,American Samoa,1993,UM
+ASM,American Samoa,1994,UM
+ASM,American Samoa,1995,UM
+ASM,American Samoa,1996,UM
+ASM,American Samoa,1997,UM
+ASM,American Samoa,1998,UM
+ASM,American Samoa,1999,UM
+ASM,American Samoa,2000,UM
+ASM,American Samoa,2001,UM
+ASM,American Samoa,2002,UM
+ASM,American Samoa,2003,UM
+ASM,American Samoa,2004,UM
+ASM,American Samoa,2005,UM
+ASM,American Samoa,2006,UM
+ASM,American Samoa,2007,UM
+ASM,American Samoa,2008,UM
+ASM,American Samoa,2009,UM
+ASM,American Samoa,2010,UM
+ASM,American Samoa,2011,UM
+ASM,American Samoa,2012,UM
+ASM,American Samoa,2013,UM
+ASM,American Samoa,2014,UM
+ASM,American Samoa,2015,UM
+ASM,American Samoa,2016,UM
+ASM,American Samoa,2017,UM
+ASM,American Samoa,2018,UM
+ASM,American Samoa,2019,UM
+AND,Andorra,1987,NA
+AND,Andorra,1988,NA
+AND,Andorra,1989,NA
+AND,Andorra,1990,H
+AND,Andorra,1991,H
+AND,Andorra,1992,H
+AND,Andorra,1993,H
+AND,Andorra,1994,H
+AND,Andorra,1995,H
+AND,Andorra,1996,H
+AND,Andorra,1997,H
+AND,Andorra,1998,H
+AND,Andorra,1999,H
+AND,Andorra,2000,H
+AND,Andorra,2001,H
+AND,Andorra,2002,H
+AND,Andorra,2003,H
+AND,Andorra,2004,H
+AND,Andorra,2005,H
+AND,Andorra,2006,H
+AND,Andorra,2007,H
+AND,Andorra,2008,H
+AND,Andorra,2009,H
+AND,Andorra,2010,H
+AND,Andorra,2011,H
+AND,Andorra,2012,H
+AND,Andorra,2013,H
+AND,Andorra,2014,H
+AND,Andorra,2015,H
+AND,Andorra,2016,H
+AND,Andorra,2017,H
+AND,Andorra,2018,H
+AND,Andorra,2019,H
+AGO,Angola,1987,NA
+AGO,Angola,1988,LM
+AGO,Angola,1989,LM
+AGO,Angola,1990,LM
+AGO,Angola,1991,LM
+AGO,Angola,1992,LM
+AGO,Angola,1993,LM
+AGO,Angola,1994,LM
+AGO,Angola,1995,L
+AGO,Angola,1996,L
+AGO,Angola,1997,L
+AGO,Angola,1998,L
+AGO,Angola,1999,L
+AGO,Angola,2000,L
+AGO,Angola,2001,L
+AGO,Angola,2002,L
+AGO,Angola,2003,L
+AGO,Angola,2004,LM
+AGO,Angola,2005,LM
+AGO,Angola,2006,LM
+AGO,Angola,2007,LM
+AGO,Angola,2008,LM
+AGO,Angola,2009,LM
+AGO,Angola,2010,LM
+AGO,Angola,2011,UM
+AGO,Angola,2012,UM
+AGO,Angola,2013,UM
+AGO,Angola,2014,UM
+AGO,Angola,2015,UM
+AGO,Angola,2016,LM
+AGO,Angola,2017,LM
+AGO,Angola,2018,LM
+AGO,Angola,2019,LM
+ATG,Antigua and Barbuda,1987,UM
+ATG,Antigua and Barbuda,1988,UM
+ATG,Antigua and Barbuda,1989,UM
+ATG,Antigua and Barbuda,1990,UM
+ATG,Antigua and Barbuda,1991,UM
+ATG,Antigua and Barbuda,1992,UM
+ATG,Antigua and Barbuda,1993,UM
+ATG,Antigua and Barbuda,1994,UM
+ATG,Antigua and Barbuda,1995,UM
+ATG,Antigua and Barbuda,1996,UM
+ATG,Antigua and Barbuda,1997,UM
+ATG,Antigua and Barbuda,1998,UM
+ATG,Antigua and Barbuda,1999,UM
+ATG,Antigua and Barbuda,2000,UM
+ATG,Antigua and Barbuda,2001,UM
+ATG,Antigua and Barbuda,2002,H
+ATG,Antigua and Barbuda,2003,UM
+ATG,Antigua and Barbuda,2004,UM
+ATG,Antigua and Barbuda,2005,H
+ATG,Antigua and Barbuda,2006,H
+ATG,Antigua and Barbuda,2007,H
+ATG,Antigua and Barbuda,2008,H
+ATG,Antigua and Barbuda,2009,UM
+ATG,Antigua and Barbuda,2010,UM
+ATG,Antigua and Barbuda,2011,UM
+ATG,Antigua and Barbuda,2012,H
+ATG,Antigua and Barbuda,2013,H
+ATG,Antigua and Barbuda,2014,H
+ATG,Antigua and Barbuda,2015,H
+ATG,Antigua and Barbuda,2016,H
+ATG,Antigua and Barbuda,2017,H
+ATG,Antigua and Barbuda,2018,H
+ATG,Antigua and Barbuda,2019,H
+ARG,Argentina,1987,UM
+ARG,Argentina,1988,UM
+ARG,Argentina,1989,LM
+ARG,Argentina,1990,LM
+ARG,Argentina,1991,UM
+ARG,Argentina,1992,UM
+ARG,Argentina,1993,UM
+ARG,Argentina,1994,UM
+ARG,Argentina,1995,UM
+ARG,Argentina,1996,UM
+ARG,Argentina,1997,UM
+ARG,Argentina,1998,UM
+ARG,Argentina,1999,UM
+ARG,Argentina,2000,UM
+ARG,Argentina,2001,UM
+ARG,Argentina,2002,UM
+ARG,Argentina,2003,UM
+ARG,Argentina,2004,UM
+ARG,Argentina,2005,UM
+ARG,Argentina,2006,UM
+ARG,Argentina,2007,UM
+ARG,Argentina,2008,UM
+ARG,Argentina,2009,UM
+ARG,Argentina,2010,UM
+ARG,Argentina,2011,UM
+ARG,Argentina,2012,UM
+ARG,Argentina,2013,UM
+ARG,Argentina,2014,H
+ARG,Argentina,2015,UM
+ARG,Argentina,2016,UM
+ARG,Argentina,2017,H
+ARG,Argentina,2018,UM
+ARG,Argentina,2019,UM
+ARM,Armenia,1987,NA
+ARM,Armenia,1988,NA
+ARM,Armenia,1989,NA
+ARM,Armenia,1990,NA
+ARM,Armenia,1991,LM
+ARM,Armenia,1992,LM
+ARM,Armenia,1993,L
+ARM,Armenia,1994,L
+ARM,Armenia,1995,L
+ARM,Armenia,1996,L
+ARM,Armenia,1997,L
+ARM,Armenia,1998,L
+ARM,Armenia,1999,L
+ARM,Armenia,2000,L
+ARM,Armenia,2001,L
+ARM,Armenia,2002,LM
+ARM,Armenia,2003,LM
+ARM,Armenia,2004,LM
+ARM,Armenia,2005,LM
+ARM,Armenia,2006,LM
+ARM,Armenia,2007,LM
+ARM,Armenia,2008,LM
+ARM,Armenia,2009,LM
+ARM,Armenia,2010,LM
+ARM,Armenia,2011,LM
+ARM,Armenia,2012,LM
+ARM,Armenia,2013,LM
+ARM,Armenia,2014,LM
+ARM,Armenia,2015,LM
+ARM,Armenia,2016,LM
+ARM,Armenia,2017,UM
+ARM,Armenia,2018,UM
+ARM,Armenia,2019,UM
+ABW,Aruba,1987,H
+ABW,Aruba,1988,H
+ABW,Aruba,1989,H
+ABW,Aruba,1990,H
+ABW,Aruba,1991,UM
+ABW,Aruba,1992,UM
+ABW,Aruba,1993,UM
+ABW,Aruba,1994,H
+ABW,Aruba,1995,H
+ABW,Aruba,1996,H
+ABW,Aruba,1997,H
+ABW,Aruba,1998,H
+ABW,Aruba,1999,H
+ABW,Aruba,2000,H
+ABW,Aruba,2001,H
+ABW,Aruba,2002,H
+ABW,Aruba,2003,H
+ABW,Aruba,2004,H
+ABW,Aruba,2005,H
+ABW,Aruba,2006,H
+ABW,Aruba,2007,H
+ABW,Aruba,2008,H
+ABW,Aruba,2009,H
+ABW,Aruba,2010,H
+ABW,Aruba,2011,H
+ABW,Aruba,2012,H
+ABW,Aruba,2013,H
+ABW,Aruba,2014,H
+ABW,Aruba,2015,H
+ABW,Aruba,2016,H
+ABW,Aruba,2017,H
+ABW,Aruba,2018,H
+ABW,Aruba,2019,H
+AUS,Australia,1987,H
+AUS,Australia,1988,H
+AUS,Australia,1989,H
+AUS,Australia,1990,H
+AUS,Australia,1991,H
+AUS,Australia,1992,H
+AUS,Australia,1993,H
+AUS,Australia,1994,H
+AUS,Australia,1995,H
+AUS,Australia,1996,H
+AUS,Australia,1997,H
+AUS,Australia,1998,H
+AUS,Australia,1999,H
+AUS,Australia,2000,H
+AUS,Australia,2001,H
+AUS,Australia,2002,H
+AUS,Australia,2003,H
+AUS,Australia,2004,H
+AUS,Australia,2005,H
+AUS,Australia,2006,H
+AUS,Australia,2007,H
+AUS,Australia,2008,H
+AUS,Australia,2009,H
+AUS,Australia,2010,H
+AUS,Australia,2011,H
+AUS,Australia,2012,H
+AUS,Australia,2013,H
+AUS,Australia,2014,H
+AUS,Australia,2015,H
+AUS,Australia,2016,H
+AUS,Australia,2017,H
+AUS,Australia,2018,H
+AUS,Australia,2019,H
+AUT,Austria,1987,H
+AUT,Austria,1988,H
+AUT,Austria,1989,H
+AUT,Austria,1990,H
+AUT,Austria,1991,H
+AUT,Austria,1992,H
+AUT,Austria,1993,H
+AUT,Austria,1994,H
+AUT,Austria,1995,H
+AUT,Austria,1996,H
+AUT,Austria,1997,H
+AUT,Austria,1998,H
+AUT,Austria,1999,H
+AUT,Austria,2000,H
+AUT,Austria,2001,H
+AUT,Austria,2002,H
+AUT,Austria,2003,H
+AUT,Austria,2004,H
+AUT,Austria,2005,H
+AUT,Austria,2006,H
+AUT,Austria,2007,H
+AUT,Austria,2008,H
+AUT,Austria,2009,H
+AUT,Austria,2010,H
+AUT,Austria,2011,H
+AUT,Austria,2012,H
+AUT,Austria,2013,H
+AUT,Austria,2014,H
+AUT,Austria,2015,H
+AUT,Austria,2016,H
+AUT,Austria,2017,H
+AUT,Austria,2018,H
+AUT,Austria,2019,H
+AZE,Azerbaijan,1987,NA
+AZE,Azerbaijan,1988,NA
+AZE,Azerbaijan,1989,NA
+AZE,Azerbaijan,1990,NA
+AZE,Azerbaijan,1991,LM
+AZE,Azerbaijan,1992,LM
+AZE,Azerbaijan,1993,LM
+AZE,Azerbaijan,1994,L
+AZE,Azerbaijan,1995,L
+AZE,Azerbaijan,1996,L
+AZE,Azerbaijan,1997,L
+AZE,Azerbaijan,1998,L
+AZE,Azerbaijan,1999,L
+AZE,Azerbaijan,2000,L
+AZE,Azerbaijan,2001,L
+AZE,Azerbaijan,2002,L
+AZE,Azerbaijan,2003,LM
+AZE,Azerbaijan,2004,LM
+AZE,Azerbaijan,2005,LM
+AZE,Azerbaijan,2006,LM
+AZE,Azerbaijan,2007,LM
+AZE,Azerbaijan,2008,LM
+AZE,Azerbaijan,2009,UM
+AZE,Azerbaijan,2010,UM
+AZE,Azerbaijan,2011,UM
+AZE,Azerbaijan,2012,UM
+AZE,Azerbaijan,2013,UM
+AZE,Azerbaijan,2014,UM
+AZE,Azerbaijan,2015,UM
+AZE,Azerbaijan,2016,UM
+AZE,Azerbaijan,2017,UM
+AZE,Azerbaijan,2018,UM
+AZE,Azerbaijan,2019,UM
+BHS,"Bahamas, The",1987,H
+BHS,"Bahamas, The",1988,H
+BHS,"Bahamas, The",1989,H
+BHS,"Bahamas, The",1990,H
+BHS,"Bahamas, The",1991,H
+BHS,"Bahamas, The",1992,H
+BHS,"Bahamas, The",1993,H
+BHS,"Bahamas, The",1994,H
+BHS,"Bahamas, The",1995,H
+BHS,"Bahamas, The",1996,H
+BHS,"Bahamas, The",1997,H
+BHS,"Bahamas, The",1998,H
+BHS,"Bahamas, The",1999,H
+BHS,"Bahamas, The",2000,H
+BHS,"Bahamas, The",2001,H
+BHS,"Bahamas, The",2002,H
+BHS,"Bahamas, The",2003,H
+BHS,"Bahamas, The",2004,H
+BHS,"Bahamas, The",2005,H
+BHS,"Bahamas, The",2006,H
+BHS,"Bahamas, The",2007,H
+BHS,"Bahamas, The",2008,H
+BHS,"Bahamas, The",2009,H
+BHS,"Bahamas, The",2010,H
+BHS,"Bahamas, The",2011,H
+BHS,"Bahamas, The",2012,H
+BHS,"Bahamas, The",2013,H
+BHS,"Bahamas, The",2014,H
+BHS,"Bahamas, The",2015,H
+BHS,"Bahamas, The",2016,H
+BHS,"Bahamas, The",2017,H
+BHS,"Bahamas, The",2018,H
+BHS,"Bahamas, The",2019,H
+BHR,Bahrain,1987,H
+BHR,Bahrain,1988,H
+BHR,Bahrain,1989,H
+BHR,Bahrain,1990,UM
+BHR,Bahrain,1991,UM
+BHR,Bahrain,1992,UM
+BHR,Bahrain,1993,UM
+BHR,Bahrain,1994,UM
+BHR,Bahrain,1995,UM
+BHR,Bahrain,1996,UM
+BHR,Bahrain,1997,UM
+BHR,Bahrain,1998,UM
+BHR,Bahrain,1999,UM
+BHR,Bahrain,2000,UM
+BHR,Bahrain,2001,H
+BHR,Bahrain,2002,H
+BHR,Bahrain,2003,H
+BHR,Bahrain,2004,H
+BHR,Bahrain,2005,H
+BHR,Bahrain,2006,H
+BHR,Bahrain,2007,H
+BHR,Bahrain,2008,H
+BHR,Bahrain,2009,H
+BHR,Bahrain,2010,H
+BHR,Bahrain,2011,H
+BHR,Bahrain,2012,H
+BHR,Bahrain,2013,H
+BHR,Bahrain,2014,H
+BHR,Bahrain,2015,H
+BHR,Bahrain,2016,H
+BHR,Bahrain,2017,H
+BHR,Bahrain,2018,H
+BHR,Bahrain,2019,H
+BGD,Bangladesh,1987,L
+BGD,Bangladesh,1988,L
+BGD,Bangladesh,1989,L
+BGD,Bangladesh,1990,L
+BGD,Bangladesh,1991,L
+BGD,Bangladesh,1992,L
+BGD,Bangladesh,1993,L
+BGD,Bangladesh,1994,L
+BGD,Bangladesh,1995,L
+BGD,Bangladesh,1996,L
+BGD,Bangladesh,1997,L
+BGD,Bangladesh,1998,L
+BGD,Bangladesh,1999,L
+BGD,Bangladesh,2000,L
+BGD,Bangladesh,2001,L
+BGD,Bangladesh,2002,L
+BGD,Bangladesh,2003,L
+BGD,Bangladesh,2004,L
+BGD,Bangladesh,2005,L
+BGD,Bangladesh,2006,L
+BGD,Bangladesh,2007,L
+BGD,Bangladesh,2008,L
+BGD,Bangladesh,2009,L
+BGD,Bangladesh,2010,L
+BGD,Bangladesh,2011,L
+BGD,Bangladesh,2012,L
+BGD,Bangladesh,2013,L
+BGD,Bangladesh,2014,LM
+BGD,Bangladesh,2015,LM
+BGD,Bangladesh,2016,LM
+BGD,Bangladesh,2017,LM
+BGD,Bangladesh,2018,LM
+BGD,Bangladesh,2019,LM
+BRB,Barbados,1987,UM
+BRB,Barbados,1988,UM
+BRB,Barbados,1989,H
+BRB,Barbados,1990,UM
+BRB,Barbados,1991,UM
+BRB,Barbados,1992,UM
+BRB,Barbados,1993,UM
+BRB,Barbados,1994,UM
+BRB,Barbados,1995,UM
+BRB,Barbados,1996,UM
+BRB,Barbados,1997,UM
+BRB,Barbados,1998,UM
+BRB,Barbados,1999,UM
+BRB,Barbados,2000,H
+BRB,Barbados,2001,UM
+BRB,Barbados,2002,H
+BRB,Barbados,2003,UM
+BRB,Barbados,2004,UM
+BRB,Barbados,2005,UM
+BRB,Barbados,2006,H
+BRB,Barbados,2007,H
+BRB,Barbados,2008,H
+BRB,Barbados,2009,H
+BRB,Barbados,2010,H
+BRB,Barbados,2011,H
+BRB,Barbados,2012,H
+BRB,Barbados,2013,H
+BRB,Barbados,2014,H
+BRB,Barbados,2015,H
+BRB,Barbados,2016,H
+BRB,Barbados,2017,H
+BRB,Barbados,2018,H
+BRB,Barbados,2019,H
+BLR,Belarus,1987,NA
+BLR,Belarus,1988,NA
+BLR,Belarus,1989,NA
+BLR,Belarus,1990,NA
+BLR,Belarus,1991,UM
+BLR,Belarus,1992,UM
+BLR,Belarus,1993,UM
+BLR,Belarus,1994,LM
+BLR,Belarus,1995,LM
+BLR,Belarus,1996,LM
+BLR,Belarus,1997,LM
+BLR,Belarus,1998,LM
+BLR,Belarus,1999,LM
+BLR,Belarus,2000,LM
+BLR,Belarus,2001,LM
+BLR,Belarus,2002,LM
+BLR,Belarus,2003,LM
+BLR,Belarus,2004,LM
+BLR,Belarus,2005,LM
+BLR,Belarus,2006,LM
+BLR,Belarus,2007,UM
+BLR,Belarus,2008,UM
+BLR,Belarus,2009,UM
+BLR,Belarus,2010,UM
+BLR,Belarus,2011,UM
+BLR,Belarus,2012,UM
+BLR,Belarus,2013,UM
+BLR,Belarus,2014,UM
+BLR,Belarus,2015,UM
+BLR,Belarus,2016,UM
+BLR,Belarus,2017,UM
+BLR,Belarus,2018,UM
+BLR,Belarus,2019,UM
+BEL,Belgium,1987,H
+BEL,Belgium,1988,H
+BEL,Belgium,1989,H
+BEL,Belgium,1990,H
+BEL,Belgium,1991,H
+BEL,Belgium,1992,H
+BEL,Belgium,1993,H
+BEL,Belgium,1994,H
+BEL,Belgium,1995,H
+BEL,Belgium,1996,H
+BEL,Belgium,1997,H
+BEL,Belgium,1998,H
+BEL,Belgium,1999,H
+BEL,Belgium,2000,H
+BEL,Belgium,2001,H
+BEL,Belgium,2002,H
+BEL,Belgium,2003,H
+BEL,Belgium,2004,H
+BEL,Belgium,2005,H
+BEL,Belgium,2006,H
+BEL,Belgium,2007,H
+BEL,Belgium,2008,H
+BEL,Belgium,2009,H
+BEL,Belgium,2010,H
+BEL,Belgium,2011,H
+BEL,Belgium,2012,H
+BEL,Belgium,2013,H
+BEL,Belgium,2014,H
+BEL,Belgium,2015,H
+BEL,Belgium,2016,H
+BEL,Belgium,2017,H
+BEL,Belgium,2018,H
+BEL,Belgium,2019,H
+BLZ,Belize,1987,LM
+BLZ,Belize,1988,LM
+BLZ,Belize,1989,LM
+BLZ,Belize,1990,LM
+BLZ,Belize,1991,LM
+BLZ,Belize,1992,LM
+BLZ,Belize,1993,LM
+BLZ,Belize,1994,LM
+BLZ,Belize,1995,LM
+BLZ,Belize,1996,LM
+BLZ,Belize,1997,LM
+BLZ,Belize,1998,LM
+BLZ,Belize,1999,LM
+BLZ,Belize,2000,LM
+BLZ,Belize,2001,LM
+BLZ,Belize,2002,UM
+BLZ,Belize,2003,UM
+BLZ,Belize,2004,UM
+BLZ,Belize,2005,UM
+BLZ,Belize,2006,UM
+BLZ,Belize,2007,UM
+BLZ,Belize,2008,LM
+BLZ,Belize,2009,LM
+BLZ,Belize,2010,LM
+BLZ,Belize,2011,LM
+BLZ,Belize,2012,UM
+BLZ,Belize,2013,UM
+BLZ,Belize,2014,UM
+BLZ,Belize,2015,UM
+BLZ,Belize,2016,UM
+BLZ,Belize,2017,UM
+BLZ,Belize,2018,UM
+BLZ,Belize,2019,UM
+BEN,Benin,1987,L
+BEN,Benin,1988,L
+BEN,Benin,1989,L
+BEN,Benin,1990,L
+BEN,Benin,1991,L
+BEN,Benin,1992,L
+BEN,Benin,1993,L
+BEN,Benin,1994,L
+BEN,Benin,1995,L
+BEN,Benin,1996,L
+BEN,Benin,1997,L
+BEN,Benin,1998,L
+BEN,Benin,1999,L
+BEN,Benin,2000,L
+BEN,Benin,2001,L
+BEN,Benin,2002,L
+BEN,Benin,2003,L
+BEN,Benin,2004,L
+BEN,Benin,2005,L
+BEN,Benin,2006,L
+BEN,Benin,2007,L
+BEN,Benin,2008,L
+BEN,Benin,2009,L
+BEN,Benin,2010,L
+BEN,Benin,2011,L
+BEN,Benin,2012,L
+BEN,Benin,2013,L
+BEN,Benin,2014,L
+BEN,Benin,2015,L
+BEN,Benin,2016,L
+BEN,Benin,2017,L
+BEN,Benin,2018,L
+BEN,Benin,2019,LM
+BMU,Bermuda,1987,H
+BMU,Bermuda,1988,H
+BMU,Bermuda,1989,H
+BMU,Bermuda,1990,H
+BMU,Bermuda,1991,H
+BMU,Bermuda,1992,H
+BMU,Bermuda,1993,H
+BMU,Bermuda,1994,H
+BMU,Bermuda,1995,H
+BMU,Bermuda,1996,H
+BMU,Bermuda,1997,H
+BMU,Bermuda,1998,H
+BMU,Bermuda,1999,H
+BMU,Bermuda,2000,H
+BMU,Bermuda,2001,H
+BMU,Bermuda,2002,H
+BMU,Bermuda,2003,H
+BMU,Bermuda,2004,H
+BMU,Bermuda,2005,H
+BMU,Bermuda,2006,H
+BMU,Bermuda,2007,H
+BMU,Bermuda,2008,H
+BMU,Bermuda,2009,H
+BMU,Bermuda,2010,H
+BMU,Bermuda,2011,H
+BMU,Bermuda,2012,H
+BMU,Bermuda,2013,H
+BMU,Bermuda,2014,H
+BMU,Bermuda,2015,H
+BMU,Bermuda,2016,H
+BMU,Bermuda,2017,H
+BMU,Bermuda,2018,H
+BMU,Bermuda,2019,H
+BTN,Bhutan,1987,L
+BTN,Bhutan,1988,L
+BTN,Bhutan,1989,L
+BTN,Bhutan,1990,L
+BTN,Bhutan,1991,L
+BTN,Bhutan,1992,L
+BTN,Bhutan,1993,L
+BTN,Bhutan,1994,L
+BTN,Bhutan,1995,L
+BTN,Bhutan,1996,L
+BTN,Bhutan,1997,L
+BTN,Bhutan,1998,L
+BTN,Bhutan,1999,L
+BTN,Bhutan,2000,L
+BTN,Bhutan,2001,L
+BTN,Bhutan,2002,L
+BTN,Bhutan,2003,L
+BTN,Bhutan,2004,L
+BTN,Bhutan,2005,L
+BTN,Bhutan,2006,LM
+BTN,Bhutan,2007,LM
+BTN,Bhutan,2008,LM
+BTN,Bhutan,2009,LM
+BTN,Bhutan,2010,LM
+BTN,Bhutan,2011,LM
+BTN,Bhutan,2012,LM
+BTN,Bhutan,2013,LM
+BTN,Bhutan,2014,LM
+BTN,Bhutan,2015,LM
+BTN,Bhutan,2016,LM
+BTN,Bhutan,2017,LM
+BTN,Bhutan,2018,LM
+BTN,Bhutan,2019,LM
+BOL,Bolivia,1987,LM
+BOL,Bolivia,1988,LM
+BOL,Bolivia,1989,LM
+BOL,Bolivia,1990,LM
+BOL,Bolivia,1991,LM
+BOL,Bolivia,1992,LM
+BOL,Bolivia,1993,LM
+BOL,Bolivia,1994,LM
+BOL,Bolivia,1995,LM
+BOL,Bolivia,1996,LM
+BOL,Bolivia,1997,LM
+BOL,Bolivia,1998,LM
+BOL,Bolivia,1999,LM
+BOL,Bolivia,2000,LM
+BOL,Bolivia,2001,LM
+BOL,Bolivia,2002,LM
+BOL,Bolivia,2003,LM
+BOL,Bolivia,2004,LM
+BOL,Bolivia,2005,LM
+BOL,Bolivia,2006,LM
+BOL,Bolivia,2007,LM
+BOL,Bolivia,2008,LM
+BOL,Bolivia,2009,LM
+BOL,Bolivia,2010,LM
+BOL,Bolivia,2011,LM
+BOL,Bolivia,2012,LM
+BOL,Bolivia,2013,LM
+BOL,Bolivia,2014,LM
+BOL,Bolivia,2015,LM
+BOL,Bolivia,2016,LM
+BOL,Bolivia,2017,LM
+BOL,Bolivia,2018,LM
+BOL,Bolivia,2019,LM
+BIH,Bosnia and Herzegovina,1987,NA
+BIH,Bosnia and Herzegovina,1988,NA
+BIH,Bosnia and Herzegovina,1989,NA
+BIH,Bosnia and Herzegovina,1990,NA
+BIH,Bosnia and Herzegovina,1991,NA
+BIH,Bosnia and Herzegovina,1992,LM
+BIH,Bosnia and Herzegovina,1993,L
+BIH,Bosnia and Herzegovina,1994,L
+BIH,Bosnia and Herzegovina,1995,L
+BIH,Bosnia and Herzegovina,1996,L
+BIH,Bosnia and Herzegovina,1997,L
+BIH,Bosnia and Herzegovina,1998,LM
+BIH,Bosnia and Herzegovina,1999,LM
+BIH,Bosnia and Herzegovina,2000,LM
+BIH,Bosnia and Herzegovina,2001,LM
+BIH,Bosnia and Herzegovina,2002,LM
+BIH,Bosnia and Herzegovina,2003,LM
+BIH,Bosnia and Herzegovina,2004,LM
+BIH,Bosnia and Herzegovina,2005,LM
+BIH,Bosnia and Herzegovina,2006,LM
+BIH,Bosnia and Herzegovina,2007,LM
+BIH,Bosnia and Herzegovina,2008,UM
+BIH,Bosnia and Herzegovina,2009,UM
+BIH,Bosnia and Herzegovina,2010,UM
+BIH,Bosnia and Herzegovina,2011,UM
+BIH,Bosnia and Herzegovina,2012,UM
+BIH,Bosnia and Herzegovina,2013,UM
+BIH,Bosnia and Herzegovina,2014,UM
+BIH,Bosnia and Herzegovina,2015,UM
+BIH,Bosnia and Herzegovina,2016,UM
+BIH,Bosnia and Herzegovina,2017,UM
+BIH,Bosnia and Herzegovina,2018,UM
+BIH,Bosnia and Herzegovina,2019,UM
+BWA,Botswana,1987,LM
+BWA,Botswana,1988,LM
+BWA,Botswana,1989,LM
+BWA,Botswana,1990,LM
+BWA,Botswana,1991,UM
+BWA,Botswana,1992,UM
+BWA,Botswana,1993,LM
+BWA,Botswana,1994,LM
+BWA,Botswana,1995,LM
+BWA,Botswana,1996,LM
+BWA,Botswana,1997,UM
+BWA,Botswana,1998,UM
+BWA,Botswana,1999,UM
+BWA,Botswana,2000,UM
+BWA,Botswana,2001,UM
+BWA,Botswana,2002,UM
+BWA,Botswana,2003,UM
+BWA,Botswana,2004,UM
+BWA,Botswana,2005,UM
+BWA,Botswana,2006,UM
+BWA,Botswana,2007,UM
+BWA,Botswana,2008,UM
+BWA,Botswana,2009,UM
+BWA,Botswana,2010,UM
+BWA,Botswana,2011,UM
+BWA,Botswana,2012,UM
+BWA,Botswana,2013,UM
+BWA,Botswana,2014,UM
+BWA,Botswana,2015,UM
+BWA,Botswana,2016,UM
+BWA,Botswana,2017,UM
+BWA,Botswana,2018,UM
+BWA,Botswana,2019,UM
+BRA,Brazil,1987,UM
+BRA,Brazil,1988,LM
+BRA,Brazil,1989,UM
+BRA,Brazil,1990,UM
+BRA,Brazil,1991,UM
+BRA,Brazil,1992,UM
+BRA,Brazil,1993,UM
+BRA,Brazil,1994,UM
+BRA,Brazil,1995,UM
+BRA,Brazil,1996,UM
+BRA,Brazil,1997,UM
+BRA,Brazil,1998,UM
+BRA,Brazil,1999,UM
+BRA,Brazil,2000,UM
+BRA,Brazil,2001,UM
+BRA,Brazil,2002,LM
+BRA,Brazil,2003,LM
+BRA,Brazil,2004,LM
+BRA,Brazil,2005,LM
+BRA,Brazil,2006,UM
+BRA,Brazil,2007,UM
+BRA,Brazil,2008,UM
+BRA,Brazil,2009,UM
+BRA,Brazil,2010,UM
+BRA,Brazil,2011,UM
+BRA,Brazil,2012,UM
+BRA,Brazil,2013,UM
+BRA,Brazil,2014,UM
+BRA,Brazil,2015,UM
+BRA,Brazil,2016,UM
+BRA,Brazil,2017,UM
+BRA,Brazil,2018,UM
+BRA,Brazil,2019,UM
+VGB,British Virgin Islands,1987,NA
+VGB,British Virgin Islands,1988,NA
+VGB,British Virgin Islands,1989,NA
+VGB,British Virgin Islands,1990,NA
+VGB,British Virgin Islands,1991,NA
+VGB,British Virgin Islands,1992,NA
+VGB,British Virgin Islands,1993,NA
+VGB,British Virgin Islands,1994,NA
+VGB,British Virgin Islands,1995,NA
+VGB,British Virgin Islands,1996,NA
+VGB,British Virgin Islands,1997,NA
+VGB,British Virgin Islands,1998,NA
+VGB,British Virgin Islands,1999,NA
+VGB,British Virgin Islands,2000,NA
+VGB,British Virgin Islands,2001,NA
+VGB,British Virgin Islands,2002,NA
+VGB,British Virgin Islands,2003,NA
+VGB,British Virgin Islands,2004,NA
+VGB,British Virgin Islands,2005,NA
+VGB,British Virgin Islands,2006,NA
+VGB,British Virgin Islands,2007,NA
+VGB,British Virgin Islands,2008,NA
+VGB,British Virgin Islands,2009,NA
+VGB,British Virgin Islands,2010,NA
+VGB,British Virgin Islands,2011,NA
+VGB,British Virgin Islands,2012,NA
+VGB,British Virgin Islands,2013,NA
+VGB,British Virgin Islands,2014,NA
+VGB,British Virgin Islands,2015,H
+VGB,British Virgin Islands,2016,H
+VGB,British Virgin Islands,2017,H
+VGB,British Virgin Islands,2018,H
+VGB,British Virgin Islands,2019,H
+BRN,Brunei Darussalam,1987,H
+BRN,Brunei Darussalam,1988,NA
+BRN,Brunei Darussalam,1989,NA
+BRN,Brunei Darussalam,1990,H
+BRN,Brunei Darussalam,1991,H
+BRN,Brunei Darussalam,1992,H
+BRN,Brunei Darussalam,1993,H
+BRN,Brunei Darussalam,1994,H
+BRN,Brunei Darussalam,1995,H
+BRN,Brunei Darussalam,1996,H
+BRN,Brunei Darussalam,1997,H
+BRN,Brunei Darussalam,1998,H
+BRN,Brunei Darussalam,1999,H
+BRN,Brunei Darussalam,2000,H
+BRN,Brunei Darussalam,2001,H
+BRN,Brunei Darussalam,2002,H
+BRN,Brunei Darussalam,2003,H
+BRN,Brunei Darussalam,2004,H
+BRN,Brunei Darussalam,2005,H
+BRN,Brunei Darussalam,2006,H
+BRN,Brunei Darussalam,2007,H
+BRN,Brunei Darussalam,2008,H
+BRN,Brunei Darussalam,2009,H
+BRN,Brunei Darussalam,2010,H
+BRN,Brunei Darussalam,2011,H
+BRN,Brunei Darussalam,2012,H
+BRN,Brunei Darussalam,2013,H
+BRN,Brunei Darussalam,2014,H
+BRN,Brunei Darussalam,2015,H
+BRN,Brunei Darussalam,2016,H
+BRN,Brunei Darussalam,2017,H
+BRN,Brunei Darussalam,2018,H
+BRN,Brunei Darussalam,2019,H
+BGR,Bulgaria,1987,NA
+BGR,Bulgaria,1988,NA
+BGR,Bulgaria,1989,LM
+BGR,Bulgaria,1990,LM
+BGR,Bulgaria,1991,LM
+BGR,Bulgaria,1992,LM
+BGR,Bulgaria,1993,LM
+BGR,Bulgaria,1994,LM
+BGR,Bulgaria,1995,LM
+BGR,Bulgaria,1996,LM
+BGR,Bulgaria,1997,LM
+BGR,Bulgaria,1998,LM
+BGR,Bulgaria,1999,LM
+BGR,Bulgaria,2000,LM
+BGR,Bulgaria,2001,LM
+BGR,Bulgaria,2002,LM
+BGR,Bulgaria,2003,LM
+BGR,Bulgaria,2004,LM
+BGR,Bulgaria,2005,LM
+BGR,Bulgaria,2006,UM
+BGR,Bulgaria,2007,UM
+BGR,Bulgaria,2008,UM
+BGR,Bulgaria,2009,UM
+BGR,Bulgaria,2010,UM
+BGR,Bulgaria,2011,UM
+BGR,Bulgaria,2012,UM
+BGR,Bulgaria,2013,UM
+BGR,Bulgaria,2014,UM
+BGR,Bulgaria,2015,UM
+BGR,Bulgaria,2016,UM
+BGR,Bulgaria,2017,UM
+BGR,Bulgaria,2018,UM
+BGR,Bulgaria,2019,UM
+BFA,Burkina Faso,1987,L
+BFA,Burkina Faso,1988,L
+BFA,Burkina Faso,1989,L
+BFA,Burkina Faso,1990,L
+BFA,Burkina Faso,1991,L
+BFA,Burkina Faso,1992,L
+BFA,Burkina Faso,1993,L
+BFA,Burkina Faso,1994,L
+BFA,Burkina Faso,1995,L
+BFA,Burkina Faso,1996,L
+BFA,Burkina Faso,1997,L
+BFA,Burkina Faso,1998,L
+BFA,Burkina Faso,1999,L
+BFA,Burkina Faso,2000,L
+BFA,Burkina Faso,2001,L
+BFA,Burkina Faso,2002,L
+BFA,Burkina Faso,2003,L
+BFA,Burkina Faso,2004,L
+BFA,Burkina Faso,2005,L
+BFA,Burkina Faso,2006,L
+BFA,Burkina Faso,2007,L
+BFA,Burkina Faso,2008,L
+BFA,Burkina Faso,2009,L
+BFA,Burkina Faso,2010,L
+BFA,Burkina Faso,2011,L
+BFA,Burkina Faso,2012,L
+BFA,Burkina Faso,2013,L
+BFA,Burkina Faso,2014,L
+BFA,Burkina Faso,2015,L
+BFA,Burkina Faso,2016,L
+BFA,Burkina Faso,2017,L
+BFA,Burkina Faso,2018,L
+BFA,Burkina Faso,2019,L
+BDI,Burundi,1987,L
+BDI,Burundi,1988,L
+BDI,Burundi,1989,L
+BDI,Burundi,1990,L
+BDI,Burundi,1991,L
+BDI,Burundi,1992,L
+BDI,Burundi,1993,L
+BDI,Burundi,1994,L
+BDI,Burundi,1995,L
+BDI,Burundi,1996,L
+BDI,Burundi,1997,L
+BDI,Burundi,1998,L
+BDI,Burundi,1999,L
+BDI,Burundi,2000,L
+BDI,Burundi,2001,L
+BDI,Burundi,2002,L
+BDI,Burundi,2003,L
+BDI,Burundi,2004,L
+BDI,Burundi,2005,L
+BDI,Burundi,2006,L
+BDI,Burundi,2007,L
+BDI,Burundi,2008,L
+BDI,Burundi,2009,L
+BDI,Burundi,2010,L
+BDI,Burundi,2011,L
+BDI,Burundi,2012,L
+BDI,Burundi,2013,L
+BDI,Burundi,2014,L
+BDI,Burundi,2015,L
+BDI,Burundi,2016,L
+BDI,Burundi,2017,L
+BDI,Burundi,2018,L
+BDI,Burundi,2019,L
+CPV,Cabo Verde,1987,NA
+CPV,Cabo Verde,1988,LM
+CPV,Cabo Verde,1989,LM
+CPV,Cabo Verde,1990,LM
+CPV,Cabo Verde,1991,LM
+CPV,Cabo Verde,1992,LM
+CPV,Cabo Verde,1993,LM
+CPV,Cabo Verde,1994,LM
+CPV,Cabo Verde,1995,LM
+CPV,Cabo Verde,1996,LM
+CPV,Cabo Verde,1997,LM
+CPV,Cabo Verde,1998,LM
+CPV,Cabo Verde,1999,LM
+CPV,Cabo Verde,2000,LM
+CPV,Cabo Verde,2001,LM
+CPV,Cabo Verde,2002,LM
+CPV,Cabo Verde,2003,LM
+CPV,Cabo Verde,2004,LM
+CPV,Cabo Verde,2005,LM
+CPV,Cabo Verde,2006,LM
+CPV,Cabo Verde,2007,LM
+CPV,Cabo Verde,2008,LM
+CPV,Cabo Verde,2009,LM
+CPV,Cabo Verde,2010,LM
+CPV,Cabo Verde,2011,LM
+CPV,Cabo Verde,2012,LM
+CPV,Cabo Verde,2013,LM
+CPV,Cabo Verde,2014,LM
+CPV,Cabo Verde,2015,LM
+CPV,Cabo Verde,2016,LM
+CPV,Cabo Verde,2017,LM
+CPV,Cabo Verde,2018,LM
+CPV,Cabo Verde,2019,LM
+KHM,Cambodia,1987,L
+KHM,Cambodia,1988,L
+KHM,Cambodia,1989,L
+KHM,Cambodia,1990,L
+KHM,Cambodia,1991,L
+KHM,Cambodia,1992,L
+KHM,Cambodia,1993,L
+KHM,Cambodia,1994,L
+KHM,Cambodia,1995,L
+KHM,Cambodia,1996,L
+KHM,Cambodia,1997,L
+KHM,Cambodia,1998,L
+KHM,Cambodia,1999,L
+KHM,Cambodia,2000,L
+KHM,Cambodia,2001,L
+KHM,Cambodia,2002,L
+KHM,Cambodia,2003,L
+KHM,Cambodia,2004,L
+KHM,Cambodia,2005,L
+KHM,Cambodia,2006,L
+KHM,Cambodia,2007,L
+KHM,Cambodia,2008,L
+KHM,Cambodia,2009,L
+KHM,Cambodia,2010,L
+KHM,Cambodia,2011,L
+KHM,Cambodia,2012,L
+KHM,Cambodia,2013,L
+KHM,Cambodia,2014,L
+KHM,Cambodia,2015,LM
+KHM,Cambodia,2016,LM
+KHM,Cambodia,2017,LM
+KHM,Cambodia,2018,LM
+KHM,Cambodia,2019,LM
+CMR,Cameroon,1987,LM
+CMR,Cameroon,1988,LM
+CMR,Cameroon,1989,LM
+CMR,Cameroon,1990,LM
+CMR,Cameroon,1991,LM
+CMR,Cameroon,1992,LM
+CMR,Cameroon,1993,LM
+CMR,Cameroon,1994,L
+CMR,Cameroon,1995,L
+CMR,Cameroon,1996,L
+CMR,Cameroon,1997,L
+CMR,Cameroon,1998,L
+CMR,Cameroon,1999,L
+CMR,Cameroon,2000,L
+CMR,Cameroon,2001,L
+CMR,Cameroon,2002,L
+CMR,Cameroon,2003,L
+CMR,Cameroon,2004,L
+CMR,Cameroon,2005,LM
+CMR,Cameroon,2006,LM
+CMR,Cameroon,2007,LM
+CMR,Cameroon,2008,LM
+CMR,Cameroon,2009,LM
+CMR,Cameroon,2010,LM
+CMR,Cameroon,2011,LM
+CMR,Cameroon,2012,LM
+CMR,Cameroon,2013,LM
+CMR,Cameroon,2014,LM
+CMR,Cameroon,2015,LM
+CMR,Cameroon,2016,LM
+CMR,Cameroon,2017,LM
+CMR,Cameroon,2018,LM
+CMR,Cameroon,2019,LM
+CAN,Canada,1987,H
+CAN,Canada,1988,H
+CAN,Canada,1989,H
+CAN,Canada,1990,H
+CAN,Canada,1991,H
+CAN,Canada,1992,H
+CAN,Canada,1993,H
+CAN,Canada,1994,H
+CAN,Canada,1995,H
+CAN,Canada,1996,H
+CAN,Canada,1997,H
+CAN,Canada,1998,H
+CAN,Canada,1999,H
+CAN,Canada,2000,H
+CAN,Canada,2001,H
+CAN,Canada,2002,H
+CAN,Canada,2003,H
+CAN,Canada,2004,H
+CAN,Canada,2005,H
+CAN,Canada,2006,H
+CAN,Canada,2007,H
+CAN,Canada,2008,H
+CAN,Canada,2009,H
+CAN,Canada,2010,H
+CAN,Canada,2011,H
+CAN,Canada,2012,H
+CAN,Canada,2013,H
+CAN,Canada,2014,H
+CAN,Canada,2015,H
+CAN,Canada,2016,H
+CAN,Canada,2017,H
+CAN,Canada,2018,H
+CAN,Canada,2019,H
+CYM,Cayman Islands,1987,NA
+CYM,Cayman Islands,1988,NA
+CYM,Cayman Islands,1989,NA
+CYM,Cayman Islands,1990,NA
+CYM,Cayman Islands,1991,NA
+CYM,Cayman Islands,1992,NA
+CYM,Cayman Islands,1993,H
+CYM,Cayman Islands,1994,H
+CYM,Cayman Islands,1995,H
+CYM,Cayman Islands,1996,H
+CYM,Cayman Islands,1997,H
+CYM,Cayman Islands,1998,H
+CYM,Cayman Islands,1999,H
+CYM,Cayman Islands,2000,H
+CYM,Cayman Islands,2001,H
+CYM,Cayman Islands,2002,H
+CYM,Cayman Islands,2003,H
+CYM,Cayman Islands,2004,H
+CYM,Cayman Islands,2005,H
+CYM,Cayman Islands,2006,H
+CYM,Cayman Islands,2007,H
+CYM,Cayman Islands,2008,H
+CYM,Cayman Islands,2009,H
+CYM,Cayman Islands,2010,H
+CYM,Cayman Islands,2011,H
+CYM,Cayman Islands,2012,H
+CYM,Cayman Islands,2013,H
+CYM,Cayman Islands,2014,H
+CYM,Cayman Islands,2015,H
+CYM,Cayman Islands,2016,H
+CYM,Cayman Islands,2017,H
+CYM,Cayman Islands,2018,H
+CYM,Cayman Islands,2019,H
+CAF,Central African Republic,1987,L
+CAF,Central African Republic,1988,L
+CAF,Central African Republic,1989,L
+CAF,Central African Republic,1990,L
+CAF,Central African Republic,1991,L
+CAF,Central African Republic,1992,L
+CAF,Central African Republic,1993,L
+CAF,Central African Republic,1994,L
+CAF,Central African Republic,1995,L
+CAF,Central African Republic,1996,L
+CAF,Central African Republic,1997,L
+CAF,Central African Republic,1998,L
+CAF,Central African Republic,1999,L
+CAF,Central African Republic,2000,L
+CAF,Central African Republic,2001,L
+CAF,Central African Republic,2002,L
+CAF,Central African Republic,2003,L
+CAF,Central African Republic,2004,L
+CAF,Central African Republic,2005,L
+CAF,Central African Republic,2006,L
+CAF,Central African Republic,2007,L
+CAF,Central African Republic,2008,L
+CAF,Central African Republic,2009,L
+CAF,Central African Republic,2010,L
+CAF,Central African Republic,2011,L
+CAF,Central African Republic,2012,L
+CAF,Central African Republic,2013,L
+CAF,Central African Republic,2014,L
+CAF,Central African Republic,2015,L
+CAF,Central African Republic,2016,L
+CAF,Central African Republic,2017,L
+CAF,Central African Republic,2018,L
+CAF,Central African Republic,2019,L
+TCD,Chad,1987,L
+TCD,Chad,1988,L
+TCD,Chad,1989,L
+TCD,Chad,1990,L
+TCD,Chad,1991,L
+TCD,Chad,1992,L
+TCD,Chad,1993,L
+TCD,Chad,1994,L
+TCD,Chad,1995,L
+TCD,Chad,1996,L
+TCD,Chad,1997,L
+TCD,Chad,1998,L
+TCD,Chad,1999,L
+TCD,Chad,2000,L
+TCD,Chad,2001,L
+TCD,Chad,2002,L
+TCD,Chad,2003,L
+TCD,Chad,2004,L
+TCD,Chad,2005,L
+TCD,Chad,2006,L
+TCD,Chad,2007,L
+TCD,Chad,2008,L
+TCD,Chad,2009,L
+TCD,Chad,2010,L
+TCD,Chad,2011,L
+TCD,Chad,2012,L
+TCD,Chad,2013,L
+TCD,Chad,2014,L
+TCD,Chad,2015,L
+TCD,Chad,2016,L
+TCD,Chad,2017,L
+TCD,Chad,2018,L
+TCD,Chad,2019,L
+CHI,Channel Islands,1987,H
+CHI,Channel Islands,1988,H
+CHI,Channel Islands,1989,H
+CHI,Channel Islands,1990,H
+CHI,Channel Islands,1991,H
+CHI,Channel Islands,1992,H
+CHI,Channel Islands,1993,H
+CHI,Channel Islands,1994,H
+CHI,Channel Islands,1995,H
+CHI,Channel Islands,1996,H
+CHI,Channel Islands,1997,H
+CHI,Channel Islands,1998,H
+CHI,Channel Islands,1999,H
+CHI,Channel Islands,2000,H
+CHI,Channel Islands,2001,H
+CHI,Channel Islands,2002,H
+CHI,Channel Islands,2003,H
+CHI,Channel Islands,2004,H
+CHI,Channel Islands,2005,H
+CHI,Channel Islands,2006,H
+CHI,Channel Islands,2007,H
+CHI,Channel Islands,2008,H
+CHI,Channel Islands,2009,H
+CHI,Channel Islands,2010,H
+CHI,Channel Islands,2011,H
+CHI,Channel Islands,2012,H
+CHI,Channel Islands,2013,H
+CHI,Channel Islands,2014,H
+CHI,Channel Islands,2015,H
+CHI,Channel Islands,2016,H
+CHI,Channel Islands,2017,H
+CHI,Channel Islands,2018,H
+CHI,Channel Islands,2019,H
+CHL,Chile,1987,LM
+CHL,Chile,1988,LM
+CHL,Chile,1989,LM
+CHL,Chile,1990,LM
+CHL,Chile,1991,LM
+CHL,Chile,1992,LM
+CHL,Chile,1993,UM
+CHL,Chile,1994,UM
+CHL,Chile,1995,UM
+CHL,Chile,1996,UM
+CHL,Chile,1997,UM
+CHL,Chile,1998,UM
+CHL,Chile,1999,UM
+CHL,Chile,2000,UM
+CHL,Chile,2001,UM
+CHL,Chile,2002,UM
+CHL,Chile,2003,UM
+CHL,Chile,2004,UM
+CHL,Chile,2005,UM
+CHL,Chile,2006,UM
+CHL,Chile,2007,UM
+CHL,Chile,2008,UM
+CHL,Chile,2009,UM
+CHL,Chile,2010,UM
+CHL,Chile,2011,UM
+CHL,Chile,2012,H
+CHL,Chile,2013,H
+CHL,Chile,2014,H
+CHL,Chile,2015,H
+CHL,Chile,2016,H
+CHL,Chile,2017,H
+CHL,Chile,2018,H
+CHL,Chile,2019,H
+CHN,China,1987,L
+CHN,China,1988,L
+CHN,China,1989,L
+CHN,China,1990,L
+CHN,China,1991,L
+CHN,China,1992,L
+CHN,China,1993,L
+CHN,China,1994,L
+CHN,China,1995,L
+CHN,China,1996,L
+CHN,China,1997,LM
+CHN,China,1998,L
+CHN,China,1999,LM
+CHN,China,2000,LM
+CHN,China,2001,LM
+CHN,China,2002,LM
+CHN,China,2003,LM
+CHN,China,2004,LM
+CHN,China,2005,LM
+CHN,China,2006,LM
+CHN,China,2007,LM
+CHN,China,2008,LM
+CHN,China,2009,LM
+CHN,China,2010,UM
+CHN,China,2011,UM
+CHN,China,2012,UM
+CHN,China,2013,UM
+CHN,China,2014,UM
+CHN,China,2015,UM
+CHN,China,2016,UM
+CHN,China,2017,UM
+CHN,China,2018,UM
+CHN,China,2019,UM
+COL,Colombia,1987,LM
+COL,Colombia,1988,LM
+COL,Colombia,1989,LM
+COL,Colombia,1990,LM
+COL,Colombia,1991,LM
+COL,Colombia,1992,LM
+COL,Colombia,1993,LM
+COL,Colombia,1994,LM
+COL,Colombia,1995,LM
+COL,Colombia,1996,LM
+COL,Colombia,1997,LM
+COL,Colombia,1998,LM
+COL,Colombia,1999,LM
+COL,Colombia,2000,LM
+COL,Colombia,2001,LM
+COL,Colombia,2002,LM
+COL,Colombia,2003,LM
+COL,Colombia,2004,LM
+COL,Colombia,2005,LM
+COL,Colombia,2006,LM
+COL,Colombia,2007,LM
+COL,Colombia,2008,UM
+COL,Colombia,2009,UM
+COL,Colombia,2010,UM
+COL,Colombia,2011,UM
+COL,Colombia,2012,UM
+COL,Colombia,2013,UM
+COL,Colombia,2014,UM
+COL,Colombia,2015,UM
+COL,Colombia,2016,UM
+COL,Colombia,2017,UM
+COL,Colombia,2018,UM
+COL,Colombia,2019,UM
+COM,Comoros,1987,L
+COM,Comoros,1988,L
+COM,Comoros,1989,L
+COM,Comoros,1990,L
+COM,Comoros,1991,L
+COM,Comoros,1992,L
+COM,Comoros,1993,L
+COM,Comoros,1994,L
+COM,Comoros,1995,L
+COM,Comoros,1996,L
+COM,Comoros,1997,L
+COM,Comoros,1998,L
+COM,Comoros,1999,L
+COM,Comoros,2000,L
+COM,Comoros,2001,L
+COM,Comoros,2002,L
+COM,Comoros,2003,L
+COM,Comoros,2004,L
+COM,Comoros,2005,L
+COM,Comoros,2006,L
+COM,Comoros,2007,L
+COM,Comoros,2008,L
+COM,Comoros,2009,L
+COM,Comoros,2010,L
+COM,Comoros,2011,L
+COM,Comoros,2012,L
+COM,Comoros,2013,L
+COM,Comoros,2014,L
+COM,Comoros,2015,L
+COM,Comoros,2016,L
+COM,Comoros,2017,L
+COM,Comoros,2018,LM
+COM,Comoros,2019,LM
+COD,"Congo, Dem. Rep.",1987,L
+COD,"Congo, Dem. Rep.",1988,L
+COD,"Congo, Dem. Rep.",1989,L
+COD,"Congo, Dem. Rep.",1990,L
+COD,"Congo, Dem. Rep.",1991,L
+COD,"Congo, Dem. Rep.",1992,L
+COD,"Congo, Dem. Rep.",1993,L
+COD,"Congo, Dem. Rep.",1994,L
+COD,"Congo, Dem. Rep.",1995,L
+COD,"Congo, Dem. Rep.",1996,L
+COD,"Congo, Dem. Rep.",1997,L
+COD,"Congo, Dem. Rep.",1998,L
+COD,"Congo, Dem. Rep.",1999,L
+COD,"Congo, Dem. Rep.",2000,L
+COD,"Congo, Dem. Rep.",2001,L
+COD,"Congo, Dem. Rep.",2002,L
+COD,"Congo, Dem. Rep.",2003,L
+COD,"Congo, Dem. Rep.",2004,L
+COD,"Congo, Dem. Rep.",2005,L
+COD,"Congo, Dem. Rep.",2006,L
+COD,"Congo, Dem. Rep.",2007,L
+COD,"Congo, Dem. Rep.",2008,L
+COD,"Congo, Dem. Rep.",2009,L
+COD,"Congo, Dem. Rep.",2010,L
+COD,"Congo, Dem. Rep.",2011,L
+COD,"Congo, Dem. Rep.",2012,L
+COD,"Congo, Dem. Rep.",2013,L
+COD,"Congo, Dem. Rep.",2014,L
+COD,"Congo, Dem. Rep.",2015,L
+COD,"Congo, Dem. Rep.",2016,L
+COD,"Congo, Dem. Rep.",2017,L
+COD,"Congo, Dem. Rep.",2018,L
+COD,"Congo, Dem. Rep.",2019,L
+COG,"Congo, Rep.",1987,LM
+COG,"Congo, Rep.",1988,LM
+COG,"Congo, Rep.",1989,LM
+COG,"Congo, Rep.",1990,LM
+COG,"Congo, Rep.",1991,LM
+COG,"Congo, Rep.",1992,LM
+COG,"Congo, Rep.",1993,LM
+COG,"Congo, Rep.",1994,L
+COG,"Congo, Rep.",1995,L
+COG,"Congo, Rep.",1996,L
+COG,"Congo, Rep.",1997,L
+COG,"Congo, Rep.",1998,L
+COG,"Congo, Rep.",1999,L
+COG,"Congo, Rep.",2000,L
+COG,"Congo, Rep.",2001,L
+COG,"Congo, Rep.",2002,L
+COG,"Congo, Rep.",2003,L
+COG,"Congo, Rep.",2004,L
+COG,"Congo, Rep.",2005,LM
+COG,"Congo, Rep.",2006,LM
+COG,"Congo, Rep.",2007,LM
+COG,"Congo, Rep.",2008,LM
+COG,"Congo, Rep.",2009,LM
+COG,"Congo, Rep.",2010,LM
+COG,"Congo, Rep.",2011,LM
+COG,"Congo, Rep.",2012,LM
+COG,"Congo, Rep.",2013,LM
+COG,"Congo, Rep.",2014,LM
+COG,"Congo, Rep.",2015,LM
+COG,"Congo, Rep.",2016,LM
+COG,"Congo, Rep.",2017,LM
+COG,"Congo, Rep.",2018,LM
+COG,"Congo, Rep.",2019,LM
+CRI,Costa Rica,1987,LM
+CRI,Costa Rica,1988,LM
+CRI,Costa Rica,1989,LM
+CRI,Costa Rica,1990,LM
+CRI,Costa Rica,1991,LM
+CRI,Costa Rica,1992,LM
+CRI,Costa Rica,1993,LM
+CRI,Costa Rica,1994,LM
+CRI,Costa Rica,1995,LM
+CRI,Costa Rica,1996,LM
+CRI,Costa Rica,1997,LM
+CRI,Costa Rica,1998,LM
+CRI,Costa Rica,1999,LM
+CRI,Costa Rica,2000,UM
+CRI,Costa Rica,2001,UM
+CRI,Costa Rica,2002,UM
+CRI,Costa Rica,2003,UM
+CRI,Costa Rica,2004,UM
+CRI,Costa Rica,2005,UM
+CRI,Costa Rica,2006,UM
+CRI,Costa Rica,2007,UM
+CRI,Costa Rica,2008,UM
+CRI,Costa Rica,2009,UM
+CRI,Costa Rica,2010,UM
+CRI,Costa Rica,2011,UM
+CRI,Costa Rica,2012,UM
+CRI,Costa Rica,2013,UM
+CRI,Costa Rica,2014,UM
+CRI,Costa Rica,2015,UM
+CRI,Costa Rica,2016,UM
+CRI,Costa Rica,2017,UM
+CRI,Costa Rica,2018,UM
+CRI,Costa Rica,2019,UM
+CIV,Côte d'Ivoire,1987,LM
+CIV,Côte d'Ivoire,1988,LM
+CIV,Côte d'Ivoire,1989,LM
+CIV,Côte d'Ivoire,1990,LM
+CIV,Côte d'Ivoire,1991,LM
+CIV,Côte d'Ivoire,1992,LM
+CIV,Côte d'Ivoire,1993,L
+CIV,Côte d'Ivoire,1994,L
+CIV,Côte d'Ivoire,1995,L
+CIV,Côte d'Ivoire,1996,L
+CIV,Côte d'Ivoire,1997,L
+CIV,Côte d'Ivoire,1998,L
+CIV,Côte d'Ivoire,1999,L
+CIV,Côte d'Ivoire,2000,L
+CIV,Côte d'Ivoire,2001,L
+CIV,Côte d'Ivoire,2002,L
+CIV,Côte d'Ivoire,2003,L
+CIV,Côte d'Ivoire,2004,L
+CIV,Côte d'Ivoire,2005,L
+CIV,Côte d'Ivoire,2006,L
+CIV,Côte d'Ivoire,2007,L
+CIV,Côte d'Ivoire,2008,LM
+CIV,Côte d'Ivoire,2009,LM
+CIV,Côte d'Ivoire,2010,LM
+CIV,Côte d'Ivoire,2011,LM
+CIV,Côte d'Ivoire,2012,LM
+CIV,Côte d'Ivoire,2013,LM
+CIV,Côte d'Ivoire,2014,LM
+CIV,Côte d'Ivoire,2015,LM
+CIV,Côte d'Ivoire,2016,LM
+CIV,Côte d'Ivoire,2017,LM
+CIV,Côte d'Ivoire,2018,LM
+CIV,Côte d'Ivoire,2019,LM
+HRV,Croatia,1987,NA
+HRV,Croatia,1988,NA
+HRV,Croatia,1989,NA
+HRV,Croatia,1990,NA
+HRV,Croatia,1991,NA
+HRV,Croatia,1992,LM
+HRV,Croatia,1993,LM
+HRV,Croatia,1994,LM
+HRV,Croatia,1995,UM
+HRV,Croatia,1996,UM
+HRV,Croatia,1997,UM
+HRV,Croatia,1998,UM
+HRV,Croatia,1999,UM
+HRV,Croatia,2000,UM
+HRV,Croatia,2001,UM
+HRV,Croatia,2002,UM
+HRV,Croatia,2003,UM
+HRV,Croatia,2004,UM
+HRV,Croatia,2005,UM
+HRV,Croatia,2006,UM
+HRV,Croatia,2007,UM
+HRV,Croatia,2008,H
+HRV,Croatia,2009,H
+HRV,Croatia,2010,H
+HRV,Croatia,2011,H
+HRV,Croatia,2012,H
+HRV,Croatia,2013,H
+HRV,Croatia,2014,H
+HRV,Croatia,2015,H
+HRV,Croatia,2016,UM
+HRV,Croatia,2017,H
+HRV,Croatia,2018,H
+HRV,Croatia,2019,H
+CUB,Cuba,1987,NA
+CUB,Cuba,1988,NA
+CUB,Cuba,1989,NA
+CUB,Cuba,1990,LM
+CUB,Cuba,1991,LM
+CUB,Cuba,1992,LM
+CUB,Cuba,1993,LM
+CUB,Cuba,1994,LM
+CUB,Cuba,1995,LM
+CUB,Cuba,1996,LM
+CUB,Cuba,1997,LM
+CUB,Cuba,1998,LM
+CUB,Cuba,1999,LM
+CUB,Cuba,2000,LM
+CUB,Cuba,2001,LM
+CUB,Cuba,2002,LM
+CUB,Cuba,2003,LM
+CUB,Cuba,2004,LM
+CUB,Cuba,2005,LM
+CUB,Cuba,2006,LM
+CUB,Cuba,2007,UM
+CUB,Cuba,2008,UM
+CUB,Cuba,2009,UM
+CUB,Cuba,2010,UM
+CUB,Cuba,2011,UM
+CUB,Cuba,2012,UM
+CUB,Cuba,2013,UM
+CUB,Cuba,2014,UM
+CUB,Cuba,2015,UM
+CUB,Cuba,2016,UM
+CUB,Cuba,2017,UM
+CUB,Cuba,2018,UM
+CUB,Cuba,2019,UM
+CUW,Curaçao,1987,NA
+CUW,Curaçao,1988,NA
+CUW,Curaçao,1989,NA
+CUW,Curaçao,1990,NA
+CUW,Curaçao,1991,NA
+CUW,Curaçao,1992,NA
+CUW,Curaçao,1993,NA
+CUW,Curaçao,1994,NA
+CUW,Curaçao,1995,NA
+CUW,Curaçao,1996,NA
+CUW,Curaçao,1997,NA
+CUW,Curaçao,1998,NA
+CUW,Curaçao,1999,NA
+CUW,Curaçao,2000,NA
+CUW,Curaçao,2001,NA
+CUW,Curaçao,2002,NA
+CUW,Curaçao,2003,NA
+CUW,Curaçao,2004,NA
+CUW,Curaçao,2005,NA
+CUW,Curaçao,2006,NA
+CUW,Curaçao,2007,NA
+CUW,Curaçao,2008,NA
+CUW,Curaçao,2009,NA
+CUW,Curaçao,2010,H
+CUW,Curaçao,2011,H
+CUW,Curaçao,2012,H
+CUW,Curaçao,2013,H
+CUW,Curaçao,2014,H
+CUW,Curaçao,2015,H
+CUW,Curaçao,2016,H
+CUW,Curaçao,2017,H
+CUW,Curaçao,2018,H
+CUW,Curaçao,2019,H
+CYP,Cyprus,1987,UM
+CYP,Cyprus,1988,H
+CYP,Cyprus,1989,H
+CYP,Cyprus,1990,H
+CYP,Cyprus,1991,H
+CYP,Cyprus,1992,H
+CYP,Cyprus,1993,H
+CYP,Cyprus,1994,H
+CYP,Cyprus,1995,H
+CYP,Cyprus,1996,H
+CYP,Cyprus,1997,H
+CYP,Cyprus,1998,H
+CYP,Cyprus,1999,H
+CYP,Cyprus,2000,H
+CYP,Cyprus,2001,H
+CYP,Cyprus,2002,H
+CYP,Cyprus,2003,H
+CYP,Cyprus,2004,H
+CYP,Cyprus,2005,H
+CYP,Cyprus,2006,H
+CYP,Cyprus,2007,H
+CYP,Cyprus,2008,H
+CYP,Cyprus,2009,H
+CYP,Cyprus,2010,H
+CYP,Cyprus,2011,H
+CYP,Cyprus,2012,H
+CYP,Cyprus,2013,H
+CYP,Cyprus,2014,H
+CYP,Cyprus,2015,H
+CYP,Cyprus,2016,H
+CYP,Cyprus,2017,H
+CYP,Cyprus,2018,H
+CYP,Cyprus,2019,H
+CZE,Czech Republic,1987,NA
+CZE,Czech Republic,1988,NA
+CZE,Czech Republic,1989,NA
+CZE,Czech Republic,1990,NA
+CZE,Czech Republic,1991,NA
+CZE,Czech Republic,1992,LM
+CZE,Czech Republic,1993,LM
+CZE,Czech Republic,1994,UM
+CZE,Czech Republic,1995,UM
+CZE,Czech Republic,1996,UM
+CZE,Czech Republic,1997,UM
+CZE,Czech Republic,1998,UM
+CZE,Czech Republic,1999,UM
+CZE,Czech Republic,2000,UM
+CZE,Czech Republic,2001,UM
+CZE,Czech Republic,2002,UM
+CZE,Czech Republic,2003,UM
+CZE,Czech Republic,2004,UM
+CZE,Czech Republic,2005,UM
+CZE,Czech Republic,2006,H
+CZE,Czech Republic,2007,H
+CZE,Czech Republic,2008,H
+CZE,Czech Republic,2009,H
+CZE,Czech Republic,2010,H
+CZE,Czech Republic,2011,H
+CZE,Czech Republic,2012,H
+CZE,Czech Republic,2013,H
+CZE,Czech Republic,2014,H
+CZE,Czech Republic,2015,H
+CZE,Czech Republic,2016,H
+CZE,Czech Republic,2017,H
+CZE,Czech Republic,2018,H
+CZE,Czech Republic,2019,H
+DNK,Denmark,1987,H
+DNK,Denmark,1988,H
+DNK,Denmark,1989,H
+DNK,Denmark,1990,H
+DNK,Denmark,1991,H
+DNK,Denmark,1992,H
+DNK,Denmark,1993,H
+DNK,Denmark,1994,H
+DNK,Denmark,1995,H
+DNK,Denmark,1996,H
+DNK,Denmark,1997,H
+DNK,Denmark,1998,H
+DNK,Denmark,1999,H
+DNK,Denmark,2000,H
+DNK,Denmark,2001,H
+DNK,Denmark,2002,H
+DNK,Denmark,2003,H
+DNK,Denmark,2004,H
+DNK,Denmark,2005,H
+DNK,Denmark,2006,H
+DNK,Denmark,2007,H
+DNK,Denmark,2008,H
+DNK,Denmark,2009,H
+DNK,Denmark,2010,H
+DNK,Denmark,2011,H
+DNK,Denmark,2012,H
+DNK,Denmark,2013,H
+DNK,Denmark,2014,H
+DNK,Denmark,2015,H
+DNK,Denmark,2016,H
+DNK,Denmark,2017,H
+DNK,Denmark,2018,H
+DNK,Denmark,2019,H
+DJI,Djibouti,1987,NA
+DJI,Djibouti,1988,NA
+DJI,Djibouti,1989,NA
+DJI,Djibouti,1990,LM
+DJI,Djibouti,1991,LM
+DJI,Djibouti,1992,LM
+DJI,Djibouti,1993,LM
+DJI,Djibouti,1994,LM
+DJI,Djibouti,1995,LM
+DJI,Djibouti,1996,LM
+DJI,Djibouti,1997,LM
+DJI,Djibouti,1998,LM
+DJI,Djibouti,1999,LM
+DJI,Djibouti,2000,LM
+DJI,Djibouti,2001,LM
+DJI,Djibouti,2002,LM
+DJI,Djibouti,2003,LM
+DJI,Djibouti,2004,LM
+DJI,Djibouti,2005,LM
+DJI,Djibouti,2006,LM
+DJI,Djibouti,2007,LM
+DJI,Djibouti,2008,LM
+DJI,Djibouti,2009,LM
+DJI,Djibouti,2010,LM
+DJI,Djibouti,2011,LM
+DJI,Djibouti,2012,LM
+DJI,Djibouti,2013,LM
+DJI,Djibouti,2014,LM
+DJI,Djibouti,2015,LM
+DJI,Djibouti,2016,LM
+DJI,Djibouti,2017,LM
+DJI,Djibouti,2018,LM
+DJI,Djibouti,2019,LM
+DMA,Dominica,1987,LM
+DMA,Dominica,1988,LM
+DMA,Dominica,1989,LM
+DMA,Dominica,1990,LM
+DMA,Dominica,1991,LM
+DMA,Dominica,1992,LM
+DMA,Dominica,1993,LM
+DMA,Dominica,1994,LM
+DMA,Dominica,1995,LM
+DMA,Dominica,1996,LM
+DMA,Dominica,1997,LM
+DMA,Dominica,1998,LM
+DMA,Dominica,1999,UM
+DMA,Dominica,2000,UM
+DMA,Dominica,2001,UM
+DMA,Dominica,2002,UM
+DMA,Dominica,2003,UM
+DMA,Dominica,2004,UM
+DMA,Dominica,2005,UM
+DMA,Dominica,2006,UM
+DMA,Dominica,2007,UM
+DMA,Dominica,2008,UM
+DMA,Dominica,2009,UM
+DMA,Dominica,2010,UM
+DMA,Dominica,2011,UM
+DMA,Dominica,2012,UM
+DMA,Dominica,2013,UM
+DMA,Dominica,2014,UM
+DMA,Dominica,2015,UM
+DMA,Dominica,2016,UM
+DMA,Dominica,2017,UM
+DMA,Dominica,2018,UM
+DMA,Dominica,2019,UM
+DOM,Dominican Republic,1987,LM
+DOM,Dominican Republic,1988,LM
+DOM,Dominican Republic,1989,LM
+DOM,Dominican Republic,1990,LM
+DOM,Dominican Republic,1991,LM
+DOM,Dominican Republic,1992,LM
+DOM,Dominican Republic,1993,LM
+DOM,Dominican Republic,1994,LM
+DOM,Dominican Republic,1995,LM
+DOM,Dominican Republic,1996,LM
+DOM,Dominican Republic,1997,LM
+DOM,Dominican Republic,1998,LM
+DOM,Dominican Republic,1999,LM
+DOM,Dominican Republic,2000,LM
+DOM,Dominican Republic,2001,LM
+DOM,Dominican Republic,2002,LM
+DOM,Dominican Republic,2003,LM
+DOM,Dominican Republic,2004,LM
+DOM,Dominican Republic,2005,LM
+DOM,Dominican Republic,2006,LM
+DOM,Dominican Republic,2007,LM
+DOM,Dominican Republic,2008,UM
+DOM,Dominican Republic,2009,UM
+DOM,Dominican Republic,2010,UM
+DOM,Dominican Republic,2011,UM
+DOM,Dominican Republic,2012,UM
+DOM,Dominican Republic,2013,UM
+DOM,Dominican Republic,2014,UM
+DOM,Dominican Republic,2015,UM
+DOM,Dominican Republic,2016,UM
+DOM,Dominican Republic,2017,UM
+DOM,Dominican Republic,2018,UM
+DOM,Dominican Republic,2019,UM
+ECU,Ecuador,1987,LM
+ECU,Ecuador,1988,LM
+ECU,Ecuador,1989,LM
+ECU,Ecuador,1990,LM
+ECU,Ecuador,1991,LM
+ECU,Ecuador,1992,LM
+ECU,Ecuador,1993,LM
+ECU,Ecuador,1994,LM
+ECU,Ecuador,1995,LM
+ECU,Ecuador,1996,LM
+ECU,Ecuador,1997,LM
+ECU,Ecuador,1998,LM
+ECU,Ecuador,1999,LM
+ECU,Ecuador,2000,LM
+ECU,Ecuador,2001,LM
+ECU,Ecuador,2002,LM
+ECU,Ecuador,2003,LM
+ECU,Ecuador,2004,LM
+ECU,Ecuador,2005,LM
+ECU,Ecuador,2006,LM
+ECU,Ecuador,2007,LM
+ECU,Ecuador,2008,LM
+ECU,Ecuador,2009,LM
+ECU,Ecuador,2010,UM
+ECU,Ecuador,2011,UM
+ECU,Ecuador,2012,UM
+ECU,Ecuador,2013,UM
+ECU,Ecuador,2014,UM
+ECU,Ecuador,2015,UM
+ECU,Ecuador,2016,UM
+ECU,Ecuador,2017,UM
+ECU,Ecuador,2018,UM
+ECU,Ecuador,2019,UM
+EGY,"Egypt, Arab Rep.",1987,LM
+EGY,"Egypt, Arab Rep.",1988,LM
+EGY,"Egypt, Arab Rep.",1989,LM
+EGY,"Egypt, Arab Rep.",1990,L
+EGY,"Egypt, Arab Rep.",1991,L
+EGY,"Egypt, Arab Rep.",1992,L
+EGY,"Egypt, Arab Rep.",1993,L
+EGY,"Egypt, Arab Rep.",1994,L
+EGY,"Egypt, Arab Rep.",1995,LM
+EGY,"Egypt, Arab Rep.",1996,LM
+EGY,"Egypt, Arab Rep.",1997,LM
+EGY,"Egypt, Arab Rep.",1998,LM
+EGY,"Egypt, Arab Rep.",1999,LM
+EGY,"Egypt, Arab Rep.",2000,LM
+EGY,"Egypt, Arab Rep.",2001,LM
+EGY,"Egypt, Arab Rep.",2002,LM
+EGY,"Egypt, Arab Rep.",2003,LM
+EGY,"Egypt, Arab Rep.",2004,LM
+EGY,"Egypt, Arab Rep.",2005,LM
+EGY,"Egypt, Arab Rep.",2006,LM
+EGY,"Egypt, Arab Rep.",2007,LM
+EGY,"Egypt, Arab Rep.",2008,LM
+EGY,"Egypt, Arab Rep.",2009,LM
+EGY,"Egypt, Arab Rep.",2010,LM
+EGY,"Egypt, Arab Rep.",2011,LM
+EGY,"Egypt, Arab Rep.",2012,LM
+EGY,"Egypt, Arab Rep.",2013,LM
+EGY,"Egypt, Arab Rep.",2014,LM
+EGY,"Egypt, Arab Rep.",2015,LM
+EGY,"Egypt, Arab Rep.",2016,LM
+EGY,"Egypt, Arab Rep.",2017,LM
+EGY,"Egypt, Arab Rep.",2018,LM
+EGY,"Egypt, Arab Rep.",2019,LM
+SLV,El Salvador,1987,LM
+SLV,El Salvador,1988,LM
+SLV,El Salvador,1989,LM
+SLV,El Salvador,1990,LM
+SLV,El Salvador,1991,LM
+SLV,El Salvador,1992,LM
+SLV,El Salvador,1993,LM
+SLV,El Salvador,1994,LM
+SLV,El Salvador,1995,LM
+SLV,El Salvador,1996,LM
+SLV,El Salvador,1997,LM
+SLV,El Salvador,1998,LM
+SLV,El Salvador,1999,LM
+SLV,El Salvador,2000,LM
+SLV,El Salvador,2001,LM
+SLV,El Salvador,2002,LM
+SLV,El Salvador,2003,LM
+SLV,El Salvador,2004,LM
+SLV,El Salvador,2005,LM
+SLV,El Salvador,2006,LM
+SLV,El Salvador,2007,LM
+SLV,El Salvador,2008,LM
+SLV,El Salvador,2009,LM
+SLV,El Salvador,2010,LM
+SLV,El Salvador,2011,LM
+SLV,El Salvador,2012,LM
+SLV,El Salvador,2013,LM
+SLV,El Salvador,2014,LM
+SLV,El Salvador,2015,LM
+SLV,El Salvador,2016,LM
+SLV,El Salvador,2017,LM
+SLV,El Salvador,2018,LM
+SLV,El Salvador,2019,LM
+GNQ,Equatorial Guinea,1987,L
+GNQ,Equatorial Guinea,1988,L
+GNQ,Equatorial Guinea,1989,L
+GNQ,Equatorial Guinea,1990,L
+GNQ,Equatorial Guinea,1991,L
+GNQ,Equatorial Guinea,1992,L
+GNQ,Equatorial Guinea,1993,L
+GNQ,Equatorial Guinea,1994,L
+GNQ,Equatorial Guinea,1995,L
+GNQ,Equatorial Guinea,1996,L
+GNQ,Equatorial Guinea,1997,LM
+GNQ,Equatorial Guinea,1998,LM
+GNQ,Equatorial Guinea,1999,LM
+GNQ,Equatorial Guinea,2000,LM
+GNQ,Equatorial Guinea,2001,L
+GNQ,Equatorial Guinea,2002,L
+GNQ,Equatorial Guinea,2003,L
+GNQ,Equatorial Guinea,2004,UM
+GNQ,Equatorial Guinea,2005,UM
+GNQ,Equatorial Guinea,2006,UM
+GNQ,Equatorial Guinea,2007,H
+GNQ,Equatorial Guinea,2008,H
+GNQ,Equatorial Guinea,2009,H
+GNQ,Equatorial Guinea,2010,H
+GNQ,Equatorial Guinea,2011,H
+GNQ,Equatorial Guinea,2012,H
+GNQ,Equatorial Guinea,2013,H
+GNQ,Equatorial Guinea,2014,H
+GNQ,Equatorial Guinea,2015,UM
+GNQ,Equatorial Guinea,2016,UM
+GNQ,Equatorial Guinea,2017,UM
+GNQ,Equatorial Guinea,2018,UM
+GNQ,Equatorial Guinea,2019,UM
+ERI,Eritrea,1987,NA
+ERI,Eritrea,1988,NA
+ERI,Eritrea,1989,NA
+ERI,Eritrea,1990,NA
+ERI,Eritrea,1991,NA
+ERI,Eritrea,1992,L
+ERI,Eritrea,1993,L
+ERI,Eritrea,1994,L
+ERI,Eritrea,1995,L
+ERI,Eritrea,1996,L
+ERI,Eritrea,1997,L
+ERI,Eritrea,1998,L
+ERI,Eritrea,1999,L
+ERI,Eritrea,2000,L
+ERI,Eritrea,2001,L
+ERI,Eritrea,2002,L
+ERI,Eritrea,2003,L
+ERI,Eritrea,2004,L
+ERI,Eritrea,2005,L
+ERI,Eritrea,2006,L
+ERI,Eritrea,2007,L
+ERI,Eritrea,2008,L
+ERI,Eritrea,2009,L
+ERI,Eritrea,2010,L
+ERI,Eritrea,2011,L
+ERI,Eritrea,2012,L
+ERI,Eritrea,2013,L
+ERI,Eritrea,2014,L
+ERI,Eritrea,2015,L
+ERI,Eritrea,2016,L
+ERI,Eritrea,2017,L
+ERI,Eritrea,2018,L
+ERI,Eritrea,2019,L
+EST,Estonia,1987,NA
+EST,Estonia,1988,NA
+EST,Estonia,1989,NA
+EST,Estonia,1990,NA
+EST,Estonia,1991,UM
+EST,Estonia,1992,UM
+EST,Estonia,1993,UM
+EST,Estonia,1994,LM
+EST,Estonia,1995,LM
+EST,Estonia,1996,LM
+EST,Estonia,1997,UM
+EST,Estonia,1998,UM
+EST,Estonia,1999,UM
+EST,Estonia,2000,UM
+EST,Estonia,2001,UM
+EST,Estonia,2002,UM
+EST,Estonia,2003,UM
+EST,Estonia,2004,UM
+EST,Estonia,2005,UM
+EST,Estonia,2006,H
+EST,Estonia,2007,H
+EST,Estonia,2008,H
+EST,Estonia,2009,H
+EST,Estonia,2010,H
+EST,Estonia,2011,H
+EST,Estonia,2012,H
+EST,Estonia,2013,H
+EST,Estonia,2014,H
+EST,Estonia,2015,H
+EST,Estonia,2016,H
+EST,Estonia,2017,H
+EST,Estonia,2018,H
+EST,Estonia,2019,H
+SWZ,Eswatini,1987,LM
+SWZ,Eswatini,1988,LM
+SWZ,Eswatini,1989,LM
+SWZ,Eswatini,1990,LM
+SWZ,Eswatini,1991,LM
+SWZ,Eswatini,1992,LM
+SWZ,Eswatini,1993,LM
+SWZ,Eswatini,1994,LM
+SWZ,Eswatini,1995,LM
+SWZ,Eswatini,1996,LM
+SWZ,Eswatini,1997,LM
+SWZ,Eswatini,1998,LM
+SWZ,Eswatini,1999,LM
+SWZ,Eswatini,2000,LM
+SWZ,Eswatini,2001,LM
+SWZ,Eswatini,2002,LM
+SWZ,Eswatini,2003,LM
+SWZ,Eswatini,2004,LM
+SWZ,Eswatini,2005,LM
+SWZ,Eswatini,2006,LM
+SWZ,Eswatini,2007,LM
+SWZ,Eswatini,2008,LM
+SWZ,Eswatini,2009,LM
+SWZ,Eswatini,2010,LM
+SWZ,Eswatini,2011,LM
+SWZ,Eswatini,2012,LM
+SWZ,Eswatini,2013,LM
+SWZ,Eswatini,2014,LM
+SWZ,Eswatini,2015,LM
+SWZ,Eswatini,2016,LM
+SWZ,Eswatini,2017,LM
+SWZ,Eswatini,2018,LM
+SWZ,Eswatini,2019,LM
+ETH,Ethiopia,1987,L
+ETH,Ethiopia,1988,L
+ETH,Ethiopia,1989,L
+ETH,Ethiopia,1990,L
+ETH,Ethiopia,1991,L
+ETH,Ethiopia,1992,L
+ETH,Ethiopia,1993,L
+ETH,Ethiopia,1994,L
+ETH,Ethiopia,1995,L
+ETH,Ethiopia,1996,L
+ETH,Ethiopia,1997,L
+ETH,Ethiopia,1998,L
+ETH,Ethiopia,1999,L
+ETH,Ethiopia,2000,L
+ETH,Ethiopia,2001,L
+ETH,Ethiopia,2002,L
+ETH,Ethiopia,2003,L
+ETH,Ethiopia,2004,L
+ETH,Ethiopia,2005,L
+ETH,Ethiopia,2006,L
+ETH,Ethiopia,2007,L
+ETH,Ethiopia,2008,L
+ETH,Ethiopia,2009,L
+ETH,Ethiopia,2010,L
+ETH,Ethiopia,2011,L
+ETH,Ethiopia,2012,L
+ETH,Ethiopia,2013,L
+ETH,Ethiopia,2014,L
+ETH,Ethiopia,2015,L
+ETH,Ethiopia,2016,L
+ETH,Ethiopia,2017,L
+ETH,Ethiopia,2018,L
+ETH,Ethiopia,2019,L
+FRO,Faeroe Islands,1987,H
+FRO,Faeroe Islands,1988,H
+FRO,Faeroe Islands,1989,H
+FRO,Faeroe Islands,1990,H
+FRO,Faeroe Islands,1991,H
+FRO,Faeroe Islands,1992,H
+FRO,Faeroe Islands,1993,H
+FRO,Faeroe Islands,1994,H
+FRO,Faeroe Islands,1995,H
+FRO,Faeroe Islands,1996,H
+FRO,Faeroe Islands,1997,H
+FRO,Faeroe Islands,1998,H
+FRO,Faeroe Islands,1999,H
+FRO,Faeroe Islands,2000,H
+FRO,Faeroe Islands,2001,H
+FRO,Faeroe Islands,2002,H
+FRO,Faeroe Islands,2003,H
+FRO,Faeroe Islands,2004,H
+FRO,Faeroe Islands,2005,H
+FRO,Faeroe Islands,2006,H
+FRO,Faeroe Islands,2007,H
+FRO,Faeroe Islands,2008,H
+FRO,Faeroe Islands,2009,H
+FRO,Faeroe Islands,2010,H
+FRO,Faeroe Islands,2011,H
+FRO,Faeroe Islands,2012,H
+FRO,Faeroe Islands,2013,H
+FRO,Faeroe Islands,2014,H
+FRO,Faeroe Islands,2015,H
+FRO,Faeroe Islands,2016,H
+FRO,Faeroe Islands,2017,H
+FRO,Faeroe Islands,2018,H
+FRO,Faeroe Islands,2019,H
+FJI,Fiji,1987,LM
+FJI,Fiji,1988,LM
+FJI,Fiji,1989,LM
+FJI,Fiji,1990,LM
+FJI,Fiji,1991,LM
+FJI,Fiji,1992,LM
+FJI,Fiji,1993,LM
+FJI,Fiji,1994,LM
+FJI,Fiji,1995,LM
+FJI,Fiji,1996,LM
+FJI,Fiji,1997,LM
+FJI,Fiji,1998,LM
+FJI,Fiji,1999,LM
+FJI,Fiji,2000,LM
+FJI,Fiji,2001,LM
+FJI,Fiji,2002,LM
+FJI,Fiji,2003,LM
+FJI,Fiji,2004,LM
+FJI,Fiji,2005,LM
+FJI,Fiji,2006,LM
+FJI,Fiji,2007,UM
+FJI,Fiji,2008,UM
+FJI,Fiji,2009,UM
+FJI,Fiji,2010,LM
+FJI,Fiji,2011,LM
+FJI,Fiji,2012,UM
+FJI,Fiji,2013,UM
+FJI,Fiji,2014,UM
+FJI,Fiji,2015,UM
+FJI,Fiji,2016,UM
+FJI,Fiji,2017,UM
+FJI,Fiji,2018,UM
+FJI,Fiji,2019,UM
+FIN,Finland,1987,H
+FIN,Finland,1988,H
+FIN,Finland,1989,H
+FIN,Finland,1990,H
+FIN,Finland,1991,H
+FIN,Finland,1992,H
+FIN,Finland,1993,H
+FIN,Finland,1994,H
+FIN,Finland,1995,H
+FIN,Finland,1996,H
+FIN,Finland,1997,H
+FIN,Finland,1998,H
+FIN,Finland,1999,H
+FIN,Finland,2000,H
+FIN,Finland,2001,H
+FIN,Finland,2002,H
+FIN,Finland,2003,H
+FIN,Finland,2004,H
+FIN,Finland,2005,H
+FIN,Finland,2006,H
+FIN,Finland,2007,H
+FIN,Finland,2008,H
+FIN,Finland,2009,H
+FIN,Finland,2010,H
+FIN,Finland,2011,H
+FIN,Finland,2012,H
+FIN,Finland,2013,H
+FIN,Finland,2014,H
+FIN,Finland,2015,H
+FIN,Finland,2016,H
+FIN,Finland,2017,H
+FIN,Finland,2018,H
+FIN,Finland,2019,H
+FRA,France,1987,H
+FRA,France,1988,H
+FRA,France,1989,H
+FRA,France,1990,H
+FRA,France,1991,H
+FRA,France,1992,H
+FRA,France,1993,H
+FRA,France,1994,H
+FRA,France,1995,H
+FRA,France,1996,H
+FRA,France,1997,H
+FRA,France,1998,H
+FRA,France,1999,H
+FRA,France,2000,H
+FRA,France,2001,H
+FRA,France,2002,H
+FRA,France,2003,H
+FRA,France,2004,H
+FRA,France,2005,H
+FRA,France,2006,H
+FRA,France,2007,H
+FRA,France,2008,H
+FRA,France,2009,H
+FRA,France,2010,H
+FRA,France,2011,H
+FRA,France,2012,H
+FRA,France,2013,H
+FRA,France,2014,H
+FRA,France,2015,H
+FRA,France,2016,H
+FRA,France,2017,H
+FRA,France,2018,H
+FRA,France,2019,H
+PYF,French Polynesia,1987,NA
+PYF,French Polynesia,1988,NA
+PYF,French Polynesia,1989,NA
+PYF,French Polynesia,1990,H
+PYF,French Polynesia,1991,H
+PYF,French Polynesia,1992,H
+PYF,French Polynesia,1993,H
+PYF,French Polynesia,1994,H
+PYF,French Polynesia,1995,H
+PYF,French Polynesia,1996,H
+PYF,French Polynesia,1997,H
+PYF,French Polynesia,1998,H
+PYF,French Polynesia,1999,H
+PYF,French Polynesia,2000,H
+PYF,French Polynesia,2001,H
+PYF,French Polynesia,2002,H
+PYF,French Polynesia,2003,H
+PYF,French Polynesia,2004,H
+PYF,French Polynesia,2005,H
+PYF,French Polynesia,2006,H
+PYF,French Polynesia,2007,H
+PYF,French Polynesia,2008,H
+PYF,French Polynesia,2009,H
+PYF,French Polynesia,2010,H
+PYF,French Polynesia,2011,H
+PYF,French Polynesia,2012,H
+PYF,French Polynesia,2013,H
+PYF,French Polynesia,2014,H
+PYF,French Polynesia,2015,H
+PYF,French Polynesia,2016,H
+PYF,French Polynesia,2017,H
+PYF,French Polynesia,2018,H
+PYF,French Polynesia,2019,H
+GAB,Gabon,1987,UM
+GAB,Gabon,1988,UM
+GAB,Gabon,1989,UM
+GAB,Gabon,1990,UM
+GAB,Gabon,1991,UM
+GAB,Gabon,1992,UM
+GAB,Gabon,1993,UM
+GAB,Gabon,1994,UM
+GAB,Gabon,1995,UM
+GAB,Gabon,1996,UM
+GAB,Gabon,1997,UM
+GAB,Gabon,1998,UM
+GAB,Gabon,1999,UM
+GAB,Gabon,2000,UM
+GAB,Gabon,2001,UM
+GAB,Gabon,2002,UM
+GAB,Gabon,2003,UM
+GAB,Gabon,2004,UM
+GAB,Gabon,2005,UM
+GAB,Gabon,2006,UM
+GAB,Gabon,2007,UM
+GAB,Gabon,2008,UM
+GAB,Gabon,2009,UM
+GAB,Gabon,2010,UM
+GAB,Gabon,2011,UM
+GAB,Gabon,2012,UM
+GAB,Gabon,2013,UM
+GAB,Gabon,2014,UM
+GAB,Gabon,2015,UM
+GAB,Gabon,2016,UM
+GAB,Gabon,2017,UM
+GAB,Gabon,2018,UM
+GAB,Gabon,2019,UM
+GMB,"Gambia, The",1987,L
+GMB,"Gambia, The",1988,L
+GMB,"Gambia, The",1989,L
+GMB,"Gambia, The",1990,L
+GMB,"Gambia, The",1991,L
+GMB,"Gambia, The",1992,L
+GMB,"Gambia, The",1993,L
+GMB,"Gambia, The",1994,L
+GMB,"Gambia, The",1995,L
+GMB,"Gambia, The",1996,L
+GMB,"Gambia, The",1997,L
+GMB,"Gambia, The",1998,L
+GMB,"Gambia, The",1999,L
+GMB,"Gambia, The",2000,L
+GMB,"Gambia, The",2001,L
+GMB,"Gambia, The",2002,L
+GMB,"Gambia, The",2003,L
+GMB,"Gambia, The",2004,L
+GMB,"Gambia, The",2005,L
+GMB,"Gambia, The",2006,L
+GMB,"Gambia, The",2007,L
+GMB,"Gambia, The",2008,L
+GMB,"Gambia, The",2009,L
+GMB,"Gambia, The",2010,L
+GMB,"Gambia, The",2011,L
+GMB,"Gambia, The",2012,L
+GMB,"Gambia, The",2013,L
+GMB,"Gambia, The",2014,L
+GMB,"Gambia, The",2015,L
+GMB,"Gambia, The",2016,L
+GMB,"Gambia, The",2017,L
+GMB,"Gambia, The",2018,L
+GMB,"Gambia, The",2019,L
+GEO,Georgia,1987,NA
+GEO,Georgia,1988,NA
+GEO,Georgia,1989,NA
+GEO,Georgia,1990,NA
+GEO,Georgia,1991,LM
+GEO,Georgia,1992,LM
+GEO,Georgia,1993,L
+GEO,Georgia,1994,L
+GEO,Georgia,1995,L
+GEO,Georgia,1996,LM
+GEO,Georgia,1997,LM
+GEO,Georgia,1998,LM
+GEO,Georgia,1999,L
+GEO,Georgia,2000,L
+GEO,Georgia,2001,L
+GEO,Georgia,2002,L
+GEO,Georgia,2003,LM
+GEO,Georgia,2004,LM
+GEO,Georgia,2005,LM
+GEO,Georgia,2006,LM
+GEO,Georgia,2007,LM
+GEO,Georgia,2008,LM
+GEO,Georgia,2009,LM
+GEO,Georgia,2010,LM
+GEO,Georgia,2011,LM
+GEO,Georgia,2012,LM
+GEO,Georgia,2013,LM
+GEO,Georgia,2014,LM
+GEO,Georgia,2015,UM
+GEO,Georgia,2016,LM
+GEO,Georgia,2017,LM
+GEO,Georgia,2018,UM
+GEO,Georgia,2019,UM
+DEU,Germany,1987,H
+DEU,Germany,1988,H
+DEU,Germany,1989,H
+DEU,Germany,1990,H
+DEU,Germany,1991,H
+DEU,Germany,1992,H
+DEU,Germany,1993,H
+DEU,Germany,1994,H
+DEU,Germany,1995,H
+DEU,Germany,1996,H
+DEU,Germany,1997,H
+DEU,Germany,1998,H
+DEU,Germany,1999,H
+DEU,Germany,2000,H
+DEU,Germany,2001,H
+DEU,Germany,2002,H
+DEU,Germany,2003,H
+DEU,Germany,2004,H
+DEU,Germany,2005,H
+DEU,Germany,2006,H
+DEU,Germany,2007,H
+DEU,Germany,2008,H
+DEU,Germany,2009,H
+DEU,Germany,2010,H
+DEU,Germany,2011,H
+DEU,Germany,2012,H
+DEU,Germany,2013,H
+DEU,Germany,2014,H
+DEU,Germany,2015,H
+DEU,Germany,2016,H
+DEU,Germany,2017,H
+DEU,Germany,2018,H
+DEU,Germany,2019,H
+GHA,Ghana,1987,L
+GHA,Ghana,1988,L
+GHA,Ghana,1989,L
+GHA,Ghana,1990,L
+GHA,Ghana,1991,L
+GHA,Ghana,1992,L
+GHA,Ghana,1993,L
+GHA,Ghana,1994,L
+GHA,Ghana,1995,L
+GHA,Ghana,1996,L
+GHA,Ghana,1997,L
+GHA,Ghana,1998,L
+GHA,Ghana,1999,L
+GHA,Ghana,2000,L
+GHA,Ghana,2001,L
+GHA,Ghana,2002,L
+GHA,Ghana,2003,L
+GHA,Ghana,2004,L
+GHA,Ghana,2005,L
+GHA,Ghana,2006,L
+GHA,Ghana,2007,L
+GHA,Ghana,2008,L
+GHA,Ghana,2009,L
+GHA,Ghana,2010,LM
+GHA,Ghana,2011,LM
+GHA,Ghana,2012,LM
+GHA,Ghana,2013,LM
+GHA,Ghana,2014,LM
+GHA,Ghana,2015,LM
+GHA,Ghana,2016,LM
+GHA,Ghana,2017,LM
+GHA,Ghana,2018,LM
+GHA,Ghana,2019,LM
+GIB,Gibraltar,1987,UM
+GIB,Gibraltar,1988,UM
+GIB,Gibraltar,1989,UM
+GIB,Gibraltar,1990,UM
+GIB,Gibraltar,1991,UM
+GIB,Gibraltar,1992,UM
+GIB,Gibraltar,1993,UM
+GIB,Gibraltar,1994,NA
+GIB,Gibraltar,1995,NA
+GIB,Gibraltar,1996,NA
+GIB,Gibraltar,1997,NA
+GIB,Gibraltar,1998,NA
+GIB,Gibraltar,1999,NA
+GIB,Gibraltar,2000,NA
+GIB,Gibraltar,2001,NA
+GIB,Gibraltar,2002,NA
+GIB,Gibraltar,2003,NA
+GIB,Gibraltar,2004,NA
+GIB,Gibraltar,2005,NA
+GIB,Gibraltar,2006,NA
+GIB,Gibraltar,2007,NA
+GIB,Gibraltar,2008,NA
+GIB,Gibraltar,2009,H
+GIB,Gibraltar,2010,H
+GIB,Gibraltar,2011,NA
+GIB,Gibraltar,2012,NA
+GIB,Gibraltar,2013,NA
+GIB,Gibraltar,2014,NA
+GIB,Gibraltar,2015,H
+GIB,Gibraltar,2016,H
+GIB,Gibraltar,2017,H
+GIB,Gibraltar,2018,H
+GIB,Gibraltar,2019,H
+GRC,Greece,1987,UM
+GRC,Greece,1988,UM
+GRC,Greece,1989,UM
+GRC,Greece,1990,UM
+GRC,Greece,1991,UM
+GRC,Greece,1992,UM
+GRC,Greece,1993,UM
+GRC,Greece,1994,UM
+GRC,Greece,1995,UM
+GRC,Greece,1996,H
+GRC,Greece,1997,H
+GRC,Greece,1998,H
+GRC,Greece,1999,H
+GRC,Greece,2000,H
+GRC,Greece,2001,H
+GRC,Greece,2002,H
+GRC,Greece,2003,H
+GRC,Greece,2004,H
+GRC,Greece,2005,H
+GRC,Greece,2006,H
+GRC,Greece,2007,H
+GRC,Greece,2008,H
+GRC,Greece,2009,H
+GRC,Greece,2010,H
+GRC,Greece,2011,H
+GRC,Greece,2012,H
+GRC,Greece,2013,H
+GRC,Greece,2014,H
+GRC,Greece,2015,H
+GRC,Greece,2016,H
+GRC,Greece,2017,H
+GRC,Greece,2018,H
+GRC,Greece,2019,H
+GRL,Greenland,1987,H
+GRL,Greenland,1988,H
+GRL,Greenland,1989,H
+GRL,Greenland,1990,H
+GRL,Greenland,1991,H
+GRL,Greenland,1992,H
+GRL,Greenland,1993,H
+GRL,Greenland,1994,H
+GRL,Greenland,1995,H
+GRL,Greenland,1996,H
+GRL,Greenland,1997,H
+GRL,Greenland,1998,H
+GRL,Greenland,1999,H
+GRL,Greenland,2000,H
+GRL,Greenland,2001,H
+GRL,Greenland,2002,H
+GRL,Greenland,2003,H
+GRL,Greenland,2004,H
+GRL,Greenland,2005,H
+GRL,Greenland,2006,H
+GRL,Greenland,2007,H
+GRL,Greenland,2008,H
+GRL,Greenland,2009,H
+GRL,Greenland,2010,H
+GRL,Greenland,2011,H
+GRL,Greenland,2012,H
+GRL,Greenland,2013,H
+GRL,Greenland,2014,H
+GRL,Greenland,2015,H
+GRL,Greenland,2016,H
+GRL,Greenland,2017,H
+GRL,Greenland,2018,H
+GRL,Greenland,2019,H
+GRD,Grenada,1987,LM
+GRD,Grenada,1988,LM
+GRD,Grenada,1989,LM
+GRD,Grenada,1990,LM
+GRD,Grenada,1991,LM
+GRD,Grenada,1992,LM
+GRD,Grenada,1993,LM
+GRD,Grenada,1994,LM
+GRD,Grenada,1995,LM
+GRD,Grenada,1996,LM
+GRD,Grenada,1997,UM
+GRD,Grenada,1998,UM
+GRD,Grenada,1999,UM
+GRD,Grenada,2000,UM
+GRD,Grenada,2001,UM
+GRD,Grenada,2002,UM
+GRD,Grenada,2003,UM
+GRD,Grenada,2004,UM
+GRD,Grenada,2005,UM
+GRD,Grenada,2006,UM
+GRD,Grenada,2007,UM
+GRD,Grenada,2008,UM
+GRD,Grenada,2009,UM
+GRD,Grenada,2010,UM
+GRD,Grenada,2011,UM
+GRD,Grenada,2012,UM
+GRD,Grenada,2013,UM
+GRD,Grenada,2014,UM
+GRD,Grenada,2015,UM
+GRD,Grenada,2016,UM
+GRD,Grenada,2017,UM
+GRD,Grenada,2018,UM
+GRD,Grenada,2019,UM
+GUM,Guam,1987,H
+GUM,Guam,1988,H
+GUM,Guam,1989,H
+GUM,Guam,1990,UM
+GUM,Guam,1991,UM
+GUM,Guam,1992,UM
+GUM,Guam,1993,UM
+GUM,Guam,1994,UM
+GUM,Guam,1995,H
+GUM,Guam,1996,H
+GUM,Guam,1997,H
+GUM,Guam,1998,H
+GUM,Guam,1999,H
+GUM,Guam,2000,H
+GUM,Guam,2001,H
+GUM,Guam,2002,H
+GUM,Guam,2003,H
+GUM,Guam,2004,H
+GUM,Guam,2005,H
+GUM,Guam,2006,H
+GUM,Guam,2007,H
+GUM,Guam,2008,H
+GUM,Guam,2009,H
+GUM,Guam,2010,H
+GUM,Guam,2011,H
+GUM,Guam,2012,H
+GUM,Guam,2013,H
+GUM,Guam,2014,H
+GUM,Guam,2015,H
+GUM,Guam,2016,H
+GUM,Guam,2017,H
+GUM,Guam,2018,H
+GUM,Guam,2019,H
+GTM,Guatemala,1987,LM
+GTM,Guatemala,1988,LM
+GTM,Guatemala,1989,LM
+GTM,Guatemala,1990,LM
+GTM,Guatemala,1991,LM
+GTM,Guatemala,1992,LM
+GTM,Guatemala,1993,LM
+GTM,Guatemala,1994,LM
+GTM,Guatemala,1995,LM
+GTM,Guatemala,1996,LM
+GTM,Guatemala,1997,LM
+GTM,Guatemala,1998,LM
+GTM,Guatemala,1999,LM
+GTM,Guatemala,2000,LM
+GTM,Guatemala,2001,LM
+GTM,Guatemala,2002,LM
+GTM,Guatemala,2003,LM
+GTM,Guatemala,2004,LM
+GTM,Guatemala,2005,LM
+GTM,Guatemala,2006,LM
+GTM,Guatemala,2007,LM
+GTM,Guatemala,2008,LM
+GTM,Guatemala,2009,LM
+GTM,Guatemala,2010,LM
+GTM,Guatemala,2011,LM
+GTM,Guatemala,2012,LM
+GTM,Guatemala,2013,LM
+GTM,Guatemala,2014,LM
+GTM,Guatemala,2015,LM
+GTM,Guatemala,2016,LM
+GTM,Guatemala,2017,UM
+GTM,Guatemala,2018,UM
+GTM,Guatemala,2019,UM
+GIN,Guinea,1987,L
+GIN,Guinea,1988,L
+GIN,Guinea,1989,L
+GIN,Guinea,1990,L
+GIN,Guinea,1991,L
+GIN,Guinea,1992,L
+GIN,Guinea,1993,L
+GIN,Guinea,1994,L
+GIN,Guinea,1995,L
+GIN,Guinea,1996,L
+GIN,Guinea,1997,L
+GIN,Guinea,1998,L
+GIN,Guinea,1999,L
+GIN,Guinea,2000,L
+GIN,Guinea,2001,L
+GIN,Guinea,2002,L
+GIN,Guinea,2003,L
+GIN,Guinea,2004,L
+GIN,Guinea,2005,L
+GIN,Guinea,2006,L
+GIN,Guinea,2007,L
+GIN,Guinea,2008,L
+GIN,Guinea,2009,L
+GIN,Guinea,2010,L
+GIN,Guinea,2011,L
+GIN,Guinea,2012,L
+GIN,Guinea,2013,L
+GIN,Guinea,2014,L
+GIN,Guinea,2015,L
+GIN,Guinea,2016,L
+GIN,Guinea,2017,L
+GIN,Guinea,2018,L
+GIN,Guinea,2019,L
+GNB,Guinea-Bissau,1987,L
+GNB,Guinea-Bissau,1988,L
+GNB,Guinea-Bissau,1989,L
+GNB,Guinea-Bissau,1990,L
+GNB,Guinea-Bissau,1991,L
+GNB,Guinea-Bissau,1992,L
+GNB,Guinea-Bissau,1993,L
+GNB,Guinea-Bissau,1994,L
+GNB,Guinea-Bissau,1995,L
+GNB,Guinea-Bissau,1996,L
+GNB,Guinea-Bissau,1997,L
+GNB,Guinea-Bissau,1998,L
+GNB,Guinea-Bissau,1999,L
+GNB,Guinea-Bissau,2000,L
+GNB,Guinea-Bissau,2001,L
+GNB,Guinea-Bissau,2002,L
+GNB,Guinea-Bissau,2003,L
+GNB,Guinea-Bissau,2004,L
+GNB,Guinea-Bissau,2005,L
+GNB,Guinea-Bissau,2006,L
+GNB,Guinea-Bissau,2007,L
+GNB,Guinea-Bissau,2008,L
+GNB,Guinea-Bissau,2009,L
+GNB,Guinea-Bissau,2010,L
+GNB,Guinea-Bissau,2011,L
+GNB,Guinea-Bissau,2012,L
+GNB,Guinea-Bissau,2013,L
+GNB,Guinea-Bissau,2014,L
+GNB,Guinea-Bissau,2015,L
+GNB,Guinea-Bissau,2016,L
+GNB,Guinea-Bissau,2017,L
+GNB,Guinea-Bissau,2018,L
+GNB,Guinea-Bissau,2019,L
+GUY,Guyana,1987,L
+GUY,Guyana,1988,L
+GUY,Guyana,1989,L
+GUY,Guyana,1990,L
+GUY,Guyana,1991,L
+GUY,Guyana,1992,L
+GUY,Guyana,1993,L
+GUY,Guyana,1994,L
+GUY,Guyana,1995,L
+GUY,Guyana,1996,L
+GUY,Guyana,1997,LM
+GUY,Guyana,1998,LM
+GUY,Guyana,1999,LM
+GUY,Guyana,2000,LM
+GUY,Guyana,2001,LM
+GUY,Guyana,2002,LM
+GUY,Guyana,2003,LM
+GUY,Guyana,2004,LM
+GUY,Guyana,2005,LM
+GUY,Guyana,2006,LM
+GUY,Guyana,2007,LM
+GUY,Guyana,2008,LM
+GUY,Guyana,2009,LM
+GUY,Guyana,2010,LM
+GUY,Guyana,2011,LM
+GUY,Guyana,2012,LM
+GUY,Guyana,2013,LM
+GUY,Guyana,2014,LM
+GUY,Guyana,2015,UM
+GUY,Guyana,2016,UM
+GUY,Guyana,2017,UM
+GUY,Guyana,2018,UM
+GUY,Guyana,2019,UM
+HTI,Haiti,1987,L
+HTI,Haiti,1988,L
+HTI,Haiti,1989,L
+HTI,Haiti,1990,L
+HTI,Haiti,1991,L
+HTI,Haiti,1992,L
+HTI,Haiti,1993,L
+HTI,Haiti,1994,L
+HTI,Haiti,1995,L
+HTI,Haiti,1996,L
+HTI,Haiti,1997,L
+HTI,Haiti,1998,L
+HTI,Haiti,1999,L
+HTI,Haiti,2000,L
+HTI,Haiti,2001,L
+HTI,Haiti,2002,L
+HTI,Haiti,2003,L
+HTI,Haiti,2004,L
+HTI,Haiti,2005,L
+HTI,Haiti,2006,L
+HTI,Haiti,2007,L
+HTI,Haiti,2008,L
+HTI,Haiti,2009,L
+HTI,Haiti,2010,L
+HTI,Haiti,2011,L
+HTI,Haiti,2012,L
+HTI,Haiti,2013,L
+HTI,Haiti,2014,L
+HTI,Haiti,2015,L
+HTI,Haiti,2016,L
+HTI,Haiti,2017,L
+HTI,Haiti,2018,L
+HTI,Haiti,2019,L
+HND,Honduras,1987,LM
+HND,Honduras,1988,LM
+HND,Honduras,1989,LM
+HND,Honduras,1990,L
+HND,Honduras,1991,L
+HND,Honduras,1992,L
+HND,Honduras,1993,L
+HND,Honduras,1994,L
+HND,Honduras,1995,L
+HND,Honduras,1996,L
+HND,Honduras,1997,L
+HND,Honduras,1998,L
+HND,Honduras,1999,LM
+HND,Honduras,2000,LM
+HND,Honduras,2001,LM
+HND,Honduras,2002,LM
+HND,Honduras,2003,LM
+HND,Honduras,2004,LM
+HND,Honduras,2005,LM
+HND,Honduras,2006,LM
+HND,Honduras,2007,LM
+HND,Honduras,2008,LM
+HND,Honduras,2009,LM
+HND,Honduras,2010,LM
+HND,Honduras,2011,LM
+HND,Honduras,2012,LM
+HND,Honduras,2013,LM
+HND,Honduras,2014,LM
+HND,Honduras,2015,LM
+HND,Honduras,2016,LM
+HND,Honduras,2017,LM
+HND,Honduras,2018,LM
+HND,Honduras,2019,LM
+HKG,"Hong Kong SAR, China",1987,H
+HKG,"Hong Kong SAR, China",1988,H
+HKG,"Hong Kong SAR, China",1989,H
+HKG,"Hong Kong SAR, China",1990,H
+HKG,"Hong Kong SAR, China",1991,H
+HKG,"Hong Kong SAR, China",1992,H
+HKG,"Hong Kong SAR, China",1993,H
+HKG,"Hong Kong SAR, China",1994,H
+HKG,"Hong Kong SAR, China",1995,H
+HKG,"Hong Kong SAR, China",1996,H
+HKG,"Hong Kong SAR, China",1997,H
+HKG,"Hong Kong SAR, China",1998,H
+HKG,"Hong Kong SAR, China",1999,H
+HKG,"Hong Kong SAR, China",2000,H
+HKG,"Hong Kong SAR, China",2001,H
+HKG,"Hong Kong SAR, China",2002,H
+HKG,"Hong Kong SAR, China",2003,H
+HKG,"Hong Kong SAR, China",2004,H
+HKG,"Hong Kong SAR, China",2005,H
+HKG,"Hong Kong SAR, China",2006,H
+HKG,"Hong Kong SAR, China",2007,H
+HKG,"Hong Kong SAR, China",2008,H
+HKG,"Hong Kong SAR, China",2009,H
+HKG,"Hong Kong SAR, China",2010,H
+HKG,"Hong Kong SAR, China",2011,H
+HKG,"Hong Kong SAR, China",2012,H
+HKG,"Hong Kong SAR, China",2013,H
+HKG,"Hong Kong SAR, China",2014,H
+HKG,"Hong Kong SAR, China",2015,H
+HKG,"Hong Kong SAR, China",2016,H
+HKG,"Hong Kong SAR, China",2017,H
+HKG,"Hong Kong SAR, China",2018,H
+HKG,"Hong Kong SAR, China",2019,H
+HUN,Hungary,1987,UM
+HUN,Hungary,1988,UM
+HUN,Hungary,1989,UM
+HUN,Hungary,1990,UM
+HUN,Hungary,1991,UM
+HUN,Hungary,1992,UM
+HUN,Hungary,1993,UM
+HUN,Hungary,1994,UM
+HUN,Hungary,1995,UM
+HUN,Hungary,1996,UM
+HUN,Hungary,1997,UM
+HUN,Hungary,1998,UM
+HUN,Hungary,1999,UM
+HUN,Hungary,2000,UM
+HUN,Hungary,2001,UM
+HUN,Hungary,2002,UM
+HUN,Hungary,2003,UM
+HUN,Hungary,2004,UM
+HUN,Hungary,2005,UM
+HUN,Hungary,2006,UM
+HUN,Hungary,2007,H
+HUN,Hungary,2008,H
+HUN,Hungary,2009,H
+HUN,Hungary,2010,H
+HUN,Hungary,2011,H
+HUN,Hungary,2012,UM
+HUN,Hungary,2013,UM
+HUN,Hungary,2014,H
+HUN,Hungary,2015,H
+HUN,Hungary,2016,H
+HUN,Hungary,2017,H
+HUN,Hungary,2018,H
+HUN,Hungary,2019,H
+ISL,Iceland,1987,H
+ISL,Iceland,1988,H
+ISL,Iceland,1989,H
+ISL,Iceland,1990,H
+ISL,Iceland,1991,H
+ISL,Iceland,1992,H
+ISL,Iceland,1993,H
+ISL,Iceland,1994,H
+ISL,Iceland,1995,H
+ISL,Iceland,1996,H
+ISL,Iceland,1997,H
+ISL,Iceland,1998,H
+ISL,Iceland,1999,H
+ISL,Iceland,2000,H
+ISL,Iceland,2001,H
+ISL,Iceland,2002,H
+ISL,Iceland,2003,H
+ISL,Iceland,2004,H
+ISL,Iceland,2005,H
+ISL,Iceland,2006,H
+ISL,Iceland,2007,H
+ISL,Iceland,2008,H
+ISL,Iceland,2009,H
+ISL,Iceland,2010,H
+ISL,Iceland,2011,H
+ISL,Iceland,2012,H
+ISL,Iceland,2013,H
+ISL,Iceland,2014,H
+ISL,Iceland,2015,H
+ISL,Iceland,2016,H
+ISL,Iceland,2017,H
+ISL,Iceland,2018,H
+ISL,Iceland,2019,H
+IND,India,1987,L
+IND,India,1988,L
+IND,India,1989,L
+IND,India,1990,L
+IND,India,1991,L
+IND,India,1992,L
+IND,India,1993,L
+IND,India,1994,L
+IND,India,1995,L
+IND,India,1996,L
+IND,India,1997,L
+IND,India,1998,L
+IND,India,1999,L
+IND,India,2000,L
+IND,India,2001,L
+IND,India,2002,L
+IND,India,2003,L
+IND,India,2004,L
+IND,India,2005,L
+IND,India,2006,L
+IND,India,2007,LM
+IND,India,2008,LM
+IND,India,2009,LM
+IND,India,2010,LM
+IND,India,2011,LM
+IND,India,2012,LM
+IND,India,2013,LM
+IND,India,2014,LM
+IND,India,2015,LM
+IND,India,2016,LM
+IND,India,2017,LM
+IND,India,2018,LM
+IND,India,2019,LM
+IDN,Indonesia,1987,L
+IDN,Indonesia,1988,L
+IDN,Indonesia,1989,L
+IDN,Indonesia,1990,L
+IDN,Indonesia,1991,L
+IDN,Indonesia,1992,L
+IDN,Indonesia,1993,LM
+IDN,Indonesia,1994,LM
+IDN,Indonesia,1995,LM
+IDN,Indonesia,1996,LM
+IDN,Indonesia,1997,LM
+IDN,Indonesia,1998,L
+IDN,Indonesia,1999,L
+IDN,Indonesia,2000,L
+IDN,Indonesia,2001,L
+IDN,Indonesia,2002,L
+IDN,Indonesia,2003,LM
+IDN,Indonesia,2004,LM
+IDN,Indonesia,2005,LM
+IDN,Indonesia,2006,LM
+IDN,Indonesia,2007,LM
+IDN,Indonesia,2008,LM
+IDN,Indonesia,2009,LM
+IDN,Indonesia,2010,LM
+IDN,Indonesia,2011,LM
+IDN,Indonesia,2012,LM
+IDN,Indonesia,2013,LM
+IDN,Indonesia,2014,LM
+IDN,Indonesia,2015,LM
+IDN,Indonesia,2016,LM
+IDN,Indonesia,2017,LM
+IDN,Indonesia,2018,LM
+IDN,Indonesia,2019,UM
+IRN,"Iran, Islamic Rep.",1987,UM
+IRN,"Iran, Islamic Rep.",1988,UM
+IRN,"Iran, Islamic Rep.",1989,UM
+IRN,"Iran, Islamic Rep.",1990,LM
+IRN,"Iran, Islamic Rep.",1991,LM
+IRN,"Iran, Islamic Rep.",1992,LM
+IRN,"Iran, Islamic Rep.",1993,LM
+IRN,"Iran, Islamic Rep.",1994,LM
+IRN,"Iran, Islamic Rep.",1995,LM
+IRN,"Iran, Islamic Rep.",1996,LM
+IRN,"Iran, Islamic Rep.",1997,LM
+IRN,"Iran, Islamic Rep.",1998,LM
+IRN,"Iran, Islamic Rep.",1999,LM
+IRN,"Iran, Islamic Rep.",2000,LM
+IRN,"Iran, Islamic Rep.",2001,LM
+IRN,"Iran, Islamic Rep.",2002,LM
+IRN,"Iran, Islamic Rep.",2003,LM
+IRN,"Iran, Islamic Rep.",2004,LM
+IRN,"Iran, Islamic Rep.",2005,LM
+IRN,"Iran, Islamic Rep.",2006,LM
+IRN,"Iran, Islamic Rep.",2007,LM
+IRN,"Iran, Islamic Rep.",2008,LM
+IRN,"Iran, Islamic Rep.",2009,UM
+IRN,"Iran, Islamic Rep.",2010,UM
+IRN,"Iran, Islamic Rep.",2011,UM
+IRN,"Iran, Islamic Rep.",2012,UM
+IRN,"Iran, Islamic Rep.",2013,UM
+IRN,"Iran, Islamic Rep.",2014,UM
+IRN,"Iran, Islamic Rep.",2015,UM
+IRN,"Iran, Islamic Rep.",2016,UM
+IRN,"Iran, Islamic Rep.",2017,UM
+IRN,"Iran, Islamic Rep.",2018,UM
+IRN,"Iran, Islamic Rep.",2019,UM
+IRQ,Iraq,1987,UM
+IRQ,Iraq,1988,UM
+IRQ,Iraq,1989,UM
+IRQ,Iraq,1990,UM
+IRQ,Iraq,1991,LM
+IRQ,Iraq,1992,LM
+IRQ,Iraq,1993,LM
+IRQ,Iraq,1994,LM
+IRQ,Iraq,1995,LM
+IRQ,Iraq,1996,LM
+IRQ,Iraq,1997,LM
+IRQ,Iraq,1998,LM
+IRQ,Iraq,1999,LM
+IRQ,Iraq,2000,LM
+IRQ,Iraq,2001,LM
+IRQ,Iraq,2002,LM
+IRQ,Iraq,2003,LM
+IRQ,Iraq,2004,LM
+IRQ,Iraq,2005,LM
+IRQ,Iraq,2006,LM
+IRQ,Iraq,2007,LM
+IRQ,Iraq,2008,LM
+IRQ,Iraq,2009,LM
+IRQ,Iraq,2010,LM
+IRQ,Iraq,2011,LM
+IRQ,Iraq,2012,UM
+IRQ,Iraq,2013,UM
+IRQ,Iraq,2014,UM
+IRQ,Iraq,2015,UM
+IRQ,Iraq,2016,UM
+IRQ,Iraq,2017,UM
+IRQ,Iraq,2018,UM
+IRQ,Iraq,2019,UM
+IRL,Ireland,1987,H
+IRL,Ireland,1988,H
+IRL,Ireland,1989,H
+IRL,Ireland,1990,H
+IRL,Ireland,1991,H
+IRL,Ireland,1992,H
+IRL,Ireland,1993,H
+IRL,Ireland,1994,H
+IRL,Ireland,1995,H
+IRL,Ireland,1996,H
+IRL,Ireland,1997,H
+IRL,Ireland,1998,H
+IRL,Ireland,1999,H
+IRL,Ireland,2000,H
+IRL,Ireland,2001,H
+IRL,Ireland,2002,H
+IRL,Ireland,2003,H
+IRL,Ireland,2004,H
+IRL,Ireland,2005,H
+IRL,Ireland,2006,H
+IRL,Ireland,2007,H
+IRL,Ireland,2008,H
+IRL,Ireland,2009,H
+IRL,Ireland,2010,H
+IRL,Ireland,2011,H
+IRL,Ireland,2012,H
+IRL,Ireland,2013,H
+IRL,Ireland,2014,H
+IRL,Ireland,2015,H
+IRL,Ireland,2016,H
+IRL,Ireland,2017,H
+IRL,Ireland,2018,H
+IRL,Ireland,2019,H
+IMN,Isle of Man,1987,H
+IMN,Isle of Man,1988,H
+IMN,Isle of Man,1989,H
+IMN,Isle of Man,1990,UM
+IMN,Isle of Man,1991,UM
+IMN,Isle of Man,1992,UM
+IMN,Isle of Man,1993,UM
+IMN,Isle of Man,1994,UM
+IMN,Isle of Man,1995,UM
+IMN,Isle of Man,1996,UM
+IMN,Isle of Man,1997,UM
+IMN,Isle of Man,1998,UM
+IMN,Isle of Man,1999,UM
+IMN,Isle of Man,2000,UM
+IMN,Isle of Man,2001,UM
+IMN,Isle of Man,2002,H
+IMN,Isle of Man,2003,H
+IMN,Isle of Man,2004,H
+IMN,Isle of Man,2005,H
+IMN,Isle of Man,2006,H
+IMN,Isle of Man,2007,H
+IMN,Isle of Man,2008,H
+IMN,Isle of Man,2009,H
+IMN,Isle of Man,2010,H
+IMN,Isle of Man,2011,H
+IMN,Isle of Man,2012,H
+IMN,Isle of Man,2013,H
+IMN,Isle of Man,2014,H
+IMN,Isle of Man,2015,H
+IMN,Isle of Man,2016,H
+IMN,Isle of Man,2017,H
+IMN,Isle of Man,2018,H
+IMN,Isle of Man,2019,H
+ISR,Israel,1987,H
+ISR,Israel,1988,H
+ISR,Israel,1989,H
+ISR,Israel,1990,H
+ISR,Israel,1991,H
+ISR,Israel,1992,H
+ISR,Israel,1993,H
+ISR,Israel,1994,H
+ISR,Israel,1995,H
+ISR,Israel,1996,H
+ISR,Israel,1997,H
+ISR,Israel,1998,H
+ISR,Israel,1999,H
+ISR,Israel,2000,H
+ISR,Israel,2001,H
+ISR,Israel,2002,H
+ISR,Israel,2003,H
+ISR,Israel,2004,H
+ISR,Israel,2005,H
+ISR,Israel,2006,H
+ISR,Israel,2007,H
+ISR,Israel,2008,H
+ISR,Israel,2009,H
+ISR,Israel,2010,H
+ISR,Israel,2011,H
+ISR,Israel,2012,H
+ISR,Israel,2013,H
+ISR,Israel,2014,H
+ISR,Israel,2015,H
+ISR,Israel,2016,H
+ISR,Israel,2017,H
+ISR,Israel,2018,H
+ISR,Israel,2019,H
+ITA,Italy,1987,H
+ITA,Italy,1988,H
+ITA,Italy,1989,H
+ITA,Italy,1990,H
+ITA,Italy,1991,H
+ITA,Italy,1992,H
+ITA,Italy,1993,H
+ITA,Italy,1994,H
+ITA,Italy,1995,H
+ITA,Italy,1996,H
+ITA,Italy,1997,H
+ITA,Italy,1998,H
+ITA,Italy,1999,H
+ITA,Italy,2000,H
+ITA,Italy,2001,H
+ITA,Italy,2002,H
+ITA,Italy,2003,H
+ITA,Italy,2004,H
+ITA,Italy,2005,H
+ITA,Italy,2006,H
+ITA,Italy,2007,H
+ITA,Italy,2008,H
+ITA,Italy,2009,H
+ITA,Italy,2010,H
+ITA,Italy,2011,H
+ITA,Italy,2012,H
+ITA,Italy,2013,H
+ITA,Italy,2014,H
+ITA,Italy,2015,H
+ITA,Italy,2016,H
+ITA,Italy,2017,H
+ITA,Italy,2018,H
+ITA,Italy,2019,H
+JAM,Jamaica,1987,LM
+JAM,Jamaica,1988,LM
+JAM,Jamaica,1989,LM
+JAM,Jamaica,1990,LM
+JAM,Jamaica,1991,LM
+JAM,Jamaica,1992,LM
+JAM,Jamaica,1993,LM
+JAM,Jamaica,1994,LM
+JAM,Jamaica,1995,LM
+JAM,Jamaica,1996,LM
+JAM,Jamaica,1997,LM
+JAM,Jamaica,1998,LM
+JAM,Jamaica,1999,LM
+JAM,Jamaica,2000,LM
+JAM,Jamaica,2001,LM
+JAM,Jamaica,2002,LM
+JAM,Jamaica,2003,LM
+JAM,Jamaica,2004,LM
+JAM,Jamaica,2005,LM
+JAM,Jamaica,2006,LM
+JAM,Jamaica,2007,UM
+JAM,Jamaica,2008,UM
+JAM,Jamaica,2009,UM
+JAM,Jamaica,2010,UM
+JAM,Jamaica,2011,UM
+JAM,Jamaica,2012,UM
+JAM,Jamaica,2013,UM
+JAM,Jamaica,2014,UM
+JAM,Jamaica,2015,UM
+JAM,Jamaica,2016,UM
+JAM,Jamaica,2017,UM
+JAM,Jamaica,2018,UM
+JAM,Jamaica,2019,UM
+JPN,Japan,1987,H
+JPN,Japan,1988,H
+JPN,Japan,1989,H
+JPN,Japan,1990,H
+JPN,Japan,1991,H
+JPN,Japan,1992,H
+JPN,Japan,1993,H
+JPN,Japan,1994,H
+JPN,Japan,1995,H
+JPN,Japan,1996,H
+JPN,Japan,1997,H
+JPN,Japan,1998,H
+JPN,Japan,1999,H
+JPN,Japan,2000,H
+JPN,Japan,2001,H
+JPN,Japan,2002,H
+JPN,Japan,2003,H
+JPN,Japan,2004,H
+JPN,Japan,2005,H
+JPN,Japan,2006,H
+JPN,Japan,2007,H
+JPN,Japan,2008,H
+JPN,Japan,2009,H
+JPN,Japan,2010,H
+JPN,Japan,2011,H
+JPN,Japan,2012,H
+JPN,Japan,2013,H
+JPN,Japan,2014,H
+JPN,Japan,2015,H
+JPN,Japan,2016,H
+JPN,Japan,2017,H
+JPN,Japan,2018,H
+JPN,Japan,2019,H
+JOR,Jordan,1987,LM
+JOR,Jordan,1988,LM
+JOR,Jordan,1989,LM
+JOR,Jordan,1990,LM
+JOR,Jordan,1991,LM
+JOR,Jordan,1992,LM
+JOR,Jordan,1993,LM
+JOR,Jordan,1994,LM
+JOR,Jordan,1995,LM
+JOR,Jordan,1996,LM
+JOR,Jordan,1997,LM
+JOR,Jordan,1998,LM
+JOR,Jordan,1999,LM
+JOR,Jordan,2000,LM
+JOR,Jordan,2001,LM
+JOR,Jordan,2002,LM
+JOR,Jordan,2003,LM
+JOR,Jordan,2004,LM
+JOR,Jordan,2005,LM
+JOR,Jordan,2006,LM
+JOR,Jordan,2007,LM
+JOR,Jordan,2008,LM
+JOR,Jordan,2009,LM
+JOR,Jordan,2010,UM
+JOR,Jordan,2011,UM
+JOR,Jordan,2012,UM
+JOR,Jordan,2013,UM
+JOR,Jordan,2014,UM
+JOR,Jordan,2015,UM
+JOR,Jordan,2016,LM
+JOR,Jordan,2017,UM
+JOR,Jordan,2018,UM
+JOR,Jordan,2019,UM
+KAZ,Kazakhstan,1987,NA
+KAZ,Kazakhstan,1988,NA
+KAZ,Kazakhstan,1989,NA
+KAZ,Kazakhstan,1990,NA
+KAZ,Kazakhstan,1991,LM
+KAZ,Kazakhstan,1992,LM
+KAZ,Kazakhstan,1993,LM
+KAZ,Kazakhstan,1994,LM
+KAZ,Kazakhstan,1995,LM
+KAZ,Kazakhstan,1996,LM
+KAZ,Kazakhstan,1997,LM
+KAZ,Kazakhstan,1998,LM
+KAZ,Kazakhstan,1999,LM
+KAZ,Kazakhstan,2000,LM
+KAZ,Kazakhstan,2001,LM
+KAZ,Kazakhstan,2002,LM
+KAZ,Kazakhstan,2003,LM
+KAZ,Kazakhstan,2004,LM
+KAZ,Kazakhstan,2005,LM
+KAZ,Kazakhstan,2006,UM
+KAZ,Kazakhstan,2007,UM
+KAZ,Kazakhstan,2008,UM
+KAZ,Kazakhstan,2009,UM
+KAZ,Kazakhstan,2010,UM
+KAZ,Kazakhstan,2011,UM
+KAZ,Kazakhstan,2012,UM
+KAZ,Kazakhstan,2013,UM
+KAZ,Kazakhstan,2014,UM
+KAZ,Kazakhstan,2015,UM
+KAZ,Kazakhstan,2016,UM
+KAZ,Kazakhstan,2017,UM
+KAZ,Kazakhstan,2018,UM
+KAZ,Kazakhstan,2019,UM
+KEN,Kenya,1987,L
+KEN,Kenya,1988,L
+KEN,Kenya,1989,L
+KEN,Kenya,1990,L
+KEN,Kenya,1991,L
+KEN,Kenya,1992,L
+KEN,Kenya,1993,L
+KEN,Kenya,1994,L
+KEN,Kenya,1995,L
+KEN,Kenya,1996,L
+KEN,Kenya,1997,L
+KEN,Kenya,1998,L
+KEN,Kenya,1999,L
+KEN,Kenya,2000,L
+KEN,Kenya,2001,L
+KEN,Kenya,2002,L
+KEN,Kenya,2003,L
+KEN,Kenya,2004,L
+KEN,Kenya,2005,L
+KEN,Kenya,2006,L
+KEN,Kenya,2007,L
+KEN,Kenya,2008,L
+KEN,Kenya,2009,L
+KEN,Kenya,2010,L
+KEN,Kenya,2011,L
+KEN,Kenya,2012,L
+KEN,Kenya,2013,L
+KEN,Kenya,2014,LM
+KEN,Kenya,2015,LM
+KEN,Kenya,2016,LM
+KEN,Kenya,2017,LM
+KEN,Kenya,2018,LM
+KEN,Kenya,2019,LM
+KIR,Kiribati,1987,LM
+KIR,Kiribati,1988,LM
+KIR,Kiribati,1989,LM
+KIR,Kiribati,1990,LM
+KIR,Kiribati,1991,LM
+KIR,Kiribati,1992,LM
+KIR,Kiribati,1993,LM
+KIR,Kiribati,1994,LM
+KIR,Kiribati,1995,LM
+KIR,Kiribati,1996,LM
+KIR,Kiribati,1997,LM
+KIR,Kiribati,1998,LM
+KIR,Kiribati,1999,LM
+KIR,Kiribati,2000,LM
+KIR,Kiribati,2001,LM
+KIR,Kiribati,2002,LM
+KIR,Kiribati,2003,LM
+KIR,Kiribati,2004,LM
+KIR,Kiribati,2005,LM
+KIR,Kiribati,2006,LM
+KIR,Kiribati,2007,LM
+KIR,Kiribati,2008,LM
+KIR,Kiribati,2009,LM
+KIR,Kiribati,2010,LM
+KIR,Kiribati,2011,LM
+KIR,Kiribati,2012,LM
+KIR,Kiribati,2013,LM
+KIR,Kiribati,2014,LM
+KIR,Kiribati,2015,LM
+KIR,Kiribati,2016,LM
+KIR,Kiribati,2017,LM
+KIR,Kiribati,2018,LM
+KIR,Kiribati,2019,LM
+PRK,"Korea, Dem. Rep.",1987,NA
+PRK,"Korea, Dem. Rep.",1988,NA
+PRK,"Korea, Dem. Rep.",1989,NA
+PRK,"Korea, Dem. Rep.",1990,LM
+PRK,"Korea, Dem. Rep.",1991,LM
+PRK,"Korea, Dem. Rep.",1992,LM
+PRK,"Korea, Dem. Rep.",1993,LM
+PRK,"Korea, Dem. Rep.",1994,LM
+PRK,"Korea, Dem. Rep.",1995,LM
+PRK,"Korea, Dem. Rep.",1996,LM
+PRK,"Korea, Dem. Rep.",1997,LM
+PRK,"Korea, Dem. Rep.",1998,L
+PRK,"Korea, Dem. Rep.",1999,L
+PRK,"Korea, Dem. Rep.",2000,L
+PRK,"Korea, Dem. Rep.",2001,L
+PRK,"Korea, Dem. Rep.",2002,L
+PRK,"Korea, Dem. Rep.",2003,L
+PRK,"Korea, Dem. Rep.",2004,L
+PRK,"Korea, Dem. Rep.",2005,L
+PRK,"Korea, Dem. Rep.",2006,L
+PRK,"Korea, Dem. Rep.",2007,L
+PRK,"Korea, Dem. Rep.",2008,L
+PRK,"Korea, Dem. Rep.",2009,L
+PRK,"Korea, Dem. Rep.",2010,L
+PRK,"Korea, Dem. Rep.",2011,L
+PRK,"Korea, Dem. Rep.",2012,L
+PRK,"Korea, Dem. Rep.",2013,L
+PRK,"Korea, Dem. Rep.",2014,L
+PRK,"Korea, Dem. Rep.",2015,L
+PRK,"Korea, Dem. Rep.",2016,L
+PRK,"Korea, Dem. Rep.",2017,L
+PRK,"Korea, Dem. Rep.",2018,L
+PRK,"Korea, Dem. Rep.",2019,L
+KOR,"Korea, Rep.",1987,UM
+KOR,"Korea, Rep.",1988,UM
+KOR,"Korea, Rep.",1989,UM
+KOR,"Korea, Rep.",1990,UM
+KOR,"Korea, Rep.",1991,UM
+KOR,"Korea, Rep.",1992,UM
+KOR,"Korea, Rep.",1993,UM
+KOR,"Korea, Rep.",1994,UM
+KOR,"Korea, Rep.",1995,H
+KOR,"Korea, Rep.",1996,H
+KOR,"Korea, Rep.",1997,H
+KOR,"Korea, Rep.",1998,UM
+KOR,"Korea, Rep.",1999,UM
+KOR,"Korea, Rep.",2000,UM
+KOR,"Korea, Rep.",2001,H
+KOR,"Korea, Rep.",2002,H
+KOR,"Korea, Rep.",2003,H
+KOR,"Korea, Rep.",2004,H
+KOR,"Korea, Rep.",2005,H
+KOR,"Korea, Rep.",2006,H
+KOR,"Korea, Rep.",2007,H
+KOR,"Korea, Rep.",2008,H
+KOR,"Korea, Rep.",2009,H
+KOR,"Korea, Rep.",2010,H
+KOR,"Korea, Rep.",2011,H
+KOR,"Korea, Rep.",2012,H
+KOR,"Korea, Rep.",2013,H
+KOR,"Korea, Rep.",2014,H
+KOR,"Korea, Rep.",2015,H
+KOR,"Korea, Rep.",2016,H
+KOR,"Korea, Rep.",2017,H
+KOR,"Korea, Rep.",2018,H
+KOR,"Korea, Rep.",2019,H
+XKX,Kosovo,1987,NA
+XKX,Kosovo,1988,NA
+XKX,Kosovo,1989,NA
+XKX,Kosovo,1990,NA
+XKX,Kosovo,1991,NA
+XKX,Kosovo,1992,NA
+XKX,Kosovo,1993,NA
+XKX,Kosovo,1994,NA
+XKX,Kosovo,1995,NA
+XKX,Kosovo,1996,NA
+XKX,Kosovo,1997,NA
+XKX,Kosovo,1998,NA
+XKX,Kosovo,1999,NA
+XKX,Kosovo,2000,NA
+XKX,Kosovo,2001,NA
+XKX,Kosovo,2002,NA
+XKX,Kosovo,2003,NA
+XKX,Kosovo,2004,NA
+XKX,Kosovo,2005,NA
+XKX,Kosovo,2006,NA
+XKX,Kosovo,2007,NA
+XKX,Kosovo,2008,LM
+XKX,Kosovo,2009,LM
+XKX,Kosovo,2010,LM
+XKX,Kosovo,2011,LM
+XKX,Kosovo,2012,LM
+XKX,Kosovo,2013,LM
+XKX,Kosovo,2014,LM
+XKX,Kosovo,2015,LM
+XKX,Kosovo,2016,LM
+XKX,Kosovo,2017,LM
+XKX,Kosovo,2018,UM
+XKX,Kosovo,2019,UM
+KWT,Kuwait,1987,H
+KWT,Kuwait,1988,H
+KWT,Kuwait,1989,H
+KWT,Kuwait,1990,H
+KWT,Kuwait,1991,H
+KWT,Kuwait,1992,H
+KWT,Kuwait,1993,H
+KWT,Kuwait,1994,H
+KWT,Kuwait,1995,H
+KWT,Kuwait,1996,H
+KWT,Kuwait,1997,H
+KWT,Kuwait,1998,H
+KWT,Kuwait,1999,H
+KWT,Kuwait,2000,H
+KWT,Kuwait,2001,H
+KWT,Kuwait,2002,H
+KWT,Kuwait,2003,H
+KWT,Kuwait,2004,H
+KWT,Kuwait,2005,H
+KWT,Kuwait,2006,H
+KWT,Kuwait,2007,H
+KWT,Kuwait,2008,H
+KWT,Kuwait,2009,H
+KWT,Kuwait,2010,H
+KWT,Kuwait,2011,H
+KWT,Kuwait,2012,H
+KWT,Kuwait,2013,H
+KWT,Kuwait,2014,H
+KWT,Kuwait,2015,H
+KWT,Kuwait,2016,H
+KWT,Kuwait,2017,H
+KWT,Kuwait,2018,H
+KWT,Kuwait,2019,H
+KGZ,Kyrgyz Republic,1987,NA
+KGZ,Kyrgyz Republic,1988,NA
+KGZ,Kyrgyz Republic,1989,NA
+KGZ,Kyrgyz Republic,1990,NA
+KGZ,Kyrgyz Republic,1991,LM
+KGZ,Kyrgyz Republic,1992,LM
+KGZ,Kyrgyz Republic,1993,LM
+KGZ,Kyrgyz Republic,1994,L
+KGZ,Kyrgyz Republic,1995,L
+KGZ,Kyrgyz Republic,1996,L
+KGZ,Kyrgyz Republic,1997,L
+KGZ,Kyrgyz Republic,1998,L
+KGZ,Kyrgyz Republic,1999,L
+KGZ,Kyrgyz Republic,2000,L
+KGZ,Kyrgyz Republic,2001,L
+KGZ,Kyrgyz Republic,2002,L
+KGZ,Kyrgyz Republic,2003,L
+KGZ,Kyrgyz Republic,2004,L
+KGZ,Kyrgyz Republic,2005,L
+KGZ,Kyrgyz Republic,2006,L
+KGZ,Kyrgyz Republic,2007,L
+KGZ,Kyrgyz Republic,2008,L
+KGZ,Kyrgyz Republic,2009,L
+KGZ,Kyrgyz Republic,2010,L
+KGZ,Kyrgyz Republic,2011,L
+KGZ,Kyrgyz Republic,2012,L
+KGZ,Kyrgyz Republic,2013,LM
+KGZ,Kyrgyz Republic,2014,LM
+KGZ,Kyrgyz Republic,2015,LM
+KGZ,Kyrgyz Republic,2016,LM
+KGZ,Kyrgyz Republic,2017,LM
+KGZ,Kyrgyz Republic,2018,LM
+KGZ,Kyrgyz Republic,2019,LM
+LAO,Lao PDR,1987,L
+LAO,Lao PDR,1988,L
+LAO,Lao PDR,1989,L
+LAO,Lao PDR,1990,L
+LAO,Lao PDR,1991,L
+LAO,Lao PDR,1992,L
+LAO,Lao PDR,1993,L
+LAO,Lao PDR,1994,L
+LAO,Lao PDR,1995,L
+LAO,Lao PDR,1996,L
+LAO,Lao PDR,1997,L
+LAO,Lao PDR,1998,L
+LAO,Lao PDR,1999,L
+LAO,Lao PDR,2000,L
+LAO,Lao PDR,2001,L
+LAO,Lao PDR,2002,L
+LAO,Lao PDR,2003,L
+LAO,Lao PDR,2004,L
+LAO,Lao PDR,2005,L
+LAO,Lao PDR,2006,L
+LAO,Lao PDR,2007,L
+LAO,Lao PDR,2008,L
+LAO,Lao PDR,2009,L
+LAO,Lao PDR,2010,LM
+LAO,Lao PDR,2011,LM
+LAO,Lao PDR,2012,LM
+LAO,Lao PDR,2013,LM
+LAO,Lao PDR,2014,LM
+LAO,Lao PDR,2015,LM
+LAO,Lao PDR,2016,LM
+LAO,Lao PDR,2017,LM
+LAO,Lao PDR,2018,LM
+LAO,Lao PDR,2019,LM
+LVA,Latvia,1987,NA
+LVA,Latvia,1988,NA
+LVA,Latvia,1989,NA
+LVA,Latvia,1990,NA
+LVA,Latvia,1991,UM
+LVA,Latvia,1992,LM
+LVA,Latvia,1993,LM
+LVA,Latvia,1994,LM
+LVA,Latvia,1995,LM
+LVA,Latvia,1996,LM
+LVA,Latvia,1997,LM
+LVA,Latvia,1998,LM
+LVA,Latvia,1999,LM
+LVA,Latvia,2000,LM
+LVA,Latvia,2001,UM
+LVA,Latvia,2002,UM
+LVA,Latvia,2003,UM
+LVA,Latvia,2004,UM
+LVA,Latvia,2005,UM
+LVA,Latvia,2006,UM
+LVA,Latvia,2007,UM
+LVA,Latvia,2008,UM
+LVA,Latvia,2009,H
+LVA,Latvia,2010,UM
+LVA,Latvia,2011,UM
+LVA,Latvia,2012,H
+LVA,Latvia,2013,H
+LVA,Latvia,2014,H
+LVA,Latvia,2015,H
+LVA,Latvia,2016,H
+LVA,Latvia,2017,H
+LVA,Latvia,2018,H
+LVA,Latvia,2019,H
+LBN,Lebanon,1987,LM
+LBN,Lebanon,1988,LM
+LBN,Lebanon,1989,LM
+LBN,Lebanon,1990,LM
+LBN,Lebanon,1991,LM
+LBN,Lebanon,1992,LM
+LBN,Lebanon,1993,LM
+LBN,Lebanon,1994,LM
+LBN,Lebanon,1995,LM
+LBN,Lebanon,1996,LM
+LBN,Lebanon,1997,UM
+LBN,Lebanon,1998,UM
+LBN,Lebanon,1999,UM
+LBN,Lebanon,2000,UM
+LBN,Lebanon,2001,UM
+LBN,Lebanon,2002,UM
+LBN,Lebanon,2003,UM
+LBN,Lebanon,2004,UM
+LBN,Lebanon,2005,UM
+LBN,Lebanon,2006,UM
+LBN,Lebanon,2007,UM
+LBN,Lebanon,2008,UM
+LBN,Lebanon,2009,UM
+LBN,Lebanon,2010,UM
+LBN,Lebanon,2011,UM
+LBN,Lebanon,2012,UM
+LBN,Lebanon,2013,UM
+LBN,Lebanon,2014,UM
+LBN,Lebanon,2015,UM
+LBN,Lebanon,2016,UM
+LBN,Lebanon,2017,UM
+LBN,Lebanon,2018,UM
+LBN,Lebanon,2019,UM
+LSO,Lesotho,1987,L
+LSO,Lesotho,1988,L
+LSO,Lesotho,1989,L
+LSO,Lesotho,1990,L
+LSO,Lesotho,1991,L
+LSO,Lesotho,1992,L
+LSO,Lesotho,1993,L
+LSO,Lesotho,1994,L
+LSO,Lesotho,1995,LM
+LSO,Lesotho,1996,L
+LSO,Lesotho,1997,L
+LSO,Lesotho,1998,L
+LSO,Lesotho,1999,L
+LSO,Lesotho,2000,L
+LSO,Lesotho,2001,L
+LSO,Lesotho,2002,L
+LSO,Lesotho,2003,L
+LSO,Lesotho,2004,L
+LSO,Lesotho,2005,LM
+LSO,Lesotho,2006,LM
+LSO,Lesotho,2007,LM
+LSO,Lesotho,2008,LM
+LSO,Lesotho,2009,LM
+LSO,Lesotho,2010,LM
+LSO,Lesotho,2011,LM
+LSO,Lesotho,2012,LM
+LSO,Lesotho,2013,LM
+LSO,Lesotho,2014,LM
+LSO,Lesotho,2015,LM
+LSO,Lesotho,2016,LM
+LSO,Lesotho,2017,LM
+LSO,Lesotho,2018,LM
+LSO,Lesotho,2019,LM
+LBR,Liberia,1987,L
+LBR,Liberia,1988,L
+LBR,Liberia,1989,L
+LBR,Liberia,1990,L
+LBR,Liberia,1991,L
+LBR,Liberia,1992,L
+LBR,Liberia,1993,L
+LBR,Liberia,1994,L
+LBR,Liberia,1995,L
+LBR,Liberia,1996,L
+LBR,Liberia,1997,L
+LBR,Liberia,1998,L
+LBR,Liberia,1999,L
+LBR,Liberia,2000,L
+LBR,Liberia,2001,L
+LBR,Liberia,2002,L
+LBR,Liberia,2003,L
+LBR,Liberia,2004,L
+LBR,Liberia,2005,L
+LBR,Liberia,2006,L
+LBR,Liberia,2007,L
+LBR,Liberia,2008,L
+LBR,Liberia,2009,L
+LBR,Liberia,2010,L
+LBR,Liberia,2011,L
+LBR,Liberia,2012,L
+LBR,Liberia,2013,L
+LBR,Liberia,2014,L
+LBR,Liberia,2015,L
+LBR,Liberia,2016,L
+LBR,Liberia,2017,L
+LBR,Liberia,2018,L
+LBR,Liberia,2019,L
+LBY,Libya,1987,UM
+LBY,Libya,1988,UM
+LBY,Libya,1989,UM
+LBY,Libya,1990,UM
+LBY,Libya,1991,UM
+LBY,Libya,1992,UM
+LBY,Libya,1993,UM
+LBY,Libya,1994,UM
+LBY,Libya,1995,UM
+LBY,Libya,1996,UM
+LBY,Libya,1997,UM
+LBY,Libya,1998,UM
+LBY,Libya,1999,UM
+LBY,Libya,2000,UM
+LBY,Libya,2001,UM
+LBY,Libya,2002,UM
+LBY,Libya,2003,UM
+LBY,Libya,2004,UM
+LBY,Libya,2005,UM
+LBY,Libya,2006,UM
+LBY,Libya,2007,UM
+LBY,Libya,2008,UM
+LBY,Libya,2009,UM
+LBY,Libya,2010,UM
+LBY,Libya,2011,UM
+LBY,Libya,2012,UM
+LBY,Libya,2013,UM
+LBY,Libya,2014,UM
+LBY,Libya,2015,UM
+LBY,Libya,2016,UM
+LBY,Libya,2017,UM
+LBY,Libya,2018,UM
+LBY,Libya,2019,UM
+LIE,Liechtenstein,1987,NA
+LIE,Liechtenstein,1988,NA
+LIE,Liechtenstein,1989,NA
+LIE,Liechtenstein,1990,NA
+LIE,Liechtenstein,1991,NA
+LIE,Liechtenstein,1992,NA
+LIE,Liechtenstein,1993,NA
+LIE,Liechtenstein,1994,H
+LIE,Liechtenstein,1995,H
+LIE,Liechtenstein,1996,H
+LIE,Liechtenstein,1997,H
+LIE,Liechtenstein,1998,H
+LIE,Liechtenstein,1999,H
+LIE,Liechtenstein,2000,H
+LIE,Liechtenstein,2001,H
+LIE,Liechtenstein,2002,H
+LIE,Liechtenstein,2003,H
+LIE,Liechtenstein,2004,H
+LIE,Liechtenstein,2005,H
+LIE,Liechtenstein,2006,H
+LIE,Liechtenstein,2007,H
+LIE,Liechtenstein,2008,H
+LIE,Liechtenstein,2009,H
+LIE,Liechtenstein,2010,H
+LIE,Liechtenstein,2011,H
+LIE,Liechtenstein,2012,H
+LIE,Liechtenstein,2013,H
+LIE,Liechtenstein,2014,H
+LIE,Liechtenstein,2015,H
+LIE,Liechtenstein,2016,H
+LIE,Liechtenstein,2017,H
+LIE,Liechtenstein,2018,H
+LIE,Liechtenstein,2019,H
+LTU,Lithuania,1987,NA
+LTU,Lithuania,1988,NA
+LTU,Lithuania,1989,NA
+LTU,Lithuania,1990,NA
+LTU,Lithuania,1991,UM
+LTU,Lithuania,1992,LM
+LTU,Lithuania,1993,LM
+LTU,Lithuania,1994,LM
+LTU,Lithuania,1995,LM
+LTU,Lithuania,1996,LM
+LTU,Lithuania,1997,LM
+LTU,Lithuania,1998,LM
+LTU,Lithuania,1999,LM
+LTU,Lithuania,2000,LM
+LTU,Lithuania,2001,UM
+LTU,Lithuania,2002,UM
+LTU,Lithuania,2003,UM
+LTU,Lithuania,2004,UM
+LTU,Lithuania,2005,UM
+LTU,Lithuania,2006,UM
+LTU,Lithuania,2007,UM
+LTU,Lithuania,2008,UM
+LTU,Lithuania,2009,UM
+LTU,Lithuania,2010,UM
+LTU,Lithuania,2011,UM
+LTU,Lithuania,2012,H
+LTU,Lithuania,2013,H
+LTU,Lithuania,2014,H
+LTU,Lithuania,2015,H
+LTU,Lithuania,2016,H
+LTU,Lithuania,2017,H
+LTU,Lithuania,2018,H
+LTU,Lithuania,2019,H
+LUX,Luxembourg,1987,H
+LUX,Luxembourg,1988,H
+LUX,Luxembourg,1989,H
+LUX,Luxembourg,1990,H
+LUX,Luxembourg,1991,H
+LUX,Luxembourg,1992,H
+LUX,Luxembourg,1993,H
+LUX,Luxembourg,1994,H
+LUX,Luxembourg,1995,H
+LUX,Luxembourg,1996,H
+LUX,Luxembourg,1997,H
+LUX,Luxembourg,1998,H
+LUX,Luxembourg,1999,H
+LUX,Luxembourg,2000,H
+LUX,Luxembourg,2001,H
+LUX,Luxembourg,2002,H
+LUX,Luxembourg,2003,H
+LUX,Luxembourg,2004,H
+LUX,Luxembourg,2005,H
+LUX,Luxembourg,2006,H
+LUX,Luxembourg,2007,H
+LUX,Luxembourg,2008,H
+LUX,Luxembourg,2009,H
+LUX,Luxembourg,2010,H
+LUX,Luxembourg,2011,H
+LUX,Luxembourg,2012,H
+LUX,Luxembourg,2013,H
+LUX,Luxembourg,2014,H
+LUX,Luxembourg,2015,H
+LUX,Luxembourg,2016,H
+LUX,Luxembourg,2017,H
+LUX,Luxembourg,2018,H
+LUX,Luxembourg,2019,H
+MAC,"Macao SAR, China",1987,UM
+MAC,"Macao SAR, China",1988,UM
+MAC,"Macao SAR, China",1989,UM
+MAC,"Macao SAR, China",1990,UM
+MAC,"Macao SAR, China",1991,UM
+MAC,"Macao SAR, China",1992,UM
+MAC,"Macao SAR, China",1993,UM
+MAC,"Macao SAR, China",1994,H
+MAC,"Macao SAR, China",1995,H
+MAC,"Macao SAR, China",1996,H
+MAC,"Macao SAR, China",1997,H
+MAC,"Macao SAR, China",1998,H
+MAC,"Macao SAR, China",1999,H
+MAC,"Macao SAR, China",2000,H
+MAC,"Macao SAR, China",2001,H
+MAC,"Macao SAR, China",2002,H
+MAC,"Macao SAR, China",2003,H
+MAC,"Macao SAR, China",2004,H
+MAC,"Macao SAR, China",2005,H
+MAC,"Macao SAR, China",2006,H
+MAC,"Macao SAR, China",2007,H
+MAC,"Macao SAR, China",2008,H
+MAC,"Macao SAR, China",2009,H
+MAC,"Macao SAR, China",2010,H
+MAC,"Macao SAR, China",2011,H
+MAC,"Macao SAR, China",2012,H
+MAC,"Macao SAR, China",2013,H
+MAC,"Macao SAR, China",2014,H
+MAC,"Macao SAR, China",2015,H
+MAC,"Macao SAR, China",2016,H
+MAC,"Macao SAR, China",2017,H
+MAC,"Macao SAR, China",2018,H
+MAC,"Macao SAR, China",2019,H
+MDG,Madagascar,1987,L
+MDG,Madagascar,1988,L
+MDG,Madagascar,1989,L
+MDG,Madagascar,1990,L
+MDG,Madagascar,1991,L
+MDG,Madagascar,1992,L
+MDG,Madagascar,1993,L
+MDG,Madagascar,1994,L
+MDG,Madagascar,1995,L
+MDG,Madagascar,1996,L
+MDG,Madagascar,1997,L
+MDG,Madagascar,1998,L
+MDG,Madagascar,1999,L
+MDG,Madagascar,2000,L
+MDG,Madagascar,2001,L
+MDG,Madagascar,2002,L
+MDG,Madagascar,2003,L
+MDG,Madagascar,2004,L
+MDG,Madagascar,2005,L
+MDG,Madagascar,2006,L
+MDG,Madagascar,2007,L
+MDG,Madagascar,2008,L
+MDG,Madagascar,2009,L
+MDG,Madagascar,2010,L
+MDG,Madagascar,2011,L
+MDG,Madagascar,2012,L
+MDG,Madagascar,2013,L
+MDG,Madagascar,2014,L
+MDG,Madagascar,2015,L
+MDG,Madagascar,2016,L
+MDG,Madagascar,2017,L
+MDG,Madagascar,2018,L
+MDG,Madagascar,2019,L
+MWI,Malawi,1987,L
+MWI,Malawi,1988,L
+MWI,Malawi,1989,L
+MWI,Malawi,1990,L
+MWI,Malawi,1991,L
+MWI,Malawi,1992,L
+MWI,Malawi,1993,L
+MWI,Malawi,1994,L
+MWI,Malawi,1995,L
+MWI,Malawi,1996,L
+MWI,Malawi,1997,L
+MWI,Malawi,1998,L
+MWI,Malawi,1999,L
+MWI,Malawi,2000,L
+MWI,Malawi,2001,L
+MWI,Malawi,2002,L
+MWI,Malawi,2003,L
+MWI,Malawi,2004,L
+MWI,Malawi,2005,L
+MWI,Malawi,2006,L
+MWI,Malawi,2007,L
+MWI,Malawi,2008,L
+MWI,Malawi,2009,L
+MWI,Malawi,2010,L
+MWI,Malawi,2011,L
+MWI,Malawi,2012,L
+MWI,Malawi,2013,L
+MWI,Malawi,2014,L
+MWI,Malawi,2015,L
+MWI,Malawi,2016,L
+MWI,Malawi,2017,L
+MWI,Malawi,2018,L
+MWI,Malawi,2019,L
+MYS,Malaysia,1987,LM
+MYS,Malaysia,1988,LM
+MYS,Malaysia,1989,LM
+MYS,Malaysia,1990,LM
+MYS,Malaysia,1991,LM
+MYS,Malaysia,1992,UM
+MYS,Malaysia,1993,UM
+MYS,Malaysia,1994,UM
+MYS,Malaysia,1995,UM
+MYS,Malaysia,1996,UM
+MYS,Malaysia,1997,UM
+MYS,Malaysia,1998,UM
+MYS,Malaysia,1999,UM
+MYS,Malaysia,2000,UM
+MYS,Malaysia,2001,UM
+MYS,Malaysia,2002,UM
+MYS,Malaysia,2003,UM
+MYS,Malaysia,2004,UM
+MYS,Malaysia,2005,UM
+MYS,Malaysia,2006,UM
+MYS,Malaysia,2007,UM
+MYS,Malaysia,2008,UM
+MYS,Malaysia,2009,UM
+MYS,Malaysia,2010,UM
+MYS,Malaysia,2011,UM
+MYS,Malaysia,2012,UM
+MYS,Malaysia,2013,UM
+MYS,Malaysia,2014,UM
+MYS,Malaysia,2015,UM
+MYS,Malaysia,2016,UM
+MYS,Malaysia,2017,UM
+MYS,Malaysia,2018,UM
+MYS,Malaysia,2019,UM
+MDV,Maldives,1987,L
+MDV,Maldives,1988,L
+MDV,Maldives,1989,L
+MDV,Maldives,1990,L
+MDV,Maldives,1991,L
+MDV,Maldives,1992,L
+MDV,Maldives,1993,LM
+MDV,Maldives,1994,LM
+MDV,Maldives,1995,LM
+MDV,Maldives,1996,LM
+MDV,Maldives,1997,LM
+MDV,Maldives,1998,LM
+MDV,Maldives,1999,LM
+MDV,Maldives,2000,LM
+MDV,Maldives,2001,LM
+MDV,Maldives,2002,LM
+MDV,Maldives,2003,LM
+MDV,Maldives,2004,LM
+MDV,Maldives,2005,LM
+MDV,Maldives,2006,LM
+MDV,Maldives,2007,LM
+MDV,Maldives,2008,LM
+MDV,Maldives,2009,LM
+MDV,Maldives,2010,UM
+MDV,Maldives,2011,UM
+MDV,Maldives,2012,UM
+MDV,Maldives,2013,UM
+MDV,Maldives,2014,UM
+MDV,Maldives,2015,UM
+MDV,Maldives,2016,UM
+MDV,Maldives,2017,UM
+MDV,Maldives,2018,UM
+MDV,Maldives,2019,UM
+MLI,Mali,1987,L
+MLI,Mali,1988,L
+MLI,Mali,1989,L
+MLI,Mali,1990,L
+MLI,Mali,1991,L
+MLI,Mali,1992,L
+MLI,Mali,1993,L
+MLI,Mali,1994,L
+MLI,Mali,1995,L
+MLI,Mali,1996,L
+MLI,Mali,1997,L
+MLI,Mali,1998,L
+MLI,Mali,1999,L
+MLI,Mali,2000,L
+MLI,Mali,2001,L
+MLI,Mali,2002,L
+MLI,Mali,2003,L
+MLI,Mali,2004,L
+MLI,Mali,2005,L
+MLI,Mali,2006,L
+MLI,Mali,2007,L
+MLI,Mali,2008,L
+MLI,Mali,2009,L
+MLI,Mali,2010,L
+MLI,Mali,2011,L
+MLI,Mali,2012,L
+MLI,Mali,2013,L
+MLI,Mali,2014,L
+MLI,Mali,2015,L
+MLI,Mali,2016,L
+MLI,Mali,2017,L
+MLI,Mali,2018,L
+MLI,Mali,2019,L
+MLT,Malta,1987,UM
+MLT,Malta,1988,UM
+MLT,Malta,1989,H
+MLT,Malta,1990,UM
+MLT,Malta,1991,UM
+MLT,Malta,1992,UM
+MLT,Malta,1993,UM
+MLT,Malta,1994,UM
+MLT,Malta,1995,UM
+MLT,Malta,1996,UM
+MLT,Malta,1997,UM
+MLT,Malta,1998,H
+MLT,Malta,1999,UM
+MLT,Malta,2000,H
+MLT,Malta,2001,UM
+MLT,Malta,2002,H
+MLT,Malta,2003,H
+MLT,Malta,2004,H
+MLT,Malta,2005,H
+MLT,Malta,2006,H
+MLT,Malta,2007,H
+MLT,Malta,2008,H
+MLT,Malta,2009,H
+MLT,Malta,2010,H
+MLT,Malta,2011,H
+MLT,Malta,2012,H
+MLT,Malta,2013,H
+MLT,Malta,2014,H
+MLT,Malta,2015,H
+MLT,Malta,2016,H
+MLT,Malta,2017,H
+MLT,Malta,2018,H
+MLT,Malta,2019,H
+MHL,Marshall Islands,1987,NA
+MHL,Marshall Islands,1988,NA
+MHL,Marshall Islands,1989,NA
+MHL,Marshall Islands,1990,NA
+MHL,Marshall Islands,1991,LM
+MHL,Marshall Islands,1992,LM
+MHL,Marshall Islands,1993,LM
+MHL,Marshall Islands,1994,LM
+MHL,Marshall Islands,1995,LM
+MHL,Marshall Islands,1996,LM
+MHL,Marshall Islands,1997,LM
+MHL,Marshall Islands,1998,LM
+MHL,Marshall Islands,1999,LM
+MHL,Marshall Islands,2000,LM
+MHL,Marshall Islands,2001,LM
+MHL,Marshall Islands,2002,LM
+MHL,Marshall Islands,2003,LM
+MHL,Marshall Islands,2004,LM
+MHL,Marshall Islands,2005,LM
+MHL,Marshall Islands,2006,LM
+MHL,Marshall Islands,2007,LM
+MHL,Marshall Islands,2008,LM
+MHL,Marshall Islands,2009,LM
+MHL,Marshall Islands,2010,LM
+MHL,Marshall Islands,2011,LM
+MHL,Marshall Islands,2012,UM
+MHL,Marshall Islands,2013,UM
+MHL,Marshall Islands,2014,UM
+MHL,Marshall Islands,2015,UM
+MHL,Marshall Islands,2016,UM
+MHL,Marshall Islands,2017,UM
+MHL,Marshall Islands,2018,UM
+MHL,Marshall Islands,2019,UM
+MRT,Mauritania,1987,L
+MRT,Mauritania,1988,L
+MRT,Mauritania,1989,L
+MRT,Mauritania,1990,L
+MRT,Mauritania,1991,L
+MRT,Mauritania,1992,L
+MRT,Mauritania,1993,L
+MRT,Mauritania,1994,L
+MRT,Mauritania,1995,L
+MRT,Mauritania,1996,L
+MRT,Mauritania,1997,L
+MRT,Mauritania,1998,L
+MRT,Mauritania,1999,L
+MRT,Mauritania,2000,L
+MRT,Mauritania,2001,L
+MRT,Mauritania,2002,L
+MRT,Mauritania,2003,L
+MRT,Mauritania,2004,L
+MRT,Mauritania,2005,L
+MRT,Mauritania,2006,L
+MRT,Mauritania,2007,L
+MRT,Mauritania,2008,L
+MRT,Mauritania,2009,L
+MRT,Mauritania,2010,LM
+MRT,Mauritania,2011,L
+MRT,Mauritania,2012,LM
+MRT,Mauritania,2013,LM
+MRT,Mauritania,2014,LM
+MRT,Mauritania,2015,LM
+MRT,Mauritania,2016,LM
+MRT,Mauritania,2017,LM
+MRT,Mauritania,2018,LM
+MRT,Mauritania,2019,LM
+MUS,Mauritius,1987,LM
+MUS,Mauritius,1988,LM
+MUS,Mauritius,1989,LM
+MUS,Mauritius,1990,LM
+MUS,Mauritius,1991,LM
+MUS,Mauritius,1992,UM
+MUS,Mauritius,1993,UM
+MUS,Mauritius,1994,UM
+MUS,Mauritius,1995,UM
+MUS,Mauritius,1996,UM
+MUS,Mauritius,1997,UM
+MUS,Mauritius,1998,UM
+MUS,Mauritius,1999,UM
+MUS,Mauritius,2000,UM
+MUS,Mauritius,2001,UM
+MUS,Mauritius,2002,UM
+MUS,Mauritius,2003,UM
+MUS,Mauritius,2004,UM
+MUS,Mauritius,2005,UM
+MUS,Mauritius,2006,UM
+MUS,Mauritius,2007,UM
+MUS,Mauritius,2008,UM
+MUS,Mauritius,2009,UM
+MUS,Mauritius,2010,UM
+MUS,Mauritius,2011,UM
+MUS,Mauritius,2012,UM
+MUS,Mauritius,2013,UM
+MUS,Mauritius,2014,UM
+MUS,Mauritius,2015,UM
+MUS,Mauritius,2016,UM
+MUS,Mauritius,2017,UM
+MUS,Mauritius,2018,UM
+MUS,Mauritius,2019,H
+MEX,Mexico,1987,LM
+MEX,Mexico,1988,LM
+MEX,Mexico,1989,LM
+MEX,Mexico,1990,UM
+MEX,Mexico,1991,UM
+MEX,Mexico,1992,UM
+MEX,Mexico,1993,UM
+MEX,Mexico,1994,UM
+MEX,Mexico,1995,UM
+MEX,Mexico,1996,UM
+MEX,Mexico,1997,UM
+MEX,Mexico,1998,UM
+MEX,Mexico,1999,UM
+MEX,Mexico,2000,UM
+MEX,Mexico,2001,UM
+MEX,Mexico,2002,UM
+MEX,Mexico,2003,UM
+MEX,Mexico,2004,UM
+MEX,Mexico,2005,UM
+MEX,Mexico,2006,UM
+MEX,Mexico,2007,UM
+MEX,Mexico,2008,UM
+MEX,Mexico,2009,UM
+MEX,Mexico,2010,UM
+MEX,Mexico,2011,UM
+MEX,Mexico,2012,UM
+MEX,Mexico,2013,UM
+MEX,Mexico,2014,UM
+MEX,Mexico,2015,UM
+MEX,Mexico,2016,UM
+MEX,Mexico,2017,UM
+MEX,Mexico,2018,UM
+MEX,Mexico,2019,UM
+FSM,"Micronesia, Fed. Sts.",1987,NA
+FSM,"Micronesia, Fed. Sts.",1988,NA
+FSM,"Micronesia, Fed. Sts.",1989,NA
+FSM,"Micronesia, Fed. Sts.",1990,NA
+FSM,"Micronesia, Fed. Sts.",1991,LM
+FSM,"Micronesia, Fed. Sts.",1992,LM
+FSM,"Micronesia, Fed. Sts.",1993,LM
+FSM,"Micronesia, Fed. Sts.",1994,LM
+FSM,"Micronesia, Fed. Sts.",1995,LM
+FSM,"Micronesia, Fed. Sts.",1996,LM
+FSM,"Micronesia, Fed. Sts.",1997,LM
+FSM,"Micronesia, Fed. Sts.",1998,LM
+FSM,"Micronesia, Fed. Sts.",1999,LM
+FSM,"Micronesia, Fed. Sts.",2000,LM
+FSM,"Micronesia, Fed. Sts.",2001,LM
+FSM,"Micronesia, Fed. Sts.",2002,LM
+FSM,"Micronesia, Fed. Sts.",2003,LM
+FSM,"Micronesia, Fed. Sts.",2004,LM
+FSM,"Micronesia, Fed. Sts.",2005,LM
+FSM,"Micronesia, Fed. Sts.",2006,LM
+FSM,"Micronesia, Fed. Sts.",2007,LM
+FSM,"Micronesia, Fed. Sts.",2008,LM
+FSM,"Micronesia, Fed. Sts.",2009,LM
+FSM,"Micronesia, Fed. Sts.",2010,LM
+FSM,"Micronesia, Fed. Sts.",2011,LM
+FSM,"Micronesia, Fed. Sts.",2012,LM
+FSM,"Micronesia, Fed. Sts.",2013,LM
+FSM,"Micronesia, Fed. Sts.",2014,LM
+FSM,"Micronesia, Fed. Sts.",2015,LM
+FSM,"Micronesia, Fed. Sts.",2016,LM
+FSM,"Micronesia, Fed. Sts.",2017,LM
+FSM,"Micronesia, Fed. Sts.",2018,LM
+FSM,"Micronesia, Fed. Sts.",2019,LM
+MDA,Moldova,1987,NA
+MDA,Moldova,1988,NA
+MDA,Moldova,1989,NA
+MDA,Moldova,1990,NA
+MDA,Moldova,1991,LM
+MDA,Moldova,1992,LM
+MDA,Moldova,1993,LM
+MDA,Moldova,1994,LM
+MDA,Moldova,1995,LM
+MDA,Moldova,1996,L
+MDA,Moldova,1997,L
+MDA,Moldova,1998,L
+MDA,Moldova,1999,L
+MDA,Moldova,2000,L
+MDA,Moldova,2001,L
+MDA,Moldova,2002,L
+MDA,Moldova,2003,L
+MDA,Moldova,2004,L
+MDA,Moldova,2005,LM
+MDA,Moldova,2006,LM
+MDA,Moldova,2007,LM
+MDA,Moldova,2008,LM
+MDA,Moldova,2009,LM
+MDA,Moldova,2010,LM
+MDA,Moldova,2011,LM
+MDA,Moldova,2012,LM
+MDA,Moldova,2013,LM
+MDA,Moldova,2014,LM
+MDA,Moldova,2015,LM
+MDA,Moldova,2016,LM
+MDA,Moldova,2017,LM
+MDA,Moldova,2018,LM
+MDA,Moldova,2019,LM
+MCO,Monaco,1987,NA
+MCO,Monaco,1988,NA
+MCO,Monaco,1989,NA
+MCO,Monaco,1990,NA
+MCO,Monaco,1991,NA
+MCO,Monaco,1992,NA
+MCO,Monaco,1993,NA
+MCO,Monaco,1994,H
+MCO,Monaco,1995,H
+MCO,Monaco,1996,H
+MCO,Monaco,1997,H
+MCO,Monaco,1998,H
+MCO,Monaco,1999,H
+MCO,Monaco,2000,H
+MCO,Monaco,2001,H
+MCO,Monaco,2002,H
+MCO,Monaco,2003,H
+MCO,Monaco,2004,H
+MCO,Monaco,2005,H
+MCO,Monaco,2006,H
+MCO,Monaco,2007,H
+MCO,Monaco,2008,H
+MCO,Monaco,2009,H
+MCO,Monaco,2010,H
+MCO,Monaco,2011,H
+MCO,Monaco,2012,H
+MCO,Monaco,2013,H
+MCO,Monaco,2014,H
+MCO,Monaco,2015,H
+MCO,Monaco,2016,H
+MCO,Monaco,2017,H
+MCO,Monaco,2018,H
+MCO,Monaco,2019,H
+MNG,Mongolia,1987,NA
+MNG,Mongolia,1988,NA
+MNG,Mongolia,1989,LM
+MNG,Mongolia,1990,LM
+MNG,Mongolia,1991,LM
+MNG,Mongolia,1992,LM
+MNG,Mongolia,1993,L
+MNG,Mongolia,1994,L
+MNG,Mongolia,1995,L
+MNG,Mongolia,1996,L
+MNG,Mongolia,1997,L
+MNG,Mongolia,1998,L
+MNG,Mongolia,1999,L
+MNG,Mongolia,2000,L
+MNG,Mongolia,2001,L
+MNG,Mongolia,2002,L
+MNG,Mongolia,2003,L
+MNG,Mongolia,2004,L
+MNG,Mongolia,2005,L
+MNG,Mongolia,2006,L
+MNG,Mongolia,2007,LM
+MNG,Mongolia,2008,LM
+MNG,Mongolia,2009,LM
+MNG,Mongolia,2010,LM
+MNG,Mongolia,2011,LM
+MNG,Mongolia,2012,LM
+MNG,Mongolia,2013,LM
+MNG,Mongolia,2014,UM
+MNG,Mongolia,2015,LM
+MNG,Mongolia,2016,LM
+MNG,Mongolia,2017,LM
+MNG,Mongolia,2018,LM
+MNG,Mongolia,2019,LM
+MNE,Montenegro,1987,NA
+MNE,Montenegro,1988,NA
+MNE,Montenegro,1989,NA
+MNE,Montenegro,1990,NA
+MNE,Montenegro,1991,NA
+MNE,Montenegro,1992,NA
+MNE,Montenegro,1993,NA
+MNE,Montenegro,1994,NA
+MNE,Montenegro,1995,NA
+MNE,Montenegro,1996,NA
+MNE,Montenegro,1997,NA
+MNE,Montenegro,1998,NA
+MNE,Montenegro,1999,NA
+MNE,Montenegro,2000,NA
+MNE,Montenegro,2001,NA
+MNE,Montenegro,2002,NA
+MNE,Montenegro,2003,NA
+MNE,Montenegro,2004,NA
+MNE,Montenegro,2005,NA
+MNE,Montenegro,2006,UM
+MNE,Montenegro,2007,UM
+MNE,Montenegro,2008,UM
+MNE,Montenegro,2009,UM
+MNE,Montenegro,2010,UM
+MNE,Montenegro,2011,UM
+MNE,Montenegro,2012,UM
+MNE,Montenegro,2013,UM
+MNE,Montenegro,2014,UM
+MNE,Montenegro,2015,UM
+MNE,Montenegro,2016,UM
+MNE,Montenegro,2017,UM
+MNE,Montenegro,2018,UM
+MNE,Montenegro,2019,UM
+MAR,Morocco,1987,LM
+MAR,Morocco,1988,LM
+MAR,Morocco,1989,LM
+MAR,Morocco,1990,LM
+MAR,Morocco,1991,LM
+MAR,Morocco,1992,LM
+MAR,Morocco,1993,LM
+MAR,Morocco,1994,LM
+MAR,Morocco,1995,LM
+MAR,Morocco,1996,LM
+MAR,Morocco,1997,LM
+MAR,Morocco,1998,LM
+MAR,Morocco,1999,LM
+MAR,Morocco,2000,LM
+MAR,Morocco,2001,LM
+MAR,Morocco,2002,LM
+MAR,Morocco,2003,LM
+MAR,Morocco,2004,LM
+MAR,Morocco,2005,LM
+MAR,Morocco,2006,LM
+MAR,Morocco,2007,LM
+MAR,Morocco,2008,LM
+MAR,Morocco,2009,LM
+MAR,Morocco,2010,LM
+MAR,Morocco,2011,LM
+MAR,Morocco,2012,LM
+MAR,Morocco,2013,LM
+MAR,Morocco,2014,LM
+MAR,Morocco,2015,LM
+MAR,Morocco,2016,LM
+MAR,Morocco,2017,LM
+MAR,Morocco,2018,LM
+MAR,Morocco,2019,LM
+MOZ,Mozambique,1987,L
+MOZ,Mozambique,1988,L
+MOZ,Mozambique,1989,L
+MOZ,Mozambique,1990,L
+MOZ,Mozambique,1991,L
+MOZ,Mozambique,1992,L
+MOZ,Mozambique,1993,L
+MOZ,Mozambique,1994,L
+MOZ,Mozambique,1995,L
+MOZ,Mozambique,1996,L
+MOZ,Mozambique,1997,L
+MOZ,Mozambique,1998,L
+MOZ,Mozambique,1999,L
+MOZ,Mozambique,2000,L
+MOZ,Mozambique,2001,L
+MOZ,Mozambique,2002,L
+MOZ,Mozambique,2003,L
+MOZ,Mozambique,2004,L
+MOZ,Mozambique,2005,L
+MOZ,Mozambique,2006,L
+MOZ,Mozambique,2007,L
+MOZ,Mozambique,2008,L
+MOZ,Mozambique,2009,L
+MOZ,Mozambique,2010,L
+MOZ,Mozambique,2011,L
+MOZ,Mozambique,2012,L
+MOZ,Mozambique,2013,L
+MOZ,Mozambique,2014,L
+MOZ,Mozambique,2015,L
+MOZ,Mozambique,2016,L
+MOZ,Mozambique,2017,L
+MOZ,Mozambique,2018,L
+MOZ,Mozambique,2019,L
+MMR,Myanmar,1987,L
+MMR,Myanmar,1988,L
+MMR,Myanmar,1989,L
+MMR,Myanmar,1990,L
+MMR,Myanmar,1991,L
+MMR,Myanmar,1992,L
+MMR,Myanmar,1993,L
+MMR,Myanmar,1994,L
+MMR,Myanmar,1995,L
+MMR,Myanmar,1996,L
+MMR,Myanmar,1997,L
+MMR,Myanmar,1998,L
+MMR,Myanmar,1999,L
+MMR,Myanmar,2000,L
+MMR,Myanmar,2001,L
+MMR,Myanmar,2002,L
+MMR,Myanmar,2003,L
+MMR,Myanmar,2004,L
+MMR,Myanmar,2005,L
+MMR,Myanmar,2006,L
+MMR,Myanmar,2007,L
+MMR,Myanmar,2008,L
+MMR,Myanmar,2009,L
+MMR,Myanmar,2010,L
+MMR,Myanmar,2011,L
+MMR,Myanmar,2012,L
+MMR,Myanmar,2013,L
+MMR,Myanmar,2014,LM
+MMR,Myanmar,2015,LM
+MMR,Myanmar,2016,LM
+MMR,Myanmar,2017,LM
+MMR,Myanmar,2018,LM
+MMR,Myanmar,2019,LM
+NAM,Namibia,1987,NA
+NAM,Namibia,1988,NA
+NAM,Namibia,1989,LM
+NAM,Namibia,1990,LM
+NAM,Namibia,1991,LM
+NAM,Namibia,1992,LM
+NAM,Namibia,1993,LM
+NAM,Namibia,1994,LM
+NAM,Namibia,1995,LM
+NAM,Namibia,1996,LM
+NAM,Namibia,1997,LM
+NAM,Namibia,1998,LM
+NAM,Namibia,1999,LM
+NAM,Namibia,2000,LM
+NAM,Namibia,2001,LM
+NAM,Namibia,2002,LM
+NAM,Namibia,2003,LM
+NAM,Namibia,2004,LM
+NAM,Namibia,2005,LM
+NAM,Namibia,2006,LM
+NAM,Namibia,2007,LM
+NAM,Namibia,2008,UM
+NAM,Namibia,2009,UM
+NAM,Namibia,2010,UM
+NAM,Namibia,2011,UM
+NAM,Namibia,2012,UM
+NAM,Namibia,2013,UM
+NAM,Namibia,2014,UM
+NAM,Namibia,2015,UM
+NAM,Namibia,2016,UM
+NAM,Namibia,2017,UM
+NAM,Namibia,2018,UM
+NAM,Namibia,2019,UM
+NRU,Nauru,1987,NA
+NRU,Nauru,1988,NA
+NRU,Nauru,1989,NA
+NRU,Nauru,1990,NA
+NRU,Nauru,1991,NA
+NRU,Nauru,1992,NA
+NRU,Nauru,1993,NA
+NRU,Nauru,1994,NA
+NRU,Nauru,1995,NA
+NRU,Nauru,1996,NA
+NRU,Nauru,1997,NA
+NRU,Nauru,1998,NA
+NRU,Nauru,1999,NA
+NRU,Nauru,2000,NA
+NRU,Nauru,2001,NA
+NRU,Nauru,2002,NA
+NRU,Nauru,2003,NA
+NRU,Nauru,2004,NA
+NRU,Nauru,2005,NA
+NRU,Nauru,2006,NA
+NRU,Nauru,2007,NA
+NRU,Nauru,2008,NA
+NRU,Nauru,2009,NA
+NRU,Nauru,2010,NA
+NRU,Nauru,2011,NA
+NRU,Nauru,2012,NA
+NRU,Nauru,2013,NA
+NRU,Nauru,2014,NA
+NRU,Nauru,2015,H
+NRU,Nauru,2016,UM
+NRU,Nauru,2017,UM
+NRU,Nauru,2018,UM
+NRU,Nauru,2019,H
+NPL,Nepal,1987,L
+NPL,Nepal,1988,L
+NPL,Nepal,1989,L
+NPL,Nepal,1990,L
+NPL,Nepal,1991,L
+NPL,Nepal,1992,L
+NPL,Nepal,1993,L
+NPL,Nepal,1994,L
+NPL,Nepal,1995,L
+NPL,Nepal,1996,L
+NPL,Nepal,1997,L
+NPL,Nepal,1998,L
+NPL,Nepal,1999,L
+NPL,Nepal,2000,L
+NPL,Nepal,2001,L
+NPL,Nepal,2002,L
+NPL,Nepal,2003,L
+NPL,Nepal,2004,L
+NPL,Nepal,2005,L
+NPL,Nepal,2006,L
+NPL,Nepal,2007,L
+NPL,Nepal,2008,L
+NPL,Nepal,2009,L
+NPL,Nepal,2010,L
+NPL,Nepal,2011,L
+NPL,Nepal,2012,L
+NPL,Nepal,2013,L
+NPL,Nepal,2014,L
+NPL,Nepal,2015,L
+NPL,Nepal,2016,L
+NPL,Nepal,2017,L
+NPL,Nepal,2018,L
+NPL,Nepal,2019,LM
+NLD,Netherlands,1987,H
+NLD,Netherlands,1988,H
+NLD,Netherlands,1989,H
+NLD,Netherlands,1990,H
+NLD,Netherlands,1991,H
+NLD,Netherlands,1992,H
+NLD,Netherlands,1993,H
+NLD,Netherlands,1994,H
+NLD,Netherlands,1995,H
+NLD,Netherlands,1996,H
+NLD,Netherlands,1997,H
+NLD,Netherlands,1998,H
+NLD,Netherlands,1999,H
+NLD,Netherlands,2000,H
+NLD,Netherlands,2001,H
+NLD,Netherlands,2002,H
+NLD,Netherlands,2003,H
+NLD,Netherlands,2004,H
+NLD,Netherlands,2005,H
+NLD,Netherlands,2006,H
+NLD,Netherlands,2007,H
+NLD,Netherlands,2008,H
+NLD,Netherlands,2009,H
+NLD,Netherlands,2010,H
+NLD,Netherlands,2011,H
+NLD,Netherlands,2012,H
+NLD,Netherlands,2013,H
+NLD,Netherlands,2014,H
+NLD,Netherlands,2015,H
+NLD,Netherlands,2016,H
+NLD,Netherlands,2017,H
+NLD,Netherlands,2018,H
+NLD,Netherlands,2019,H
+NCL,New Caledonia,1987,UM
+NCL,New Caledonia,1988,UM
+NCL,New Caledonia,1989,UM
+NCL,New Caledonia,1990,UM
+NCL,New Caledonia,1991,UM
+NCL,New Caledonia,1992,UM
+NCL,New Caledonia,1993,UM
+NCL,New Caledonia,1994,UM
+NCL,New Caledonia,1995,H
+NCL,New Caledonia,1996,H
+NCL,New Caledonia,1997,H
+NCL,New Caledonia,1998,H
+NCL,New Caledonia,1999,H
+NCL,New Caledonia,2000,H
+NCL,New Caledonia,2001,H
+NCL,New Caledonia,2002,H
+NCL,New Caledonia,2003,H
+NCL,New Caledonia,2004,H
+NCL,New Caledonia,2005,H
+NCL,New Caledonia,2006,H
+NCL,New Caledonia,2007,H
+NCL,New Caledonia,2008,H
+NCL,New Caledonia,2009,H
+NCL,New Caledonia,2010,H
+NCL,New Caledonia,2011,H
+NCL,New Caledonia,2012,H
+NCL,New Caledonia,2013,H
+NCL,New Caledonia,2014,H
+NCL,New Caledonia,2015,H
+NCL,New Caledonia,2016,H
+NCL,New Caledonia,2017,H
+NCL,New Caledonia,2018,H
+NCL,New Caledonia,2019,H
+NZL,New Zealand,1987,H
+NZL,New Zealand,1988,H
+NZL,New Zealand,1989,H
+NZL,New Zealand,1990,H
+NZL,New Zealand,1991,H
+NZL,New Zealand,1992,H
+NZL,New Zealand,1993,H
+NZL,New Zealand,1994,H
+NZL,New Zealand,1995,H
+NZL,New Zealand,1996,H
+NZL,New Zealand,1997,H
+NZL,New Zealand,1998,H
+NZL,New Zealand,1999,H
+NZL,New Zealand,2000,H
+NZL,New Zealand,2001,H
+NZL,New Zealand,2002,H
+NZL,New Zealand,2003,H
+NZL,New Zealand,2004,H
+NZL,New Zealand,2005,H
+NZL,New Zealand,2006,H
+NZL,New Zealand,2007,H
+NZL,New Zealand,2008,H
+NZL,New Zealand,2009,H
+NZL,New Zealand,2010,H
+NZL,New Zealand,2011,H
+NZL,New Zealand,2012,H
+NZL,New Zealand,2013,H
+NZL,New Zealand,2014,H
+NZL,New Zealand,2015,H
+NZL,New Zealand,2016,H
+NZL,New Zealand,2017,H
+NZL,New Zealand,2018,H
+NZL,New Zealand,2019,H
+NIC,Nicaragua,1987,LM
+NIC,Nicaragua,1988,LM
+NIC,Nicaragua,1989,LM
+NIC,Nicaragua,1990,LM
+NIC,Nicaragua,1991,L
+NIC,Nicaragua,1992,L
+NIC,Nicaragua,1993,L
+NIC,Nicaragua,1994,L
+NIC,Nicaragua,1995,L
+NIC,Nicaragua,1996,L
+NIC,Nicaragua,1997,L
+NIC,Nicaragua,1998,L
+NIC,Nicaragua,1999,L
+NIC,Nicaragua,2000,L
+NIC,Nicaragua,2001,L
+NIC,Nicaragua,2002,L
+NIC,Nicaragua,2003,L
+NIC,Nicaragua,2004,L
+NIC,Nicaragua,2005,LM
+NIC,Nicaragua,2006,LM
+NIC,Nicaragua,2007,LM
+NIC,Nicaragua,2008,LM
+NIC,Nicaragua,2009,LM
+NIC,Nicaragua,2010,LM
+NIC,Nicaragua,2011,LM
+NIC,Nicaragua,2012,LM
+NIC,Nicaragua,2013,LM
+NIC,Nicaragua,2014,LM
+NIC,Nicaragua,2015,LM
+NIC,Nicaragua,2016,LM
+NIC,Nicaragua,2017,LM
+NIC,Nicaragua,2018,LM
+NIC,Nicaragua,2019,LM
+NER,Niger,1987,L
+NER,Niger,1988,L
+NER,Niger,1989,L
+NER,Niger,1990,L
+NER,Niger,1991,L
+NER,Niger,1992,L
+NER,Niger,1993,L
+NER,Niger,1994,L
+NER,Niger,1995,L
+NER,Niger,1996,L
+NER,Niger,1997,L
+NER,Niger,1998,L
+NER,Niger,1999,L
+NER,Niger,2000,L
+NER,Niger,2001,L
+NER,Niger,2002,L
+NER,Niger,2003,L
+NER,Niger,2004,L
+NER,Niger,2005,L
+NER,Niger,2006,L
+NER,Niger,2007,L
+NER,Niger,2008,L
+NER,Niger,2009,L
+NER,Niger,2010,L
+NER,Niger,2011,L
+NER,Niger,2012,L
+NER,Niger,2013,L
+NER,Niger,2014,L
+NER,Niger,2015,L
+NER,Niger,2016,L
+NER,Niger,2017,L
+NER,Niger,2018,L
+NER,Niger,2019,L
+NGA,Nigeria,1987,L
+NGA,Nigeria,1988,L
+NGA,Nigeria,1989,L
+NGA,Nigeria,1990,L
+NGA,Nigeria,1991,L
+NGA,Nigeria,1992,L
+NGA,Nigeria,1993,L
+NGA,Nigeria,1994,L
+NGA,Nigeria,1995,L
+NGA,Nigeria,1996,L
+NGA,Nigeria,1997,L
+NGA,Nigeria,1998,L
+NGA,Nigeria,1999,L
+NGA,Nigeria,2000,L
+NGA,Nigeria,2001,L
+NGA,Nigeria,2002,L
+NGA,Nigeria,2003,L
+NGA,Nigeria,2004,L
+NGA,Nigeria,2005,L
+NGA,Nigeria,2006,L
+NGA,Nigeria,2007,L
+NGA,Nigeria,2008,LM
+NGA,Nigeria,2009,LM
+NGA,Nigeria,2010,LM
+NGA,Nigeria,2011,LM
+NGA,Nigeria,2012,LM
+NGA,Nigeria,2013,LM
+NGA,Nigeria,2014,LM
+NGA,Nigeria,2015,LM
+NGA,Nigeria,2016,LM
+NGA,Nigeria,2017,LM
+NGA,Nigeria,2018,LM
+NGA,Nigeria,2019,LM
+MKD,North Macedonia,1987,NA
+MKD,North Macedonia,1988,NA
+MKD,North Macedonia,1989,NA
+MKD,North Macedonia,1990,NA
+MKD,North Macedonia,1991,NA
+MKD,North Macedonia,1992,LM
+MKD,North Macedonia,1993,LM
+MKD,North Macedonia,1994,LM
+MKD,North Macedonia,1995,LM
+MKD,North Macedonia,1996,LM
+MKD,North Macedonia,1997,LM
+MKD,North Macedonia,1998,LM
+MKD,North Macedonia,1999,LM
+MKD,North Macedonia,2000,LM
+MKD,North Macedonia,2001,LM
+MKD,North Macedonia,2002,LM
+MKD,North Macedonia,2003,LM
+MKD,North Macedonia,2004,LM
+MKD,North Macedonia,2005,LM
+MKD,North Macedonia,2006,LM
+MKD,North Macedonia,2007,LM
+MKD,North Macedonia,2008,UM
+MKD,North Macedonia,2009,UM
+MKD,North Macedonia,2010,UM
+MKD,North Macedonia,2011,UM
+MKD,North Macedonia,2012,UM
+MKD,North Macedonia,2013,UM
+MKD,North Macedonia,2014,UM
+MKD,North Macedonia,2015,UM
+MKD,North Macedonia,2016,UM
+MKD,North Macedonia,2017,UM
+MKD,North Macedonia,2018,UM
+MKD,North Macedonia,2019,UM
+MNP,Northern Mariana Islands,1987,NA
+MNP,Northern Mariana Islands,1988,NA
+MNP,Northern Mariana Islands,1989,NA
+MNP,Northern Mariana Islands,1990,NA
+MNP,Northern Mariana Islands,1991,NA
+MNP,Northern Mariana Islands,1992,LM
+MNP,Northern Mariana Islands,1993,LM
+MNP,Northern Mariana Islands,1994,LM
+MNP,Northern Mariana Islands,1995,H
+MNP,Northern Mariana Islands,1996,H
+MNP,Northern Mariana Islands,1997,H
+MNP,Northern Mariana Islands,1998,H
+MNP,Northern Mariana Islands,1999,H
+MNP,Northern Mariana Islands,2000,H
+MNP,Northern Mariana Islands,2001,H
+MNP,Northern Mariana Islands,2002,UM
+MNP,Northern Mariana Islands,2003,UM
+MNP,Northern Mariana Islands,2004,UM
+MNP,Northern Mariana Islands,2005,UM
+MNP,Northern Mariana Islands,2006,UM
+MNP,Northern Mariana Islands,2007,H
+MNP,Northern Mariana Islands,2008,H
+MNP,Northern Mariana Islands,2009,H
+MNP,Northern Mariana Islands,2010,H
+MNP,Northern Mariana Islands,2011,H
+MNP,Northern Mariana Islands,2012,H
+MNP,Northern Mariana Islands,2013,H
+MNP,Northern Mariana Islands,2014,H
+MNP,Northern Mariana Islands,2015,H
+MNP,Northern Mariana Islands,2016,H
+MNP,Northern Mariana Islands,2017,H
+MNP,Northern Mariana Islands,2018,H
+MNP,Northern Mariana Islands,2019,H
+NOR,Norway,1987,H
+NOR,Norway,1988,H
+NOR,Norway,1989,H
+NOR,Norway,1990,H
+NOR,Norway,1991,H
+NOR,Norway,1992,H
+NOR,Norway,1993,H
+NOR,Norway,1994,H
+NOR,Norway,1995,H
+NOR,Norway,1996,H
+NOR,Norway,1997,H
+NOR,Norway,1998,H
+NOR,Norway,1999,H
+NOR,Norway,2000,H
+NOR,Norway,2001,H
+NOR,Norway,2002,H
+NOR,Norway,2003,H
+NOR,Norway,2004,H
+NOR,Norway,2005,H
+NOR,Norway,2006,H
+NOR,Norway,2007,H
+NOR,Norway,2008,H
+NOR,Norway,2009,H
+NOR,Norway,2010,H
+NOR,Norway,2011,H
+NOR,Norway,2012,H
+NOR,Norway,2013,H
+NOR,Norway,2014,H
+NOR,Norway,2015,H
+NOR,Norway,2016,H
+NOR,Norway,2017,H
+NOR,Norway,2018,H
+NOR,Norway,2019,H
+OMN,Oman,1987,UM
+OMN,Oman,1988,UM
+OMN,Oman,1989,UM
+OMN,Oman,1990,UM
+OMN,Oman,1991,UM
+OMN,Oman,1992,UM
+OMN,Oman,1993,UM
+OMN,Oman,1994,UM
+OMN,Oman,1995,UM
+OMN,Oman,1996,UM
+OMN,Oman,1997,UM
+OMN,Oman,1998,UM
+OMN,Oman,1999,UM
+OMN,Oman,2000,UM
+OMN,Oman,2001,UM
+OMN,Oman,2002,UM
+OMN,Oman,2003,UM
+OMN,Oman,2004,UM
+OMN,Oman,2005,UM
+OMN,Oman,2006,UM
+OMN,Oman,2007,H
+OMN,Oman,2008,H
+OMN,Oman,2009,H
+OMN,Oman,2010,H
+OMN,Oman,2011,H
+OMN,Oman,2012,H
+OMN,Oman,2013,H
+OMN,Oman,2014,H
+OMN,Oman,2015,H
+OMN,Oman,2016,H
+OMN,Oman,2017,H
+OMN,Oman,2018,H
+OMN,Oman,2019,H
+PAK,Pakistan,1987,L
+PAK,Pakistan,1988,L
+PAK,Pakistan,1989,L
+PAK,Pakistan,1990,L
+PAK,Pakistan,1991,L
+PAK,Pakistan,1992,L
+PAK,Pakistan,1993,L
+PAK,Pakistan,1994,L
+PAK,Pakistan,1995,L
+PAK,Pakistan,1996,L
+PAK,Pakistan,1997,L
+PAK,Pakistan,1998,L
+PAK,Pakistan,1999,L
+PAK,Pakistan,2000,L
+PAK,Pakistan,2001,L
+PAK,Pakistan,2002,L
+PAK,Pakistan,2003,L
+PAK,Pakistan,2004,L
+PAK,Pakistan,2005,L
+PAK,Pakistan,2006,L
+PAK,Pakistan,2007,L
+PAK,Pakistan,2008,LM
+PAK,Pakistan,2009,LM
+PAK,Pakistan,2010,LM
+PAK,Pakistan,2011,LM
+PAK,Pakistan,2012,LM
+PAK,Pakistan,2013,LM
+PAK,Pakistan,2014,LM
+PAK,Pakistan,2015,LM
+PAK,Pakistan,2016,LM
+PAK,Pakistan,2017,LM
+PAK,Pakistan,2018,LM
+PAK,Pakistan,2019,LM
+PLW,Palau,1987,NA
+PLW,Palau,1988,NA
+PLW,Palau,1989,NA
+PLW,Palau,1990,NA
+PLW,Palau,1991,NA
+PLW,Palau,1992,NA
+PLW,Palau,1993,NA
+PLW,Palau,1994,NA
+PLW,Palau,1995,NA
+PLW,Palau,1996,UM
+PLW,Palau,1997,UM
+PLW,Palau,1998,UM
+PLW,Palau,1999,UM
+PLW,Palau,2000,UM
+PLW,Palau,2001,UM
+PLW,Palau,2002,UM
+PLW,Palau,2003,UM
+PLW,Palau,2004,UM
+PLW,Palau,2005,UM
+PLW,Palau,2006,UM
+PLW,Palau,2007,UM
+PLW,Palau,2008,UM
+PLW,Palau,2009,UM
+PLW,Palau,2010,UM
+PLW,Palau,2011,UM
+PLW,Palau,2012,UM
+PLW,Palau,2013,UM
+PLW,Palau,2014,UM
+PLW,Palau,2015,UM
+PLW,Palau,2016,H
+PLW,Palau,2017,H
+PLW,Palau,2018,H
+PLW,Palau,2019,H
+PAN,Panama,1987,UM
+PAN,Panama,1988,LM
+PAN,Panama,1989,LM
+PAN,Panama,1990,LM
+PAN,Panama,1991,LM
+PAN,Panama,1992,LM
+PAN,Panama,1993,LM
+PAN,Panama,1994,LM
+PAN,Panama,1995,LM
+PAN,Panama,1996,LM
+PAN,Panama,1997,LM
+PAN,Panama,1998,UM
+PAN,Panama,1999,UM
+PAN,Panama,2000,UM
+PAN,Panama,2001,UM
+PAN,Panama,2002,UM
+PAN,Panama,2003,UM
+PAN,Panama,2004,UM
+PAN,Panama,2005,UM
+PAN,Panama,2006,UM
+PAN,Panama,2007,UM
+PAN,Panama,2008,UM
+PAN,Panama,2009,UM
+PAN,Panama,2010,UM
+PAN,Panama,2011,UM
+PAN,Panama,2012,UM
+PAN,Panama,2013,UM
+PAN,Panama,2014,UM
+PAN,Panama,2015,UM
+PAN,Panama,2016,UM
+PAN,Panama,2017,H
+PAN,Panama,2018,H
+PAN,Panama,2019,H
+PNG,Papua New Guinea,1987,LM
+PNG,Papua New Guinea,1988,LM
+PNG,Papua New Guinea,1989,LM
+PNG,Papua New Guinea,1990,LM
+PNG,Papua New Guinea,1991,LM
+PNG,Papua New Guinea,1992,LM
+PNG,Papua New Guinea,1993,LM
+PNG,Papua New Guinea,1994,LM
+PNG,Papua New Guinea,1995,LM
+PNG,Papua New Guinea,1996,LM
+PNG,Papua New Guinea,1997,LM
+PNG,Papua New Guinea,1998,LM
+PNG,Papua New Guinea,1999,LM
+PNG,Papua New Guinea,2000,LM
+PNG,Papua New Guinea,2001,L
+PNG,Papua New Guinea,2002,L
+PNG,Papua New Guinea,2003,L
+PNG,Papua New Guinea,2004,L
+PNG,Papua New Guinea,2005,L
+PNG,Papua New Guinea,2006,L
+PNG,Papua New Guinea,2007,L
+PNG,Papua New Guinea,2008,LM
+PNG,Papua New Guinea,2009,LM
+PNG,Papua New Guinea,2010,LM
+PNG,Papua New Guinea,2011,LM
+PNG,Papua New Guinea,2012,LM
+PNG,Papua New Guinea,2013,LM
+PNG,Papua New Guinea,2014,LM
+PNG,Papua New Guinea,2015,LM
+PNG,Papua New Guinea,2016,LM
+PNG,Papua New Guinea,2017,LM
+PNG,Papua New Guinea,2018,LM
+PNG,Papua New Guinea,2019,LM
+PRY,Paraguay,1987,LM
+PRY,Paraguay,1988,LM
+PRY,Paraguay,1989,LM
+PRY,Paraguay,1990,LM
+PRY,Paraguay,1991,LM
+PRY,Paraguay,1992,LM
+PRY,Paraguay,1993,LM
+PRY,Paraguay,1994,LM
+PRY,Paraguay,1995,LM
+PRY,Paraguay,1996,LM
+PRY,Paraguay,1997,LM
+PRY,Paraguay,1998,LM
+PRY,Paraguay,1999,LM
+PRY,Paraguay,2000,LM
+PRY,Paraguay,2001,LM
+PRY,Paraguay,2002,LM
+PRY,Paraguay,2003,LM
+PRY,Paraguay,2004,LM
+PRY,Paraguay,2005,LM
+PRY,Paraguay,2006,LM
+PRY,Paraguay,2007,LM
+PRY,Paraguay,2008,LM
+PRY,Paraguay,2009,LM
+PRY,Paraguay,2010,LM
+PRY,Paraguay,2011,LM
+PRY,Paraguay,2012,LM
+PRY,Paraguay,2013,LM
+PRY,Paraguay,2014,UM
+PRY,Paraguay,2015,UM
+PRY,Paraguay,2016,UM
+PRY,Paraguay,2017,UM
+PRY,Paraguay,2018,UM
+PRY,Paraguay,2019,UM
+PER,Peru,1987,LM
+PER,Peru,1988,LM
+PER,Peru,1989,LM
+PER,Peru,1990,LM
+PER,Peru,1991,LM
+PER,Peru,1992,LM
+PER,Peru,1993,LM
+PER,Peru,1994,LM
+PER,Peru,1995,LM
+PER,Peru,1996,LM
+PER,Peru,1997,LM
+PER,Peru,1998,LM
+PER,Peru,1999,LM
+PER,Peru,2000,LM
+PER,Peru,2001,LM
+PER,Peru,2002,LM
+PER,Peru,2003,LM
+PER,Peru,2004,LM
+PER,Peru,2005,LM
+PER,Peru,2006,LM
+PER,Peru,2007,LM
+PER,Peru,2008,UM
+PER,Peru,2009,UM
+PER,Peru,2010,UM
+PER,Peru,2011,UM
+PER,Peru,2012,UM
+PER,Peru,2013,UM
+PER,Peru,2014,UM
+PER,Peru,2015,UM
+PER,Peru,2016,UM
+PER,Peru,2017,UM
+PER,Peru,2018,UM
+PER,Peru,2019,UM
+PHL,Philippines,1987,LM
+PHL,Philippines,1988,LM
+PHL,Philippines,1989,LM
+PHL,Philippines,1990,LM
+PHL,Philippines,1991,LM
+PHL,Philippines,1992,LM
+PHL,Philippines,1993,LM
+PHL,Philippines,1994,LM
+PHL,Philippines,1995,LM
+PHL,Philippines,1996,LM
+PHL,Philippines,1997,LM
+PHL,Philippines,1998,LM
+PHL,Philippines,1999,LM
+PHL,Philippines,2000,LM
+PHL,Philippines,2001,LM
+PHL,Philippines,2002,LM
+PHL,Philippines,2003,LM
+PHL,Philippines,2004,LM
+PHL,Philippines,2005,LM
+PHL,Philippines,2006,LM
+PHL,Philippines,2007,LM
+PHL,Philippines,2008,LM
+PHL,Philippines,2009,LM
+PHL,Philippines,2010,LM
+PHL,Philippines,2011,LM
+PHL,Philippines,2012,LM
+PHL,Philippines,2013,LM
+PHL,Philippines,2014,LM
+PHL,Philippines,2015,LM
+PHL,Philippines,2016,LM
+PHL,Philippines,2017,LM
+PHL,Philippines,2018,LM
+PHL,Philippines,2019,LM
+POL,Poland,1987,LM
+POL,Poland,1988,LM
+POL,Poland,1989,LM
+POL,Poland,1990,LM
+POL,Poland,1991,LM
+POL,Poland,1992,LM
+POL,Poland,1993,LM
+POL,Poland,1994,LM
+POL,Poland,1995,LM
+POL,Poland,1996,UM
+POL,Poland,1997,UM
+POL,Poland,1998,UM
+POL,Poland,1999,UM
+POL,Poland,2000,UM
+POL,Poland,2001,UM
+POL,Poland,2002,UM
+POL,Poland,2003,UM
+POL,Poland,2004,UM
+POL,Poland,2005,UM
+POL,Poland,2006,UM
+POL,Poland,2007,UM
+POL,Poland,2008,UM
+POL,Poland,2009,H
+POL,Poland,2010,H
+POL,Poland,2011,H
+POL,Poland,2012,H
+POL,Poland,2013,H
+POL,Poland,2014,H
+POL,Poland,2015,H
+POL,Poland,2016,H
+POL,Poland,2017,H
+POL,Poland,2018,H
+POL,Poland,2019,H
+PRT,Portugal,1987,UM
+PRT,Portugal,1988,UM
+PRT,Portugal,1989,UM
+PRT,Portugal,1990,UM
+PRT,Portugal,1991,UM
+PRT,Portugal,1992,UM
+PRT,Portugal,1993,UM
+PRT,Portugal,1994,H
+PRT,Portugal,1995,H
+PRT,Portugal,1996,H
+PRT,Portugal,1997,H
+PRT,Portugal,1998,H
+PRT,Portugal,1999,H
+PRT,Portugal,2000,H
+PRT,Portugal,2001,H
+PRT,Portugal,2002,H
+PRT,Portugal,2003,H
+PRT,Portugal,2004,H
+PRT,Portugal,2005,H
+PRT,Portugal,2006,H
+PRT,Portugal,2007,H
+PRT,Portugal,2008,H
+PRT,Portugal,2009,H
+PRT,Portugal,2010,H
+PRT,Portugal,2011,H
+PRT,Portugal,2012,H
+PRT,Portugal,2013,H
+PRT,Portugal,2014,H
+PRT,Portugal,2015,H
+PRT,Portugal,2016,H
+PRT,Portugal,2017,H
+PRT,Portugal,2018,H
+PRT,Portugal,2019,H
+PRI,Puerto Rico,1987,UM
+PRI,Puerto Rico,1988,UM
+PRI,Puerto Rico,1989,H
+PRI,Puerto Rico,1990,UM
+PRI,Puerto Rico,1991,UM
+PRI,Puerto Rico,1992,UM
+PRI,Puerto Rico,1993,UM
+PRI,Puerto Rico,1994,UM
+PRI,Puerto Rico,1995,UM
+PRI,Puerto Rico,1996,UM
+PRI,Puerto Rico,1997,UM
+PRI,Puerto Rico,1998,UM
+PRI,Puerto Rico,1999,UM
+PRI,Puerto Rico,2000,UM
+PRI,Puerto Rico,2001,UM
+PRI,Puerto Rico,2002,H
+PRI,Puerto Rico,2003,H
+PRI,Puerto Rico,2004,H
+PRI,Puerto Rico,2005,H
+PRI,Puerto Rico,2006,H
+PRI,Puerto Rico,2007,H
+PRI,Puerto Rico,2008,H
+PRI,Puerto Rico,2009,H
+PRI,Puerto Rico,2010,H
+PRI,Puerto Rico,2011,H
+PRI,Puerto Rico,2012,H
+PRI,Puerto Rico,2013,H
+PRI,Puerto Rico,2014,H
+PRI,Puerto Rico,2015,H
+PRI,Puerto Rico,2016,H
+PRI,Puerto Rico,2017,H
+PRI,Puerto Rico,2018,H
+PRI,Puerto Rico,2019,H
+QAT,Qatar,1987,H
+QAT,Qatar,1988,H
+QAT,Qatar,1989,H
+QAT,Qatar,1990,H
+QAT,Qatar,1991,H
+QAT,Qatar,1992,H
+QAT,Qatar,1993,H
+QAT,Qatar,1994,H
+QAT,Qatar,1995,H
+QAT,Qatar,1996,H
+QAT,Qatar,1997,H
+QAT,Qatar,1998,H
+QAT,Qatar,1999,H
+QAT,Qatar,2000,H
+QAT,Qatar,2001,H
+QAT,Qatar,2002,H
+QAT,Qatar,2003,H
+QAT,Qatar,2004,H
+QAT,Qatar,2005,H
+QAT,Qatar,2006,H
+QAT,Qatar,2007,H
+QAT,Qatar,2008,H
+QAT,Qatar,2009,H
+QAT,Qatar,2010,H
+QAT,Qatar,2011,H
+QAT,Qatar,2012,H
+QAT,Qatar,2013,H
+QAT,Qatar,2014,H
+QAT,Qatar,2015,H
+QAT,Qatar,2016,H
+QAT,Qatar,2017,H
+QAT,Qatar,2018,H
+QAT,Qatar,2019,H
+ROU,Romania,1987,UM
+ROU,Romania,1988,UM
+ROU,Romania,1989,UM
+ROU,Romania,1990,LM
+ROU,Romania,1991,LM
+ROU,Romania,1992,LM
+ROU,Romania,1993,LM
+ROU,Romania,1994,LM
+ROU,Romania,1995,LM
+ROU,Romania,1996,LM
+ROU,Romania,1997,LM
+ROU,Romania,1998,LM
+ROU,Romania,1999,LM
+ROU,Romania,2000,LM
+ROU,Romania,2001,LM
+ROU,Romania,2002,LM
+ROU,Romania,2003,LM
+ROU,Romania,2004,LM
+ROU,Romania,2005,UM
+ROU,Romania,2006,UM
+ROU,Romania,2007,UM
+ROU,Romania,2008,UM
+ROU,Romania,2009,UM
+ROU,Romania,2010,UM
+ROU,Romania,2011,UM
+ROU,Romania,2012,UM
+ROU,Romania,2013,UM
+ROU,Romania,2014,UM
+ROU,Romania,2015,UM
+ROU,Romania,2016,UM
+ROU,Romania,2017,UM
+ROU,Romania,2018,UM
+ROU,Romania,2019,H
+RUS,Russian Federation,1987,NA
+RUS,Russian Federation,1988,NA
+RUS,Russian Federation,1989,NA
+RUS,Russian Federation,1990,NA
+RUS,Russian Federation,1991,UM
+RUS,Russian Federation,1992,LM
+RUS,Russian Federation,1993,LM
+RUS,Russian Federation,1994,LM
+RUS,Russian Federation,1995,LM
+RUS,Russian Federation,1996,LM
+RUS,Russian Federation,1997,LM
+RUS,Russian Federation,1998,LM
+RUS,Russian Federation,1999,LM
+RUS,Russian Federation,2000,LM
+RUS,Russian Federation,2001,LM
+RUS,Russian Federation,2002,LM
+RUS,Russian Federation,2003,LM
+RUS,Russian Federation,2004,UM
+RUS,Russian Federation,2005,UM
+RUS,Russian Federation,2006,UM
+RUS,Russian Federation,2007,UM
+RUS,Russian Federation,2008,UM
+RUS,Russian Federation,2009,UM
+RUS,Russian Federation,2010,UM
+RUS,Russian Federation,2011,UM
+RUS,Russian Federation,2012,H
+RUS,Russian Federation,2013,H
+RUS,Russian Federation,2014,H
+RUS,Russian Federation,2015,UM
+RUS,Russian Federation,2016,UM
+RUS,Russian Federation,2017,UM
+RUS,Russian Federation,2018,UM
+RUS,Russian Federation,2019,UM
+RWA,Rwanda,1987,L
+RWA,Rwanda,1988,L
+RWA,Rwanda,1989,L
+RWA,Rwanda,1990,L
+RWA,Rwanda,1991,L
+RWA,Rwanda,1992,L
+RWA,Rwanda,1993,L
+RWA,Rwanda,1994,L
+RWA,Rwanda,1995,L
+RWA,Rwanda,1996,L
+RWA,Rwanda,1997,L
+RWA,Rwanda,1998,L
+RWA,Rwanda,1999,L
+RWA,Rwanda,2000,L
+RWA,Rwanda,2001,L
+RWA,Rwanda,2002,L
+RWA,Rwanda,2003,L
+RWA,Rwanda,2004,L
+RWA,Rwanda,2005,L
+RWA,Rwanda,2006,L
+RWA,Rwanda,2007,L
+RWA,Rwanda,2008,L
+RWA,Rwanda,2009,L
+RWA,Rwanda,2010,L
+RWA,Rwanda,2011,L
+RWA,Rwanda,2012,L
+RWA,Rwanda,2013,L
+RWA,Rwanda,2014,L
+RWA,Rwanda,2015,L
+RWA,Rwanda,2016,L
+RWA,Rwanda,2017,L
+RWA,Rwanda,2018,L
+RWA,Rwanda,2019,L
+WSM,Samoa,1987,LM
+WSM,Samoa,1988,LM
+WSM,Samoa,1989,LM
+WSM,Samoa,1990,LM
+WSM,Samoa,1991,LM
+WSM,Samoa,1992,LM
+WSM,Samoa,1993,LM
+WSM,Samoa,1994,LM
+WSM,Samoa,1995,LM
+WSM,Samoa,1996,LM
+WSM,Samoa,1997,LM
+WSM,Samoa,1998,LM
+WSM,Samoa,1999,LM
+WSM,Samoa,2000,LM
+WSM,Samoa,2001,LM
+WSM,Samoa,2002,LM
+WSM,Samoa,2003,LM
+WSM,Samoa,2004,LM
+WSM,Samoa,2005,LM
+WSM,Samoa,2006,LM
+WSM,Samoa,2007,LM
+WSM,Samoa,2008,LM
+WSM,Samoa,2009,LM
+WSM,Samoa,2010,LM
+WSM,Samoa,2011,LM
+WSM,Samoa,2012,LM
+WSM,Samoa,2013,LM
+WSM,Samoa,2014,LM
+WSM,Samoa,2015,LM
+WSM,Samoa,2016,UM
+WSM,Samoa,2017,UM
+WSM,Samoa,2018,UM
+WSM,Samoa,2019,UM
+SMR,San Marino,1987,NA
+SMR,San Marino,1988,NA
+SMR,San Marino,1989,NA
+SMR,San Marino,1990,NA
+SMR,San Marino,1991,H
+SMR,San Marino,1992,H
+SMR,San Marino,1993,H
+SMR,San Marino,1994,NA
+SMR,San Marino,1995,NA
+SMR,San Marino,1996,NA
+SMR,San Marino,1997,NA
+SMR,San Marino,1998,NA
+SMR,San Marino,1999,NA
+SMR,San Marino,2000,H
+SMR,San Marino,2001,H
+SMR,San Marino,2002,H
+SMR,San Marino,2003,H
+SMR,San Marino,2004,H
+SMR,San Marino,2005,H
+SMR,San Marino,2006,H
+SMR,San Marino,2007,H
+SMR,San Marino,2008,H
+SMR,San Marino,2009,H
+SMR,San Marino,2010,H
+SMR,San Marino,2011,H
+SMR,San Marino,2012,H
+SMR,San Marino,2013,H
+SMR,San Marino,2014,H
+SMR,San Marino,2015,H
+SMR,San Marino,2016,H
+SMR,San Marino,2017,H
+SMR,San Marino,2018,H
+SMR,San Marino,2019,H
+STP,São Tomé and Principe,1987,L
+STP,São Tomé and Principe,1988,L
+STP,São Tomé and Principe,1989,L
+STP,São Tomé and Principe,1990,L
+STP,São Tomé and Principe,1991,L
+STP,São Tomé and Principe,1992,L
+STP,São Tomé and Principe,1993,L
+STP,São Tomé and Principe,1994,L
+STP,São Tomé and Principe,1995,L
+STP,São Tomé and Principe,1996,L
+STP,São Tomé and Principe,1997,L
+STP,São Tomé and Principe,1998,L
+STP,São Tomé and Principe,1999,L
+STP,São Tomé and Principe,2000,L
+STP,São Tomé and Principe,2001,L
+STP,São Tomé and Principe,2002,L
+STP,São Tomé and Principe,2003,L
+STP,São Tomé and Principe,2004,L
+STP,São Tomé and Principe,2005,L
+STP,São Tomé and Principe,2006,L
+STP,São Tomé and Principe,2007,L
+STP,São Tomé and Principe,2008,LM
+STP,São Tomé and Principe,2009,LM
+STP,São Tomé and Principe,2010,LM
+STP,São Tomé and Principe,2011,LM
+STP,São Tomé and Principe,2012,LM
+STP,São Tomé and Principe,2013,LM
+STP,São Tomé and Principe,2014,LM
+STP,São Tomé and Principe,2015,LM
+STP,São Tomé and Principe,2016,LM
+STP,São Tomé and Principe,2017,LM
+STP,São Tomé and Principe,2018,LM
+STP,São Tomé and Principe,2019,LM
+SAU,Saudi Arabia,1987,H
+SAU,Saudi Arabia,1988,H
+SAU,Saudi Arabia,1989,H
+SAU,Saudi Arabia,1990,UM
+SAU,Saudi Arabia,1991,UM
+SAU,Saudi Arabia,1992,UM
+SAU,Saudi Arabia,1993,UM
+SAU,Saudi Arabia,1994,UM
+SAU,Saudi Arabia,1995,UM
+SAU,Saudi Arabia,1996,UM
+SAU,Saudi Arabia,1997,UM
+SAU,Saudi Arabia,1998,UM
+SAU,Saudi Arabia,1999,UM
+SAU,Saudi Arabia,2000,UM
+SAU,Saudi Arabia,2001,UM
+SAU,Saudi Arabia,2002,UM
+SAU,Saudi Arabia,2003,UM
+SAU,Saudi Arabia,2004,H
+SAU,Saudi Arabia,2005,H
+SAU,Saudi Arabia,2006,H
+SAU,Saudi Arabia,2007,H
+SAU,Saudi Arabia,2008,H
+SAU,Saudi Arabia,2009,H
+SAU,Saudi Arabia,2010,H
+SAU,Saudi Arabia,2011,H
+SAU,Saudi Arabia,2012,H
+SAU,Saudi Arabia,2013,H
+SAU,Saudi Arabia,2014,H
+SAU,Saudi Arabia,2015,H
+SAU,Saudi Arabia,2016,H
+SAU,Saudi Arabia,2017,H
+SAU,Saudi Arabia,2018,H
+SAU,Saudi Arabia,2019,H
+SEN,Senegal,1987,LM
+SEN,Senegal,1988,LM
+SEN,Senegal,1989,LM
+SEN,Senegal,1990,LM
+SEN,Senegal,1991,LM
+SEN,Senegal,1992,LM
+SEN,Senegal,1993,LM
+SEN,Senegal,1994,L
+SEN,Senegal,1995,L
+SEN,Senegal,1996,L
+SEN,Senegal,1997,L
+SEN,Senegal,1998,L
+SEN,Senegal,1999,L
+SEN,Senegal,2000,L
+SEN,Senegal,2001,L
+SEN,Senegal,2002,L
+SEN,Senegal,2003,L
+SEN,Senegal,2004,L
+SEN,Senegal,2005,L
+SEN,Senegal,2006,L
+SEN,Senegal,2007,L
+SEN,Senegal,2008,L
+SEN,Senegal,2009,LM
+SEN,Senegal,2010,LM
+SEN,Senegal,2011,LM
+SEN,Senegal,2012,LM
+SEN,Senegal,2013,LM
+SEN,Senegal,2014,LM
+SEN,Senegal,2015,L
+SEN,Senegal,2016,L
+SEN,Senegal,2017,L
+SEN,Senegal,2018,LM
+SEN,Senegal,2019,LM
+SRB,Serbia,1987,NA
+SRB,Serbia,1988,NA
+SRB,Serbia,1989,NA
+SRB,Serbia,1990,NA
+SRB,Serbia,1991,NA
+SRB,Serbia,1992,NA
+SRB,Serbia,1993,NA
+SRB,Serbia,1994,NA
+SRB,Serbia,1995,NA
+SRB,Serbia,1996,NA
+SRB,Serbia,1997,NA
+SRB,Serbia,1998,NA
+SRB,Serbia,1999,NA
+SRB,Serbia,2000,NA
+SRB,Serbia,2001,NA
+SRB,Serbia,2002,NA
+SRB,Serbia,2003,NA
+SRB,Serbia,2004,NA
+SRB,Serbia,2005,NA
+SRB,Serbia,2006,UM
+SRB,Serbia,2007,UM
+SRB,Serbia,2008,UM
+SRB,Serbia,2009,UM
+SRB,Serbia,2010,UM
+SRB,Serbia,2011,UM
+SRB,Serbia,2012,UM
+SRB,Serbia,2013,UM
+SRB,Serbia,2014,UM
+SRB,Serbia,2015,UM
+SRB,Serbia,2016,UM
+SRB,Serbia,2017,UM
+SRB,Serbia,2018,UM
+SRB,Serbia,2019,UM
+SYC,Seychelles,1987,UM
+SYC,Seychelles,1988,UM
+SYC,Seychelles,1989,UM
+SYC,Seychelles,1990,UM
+SYC,Seychelles,1991,UM
+SYC,Seychelles,1992,UM
+SYC,Seychelles,1993,UM
+SYC,Seychelles,1994,UM
+SYC,Seychelles,1995,UM
+SYC,Seychelles,1996,UM
+SYC,Seychelles,1997,UM
+SYC,Seychelles,1998,UM
+SYC,Seychelles,1999,UM
+SYC,Seychelles,2000,UM
+SYC,Seychelles,2001,UM
+SYC,Seychelles,2002,UM
+SYC,Seychelles,2003,UM
+SYC,Seychelles,2004,UM
+SYC,Seychelles,2005,UM
+SYC,Seychelles,2006,UM
+SYC,Seychelles,2007,UM
+SYC,Seychelles,2008,UM
+SYC,Seychelles,2009,UM
+SYC,Seychelles,2010,UM
+SYC,Seychelles,2011,UM
+SYC,Seychelles,2012,UM
+SYC,Seychelles,2013,UM
+SYC,Seychelles,2014,H
+SYC,Seychelles,2015,H
+SYC,Seychelles,2016,H
+SYC,Seychelles,2017,H
+SYC,Seychelles,2018,H
+SYC,Seychelles,2019,H
+SLE,Sierra Leone,1987,L
+SLE,Sierra Leone,1988,L
+SLE,Sierra Leone,1989,L
+SLE,Sierra Leone,1990,L
+SLE,Sierra Leone,1991,L
+SLE,Sierra Leone,1992,L
+SLE,Sierra Leone,1993,L
+SLE,Sierra Leone,1994,L
+SLE,Sierra Leone,1995,L
+SLE,Sierra Leone,1996,L
+SLE,Sierra Leone,1997,L
+SLE,Sierra Leone,1998,L
+SLE,Sierra Leone,1999,L
+SLE,Sierra Leone,2000,L
+SLE,Sierra Leone,2001,L
+SLE,Sierra Leone,2002,L
+SLE,Sierra Leone,2003,L
+SLE,Sierra Leone,2004,L
+SLE,Sierra Leone,2005,L
+SLE,Sierra Leone,2006,L
+SLE,Sierra Leone,2007,L
+SLE,Sierra Leone,2008,L
+SLE,Sierra Leone,2009,L
+SLE,Sierra Leone,2010,L
+SLE,Sierra Leone,2011,L
+SLE,Sierra Leone,2012,L
+SLE,Sierra Leone,2013,L
+SLE,Sierra Leone,2014,L
+SLE,Sierra Leone,2015,L
+SLE,Sierra Leone,2016,L
+SLE,Sierra Leone,2017,L
+SLE,Sierra Leone,2018,L
+SLE,Sierra Leone,2019,L
+SGP,Singapore,1987,H
+SGP,Singapore,1988,H
+SGP,Singapore,1989,H
+SGP,Singapore,1990,H
+SGP,Singapore,1991,H
+SGP,Singapore,1992,H
+SGP,Singapore,1993,H
+SGP,Singapore,1994,H
+SGP,Singapore,1995,H
+SGP,Singapore,1996,H
+SGP,Singapore,1997,H
+SGP,Singapore,1998,H
+SGP,Singapore,1999,H
+SGP,Singapore,2000,H
+SGP,Singapore,2001,H
+SGP,Singapore,2002,H
+SGP,Singapore,2003,H
+SGP,Singapore,2004,H
+SGP,Singapore,2005,H
+SGP,Singapore,2006,H
+SGP,Singapore,2007,H
+SGP,Singapore,2008,H
+SGP,Singapore,2009,H
+SGP,Singapore,2010,H
+SGP,Singapore,2011,H
+SGP,Singapore,2012,H
+SGP,Singapore,2013,H
+SGP,Singapore,2014,H
+SGP,Singapore,2015,H
+SGP,Singapore,2016,H
+SGP,Singapore,2017,H
+SGP,Singapore,2018,H
+SGP,Singapore,2019,H
+SXM,Sint Maarten (Dutch part),1987,NA
+SXM,Sint Maarten (Dutch part),1988,NA
+SXM,Sint Maarten (Dutch part),1989,NA
+SXM,Sint Maarten (Dutch part),1990,NA
+SXM,Sint Maarten (Dutch part),1991,NA
+SXM,Sint Maarten (Dutch part),1992,NA
+SXM,Sint Maarten (Dutch part),1993,NA
+SXM,Sint Maarten (Dutch part),1994,NA
+SXM,Sint Maarten (Dutch part),1995,NA
+SXM,Sint Maarten (Dutch part),1996,NA
+SXM,Sint Maarten (Dutch part),1997,NA
+SXM,Sint Maarten (Dutch part),1998,NA
+SXM,Sint Maarten (Dutch part),1999,NA
+SXM,Sint Maarten (Dutch part),2000,NA
+SXM,Sint Maarten (Dutch part),2001,NA
+SXM,Sint Maarten (Dutch part),2002,NA
+SXM,Sint Maarten (Dutch part),2003,NA
+SXM,Sint Maarten (Dutch part),2004,NA
+SXM,Sint Maarten (Dutch part),2005,NA
+SXM,Sint Maarten (Dutch part),2006,NA
+SXM,Sint Maarten (Dutch part),2007,NA
+SXM,Sint Maarten (Dutch part),2008,NA
+SXM,Sint Maarten (Dutch part),2009,NA
+SXM,Sint Maarten (Dutch part),2010,H
+SXM,Sint Maarten (Dutch part),2011,H
+SXM,Sint Maarten (Dutch part),2012,H
+SXM,Sint Maarten (Dutch part),2013,H
+SXM,Sint Maarten (Dutch part),2014,H
+SXM,Sint Maarten (Dutch part),2015,H
+SXM,Sint Maarten (Dutch part),2016,H
+SXM,Sint Maarten (Dutch part),2017,H
+SXM,Sint Maarten (Dutch part),2018,H
+SXM,Sint Maarten (Dutch part),2019,H
+SVK,Slovak Republic,1987,NA
+SVK,Slovak Republic,1988,NA
+SVK,Slovak Republic,1989,NA
+SVK,Slovak Republic,1990,NA
+SVK,Slovak Republic,1991,NA
+SVK,Slovak Republic,1992,LM
+SVK,Slovak Republic,1993,LM
+SVK,Slovak Republic,1994,LM
+SVK,Slovak Republic,1995,LM
+SVK,Slovak Republic,1996,UM
+SVK,Slovak Republic,1997,UM
+SVK,Slovak Republic,1998,UM
+SVK,Slovak Republic,1999,UM
+SVK,Slovak Republic,2000,UM
+SVK,Slovak Republic,2001,UM
+SVK,Slovak Republic,2002,UM
+SVK,Slovak Republic,2003,UM
+SVK,Slovak Republic,2004,UM
+SVK,Slovak Republic,2005,UM
+SVK,Slovak Republic,2006,UM
+SVK,Slovak Republic,2007,H
+SVK,Slovak Republic,2008,H
+SVK,Slovak Republic,2009,H
+SVK,Slovak Republic,2010,H
+SVK,Slovak Republic,2011,H
+SVK,Slovak Republic,2012,H
+SVK,Slovak Republic,2013,H
+SVK,Slovak Republic,2014,H
+SVK,Slovak Republic,2015,H
+SVK,Slovak Republic,2016,H
+SVK,Slovak Republic,2017,H
+SVK,Slovak Republic,2018,H
+SVK,Slovak Republic,2019,H
+SVN,Slovenia,1987,NA
+SVN,Slovenia,1988,NA
+SVN,Slovenia,1989,NA
+SVN,Slovenia,1990,NA
+SVN,Slovenia,1991,NA
+SVN,Slovenia,1992,UM
+SVN,Slovenia,1993,UM
+SVN,Slovenia,1994,UM
+SVN,Slovenia,1995,UM
+SVN,Slovenia,1996,UM
+SVN,Slovenia,1997,H
+SVN,Slovenia,1998,H
+SVN,Slovenia,1999,H
+SVN,Slovenia,2000,H
+SVN,Slovenia,2001,H
+SVN,Slovenia,2002,H
+SVN,Slovenia,2003,H
+SVN,Slovenia,2004,H
+SVN,Slovenia,2005,H
+SVN,Slovenia,2006,H
+SVN,Slovenia,2007,H
+SVN,Slovenia,2008,H
+SVN,Slovenia,2009,H
+SVN,Slovenia,2010,H
+SVN,Slovenia,2011,H
+SVN,Slovenia,2012,H
+SVN,Slovenia,2013,H
+SVN,Slovenia,2014,H
+SVN,Slovenia,2015,H
+SVN,Slovenia,2016,H
+SVN,Slovenia,2017,H
+SVN,Slovenia,2018,H
+SVN,Slovenia,2019,H
+SLB,Solomon Islands,1987,L
+SLB,Solomon Islands,1988,LM
+SLB,Solomon Islands,1989,L
+SLB,Solomon Islands,1990,L
+SLB,Solomon Islands,1991,L
+SLB,Solomon Islands,1992,LM
+SLB,Solomon Islands,1993,LM
+SLB,Solomon Islands,1994,LM
+SLB,Solomon Islands,1995,LM
+SLB,Solomon Islands,1996,LM
+SLB,Solomon Islands,1997,LM
+SLB,Solomon Islands,1998,L
+SLB,Solomon Islands,1999,L
+SLB,Solomon Islands,2000,L
+SLB,Solomon Islands,2001,L
+SLB,Solomon Islands,2002,L
+SLB,Solomon Islands,2003,L
+SLB,Solomon Islands,2004,L
+SLB,Solomon Islands,2005,L
+SLB,Solomon Islands,2006,L
+SLB,Solomon Islands,2007,L
+SLB,Solomon Islands,2008,LM
+SLB,Solomon Islands,2009,L
+SLB,Solomon Islands,2010,LM
+SLB,Solomon Islands,2011,LM
+SLB,Solomon Islands,2012,LM
+SLB,Solomon Islands,2013,LM
+SLB,Solomon Islands,2014,LM
+SLB,Solomon Islands,2015,LM
+SLB,Solomon Islands,2016,LM
+SLB,Solomon Islands,2017,LM
+SLB,Solomon Islands,2018,LM
+SLB,Solomon Islands,2019,LM
+SOM,Somalia,1987,L
+SOM,Somalia,1988,L
+SOM,Somalia,1989,L
+SOM,Somalia,1990,L
+SOM,Somalia,1991,L
+SOM,Somalia,1992,L
+SOM,Somalia,1993,L
+SOM,Somalia,1994,L
+SOM,Somalia,1995,L
+SOM,Somalia,1996,L
+SOM,Somalia,1997,L
+SOM,Somalia,1998,L
+SOM,Somalia,1999,L
+SOM,Somalia,2000,L
+SOM,Somalia,2001,L
+SOM,Somalia,2002,L
+SOM,Somalia,2003,L
+SOM,Somalia,2004,L
+SOM,Somalia,2005,L
+SOM,Somalia,2006,L
+SOM,Somalia,2007,L
+SOM,Somalia,2008,L
+SOM,Somalia,2009,L
+SOM,Somalia,2010,L
+SOM,Somalia,2011,L
+SOM,Somalia,2012,L
+SOM,Somalia,2013,L
+SOM,Somalia,2014,L
+SOM,Somalia,2015,L
+SOM,Somalia,2016,L
+SOM,Somalia,2017,L
+SOM,Somalia,2018,L
+SOM,Somalia,2019,L
+ZAF,South Africa,1987,LM
+ZAF,South Africa,1988,UM
+ZAF,South Africa,1989,UM
+ZAF,South Africa,1990,UM
+ZAF,South Africa,1991,UM
+ZAF,South Africa,1992,UM
+ZAF,South Africa,1993,UM
+ZAF,South Africa,1994,UM
+ZAF,South Africa,1995,UM
+ZAF,South Africa,1996,UM
+ZAF,South Africa,1997,UM
+ZAF,South Africa,1998,LM
+ZAF,South Africa,1999,UM
+ZAF,South Africa,2000,UM
+ZAF,South Africa,2001,LM
+ZAF,South Africa,2002,LM
+ZAF,South Africa,2003,LM
+ZAF,South Africa,2004,UM
+ZAF,South Africa,2005,UM
+ZAF,South Africa,2006,UM
+ZAF,South Africa,2007,UM
+ZAF,South Africa,2008,UM
+ZAF,South Africa,2009,UM
+ZAF,South Africa,2010,UM
+ZAF,South Africa,2011,UM
+ZAF,South Africa,2012,UM
+ZAF,South Africa,2013,UM
+ZAF,South Africa,2014,UM
+ZAF,South Africa,2015,UM
+ZAF,South Africa,2016,UM
+ZAF,South Africa,2017,UM
+ZAF,South Africa,2018,UM
+ZAF,South Africa,2019,UM
+SSD,South Sudan,1987,NA
+SSD,South Sudan,1988,NA
+SSD,South Sudan,1989,NA
+SSD,South Sudan,1990,NA
+SSD,South Sudan,1991,NA
+SSD,South Sudan,1992,NA
+SSD,South Sudan,1993,NA
+SSD,South Sudan,1994,NA
+SSD,South Sudan,1995,NA
+SSD,South Sudan,1996,NA
+SSD,South Sudan,1997,NA
+SSD,South Sudan,1998,NA
+SSD,South Sudan,1999,NA
+SSD,South Sudan,2000,NA
+SSD,South Sudan,2001,NA
+SSD,South Sudan,2002,NA
+SSD,South Sudan,2003,NA
+SSD,South Sudan,2004,NA
+SSD,South Sudan,2005,NA
+SSD,South Sudan,2006,NA
+SSD,South Sudan,2007,NA
+SSD,South Sudan,2008,NA
+SSD,South Sudan,2009,NA
+SSD,South Sudan,2010,NA
+SSD,South Sudan,2011,LM
+SSD,South Sudan,2012,L
+SSD,South Sudan,2013,LM
+SSD,South Sudan,2014,L
+SSD,South Sudan,2015,L
+SSD,South Sudan,2016,L
+SSD,South Sudan,2017,L
+SSD,South Sudan,2018,L
+SSD,South Sudan,2019,L
+ESP,Spain,1987,H
+ESP,Spain,1988,H
+ESP,Spain,1989,H
+ESP,Spain,1990,H
+ESP,Spain,1991,H
+ESP,Spain,1992,H
+ESP,Spain,1993,H
+ESP,Spain,1994,H
+ESP,Spain,1995,H
+ESP,Spain,1996,H
+ESP,Spain,1997,H
+ESP,Spain,1998,H
+ESP,Spain,1999,H
+ESP,Spain,2000,H
+ESP,Spain,2001,H
+ESP,Spain,2002,H
+ESP,Spain,2003,H
+ESP,Spain,2004,H
+ESP,Spain,2005,H
+ESP,Spain,2006,H
+ESP,Spain,2007,H
+ESP,Spain,2008,H
+ESP,Spain,2009,H
+ESP,Spain,2010,H
+ESP,Spain,2011,H
+ESP,Spain,2012,H
+ESP,Spain,2013,H
+ESP,Spain,2014,H
+ESP,Spain,2015,H
+ESP,Spain,2016,H
+ESP,Spain,2017,H
+ESP,Spain,2018,H
+ESP,Spain,2019,H
+LKA,Sri Lanka,1987,L
+LKA,Sri Lanka,1988,L
+LKA,Sri Lanka,1989,L
+LKA,Sri Lanka,1990,L
+LKA,Sri Lanka,1991,L
+LKA,Sri Lanka,1992,L
+LKA,Sri Lanka,1993,L
+LKA,Sri Lanka,1994,L
+LKA,Sri Lanka,1995,L
+LKA,Sri Lanka,1996,L
+LKA,Sri Lanka,1997,LM
+LKA,Sri Lanka,1998,LM
+LKA,Sri Lanka,1999,LM
+LKA,Sri Lanka,2000,LM
+LKA,Sri Lanka,2001,LM
+LKA,Sri Lanka,2002,LM
+LKA,Sri Lanka,2003,LM
+LKA,Sri Lanka,2004,LM
+LKA,Sri Lanka,2005,LM
+LKA,Sri Lanka,2006,LM
+LKA,Sri Lanka,2007,LM
+LKA,Sri Lanka,2008,LM
+LKA,Sri Lanka,2009,LM
+LKA,Sri Lanka,2010,LM
+LKA,Sri Lanka,2011,LM
+LKA,Sri Lanka,2012,LM
+LKA,Sri Lanka,2013,LM
+LKA,Sri Lanka,2014,LM
+LKA,Sri Lanka,2015,LM
+LKA,Sri Lanka,2016,LM
+LKA,Sri Lanka,2017,LM
+LKA,Sri Lanka,2018,UM
+LKA,Sri Lanka,2019,LM
+KNA,St. Kitts and Nevis,1987,UM
+KNA,St. Kitts and Nevis,1988,UM
+KNA,St. Kitts and Nevis,1989,UM
+KNA,St. Kitts and Nevis,1990,UM
+KNA,St. Kitts and Nevis,1991,UM
+KNA,St. Kitts and Nevis,1992,UM
+KNA,St. Kitts and Nevis,1993,UM
+KNA,St. Kitts and Nevis,1994,UM
+KNA,St. Kitts and Nevis,1995,UM
+KNA,St. Kitts and Nevis,1996,UM
+KNA,St. Kitts and Nevis,1997,UM
+KNA,St. Kitts and Nevis,1998,UM
+KNA,St. Kitts and Nevis,1999,UM
+KNA,St. Kitts and Nevis,2000,UM
+KNA,St. Kitts and Nevis,2001,UM
+KNA,St. Kitts and Nevis,2002,UM
+KNA,St. Kitts and Nevis,2003,UM
+KNA,St. Kitts and Nevis,2004,UM
+KNA,St. Kitts and Nevis,2005,UM
+KNA,St. Kitts and Nevis,2006,UM
+KNA,St. Kitts and Nevis,2007,UM
+KNA,St. Kitts and Nevis,2008,UM
+KNA,St. Kitts and Nevis,2009,UM
+KNA,St. Kitts and Nevis,2010,UM
+KNA,St. Kitts and Nevis,2011,H
+KNA,St. Kitts and Nevis,2012,H
+KNA,St. Kitts and Nevis,2013,H
+KNA,St. Kitts and Nevis,2014,H
+KNA,St. Kitts and Nevis,2015,H
+KNA,St. Kitts and Nevis,2016,H
+KNA,St. Kitts and Nevis,2017,H
+KNA,St. Kitts and Nevis,2018,H
+KNA,St. Kitts and Nevis,2019,H
+LCA,St. Lucia,1987,LM
+LCA,St. Lucia,1988,LM
+LCA,St. Lucia,1989,LM
+LCA,St. Lucia,1990,LM
+LCA,St. Lucia,1991,LM
+LCA,St. Lucia,1992,UM
+LCA,St. Lucia,1993,UM
+LCA,St. Lucia,1994,UM
+LCA,St. Lucia,1995,UM
+LCA,St. Lucia,1996,UM
+LCA,St. Lucia,1997,UM
+LCA,St. Lucia,1998,UM
+LCA,St. Lucia,1999,UM
+LCA,St. Lucia,2000,UM
+LCA,St. Lucia,2001,UM
+LCA,St. Lucia,2002,UM
+LCA,St. Lucia,2003,UM
+LCA,St. Lucia,2004,UM
+LCA,St. Lucia,2005,UM
+LCA,St. Lucia,2006,UM
+LCA,St. Lucia,2007,UM
+LCA,St. Lucia,2008,UM
+LCA,St. Lucia,2009,UM
+LCA,St. Lucia,2010,UM
+LCA,St. Lucia,2011,UM
+LCA,St. Lucia,2012,UM
+LCA,St. Lucia,2013,UM
+LCA,St. Lucia,2014,UM
+LCA,St. Lucia,2015,UM
+LCA,St. Lucia,2016,UM
+LCA,St. Lucia,2017,UM
+LCA,St. Lucia,2018,UM
+LCA,St. Lucia,2019,UM
+MAF,St. Martin (French part),1987,NA
+MAF,St. Martin (French part),1988,NA
+MAF,St. Martin (French part),1989,NA
+MAF,St. Martin (French part),1990,NA
+MAF,St. Martin (French part),1991,NA
+MAF,St. Martin (French part),1992,NA
+MAF,St. Martin (French part),1993,NA
+MAF,St. Martin (French part),1994,NA
+MAF,St. Martin (French part),1995,NA
+MAF,St. Martin (French part),1996,NA
+MAF,St. Martin (French part),1997,NA
+MAF,St. Martin (French part),1998,NA
+MAF,St. Martin (French part),1999,NA
+MAF,St. Martin (French part),2000,NA
+MAF,St. Martin (French part),2001,NA
+MAF,St. Martin (French part),2002,NA
+MAF,St. Martin (French part),2003,NA
+MAF,St. Martin (French part),2004,NA
+MAF,St. Martin (French part),2005,NA
+MAF,St. Martin (French part),2006,NA
+MAF,St. Martin (French part),2007,NA
+MAF,St. Martin (French part),2008,NA
+MAF,St. Martin (French part),2009,NA
+MAF,St. Martin (French part),2010,H
+MAF,St. Martin (French part),2011,H
+MAF,St. Martin (French part),2012,H
+MAF,St. Martin (French part),2013,H
+MAF,St. Martin (French part),2014,H
+MAF,St. Martin (French part),2015,H
+MAF,St. Martin (French part),2016,H
+MAF,St. Martin (French part),2017,H
+MAF,St. Martin (French part),2018,H
+MAF,St. Martin (French part),2019,H
+VCT,St. Vincent and the Grenadines,1987,LM
+VCT,St. Vincent and the Grenadines,1988,LM
+VCT,St. Vincent and the Grenadines,1989,LM
+VCT,St. Vincent and the Grenadines,1990,LM
+VCT,St. Vincent and the Grenadines,1991,LM
+VCT,St. Vincent and the Grenadines,1992,LM
+VCT,St. Vincent and the Grenadines,1993,LM
+VCT,St. Vincent and the Grenadines,1994,LM
+VCT,St. Vincent and the Grenadines,1995,LM
+VCT,St. Vincent and the Grenadines,1996,LM
+VCT,St. Vincent and the Grenadines,1997,LM
+VCT,St. Vincent and the Grenadines,1998,LM
+VCT,St. Vincent and the Grenadines,1999,LM
+VCT,St. Vincent and the Grenadines,2000,LM
+VCT,St. Vincent and the Grenadines,2001,LM
+VCT,St. Vincent and the Grenadines,2002,LM
+VCT,St. Vincent and the Grenadines,2003,UM
+VCT,St. Vincent and the Grenadines,2004,UM
+VCT,St. Vincent and the Grenadines,2005,UM
+VCT,St. Vincent and the Grenadines,2006,UM
+VCT,St. Vincent and the Grenadines,2007,UM
+VCT,St. Vincent and the Grenadines,2008,UM
+VCT,St. Vincent and the Grenadines,2009,UM
+VCT,St. Vincent and the Grenadines,2010,UM
+VCT,St. Vincent and the Grenadines,2011,UM
+VCT,St. Vincent and the Grenadines,2012,UM
+VCT,St. Vincent and the Grenadines,2013,UM
+VCT,St. Vincent and the Grenadines,2014,UM
+VCT,St. Vincent and the Grenadines,2015,UM
+VCT,St. Vincent and the Grenadines,2016,UM
+VCT,St. Vincent and the Grenadines,2017,UM
+VCT,St. Vincent and the Grenadines,2018,UM
+VCT,St. Vincent and the Grenadines,2019,UM
+SDN,Sudan,1987,L
+SDN,Sudan,1988,L
+SDN,Sudan,1989,L
+SDN,Sudan,1990,L
+SDN,Sudan,1991,L
+SDN,Sudan,1992,L
+SDN,Sudan,1993,L
+SDN,Sudan,1994,L
+SDN,Sudan,1995,L
+SDN,Sudan,1996,L
+SDN,Sudan,1997,L
+SDN,Sudan,1998,L
+SDN,Sudan,1999,L
+SDN,Sudan,2000,L
+SDN,Sudan,2001,L
+SDN,Sudan,2002,L
+SDN,Sudan,2003,L
+SDN,Sudan,2004,L
+SDN,Sudan,2005,L
+SDN,Sudan,2006,L
+SDN,Sudan,2007,LM
+SDN,Sudan,2008,LM
+SDN,Sudan,2009,LM
+SDN,Sudan,2010,LM
+SDN,Sudan,2011,LM
+SDN,Sudan,2012,LM
+SDN,Sudan,2013,LM
+SDN,Sudan,2014,LM
+SDN,Sudan,2015,LM
+SDN,Sudan,2016,LM
+SDN,Sudan,2017,LM
+SDN,Sudan,2018,LM
+SDN,Sudan,2019,L
+SUR,Suriname,1987,UM
+SUR,Suriname,1988,UM
+SUR,Suriname,1989,UM
+SUR,Suriname,1990,UM
+SUR,Suriname,1991,UM
+SUR,Suriname,1992,UM
+SUR,Suriname,1993,LM
+SUR,Suriname,1994,LM
+SUR,Suriname,1995,LM
+SUR,Suriname,1996,LM
+SUR,Suriname,1997,LM
+SUR,Suriname,1998,LM
+SUR,Suriname,1999,LM
+SUR,Suriname,2000,LM
+SUR,Suriname,2001,LM
+SUR,Suriname,2002,LM
+SUR,Suriname,2003,LM
+SUR,Suriname,2004,LM
+SUR,Suriname,2005,LM
+SUR,Suriname,2006,LM
+SUR,Suriname,2007,UM
+SUR,Suriname,2008,UM
+SUR,Suriname,2009,UM
+SUR,Suriname,2010,UM
+SUR,Suriname,2011,UM
+SUR,Suriname,2012,UM
+SUR,Suriname,2013,UM
+SUR,Suriname,2014,UM
+SUR,Suriname,2015,UM
+SUR,Suriname,2016,UM
+SUR,Suriname,2017,UM
+SUR,Suriname,2018,UM
+SUR,Suriname,2019,UM
+SWE,Sweden,1987,H
+SWE,Sweden,1988,H
+SWE,Sweden,1989,H
+SWE,Sweden,1990,H
+SWE,Sweden,1991,H
+SWE,Sweden,1992,H
+SWE,Sweden,1993,H
+SWE,Sweden,1994,H
+SWE,Sweden,1995,H
+SWE,Sweden,1996,H
+SWE,Sweden,1997,H
+SWE,Sweden,1998,H
+SWE,Sweden,1999,H
+SWE,Sweden,2000,H
+SWE,Sweden,2001,H
+SWE,Sweden,2002,H
+SWE,Sweden,2003,H
+SWE,Sweden,2004,H
+SWE,Sweden,2005,H
+SWE,Sweden,2006,H
+SWE,Sweden,2007,H
+SWE,Sweden,2008,H
+SWE,Sweden,2009,H
+SWE,Sweden,2010,H
+SWE,Sweden,2011,H
+SWE,Sweden,2012,H
+SWE,Sweden,2013,H
+SWE,Sweden,2014,H
+SWE,Sweden,2015,H
+SWE,Sweden,2016,H
+SWE,Sweden,2017,H
+SWE,Sweden,2018,H
+SWE,Sweden,2019,H
+CHE,Switzerland,1987,H
+CHE,Switzerland,1988,H
+CHE,Switzerland,1989,H
+CHE,Switzerland,1990,H
+CHE,Switzerland,1991,H
+CHE,Switzerland,1992,H
+CHE,Switzerland,1993,H
+CHE,Switzerland,1994,H
+CHE,Switzerland,1995,H
+CHE,Switzerland,1996,H
+CHE,Switzerland,1997,H
+CHE,Switzerland,1998,H
+CHE,Switzerland,1999,H
+CHE,Switzerland,2000,H
+CHE,Switzerland,2001,H
+CHE,Switzerland,2002,H
+CHE,Switzerland,2003,H
+CHE,Switzerland,2004,H
+CHE,Switzerland,2005,H
+CHE,Switzerland,2006,H
+CHE,Switzerland,2007,H
+CHE,Switzerland,2008,H
+CHE,Switzerland,2009,H
+CHE,Switzerland,2010,H
+CHE,Switzerland,2011,H
+CHE,Switzerland,2012,H
+CHE,Switzerland,2013,H
+CHE,Switzerland,2014,H
+CHE,Switzerland,2015,H
+CHE,Switzerland,2016,H
+CHE,Switzerland,2017,H
+CHE,Switzerland,2018,H
+CHE,Switzerland,2019,H
+SYR,Syrian Arab Republic,1987,LM
+SYR,Syrian Arab Republic,1988,LM
+SYR,Syrian Arab Republic,1989,LM
+SYR,Syrian Arab Republic,1990,LM
+SYR,Syrian Arab Republic,1991,LM
+SYR,Syrian Arab Republic,1992,LM
+SYR,Syrian Arab Republic,1993,LM
+SYR,Syrian Arab Republic,1994,LM
+SYR,Syrian Arab Republic,1995,LM
+SYR,Syrian Arab Republic,1996,LM
+SYR,Syrian Arab Republic,1997,LM
+SYR,Syrian Arab Republic,1998,LM
+SYR,Syrian Arab Republic,1999,LM
+SYR,Syrian Arab Republic,2000,LM
+SYR,Syrian Arab Republic,2001,LM
+SYR,Syrian Arab Republic,2002,LM
+SYR,Syrian Arab Republic,2003,LM
+SYR,Syrian Arab Republic,2004,LM
+SYR,Syrian Arab Republic,2005,LM
+SYR,Syrian Arab Republic,2006,LM
+SYR,Syrian Arab Republic,2007,LM
+SYR,Syrian Arab Republic,2008,LM
+SYR,Syrian Arab Republic,2009,LM
+SYR,Syrian Arab Republic,2010,LM
+SYR,Syrian Arab Republic,2011,LM
+SYR,Syrian Arab Republic,2012,LM
+SYR,Syrian Arab Republic,2013,LM
+SYR,Syrian Arab Republic,2014,LM
+SYR,Syrian Arab Republic,2015,LM
+SYR,Syrian Arab Republic,2016,LM
+SYR,Syrian Arab Republic,2017,L
+SYR,Syrian Arab Republic,2018,L
+SYR,Syrian Arab Republic,2019,L
+TWN,"Taiwan, China",1987,H
+TWN,"Taiwan, China",1988,H
+TWN,"Taiwan, China",1989,H
+TWN,"Taiwan, China",1990,H
+TWN,"Taiwan, China",1991,H
+TWN,"Taiwan, China",1992,H
+TWN,"Taiwan, China",1993,H
+TWN,"Taiwan, China",1994,H
+TWN,"Taiwan, China",1995,H
+TWN,"Taiwan, China",1996,H
+TWN,"Taiwan, China",1997,H
+TWN,"Taiwan, China",1998,H
+TWN,"Taiwan, China",1999,H
+TWN,"Taiwan, China",2000,H
+TWN,"Taiwan, China",2001,H
+TWN,"Taiwan, China",2002,H
+TWN,"Taiwan, China",2003,H
+TWN,"Taiwan, China",2004,H
+TWN,"Taiwan, China",2005,H
+TWN,"Taiwan, China",2006,H
+TWN,"Taiwan, China",2007,H
+TWN,"Taiwan, China",2008,H
+TWN,"Taiwan, China",2009,H
+TWN,"Taiwan, China",2010,H
+TWN,"Taiwan, China",2011,H
+TWN,"Taiwan, China",2012,H
+TWN,"Taiwan, China",2013,H
+TWN,"Taiwan, China",2014,H
+TWN,"Taiwan, China",2015,H
+TWN,"Taiwan, China",2016,H
+TWN,"Taiwan, China",2017,H
+TWN,"Taiwan, China",2018,H
+TWN,"Taiwan, China",2019,H
+TJK,Tajikistan,1987,NA
+TJK,Tajikistan,1988,NA
+TJK,Tajikistan,1989,NA
+TJK,Tajikistan,1990,NA
+TJK,Tajikistan,1991,LM
+TJK,Tajikistan,1992,L
+TJK,Tajikistan,1993,L
+TJK,Tajikistan,1994,L
+TJK,Tajikistan,1995,L
+TJK,Tajikistan,1996,L
+TJK,Tajikistan,1997,L
+TJK,Tajikistan,1998,L
+TJK,Tajikistan,1999,L
+TJK,Tajikistan,2000,L
+TJK,Tajikistan,2001,L
+TJK,Tajikistan,2002,L
+TJK,Tajikistan,2003,L
+TJK,Tajikistan,2004,L
+TJK,Tajikistan,2005,L
+TJK,Tajikistan,2006,L
+TJK,Tajikistan,2007,L
+TJK,Tajikistan,2008,L
+TJK,Tajikistan,2009,L
+TJK,Tajikistan,2010,L
+TJK,Tajikistan,2011,L
+TJK,Tajikistan,2012,L
+TJK,Tajikistan,2013,L
+TJK,Tajikistan,2014,LM
+TJK,Tajikistan,2015,LM
+TJK,Tajikistan,2016,LM
+TJK,Tajikistan,2017,L
+TJK,Tajikistan,2018,L
+TJK,Tajikistan,2019,L
+TZA,Tanzania,1987,L
+TZA,Tanzania,1988,L
+TZA,Tanzania,1989,L
+TZA,Tanzania,1990,L
+TZA,Tanzania,1991,L
+TZA,Tanzania,1992,L
+TZA,Tanzania,1993,L
+TZA,Tanzania,1994,L
+TZA,Tanzania,1995,L
+TZA,Tanzania,1996,L
+TZA,Tanzania,1997,L
+TZA,Tanzania,1998,L
+TZA,Tanzania,1999,L
+TZA,Tanzania,2000,L
+TZA,Tanzania,2001,L
+TZA,Tanzania,2002,L
+TZA,Tanzania,2003,L
+TZA,Tanzania,2004,L
+TZA,Tanzania,2005,L
+TZA,Tanzania,2006,L
+TZA,Tanzania,2007,L
+TZA,Tanzania,2008,L
+TZA,Tanzania,2009,L
+TZA,Tanzania,2010,L
+TZA,Tanzania,2011,L
+TZA,Tanzania,2012,L
+TZA,Tanzania,2013,L
+TZA,Tanzania,2014,L
+TZA,Tanzania,2015,L
+TZA,Tanzania,2016,L
+TZA,Tanzania,2017,L
+TZA,Tanzania,2018,L
+TZA,Tanzania,2019,LM
+THA,Thailand,1987,LM
+THA,Thailand,1988,LM
+THA,Thailand,1989,LM
+THA,Thailand,1990,LM
+THA,Thailand,1991,LM
+THA,Thailand,1992,LM
+THA,Thailand,1993,LM
+THA,Thailand,1994,LM
+THA,Thailand,1995,LM
+THA,Thailand,1996,LM
+THA,Thailand,1997,LM
+THA,Thailand,1998,LM
+THA,Thailand,1999,LM
+THA,Thailand,2000,LM
+THA,Thailand,2001,LM
+THA,Thailand,2002,LM
+THA,Thailand,2003,LM
+THA,Thailand,2004,LM
+THA,Thailand,2005,LM
+THA,Thailand,2006,LM
+THA,Thailand,2007,LM
+THA,Thailand,2008,LM
+THA,Thailand,2009,LM
+THA,Thailand,2010,UM
+THA,Thailand,2011,UM
+THA,Thailand,2012,UM
+THA,Thailand,2013,UM
+THA,Thailand,2014,UM
+THA,Thailand,2015,UM
+THA,Thailand,2016,UM
+THA,Thailand,2017,UM
+THA,Thailand,2018,UM
+THA,Thailand,2019,UM
+TLS,Timor-Leste,1987,NA
+TLS,Timor-Leste,1988,NA
+TLS,Timor-Leste,1989,NA
+TLS,Timor-Leste,1990,NA
+TLS,Timor-Leste,1991,NA
+TLS,Timor-Leste,1992,NA
+TLS,Timor-Leste,1993,NA
+TLS,Timor-Leste,1994,NA
+TLS,Timor-Leste,1995,NA
+TLS,Timor-Leste,1996,NA
+TLS,Timor-Leste,1997,NA
+TLS,Timor-Leste,1998,NA
+TLS,Timor-Leste,1999,NA
+TLS,Timor-Leste,2000,NA
+TLS,Timor-Leste,2001,L
+TLS,Timor-Leste,2002,L
+TLS,Timor-Leste,2003,L
+TLS,Timor-Leste,2004,L
+TLS,Timor-Leste,2005,L
+TLS,Timor-Leste,2006,L
+TLS,Timor-Leste,2007,LM
+TLS,Timor-Leste,2008,LM
+TLS,Timor-Leste,2009,LM
+TLS,Timor-Leste,2010,LM
+TLS,Timor-Leste,2011,LM
+TLS,Timor-Leste,2012,LM
+TLS,Timor-Leste,2013,LM
+TLS,Timor-Leste,2014,LM
+TLS,Timor-Leste,2015,LM
+TLS,Timor-Leste,2016,LM
+TLS,Timor-Leste,2017,LM
+TLS,Timor-Leste,2018,LM
+TLS,Timor-Leste,2019,LM
+TGO,Togo,1987,L
+TGO,Togo,1988,L
+TGO,Togo,1989,L
+TGO,Togo,1990,L
+TGO,Togo,1991,L
+TGO,Togo,1992,L
+TGO,Togo,1993,L
+TGO,Togo,1994,L
+TGO,Togo,1995,L
+TGO,Togo,1996,L
+TGO,Togo,1997,L
+TGO,Togo,1998,L
+TGO,Togo,1999,L
+TGO,Togo,2000,L
+TGO,Togo,2001,L
+TGO,Togo,2002,L
+TGO,Togo,2003,L
+TGO,Togo,2004,L
+TGO,Togo,2005,L
+TGO,Togo,2006,L
+TGO,Togo,2007,L
+TGO,Togo,2008,L
+TGO,Togo,2009,L
+TGO,Togo,2010,L
+TGO,Togo,2011,L
+TGO,Togo,2012,L
+TGO,Togo,2013,L
+TGO,Togo,2014,L
+TGO,Togo,2015,L
+TGO,Togo,2016,L
+TGO,Togo,2017,L
+TGO,Togo,2018,L
+TGO,Togo,2019,L
+TON,Tonga,1987,LM
+TON,Tonga,1988,LM
+TON,Tonga,1989,LM
+TON,Tonga,1990,LM
+TON,Tonga,1991,LM
+TON,Tonga,1992,LM
+TON,Tonga,1993,LM
+TON,Tonga,1994,LM
+TON,Tonga,1995,LM
+TON,Tonga,1996,LM
+TON,Tonga,1997,LM
+TON,Tonga,1998,LM
+TON,Tonga,1999,LM
+TON,Tonga,2000,LM
+TON,Tonga,2001,LM
+TON,Tonga,2002,LM
+TON,Tonga,2003,LM
+TON,Tonga,2004,LM
+TON,Tonga,2005,LM
+TON,Tonga,2006,LM
+TON,Tonga,2007,LM
+TON,Tonga,2008,LM
+TON,Tonga,2009,LM
+TON,Tonga,2010,LM
+TON,Tonga,2011,LM
+TON,Tonga,2012,UM
+TON,Tonga,2013,UM
+TON,Tonga,2014,UM
+TON,Tonga,2015,LM
+TON,Tonga,2016,UM
+TON,Tonga,2017,UM
+TON,Tonga,2018,UM
+TON,Tonga,2019,UM
+TTO,Trinidad and Tobago,1987,UM
+TTO,Trinidad and Tobago,1988,UM
+TTO,Trinidad and Tobago,1989,UM
+TTO,Trinidad and Tobago,1990,UM
+TTO,Trinidad and Tobago,1991,UM
+TTO,Trinidad and Tobago,1992,UM
+TTO,Trinidad and Tobago,1993,UM
+TTO,Trinidad and Tobago,1994,UM
+TTO,Trinidad and Tobago,1995,UM
+TTO,Trinidad and Tobago,1996,UM
+TTO,Trinidad and Tobago,1997,UM
+TTO,Trinidad and Tobago,1998,UM
+TTO,Trinidad and Tobago,1999,UM
+TTO,Trinidad and Tobago,2000,UM
+TTO,Trinidad and Tobago,2001,UM
+TTO,Trinidad and Tobago,2002,UM
+TTO,Trinidad and Tobago,2003,UM
+TTO,Trinidad and Tobago,2004,UM
+TTO,Trinidad and Tobago,2005,UM
+TTO,Trinidad and Tobago,2006,H
+TTO,Trinidad and Tobago,2007,H
+TTO,Trinidad and Tobago,2008,H
+TTO,Trinidad and Tobago,2009,H
+TTO,Trinidad and Tobago,2010,H
+TTO,Trinidad and Tobago,2011,H
+TTO,Trinidad and Tobago,2012,H
+TTO,Trinidad and Tobago,2013,H
+TTO,Trinidad and Tobago,2014,H
+TTO,Trinidad and Tobago,2015,H
+TTO,Trinidad and Tobago,2016,H
+TTO,Trinidad and Tobago,2017,H
+TTO,Trinidad and Tobago,2018,H
+TTO,Trinidad and Tobago,2019,H
+TUN,Tunisia,1987,LM
+TUN,Tunisia,1988,LM
+TUN,Tunisia,1989,LM
+TUN,Tunisia,1990,LM
+TUN,Tunisia,1991,LM
+TUN,Tunisia,1992,LM
+TUN,Tunisia,1993,LM
+TUN,Tunisia,1994,LM
+TUN,Tunisia,1995,LM
+TUN,Tunisia,1996,LM
+TUN,Tunisia,1997,LM
+TUN,Tunisia,1998,LM
+TUN,Tunisia,1999,LM
+TUN,Tunisia,2000,LM
+TUN,Tunisia,2001,LM
+TUN,Tunisia,2002,LM
+TUN,Tunisia,2003,LM
+TUN,Tunisia,2004,LM
+TUN,Tunisia,2005,LM
+TUN,Tunisia,2006,LM
+TUN,Tunisia,2007,LM
+TUN,Tunisia,2008,LM
+TUN,Tunisia,2009,LM
+TUN,Tunisia,2010,UM
+TUN,Tunisia,2011,UM
+TUN,Tunisia,2012,UM
+TUN,Tunisia,2013,UM
+TUN,Tunisia,2014,UM
+TUN,Tunisia,2015,LM
+TUN,Tunisia,2016,LM
+TUN,Tunisia,2017,LM
+TUN,Tunisia,2018,LM
+TUN,Tunisia,2019,LM
+TUR,Turkey,1987,LM
+TUR,Turkey,1988,LM
+TUR,Turkey,1989,LM
+TUR,Turkey,1990,LM
+TUR,Turkey,1991,LM
+TUR,Turkey,1992,LM
+TUR,Turkey,1993,LM
+TUR,Turkey,1994,LM
+TUR,Turkey,1995,LM
+TUR,Turkey,1996,LM
+TUR,Turkey,1997,UM
+TUR,Turkey,1998,UM
+TUR,Turkey,1999,LM
+TUR,Turkey,2000,UM
+TUR,Turkey,2001,LM
+TUR,Turkey,2002,LM
+TUR,Turkey,2003,LM
+TUR,Turkey,2004,UM
+TUR,Turkey,2005,UM
+TUR,Turkey,2006,UM
+TUR,Turkey,2007,UM
+TUR,Turkey,2008,UM
+TUR,Turkey,2009,UM
+TUR,Turkey,2010,UM
+TUR,Turkey,2011,UM
+TUR,Turkey,2012,UM
+TUR,Turkey,2013,UM
+TUR,Turkey,2014,UM
+TUR,Turkey,2015,UM
+TUR,Turkey,2016,UM
+TUR,Turkey,2017,UM
+TUR,Turkey,2018,UM
+TUR,Turkey,2019,UM
+TKM,Turkmenistan,1987,NA
+TKM,Turkmenistan,1988,NA
+TKM,Turkmenistan,1989,NA
+TKM,Turkmenistan,1990,NA
+TKM,Turkmenistan,1991,LM
+TKM,Turkmenistan,1992,LM
+TKM,Turkmenistan,1993,LM
+TKM,Turkmenistan,1994,LM
+TKM,Turkmenistan,1995,LM
+TKM,Turkmenistan,1996,LM
+TKM,Turkmenistan,1997,L
+TKM,Turkmenistan,1998,L
+TKM,Turkmenistan,1999,L
+TKM,Turkmenistan,2000,LM
+TKM,Turkmenistan,2001,LM
+TKM,Turkmenistan,2002,LM
+TKM,Turkmenistan,2003,LM
+TKM,Turkmenistan,2004,LM
+TKM,Turkmenistan,2005,LM
+TKM,Turkmenistan,2006,LM
+TKM,Turkmenistan,2007,LM
+TKM,Turkmenistan,2008,LM
+TKM,Turkmenistan,2009,LM
+TKM,Turkmenistan,2010,LM
+TKM,Turkmenistan,2011,UM
+TKM,Turkmenistan,2012,UM
+TKM,Turkmenistan,2013,UM
+TKM,Turkmenistan,2014,UM
+TKM,Turkmenistan,2015,UM
+TKM,Turkmenistan,2016,UM
+TKM,Turkmenistan,2017,UM
+TKM,Turkmenistan,2018,UM
+TKM,Turkmenistan,2019,UM
+TCA,Turks and Caicos Islands,1987,NA
+TCA,Turks and Caicos Islands,1988,NA
+TCA,Turks and Caicos Islands,1989,NA
+TCA,Turks and Caicos Islands,1990,NA
+TCA,Turks and Caicos Islands,1991,NA
+TCA,Turks and Caicos Islands,1992,NA
+TCA,Turks and Caicos Islands,1993,NA
+TCA,Turks and Caicos Islands,1994,NA
+TCA,Turks and Caicos Islands,1995,NA
+TCA,Turks and Caicos Islands,1996,NA
+TCA,Turks and Caicos Islands,1997,NA
+TCA,Turks and Caicos Islands,1998,NA
+TCA,Turks and Caicos Islands,1999,NA
+TCA,Turks and Caicos Islands,2000,NA
+TCA,Turks and Caicos Islands,2001,NA
+TCA,Turks and Caicos Islands,2002,NA
+TCA,Turks and Caicos Islands,2003,NA
+TCA,Turks and Caicos Islands,2004,NA
+TCA,Turks and Caicos Islands,2005,NA
+TCA,Turks and Caicos Islands,2006,NA
+TCA,Turks and Caicos Islands,2007,NA
+TCA,Turks and Caicos Islands,2008,NA
+TCA,Turks and Caicos Islands,2009,H
+TCA,Turks and Caicos Islands,2010,H
+TCA,Turks and Caicos Islands,2011,H
+TCA,Turks and Caicos Islands,2012,H
+TCA,Turks and Caicos Islands,2013,H
+TCA,Turks and Caicos Islands,2014,H
+TCA,Turks and Caicos Islands,2015,H
+TCA,Turks and Caicos Islands,2016,H
+TCA,Turks and Caicos Islands,2017,H
+TCA,Turks and Caicos Islands,2018,H
+TCA,Turks and Caicos Islands,2019,H
+TUV,Tuvalu,1987,NA
+TUV,Tuvalu,1988,NA
+TUV,Tuvalu,1989,NA
+TUV,Tuvalu,1990,NA
+TUV,Tuvalu,1991,NA
+TUV,Tuvalu,1992,NA
+TUV,Tuvalu,1993,NA
+TUV,Tuvalu,1994,NA
+TUV,Tuvalu,1995,NA
+TUV,Tuvalu,1996,NA
+TUV,Tuvalu,1997,NA
+TUV,Tuvalu,1998,NA
+TUV,Tuvalu,1999,NA
+TUV,Tuvalu,2000,NA
+TUV,Tuvalu,2001,NA
+TUV,Tuvalu,2002,NA
+TUV,Tuvalu,2003,NA
+TUV,Tuvalu,2004,NA
+TUV,Tuvalu,2005,NA
+TUV,Tuvalu,2006,NA
+TUV,Tuvalu,2007,NA
+TUV,Tuvalu,2008,NA
+TUV,Tuvalu,2009,LM
+TUV,Tuvalu,2010,LM
+TUV,Tuvalu,2011,UM
+TUV,Tuvalu,2012,UM
+TUV,Tuvalu,2013,UM
+TUV,Tuvalu,2014,UM
+TUV,Tuvalu,2015,UM
+TUV,Tuvalu,2016,UM
+TUV,Tuvalu,2017,UM
+TUV,Tuvalu,2018,UM
+TUV,Tuvalu,2019,UM
+UGA,Uganda,1987,L
+UGA,Uganda,1988,L
+UGA,Uganda,1989,L
+UGA,Uganda,1990,L
+UGA,Uganda,1991,L
+UGA,Uganda,1992,L
+UGA,Uganda,1993,L
+UGA,Uganda,1994,L
+UGA,Uganda,1995,L
+UGA,Uganda,1996,L
+UGA,Uganda,1997,L
+UGA,Uganda,1998,L
+UGA,Uganda,1999,L
+UGA,Uganda,2000,L
+UGA,Uganda,2001,L
+UGA,Uganda,2002,L
+UGA,Uganda,2003,L
+UGA,Uganda,2004,L
+UGA,Uganda,2005,L
+UGA,Uganda,2006,L
+UGA,Uganda,2007,L
+UGA,Uganda,2008,L
+UGA,Uganda,2009,L
+UGA,Uganda,2010,L
+UGA,Uganda,2011,L
+UGA,Uganda,2012,L
+UGA,Uganda,2013,L
+UGA,Uganda,2014,L
+UGA,Uganda,2015,L
+UGA,Uganda,2016,L
+UGA,Uganda,2017,L
+UGA,Uganda,2018,L
+UGA,Uganda,2019,L
+UKR,Ukraine,1987,NA
+UKR,Ukraine,1988,NA
+UKR,Ukraine,1989,NA
+UKR,Ukraine,1990,NA
+UKR,Ukraine,1991,LM
+UKR,Ukraine,1992,LM
+UKR,Ukraine,1993,LM
+UKR,Ukraine,1994,LM
+UKR,Ukraine,1995,LM
+UKR,Ukraine,1996,LM
+UKR,Ukraine,1997,LM
+UKR,Ukraine,1998,LM
+UKR,Ukraine,1999,L
+UKR,Ukraine,2000,L
+UKR,Ukraine,2001,L
+UKR,Ukraine,2002,LM
+UKR,Ukraine,2003,LM
+UKR,Ukraine,2004,LM
+UKR,Ukraine,2005,LM
+UKR,Ukraine,2006,LM
+UKR,Ukraine,2007,LM
+UKR,Ukraine,2008,LM
+UKR,Ukraine,2009,LM
+UKR,Ukraine,2010,LM
+UKR,Ukraine,2011,LM
+UKR,Ukraine,2012,LM
+UKR,Ukraine,2013,LM
+UKR,Ukraine,2014,LM
+UKR,Ukraine,2015,LM
+UKR,Ukraine,2016,LM
+UKR,Ukraine,2017,LM
+UKR,Ukraine,2018,LM
+UKR,Ukraine,2019,LM
+ARE,United Arab Emirates,1987,H
+ARE,United Arab Emirates,1988,H
+ARE,United Arab Emirates,1989,H
+ARE,United Arab Emirates,1990,H
+ARE,United Arab Emirates,1991,H
+ARE,United Arab Emirates,1992,H
+ARE,United Arab Emirates,1993,H
+ARE,United Arab Emirates,1994,H
+ARE,United Arab Emirates,1995,H
+ARE,United Arab Emirates,1996,H
+ARE,United Arab Emirates,1997,H
+ARE,United Arab Emirates,1998,H
+ARE,United Arab Emirates,1999,H
+ARE,United Arab Emirates,2000,H
+ARE,United Arab Emirates,2001,H
+ARE,United Arab Emirates,2002,H
+ARE,United Arab Emirates,2003,H
+ARE,United Arab Emirates,2004,H
+ARE,United Arab Emirates,2005,H
+ARE,United Arab Emirates,2006,H
+ARE,United Arab Emirates,2007,H
+ARE,United Arab Emirates,2008,H
+ARE,United Arab Emirates,2009,H
+ARE,United Arab Emirates,2010,H
+ARE,United Arab Emirates,2011,H
+ARE,United Arab Emirates,2012,H
+ARE,United Arab Emirates,2013,H
+ARE,United Arab Emirates,2014,H
+ARE,United Arab Emirates,2015,H
+ARE,United Arab Emirates,2016,H
+ARE,United Arab Emirates,2017,H
+ARE,United Arab Emirates,2018,H
+ARE,United Arab Emirates,2019,H
+GBR,United Kingdom,1987,H
+GBR,United Kingdom,1988,H
+GBR,United Kingdom,1989,H
+GBR,United Kingdom,1990,H
+GBR,United Kingdom,1991,H
+GBR,United Kingdom,1992,H
+GBR,United Kingdom,1993,H
+GBR,United Kingdom,1994,H
+GBR,United Kingdom,1995,H
+GBR,United Kingdom,1996,H
+GBR,United Kingdom,1997,H
+GBR,United Kingdom,1998,H
+GBR,United Kingdom,1999,H
+GBR,United Kingdom,2000,H
+GBR,United Kingdom,2001,H
+GBR,United Kingdom,2002,H
+GBR,United Kingdom,2003,H
+GBR,United Kingdom,2004,H
+GBR,United Kingdom,2005,H
+GBR,United Kingdom,2006,H
+GBR,United Kingdom,2007,H
+GBR,United Kingdom,2008,H
+GBR,United Kingdom,2009,H
+GBR,United Kingdom,2010,H
+GBR,United Kingdom,2011,H
+GBR,United Kingdom,2012,H
+GBR,United Kingdom,2013,H
+GBR,United Kingdom,2014,H
+GBR,United Kingdom,2015,H
+GBR,United Kingdom,2016,H
+GBR,United Kingdom,2017,H
+GBR,United Kingdom,2018,H
+GBR,United Kingdom,2019,H
+USA,United States,1987,H
+USA,United States,1988,H
+USA,United States,1989,H
+USA,United States,1990,H
+USA,United States,1991,H
+USA,United States,1992,H
+USA,United States,1993,H
+USA,United States,1994,H
+USA,United States,1995,H
+USA,United States,1996,H
+USA,United States,1997,H
+USA,United States,1998,H
+USA,United States,1999,H
+USA,United States,2000,H
+USA,United States,2001,H
+USA,United States,2002,H
+USA,United States,2003,H
+USA,United States,2004,H
+USA,United States,2005,H
+USA,United States,2006,H
+USA,United States,2007,H
+USA,United States,2008,H
+USA,United States,2009,H
+USA,United States,2010,H
+USA,United States,2011,H
+USA,United States,2012,H
+USA,United States,2013,H
+USA,United States,2014,H
+USA,United States,2015,H
+USA,United States,2016,H
+USA,United States,2017,H
+USA,United States,2018,H
+USA,United States,2019,H
+URY,Uruguay,1987,UM
+URY,Uruguay,1988,UM
+URY,Uruguay,1989,UM
+URY,Uruguay,1990,UM
+URY,Uruguay,1991,UM
+URY,Uruguay,1992,UM
+URY,Uruguay,1993,UM
+URY,Uruguay,1994,UM
+URY,Uruguay,1995,UM
+URY,Uruguay,1996,UM
+URY,Uruguay,1997,UM
+URY,Uruguay,1998,UM
+URY,Uruguay,1999,UM
+URY,Uruguay,2000,UM
+URY,Uruguay,2001,UM
+URY,Uruguay,2002,UM
+URY,Uruguay,2003,UM
+URY,Uruguay,2004,UM
+URY,Uruguay,2005,UM
+URY,Uruguay,2006,UM
+URY,Uruguay,2007,UM
+URY,Uruguay,2008,UM
+URY,Uruguay,2009,UM
+URY,Uruguay,2010,UM
+URY,Uruguay,2011,UM
+URY,Uruguay,2012,H
+URY,Uruguay,2013,H
+URY,Uruguay,2014,H
+URY,Uruguay,2015,H
+URY,Uruguay,2016,H
+URY,Uruguay,2017,H
+URY,Uruguay,2018,H
+URY,Uruguay,2019,H
+UZB,Uzbekistan,1987,NA
+UZB,Uzbekistan,1988,NA
+UZB,Uzbekistan,1989,NA
+UZB,Uzbekistan,1990,NA
+UZB,Uzbekistan,1991,LM
+UZB,Uzbekistan,1992,LM
+UZB,Uzbekistan,1993,LM
+UZB,Uzbekistan,1994,LM
+UZB,Uzbekistan,1995,LM
+UZB,Uzbekistan,1996,LM
+UZB,Uzbekistan,1997,LM
+UZB,Uzbekistan,1998,LM
+UZB,Uzbekistan,1999,L
+UZB,Uzbekistan,2000,L
+UZB,Uzbekistan,2001,L
+UZB,Uzbekistan,2002,L
+UZB,Uzbekistan,2003,L
+UZB,Uzbekistan,2004,L
+UZB,Uzbekistan,2005,L
+UZB,Uzbekistan,2006,L
+UZB,Uzbekistan,2007,L
+UZB,Uzbekistan,2008,L
+UZB,Uzbekistan,2009,LM
+UZB,Uzbekistan,2010,LM
+UZB,Uzbekistan,2011,LM
+UZB,Uzbekistan,2012,LM
+UZB,Uzbekistan,2013,LM
+UZB,Uzbekistan,2014,LM
+UZB,Uzbekistan,2015,LM
+UZB,Uzbekistan,2016,LM
+UZB,Uzbekistan,2017,LM
+UZB,Uzbekistan,2018,LM
+UZB,Uzbekistan,2019,LM
+VUT,Vanuatu,1987,LM
+VUT,Vanuatu,1988,LM
+VUT,Vanuatu,1989,LM
+VUT,Vanuatu,1990,LM
+VUT,Vanuatu,1991,LM
+VUT,Vanuatu,1992,LM
+VUT,Vanuatu,1993,LM
+VUT,Vanuatu,1994,LM
+VUT,Vanuatu,1995,LM
+VUT,Vanuatu,1996,LM
+VUT,Vanuatu,1997,LM
+VUT,Vanuatu,1998,LM
+VUT,Vanuatu,1999,LM
+VUT,Vanuatu,2000,LM
+VUT,Vanuatu,2001,LM
+VUT,Vanuatu,2002,LM
+VUT,Vanuatu,2003,LM
+VUT,Vanuatu,2004,LM
+VUT,Vanuatu,2005,LM
+VUT,Vanuatu,2006,LM
+VUT,Vanuatu,2007,LM
+VUT,Vanuatu,2008,LM
+VUT,Vanuatu,2009,LM
+VUT,Vanuatu,2010,LM
+VUT,Vanuatu,2011,LM
+VUT,Vanuatu,2012,LM
+VUT,Vanuatu,2013,LM
+VUT,Vanuatu,2014,LM
+VUT,Vanuatu,2015,LM
+VUT,Vanuatu,2016,LM
+VUT,Vanuatu,2017,LM
+VUT,Vanuatu,2018,LM
+VUT,Vanuatu,2019,LM
+VEN,"Venezuela, RB",1987,UM
+VEN,"Venezuela, RB",1988,UM
+VEN,"Venezuela, RB",1989,UM
+VEN,"Venezuela, RB",1990,UM
+VEN,"Venezuela, RB",1991,UM
+VEN,"Venezuela, RB",1992,UM
+VEN,"Venezuela, RB",1993,UM
+VEN,"Venezuela, RB",1994,LM
+VEN,"Venezuela, RB",1995,LM
+VEN,"Venezuela, RB",1996,LM
+VEN,"Venezuela, RB",1997,UM
+VEN,"Venezuela, RB",1998,UM
+VEN,"Venezuela, RB",1999,UM
+VEN,"Venezuela, RB",2000,UM
+VEN,"Venezuela, RB",2001,UM
+VEN,"Venezuela, RB",2002,UM
+VEN,"Venezuela, RB",2003,UM
+VEN,"Venezuela, RB",2004,UM
+VEN,"Venezuela, RB",2005,UM
+VEN,"Venezuela, RB",2006,UM
+VEN,"Venezuela, RB",2007,UM
+VEN,"Venezuela, RB",2008,UM
+VEN,"Venezuela, RB",2009,UM
+VEN,"Venezuela, RB",2010,UM
+VEN,"Venezuela, RB",2011,UM
+VEN,"Venezuela, RB",2012,UM
+VEN,"Venezuela, RB",2013,UM
+VEN,"Venezuela, RB",2014,H
+VEN,"Venezuela, RB",2015,UM
+VEN,"Venezuela, RB",2016,UM
+VEN,"Venezuela, RB",2017,UM
+VEN,"Venezuela, RB",2018,UM
+VEN,"Venezuela, RB",2019,UM
+VNM,Vietnam,1987,L
+VNM,Vietnam,1988,L
+VNM,Vietnam,1989,L
+VNM,Vietnam,1990,L
+VNM,Vietnam,1991,L
+VNM,Vietnam,1992,L
+VNM,Vietnam,1993,L
+VNM,Vietnam,1994,L
+VNM,Vietnam,1995,L
+VNM,Vietnam,1996,L
+VNM,Vietnam,1997,L
+VNM,Vietnam,1998,L
+VNM,Vietnam,1999,L
+VNM,Vietnam,2000,L
+VNM,Vietnam,2001,L
+VNM,Vietnam,2002,L
+VNM,Vietnam,2003,L
+VNM,Vietnam,2004,L
+VNM,Vietnam,2005,L
+VNM,Vietnam,2006,L
+VNM,Vietnam,2007,L
+VNM,Vietnam,2008,L
+VNM,Vietnam,2009,LM
+VNM,Vietnam,2010,LM
+VNM,Vietnam,2011,LM
+VNM,Vietnam,2012,LM
+VNM,Vietnam,2013,LM
+VNM,Vietnam,2014,LM
+VNM,Vietnam,2015,LM
+VNM,Vietnam,2016,LM
+VNM,Vietnam,2017,LM
+VNM,Vietnam,2018,LM
+VNM,Vietnam,2019,LM
+VIR,Virgin Islands (U.S.),1987,H
+VIR,Virgin Islands (U.S.),1988,H
+VIR,Virgin Islands (U.S.),1989,H
+VIR,Virgin Islands (U.S.),1990,H
+VIR,Virgin Islands (U.S.),1991,H
+VIR,Virgin Islands (U.S.),1992,H
+VIR,Virgin Islands (U.S.),1993,H
+VIR,Virgin Islands (U.S.),1994,H
+VIR,Virgin Islands (U.S.),1995,H
+VIR,Virgin Islands (U.S.),1996,H
+VIR,Virgin Islands (U.S.),1997,H
+VIR,Virgin Islands (U.S.),1998,H
+VIR,Virgin Islands (U.S.),1999,H
+VIR,Virgin Islands (U.S.),2000,H
+VIR,Virgin Islands (U.S.),2001,H
+VIR,Virgin Islands (U.S.),2002,H
+VIR,Virgin Islands (U.S.),2003,H
+VIR,Virgin Islands (U.S.),2004,H
+VIR,Virgin Islands (U.S.),2005,H
+VIR,Virgin Islands (U.S.),2006,H
+VIR,Virgin Islands (U.S.),2007,H
+VIR,Virgin Islands (U.S.),2008,H
+VIR,Virgin Islands (U.S.),2009,H
+VIR,Virgin Islands (U.S.),2010,H
+VIR,Virgin Islands (U.S.),2011,H
+VIR,Virgin Islands (U.S.),2012,H
+VIR,Virgin Islands (U.S.),2013,H
+VIR,Virgin Islands (U.S.),2014,H
+VIR,Virgin Islands (U.S.),2015,H
+VIR,Virgin Islands (U.S.),2016,H
+VIR,Virgin Islands (U.S.),2017,H
+VIR,Virgin Islands (U.S.),2018,H
+VIR,Virgin Islands (U.S.),2019,H
+PSE,West Bank and Gaza,1987,NA
+PSE,West Bank and Gaza,1988,NA
+PSE,West Bank and Gaza,1989,NA
+PSE,West Bank and Gaza,1990,NA
+PSE,West Bank and Gaza,1991,NA
+PSE,West Bank and Gaza,1992,NA
+PSE,West Bank and Gaza,1993,NA
+PSE,West Bank and Gaza,1994,LM
+PSE,West Bank and Gaza,1995,LM
+PSE,West Bank and Gaza,1996,LM
+PSE,West Bank and Gaza,1997,LM
+PSE,West Bank and Gaza,1998,LM
+PSE,West Bank and Gaza,1999,LM
+PSE,West Bank and Gaza,2000,LM
+PSE,West Bank and Gaza,2001,LM
+PSE,West Bank and Gaza,2002,LM
+PSE,West Bank and Gaza,2003,LM
+PSE,West Bank and Gaza,2004,LM
+PSE,West Bank and Gaza,2005,LM
+PSE,West Bank and Gaza,2006,LM
+PSE,West Bank and Gaza,2007,LM
+PSE,West Bank and Gaza,2008,LM
+PSE,West Bank and Gaza,2009,LM
+PSE,West Bank and Gaza,2010,LM
+PSE,West Bank and Gaza,2011,LM
+PSE,West Bank and Gaza,2012,LM
+PSE,West Bank and Gaza,2013,LM
+PSE,West Bank and Gaza,2014,LM
+PSE,West Bank and Gaza,2015,LM
+PSE,West Bank and Gaza,2016,LM
+PSE,West Bank and Gaza,2017,LM
+PSE,West Bank and Gaza,2018,LM
+PSE,West Bank and Gaza,2019,LM
+YEM,"Yemen, Rep.",1987,LM
+YEM,"Yemen, Rep.",1988,LM
+YEM,"Yemen, Rep.",1989,LM
+YEM,"Yemen, Rep.",1990,LM
+YEM,"Yemen, Rep.",1991,L
+YEM,"Yemen, Rep.",1992,L
+YEM,"Yemen, Rep.",1993,L
+YEM,"Yemen, Rep.",1994,L
+YEM,"Yemen, Rep.",1995,L
+YEM,"Yemen, Rep.",1996,L
+YEM,"Yemen, Rep.",1997,L
+YEM,"Yemen, Rep.",1998,L
+YEM,"Yemen, Rep.",1999,L
+YEM,"Yemen, Rep.",2000,L
+YEM,"Yemen, Rep.",2001,L
+YEM,"Yemen, Rep.",2002,L
+YEM,"Yemen, Rep.",2003,L
+YEM,"Yemen, Rep.",2004,L
+YEM,"Yemen, Rep.",2005,L
+YEM,"Yemen, Rep.",2006,L
+YEM,"Yemen, Rep.",2007,L
+YEM,"Yemen, Rep.",2008,L
+YEM,"Yemen, Rep.",2009,LM
+YEM,"Yemen, Rep.",2010,LM
+YEM,"Yemen, Rep.",2011,LM
+YEM,"Yemen, Rep.",2012,LM
+YEM,"Yemen, Rep.",2013,LM
+YEM,"Yemen, Rep.",2014,LM
+YEM,"Yemen, Rep.",2015,LM
+YEM,"Yemen, Rep.",2016,LM
+YEM,"Yemen, Rep.",2017,L
+YEM,"Yemen, Rep.",2018,L
+YEM,"Yemen, Rep.",2019,L
+ZMB,Zambia,1987,L
+ZMB,Zambia,1988,L
+ZMB,Zambia,1989,L
+ZMB,Zambia,1990,L
+ZMB,Zambia,1991,L
+ZMB,Zambia,1992,L
+ZMB,Zambia,1993,L
+ZMB,Zambia,1994,L
+ZMB,Zambia,1995,L
+ZMB,Zambia,1996,L
+ZMB,Zambia,1997,L
+ZMB,Zambia,1998,L
+ZMB,Zambia,1999,L
+ZMB,Zambia,2000,L
+ZMB,Zambia,2001,L
+ZMB,Zambia,2002,L
+ZMB,Zambia,2003,L
+ZMB,Zambia,2004,L
+ZMB,Zambia,2005,L
+ZMB,Zambia,2006,L
+ZMB,Zambia,2007,L
+ZMB,Zambia,2008,L
+ZMB,Zambia,2009,L
+ZMB,Zambia,2010,LM
+ZMB,Zambia,2011,LM
+ZMB,Zambia,2012,LM
+ZMB,Zambia,2013,LM
+ZMB,Zambia,2014,LM
+ZMB,Zambia,2015,LM
+ZMB,Zambia,2016,LM
+ZMB,Zambia,2017,LM
+ZMB,Zambia,2018,LM
+ZMB,Zambia,2019,LM
+ZWE,Zimbabwe,1987,LM
+ZWE,Zimbabwe,1988,LM
+ZWE,Zimbabwe,1989,LM
+ZWE,Zimbabwe,1990,LM
+ZWE,Zimbabwe,1991,L
+ZWE,Zimbabwe,1992,L
+ZWE,Zimbabwe,1993,L
+ZWE,Zimbabwe,1994,L
+ZWE,Zimbabwe,1995,L
+ZWE,Zimbabwe,1996,L
+ZWE,Zimbabwe,1997,L
+ZWE,Zimbabwe,1998,L
+ZWE,Zimbabwe,1999,L
+ZWE,Zimbabwe,2000,L
+ZWE,Zimbabwe,2001,L
+ZWE,Zimbabwe,2002,L
+ZWE,Zimbabwe,2003,L
+ZWE,Zimbabwe,2004,L
+ZWE,Zimbabwe,2005,L
+ZWE,Zimbabwe,2006,L
+ZWE,Zimbabwe,2007,L
+ZWE,Zimbabwe,2008,L
+ZWE,Zimbabwe,2009,L
+ZWE,Zimbabwe,2010,L
+ZWE,Zimbabwe,2011,L
+ZWE,Zimbabwe,2012,L
+ZWE,Zimbabwe,2013,L
+ZWE,Zimbabwe,2014,L
+ZWE,Zimbabwe,2015,L
+ZWE,Zimbabwe,2016,L
+ZWE,Zimbabwe,2017,L
+ZWE,Zimbabwe,2018,LM
+ZWE,Zimbabwe,2019,LM

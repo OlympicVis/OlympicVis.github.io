@@ -11,10 +11,169 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./boxPlot/style.css">
+
     </head>
     <body>
         <div id='medal-vis'></div>
+
+        <div class="sticky">
+            <table style="border:0;">
+              <tr>
+                <td >
+                  <div id="freq-plot-sticky">
+                    <svg class="box-plot" width="850" height="750">
+                    </svg>  
+                  </div>
+                </td>
+                <td valign="top">
+                  <div>
+                    </br></br>
+                    Sort by:
+  
+                    <form class="sortForm" id="sortForm" style="margin-left:7%;">
+                      <fieldset>
+                        <div>
+                          <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> alphabetical</label>
+                        </div>
+  
+  
+                        <table style="border:0; border-spacing: 0; border-collapse: collapse; width: 225px;" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td>
+                              <div class="radio">
+                                <label><input type="radio" name="optradio" class="optradio" value="age" id="age"> Age</label>
+                              </div>
+                            </td>
+                            <td valign="top" height="30">
+                              <form class="sortAttr" id="sortAttr" >
+                                <fieldset>
+                                  <select name="dropdown" style="display:inline;" id="attDropdown" disabled>
+                                    <option value="min">Minimum value</option>
+                                    <option value="max">Maximum value</option>
+                                    <option value="median">Meidan</option>
+                                  </select>
+                                </fieldset>
+                              </form>
+                            </td>
+                          </tr>
+                        </table>
+                      </fieldset>
+                    </form>
+
+                    </br></br>
+                    Filter by:
+
+                    <form class="filterForm" id="filterForm" style="margin-left:10%;">
+                      <fieldset>
+                        <div>
+                            <input type="radio" name="optradio" value="season" class="optradio" id="season" disabled> Seasons
+                            <div class="check">
+                                <div class="winter">
+                                  <input checked="checked" class="winter_check" id="winter" name="optcheck" type="checkbox" disabled/>  Winter
+                                </div>
+                                <div class="enriched">
+                                  <input checked="checked" class="summer_check" id="summer" name="optcheck" type="checkbox"  disabled/>  Summer
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="optradio" value="gender" class="optradio" id="gender" disabled> Gender
+                            <div class="check">
+                                <div class="winter">
+                                  <input checked="checked" class="female_check" id="female" name="optcheck" type="checkbox" disabled/>  Female
+                                </div>
+                                <div class="enriched">
+                                  <input checked="checked" class="male_check" id="male" name="optcheck" type="checkbox"  disabled/>  Male
+                                </div>
+                              
+                            </div>
+                        </div>
+                       
+                      </fieldset>
+                    </form>
+                    </br></br>
+                  </div>
+
+                  </br></br>
+                  y-axis:
+                  <div select class="sidenav small" id="yScaleSelect">
+                    <a href="#st_sports" class="sports">Sports</a>
+                    <a href="#st_country" class="country">Country</a>
+                    <a href="#st_year" class="year">Year</a>
+                    <a href="#st_gender" class="gender">Gender</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellpadding="0" class="toggleSwitchTable">
+                    <tr>
+                      <td>
+                        On&nbsp&nbsp
+                      </td>
+                      <td width="20px" align="center">
+                        <div class="countryLabelsToggleContainer">
+                          <div class="layer1">
+                            <img src="boxPlot/icons/disabledImg.png" alt="disabled" height="35px" width="62px" id="disabledImg" style="opacity: 0.5;">
+                          </div>
+                          <div class="layer2">
+                            <label class="switch">
+                              <input type="checkbox" id="countryLabelsToggleCheckbox">
+                              <span class="slider round" id="countryLabelsToggleSwitch"></span>
+                            </label>
+                          </div>
+                        </div> 
+                      </td>
+                      <td width="70px">
+                        &nbsp&nbspOff
+                      </td>
+                      <td width="200px" align="center">
+                        <img src="boxPlot/icons/dotPlot.png" alt="dot-plot" height="20" width="60">
+                        <label class="switch">
+                          <input type="checkbox" id="switchModeCheckbox">
+                          <span class="slider round" id="switchModeSwitch"></span>
+                        </label>
+                        <img src="boxPlot/icons/bNwPlot.png" alt="box-and-whisker-plot" height="20" width="42">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" colspan=3>
+                        &nbsp&nbspCountry labels
+                      </td>
+                      <td align="center" valign="top">
+                        Mode
+                      </td>
+                    </tr>
+                  </table>
+                  
+                </td>
+                <td style="float:left;">
+                    <button type="button" id="reset"><i class="fa fa-close"></i>Clear selections</button>
+                </td>
+              </tr>
+            </table>
+          </div>
     </body>
+
+          <!--  above will change -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
+    <script src="./d3/d3-tip.js"></script>
+    <script type="module" src="./boxPlot/index.js"></script>
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
     <script src="test.js"></script>
