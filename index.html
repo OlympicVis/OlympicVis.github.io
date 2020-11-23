@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- link rel="stylesheet" href="./boxPlot/style.css"> -->
         <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./auxplotsforBoxPlots/auxplotsforBoxPlots.css">
+        <link rel="stylesheet" href="./auxforBoxPlots/auxforBoxPlots.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Special+Elite&display=swap" rel="stylesheet">
@@ -20,8 +16,8 @@
     </head>
     <body>
         <div id='header-photo'>
-            <!-- <img src="img/fivering.png" width="700" height="400"> -->
-            <!-- <img src="img/stadium.jpg" width="700" height="400"> -->
+            <img src="img/fivering.png" width="700" height="400">
+            <img src="img/stadium.jpg" width="700" height="400">
         </div>
         <div id="open-text">
           <h1 style="font-size:300%;text-align:center;font-family: 'Bitter';color: steelblue;">Time Waits for No One:<br>
@@ -238,32 +234,30 @@ Correlate with Performance</h1>
             </table>
           </div>
         </div>
-
+        <div class="small empty"></div>
         <h1 style="text-align: center";>
-          <span style="font-size:200%;font-family: Special Elite;">Next section: the trend <a href="#main-2">
+          <span style="font-size:200%;font-family: Special Elite;">Next: the trend <a href="#main-2">
             <svg height="68" width="68">
                 <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
                 <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
             </svg></a></span></h1>
-
+        
         <div id="main-2">
-        <div class="scrollytelling-text" style="margin-left:50px">
-              <div class="empty"></div>
-              <div class="empty"></div>
-              <div class="small empty"></div>
-              <div class="exploration">
-                <h2>Exploration: how does the trend change in history</h2>
-                <p> 
-                  The world has an aging population, are Olympic athletes also older than their peers
-                  in the past? 
-                  <svg height="68" width="68">
-                    <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
-                    <polygon points="30,20 30,56 55,38" style="fill:white;stroke:white;stroke-width:1" />
-                </svg>
+        <div class="normal-text">
+                <h2>Exploration: how does the age vs performance changes in history?</h2>
+                <p> The world has an aging population, are Olympic athletes also older than their peers
+                  in the past? Does one-year older influence medals a lot?
                 </p>
-              </div>
+                <p>
+                  <ul>
+                    <li>On the left is a stacked bar chart of medals of all time </li>
+                  <li>On the right is a dot-line chart across years,
+                  of which the black line represents ages of non-medalists, and the position of gold/silver/bronze medals 
+                  represents the age of medalists.</li>
+                </ul>
+                </p>
         </div>
-          <div class="dropdowns">
+        <div class="dropdowns">
             <select id='Season'></select>
             <select id='Sport'></select>
             <select id='Event'></select>
@@ -277,21 +271,21 @@ Correlate with Performance</h1>
         </div>
 
           <!--  above will change -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
-    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>-->
+    <!-- <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script> -->
+    <!-- <script src="https://unpkg.com/d3-simple-slider"></script> -->
     <script src="./d3/d3-tip.js"></script>
-    <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-fetch.v2.min.js"></script> -->
     <!-- our scripts-->
     <!-- <script type="module" src="./boxPlot/index.js"></script> -->
-    <script src="./auxplotsforBoxPlots.js"></script>
+    <script src="./auxforBoxPlots.js"></script>
   </body>
 </html>
