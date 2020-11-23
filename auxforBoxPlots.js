@@ -8,8 +8,7 @@ window.onload = function() {
           console.error('Something went wrong: ' + error);
       }
         else {
-          //console.log('in axuplots');
-          //console.log(medalData);
+          //console.log(ageData);
           //selectSeason = $('#Season'),
           var selectSeason = document.querySelector('#Season')
           var selectSport = document.querySelector('#Sport');
@@ -94,7 +93,6 @@ function ageDotLine(data) {
     var margin = {top: 10, right: 30, bottom: 50, left: 50},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
-    var parseDate = d3.timeParse("%Y");
 
     var svg = d3.select("#ageDotLine")
       .append("svg")
@@ -104,23 +102,10 @@ function ageDotLine(data) {
       .append("g")
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-      
-    //tooltip
-    //var tooltip = d3.select("#float-container")
-    //.append("div")
-    //.attr("class", "ageDotToolTip");
-    var tooltip = d3.tip()
-    .attr("class", "d3-tip")
-    .html(function(d) {
-        //console.log(d);
-        //return "tooltip";
-        return "Year: "+ d.Year.getFullYear() +"<br>Medal: "+d.Medal +"<br>Median Age: "+d.medianAge;
-    });
-    svg.call(tooltip);
     
     //find x and y axis domain
-    var start_year = 2020
-    var end_year = 0
+    var start_year = 2020;
+    var end_year = 0;
     var maxAge = 0
     var minAge = 1000
     data.forEach((entry) => {
@@ -137,16 +122,49 @@ function ageDotLine(data) {
       if (entry["Year"] > end_year) {
         end_year = entry["Year"]
       }
-      //parse year
-      entry["Year"] = parseDate(entry["Year"]);
     });
+    var parseDate =  d3.timeParse("%Y");
+    //parse year when necessary
+    data.forEach((entry) => {
+      if (typeof entry["Year"] === 'number') {
+        entry["Year"] = parseDate(entry["Year"]);
+      }
+    });
+    //console.log(data);
 
-    //var x = d3.scaleLinear()
-    //      .range([0, width])
-    //      .domain([start_year-1, end_year+1]);
+    var tooltip = d3.tip()
+    .attr("class", "d3-tip")
+    .html(function(d) {
+        //console.log(d);
+        //return "tooltip";
+        return "Year: "+ d.Year.getFullYear() +"<br>Medal: "+d.Medal +"<br>Median Age: "+d.medianAge;
+    });
+    svg.call(tooltip);
+
+
+
+    if (typeof start_year === 'number') {
+      start_year = parseDate(start_year-1);
+    }
+    else {
+      //padding
+      start_year = new Date(start_year.getFullYear()-1,  0, 1);;
+
+    };
+
+    if (typeof end_year === 'number') {
+      end_year = parseDate(end_year+1);
+    }
+    else {
+      //padding
+      end_year = new Date(end_year.getFullYear()+1,  0, 1);
+
+    }
+
+
     var x = d3.scaleTime()
           .range([0, width])
-          .domain([parseDate(start_year-1), parseDate(end_year+1)]);
+          .domain([start_year, end_year]);
     //console.log(x);
       //x label
     svg.append('text')
