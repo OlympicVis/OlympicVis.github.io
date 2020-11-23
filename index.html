@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- link rel="stylesheet" href="./boxPlot/style.css"> -->
         <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/map.css">
+        <link rel="stylesheet" href="./css/tornadoPlots.css">
         <link rel="stylesheet" href="./auxforBoxPlots/auxforBoxPlots.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
@@ -270,7 +272,46 @@ Correlate with Performance</h1>
         </div>
         </div>
 
-          <!--  above will change -->
+       
+        <div class="small empty"></div>
+        <h1 style="text-align: center";>
+          <span style="font-size:200%;font-family: Special Elite;">Next: the economy factor <a href="#main-3">
+            <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+            </svg></a></span></h1>
+        
+          <div id="main-3">
+            <div id="map">
+                <div class="header"><h1>World Income Groups</h1></div>
+                <button id="zoom-in">Zoom in</button>
+                <button id="zoom-out">Zoom out</button> 
+            </div>
+
+          <!-- <div class="dropdowns-tornado">
+            <select id='Season'></select>
+            <select id='Year'></select>
+            <select id='Sport'></select>
+            <select id="Athlete"></select>
+          </div> -->
+          <div id="income-plot"></div>
+        </div>
+
+        <div class="small empty"></div>
+        <h1 style="text-align: center";>
+          <span style="font-size:200%;font-family: Special Elite;">Finally: the prediction <a href="#main-5">
+            <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+        </svg></a></span></h1>
+        <div id="main-5"></div>
+
+
+
+        
+        
+
+    <!--  above will change -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
@@ -278,7 +319,10 @@ Correlate with Performance</h1>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
     <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="./d3/d3-legend.min.js"></script>
     <!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>-->
     <!-- <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script> -->
     <!-- <script src="https://unpkg.com/d3-simple-slider"></script> -->
@@ -287,5 +331,7 @@ Correlate with Performance</h1>
     <!-- our scripts-->
     <!-- <script type="module" src="./boxPlot/index.js"></script> -->
     <script src="./auxforBoxPlots.js"></script>
+    <script src="./map.js"></script>
+    <script src="tornadoPlots.js"></script>
   </body>
 </html>
