@@ -8,10 +8,12 @@ window.onload = function() {
           console.error('Something went wrong: ' + error);
       }
         else {
+          //console.log('in axuplots');
+          //console.log(medalData);
           //selectSeason = $('#Season'),
-          selectSeason = document.querySelector('#Season')
-          selectSport = document.querySelector('#Sport');
-          selectEvent = document.querySelector('#Event');
+          var selectSeason = document.querySelector('#Season')
+          var selectSport = document.querySelector('#Sport');
+          var selectEvent = document.querySelector('#Event');
         
           // populate drop-downs
           setOptions(selectSeason, Object.keys(selectorData));
@@ -76,8 +78,8 @@ window.onload = function() {
           })
 
         }
-    })
-  };
+})
+};
 
 
 
@@ -117,10 +119,10 @@ function ageDotLine(data) {
     svg.call(tooltip);
     
     //find x and y axis domain
-    start_year = 2020
-    end_year = 0
-    maxAge = 0
-    minAge = 1000
+    var start_year = 2020
+    var end_year = 0
+    var maxAge = 0
+    var minAge = 1000
     data.forEach((entry) => {
 
       if (entry["maxAge"] > maxAge) {
@@ -171,7 +173,7 @@ function ageDotLine(data) {
     .text('Age');
 
     //check whether the mapping preserve the order
-    medalTypes = ['Gold', 'Silver', 'Bronze']
+    var medalTypes = ['Gold', 'Silver', 'Bronze']
     var color = d3.scaleOrdinal()
       .domain(medalTypes)
       //medal colors
@@ -181,7 +183,7 @@ function ageDotLine(data) {
     //var medalPos = {'Gold': -1, 'Silver': -0.4, 'Bronze':0.3, 'None':1};
     //console.log(data);
 
-    nonData = data.filter((entry) => entry['Medal']==='None');
+    var nonData = data.filter((entry) => entry['Medal']==='None');
     //filter out zeros
     //goodData = data.filter((entry) => (entry['minAge']!==0 && entry['maxAge']!==0));
     var lines = svg.selectAll('line.error')
@@ -202,7 +204,7 @@ function ageDotLine(data) {
     
 
     //only show medal data
-    medalData = data.filter((entry) => entry['Medal']!=='None');
+    var medalData = data.filter((entry) => entry['Medal']!=='None');
     var points = svg.selectAll('circle.point')
       .data(medalData);
     //console.log(d3.event.pageX, d3.event.pageY);
@@ -228,8 +230,9 @@ function stackedBar(data) {
   //d3.select("#stackedBar").remove();
   d3.select("#stackedBarsvg").remove();
   //e.g. [{Age: 24, Gold: 1, Silver: 0, Bronze: 0}, {Age: 25, Gold: 1, Silver: 0, Bronze: 0}]
-  age_ls = [];
-  medal_cnt_ls = [];
+  var age_ls = [];
+  var medal_cnt_ls = [];
+  var tmp_sum=0;
   data.forEach((entry) => {
     age_ls.push(entry['Age']);
     tmp_sum = entry['Gold'] + entry['Silver'] + entry['Bronze'];
@@ -240,6 +243,7 @@ function stackedBar(data) {
 
   //console.log(age_ls);
   //find y range
+  var maxMedal = 0;
   maxMedal = d3.max(medal_cnt_ls);
   
   // get all ages

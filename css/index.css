@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.empty {
+    height: 250px;
+    width: 400px;
+    /*border: 3px solid green;*/
+  }
+  
+.small.empty {
+    height: 1px;
+    width: 400px;
+    /*border: 3px solid green;*/
+  }
+  
+.special.empty {
+    height: 120px;
+    width: 400px;
+    /*border: 3px solid green;*/
+  }
+  
+  
+.scrollytelling-text {
+    max-width: 480px;
+    /*border: 3px solid #663300;*/
+    word-wrap: break-word;
+    margin: 10px;
+    padding: 40px 10px 40px 0px; /* top, right, bottom, left */
+  }
+
+svg.freq-plot {
+    position: sticky;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  }
+
+div #freq-plot-sticky {
+  /*border: 3px solid green;*/
+  padding: 40px 0px 0px 0px;
+
+}
+
+#main-1 {
+    margin: 20px;
+    clear: left;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+

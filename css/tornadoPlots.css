@@ -23,7 +23,7 @@ shape-rendering: crispEdges;
   padding: 20px;
 } 
 
-.toolTip {
+.tooltip-tornado {
   position: absolute;
   display: none;
   width: auto;

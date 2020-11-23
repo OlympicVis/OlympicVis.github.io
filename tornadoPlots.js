@@ -12,25 +12,39 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
             d.Records = -1 * d.Records;
         }
     });
-    //take user input
-    newdata = data.filter(function (elem) {
-        return (elem.Year === 2014);
-    });
+    //default, 1988, all athletes
+    drawChart(data, 1988, 'all-medal');
 
+    //update chart based on user selection
+	selectBtnYear = document.querySelector('#Year');
+	selectBtnYear.addEventListener('change', function() {
+            d3.selectAll(".tornado-svg").remove();
+            //console.log(selectBtnMedal.value);
+            //console.log(selectBtnYear.value);
+			drawChart(data, selectBtnYear.value, selectBtnMedal.value);
+    });
+    
+    selectBtnMedal = document.querySelector('#Medal');
+    selectBtnMedal.addEventListener('change', function() {
+        //console.log(selectBtnMedal.value);
+        //console.log(selectBtnYear.value);
+        d3.selectAll(".tornado-svg").remove();
+        drawChart(data, selectBtnYear.value, selectBtnMedal);
+    })
+})
+
+//predrawing:
+function drawChart(data, selectYear, selectMedal) {
+    newdata = data.filter(function (elem) {
+        return selectMedal === 'all-medal'? (elem.Year=== parseInt(selectYear)): (elem.Year===parseInt(selectYear) && elem.Medal==='Gold');
+    });
+    //console.log(newdata);
     var age_group_ls = [];
     newdata.forEach(d => {
         age_group_ls.push(d.Age);
     });
     var age_group = [...new Set(age_group_ls)].sort();
-    //var medal_range = d3.extent(data, function(d) { return d.Records; });
-
-    //income grid
     income_ls = ["L", "LM", "UM", "H"]
-    //console.log(newdata);
-    //levelData = newdata.filter(function (elem) {
-    //    return (elem.Income === "L")
-    //});
-    //console.log(levelData);
     for (var i in income_ls) {
         levelData = newdata.filter(function (elem) {
             return (elem.Income === income_ls[i])
@@ -38,18 +52,21 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
         //console.log(levelData);
         var chart = tornadoChart(age_group, income_ls[i]);
         d3.select("#income-plot")
-        .append("svg")
-        .attr("id", income_ls[i])
+        //.append("svg")
+        //.attr("id", income_ls[i])
         .datum(levelData)
         .call(chart);
     }
-})
-//here we use the same x and y axis
+}
+
+
+//here we use the same x and y axis to draw different income-level countries
 function tornadoChart(age_group, income_label) {
-    var tooltip = d3.select("#income-plot")
-    .append("div")
-    .attr("class", "toolTip")
-    .attr("id", income_label);
+    //var tooltip = d3.select("#income-plot")
+    //.append("div")
+    //.attr("class", "toolTip")
+    //.attr("id", income_label);
+
     var margin = {top: 20, right: 30, bottom: 40, left: 100},
       width = 250 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
@@ -72,11 +89,22 @@ function tornadoChart(age_group, income_label) {
     var yAxis = d3.axisLeft(y)
         .tickSize(0)
   
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("#income-plot").append("svg")
+        .attr("class", "tornado-svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var tooltip = d3.tip()
+        .attr("class", "d3-tip-tornado")
+        .html(function(d) {
+            return d.Sex === 'M'? "<div style='background-color:#9BCCF5'>Year:"+ d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>": 
+                      "<div style='background-color:pink'>Year:" + d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>"
+        });
+
+    svg.call(tooltip);
   
     function chart(selection) {
       selection.each(function(data) {
@@ -87,6 +115,15 @@ function tornadoChart(age_group, income_label) {
         xAxis.tickValues(xAxisTicks);
         //y.domain(data.map(function(d) { return d.Age; }));
         //x.domain(medal_range);
+
+        income_dict = {'L': 'Low-income', 'LM': 'Low-middle income', 'UM': 'Upper-middle income', 'H': 'High-income'}
+         //x label
+        svg.append('text')
+        .attr('class', 'label')
+        .attr('transform','translate(20, -7)')
+        .text(income_dict[income_label]);
+
+
         y.domain(age_group);
   
         var minRecords = Math.min.apply(Math, data.map(function(o){return o.Records;}))
@@ -101,32 +138,21 @@ function tornadoChart(age_group, income_label) {
             .attr("y", function(d) { return y(d.Age); })
             .attr("width", function(d) { return Math.abs(x(d.Records) - x(0)); })
             .attr("height", y.bandwidth())
-            .on("mouseover", function(d){
-                tooltip
-                  .style("left", d3.event.pageX + "px")
-                  .style("top", d3.event.pageY + "px")
-                  .style("display", "inline-block")
-                  .html(d.Sex === 'M'? "<div style='background-color:#9BCCF5'><p>Gender: " + d.Sex + "</p><p>Age: " + d.Age + "</p><p>Medals: " + Math.abs(d.Records) + "</p></div>": 
-                  "<div style='background-color:pink'><p>Gender: " + d.Sex + "</p><p>Age: " + d.Age + "</p><p>Medals: " + Math.abs(d.Records) + "</p></div>"
-                    //if (d.data.Sex === 'F') {
-                    //    return "<div style='color:#9BCCF5'><p>Gender: " + d.data.Sex + "</p><p>Age: " + d.data.Age + "</p><p>Medals: " + Math.abs(d.data.Records) + "</p></div>";
-                    //}
-                    //else {
-                    //    return "<div style='color:pink'><p>Gender: " + d.data.Sex + "</p><p>Age: " + d.data.Age + "</p><p>Medals: " + Math.abs(d.data.Records) + "</p></div>";
-                    //}
-                  )
-            })
-            .on("mouseout", function(d){ tooltip.style("display", "none");});
+            .on("mouseover", tooltip.show)
+            .on("mouseout", tooltip.hide);
   
         svg.append("g")
-            .attr("class", "x axis")
+            .attr("class", "tornado-x-axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis);
   
         svg.append("g")
-            .attr("class", "y axis")
+            .attr("class", "tornado-y-axis")
             .attr("transform", "translate(" + x(0) + ",0)")
             .call(yAxis);
+
+
+
       });
     }
   
