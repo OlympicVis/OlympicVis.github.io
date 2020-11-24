@@ -73,25 +73,34 @@ legend{
   }
   #zoom-in{
       position: relative;
-      right: 15px; 
       top: -600px;
       left: 980px;
       z-index: 600;
-      font-size: 18px;
-       color: #eeeeee;
-      background: #0000ff;
-  
+      font-size: 40px;
+      color:gray;
+      background: #eeeeee;
+      height:40px;
+      width:40px;
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0 auto;
+      padding: 0px;
   }
   #zoom-out {
-     position: relative;
-      right: 15px; 
+      position: relative;
       top: -600px;
       left: 980px;
-      font-size: 18px;
-      z-index: 1000;
-      color: #eeeeee;
-      background: #0000ff;
-  
+      font-size: 40px;
+      z-index: 600;
+      color: gray;
+      background: #eeeeee;
+      height:40px;
+      width:40px;
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0 auto;
+      padding: 0px;
+      
   }
   /* Tooltip CSS */
     /*  .d3-tip {

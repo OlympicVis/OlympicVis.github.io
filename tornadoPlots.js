@@ -29,7 +29,7 @@ d3.csv('data/all_tornado_by_income.csv', function(data) {
         //console.log(selectBtnMedal.value);
         //console.log(selectBtnYear.value);
         d3.selectAll(".tornado-svg").remove();
-        drawChart(data, selectBtnYear.value, selectBtnMedal);
+        drawChart(data, selectBtnYear.value, selectBtnMedal.value);
     })
 })
 
@@ -44,13 +44,16 @@ function drawChart(data, selectYear, selectMedal) {
         age_group_ls.push(d.Age);
     });
     var age_group = [...new Set(age_group_ls)].sort();
-    income_ls = ["L", "LM", "UM", "H"]
+    //instead of using explicity ages, use range
+    Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
+    age_range = Array.range(Math.min.apply(null, age_group),Math.max.apply(null, age_group));
+    income_ls = ["L", "LM", "UM", "H"];
     for (var i in income_ls) {
         levelData = newdata.filter(function (elem) {
             return (elem.Income === income_ls[i])
         });
         //console.log(levelData);
-        var chart = tornadoChart(age_group, income_ls[i]);
+        var chart = tornadoChart(age_range, income_ls[i]);
         d3.select("#income-plot")
         //.append("svg")
         //.attr("id", income_ls[i])
@@ -68,8 +71,8 @@ function tornadoChart(age_group, income_label) {
     //.attr("id", income_label);
 
     var margin = {top: 20, right: 30, bottom: 40, left: 100},
-      width = 250 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+      width = 350 - margin.left - margin.right,
+      height = 600 - margin.top - margin.bottom;
   
     var x = d3.scaleLinear()
         .range([0, width]);
@@ -120,14 +123,20 @@ function tornadoChart(age_group, income_label) {
          //x label
         svg.append('text')
         .attr('class', 'label')
-        .attr('transform','translate(20, -7)')
+        .attr('transform','translate(16, -7)')
         .text(income_dict[income_label]);
 
 
         y.domain(age_group);
   
         var minRecords = Math.min.apply(Math, data.map(function(o){return o.Records;}))
+
+        
         yAxis.tickPadding(Math.abs(x(minRecords) - x(0)) + 10);
+        yAxis.tickFormat(function(d) {
+            return d%2===0?d:'';
+        })
+
   
         var bar = svg.selectAll(".bar")
             .data(data)
@@ -150,6 +159,21 @@ function tornadoChart(age_group, income_label) {
             .attr("class", "tornado-y-axis")
             .attr("transform", "translate(" + x(0) + ",0)")
             .call(yAxis);
+       
+        //x label
+        svg.append('text')
+            .attr('class', 'label')
+            .attr('transform','translate(30, 580)')
+            .text('Number of Athletes');
+    
+        //y label
+        if (income_label === 'L') {
+            svg.append('text')
+                .attr('class', 'label')
+                .attr('transform','translate(-40,200) rotate(270)')
+                .text('Age');
+
+        }
 
 
 
