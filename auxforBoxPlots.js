@@ -144,20 +144,20 @@ function ageDotLine(data) {
 
 
     if (typeof start_year === 'number') {
-      start_year = parseDate(start_year-1);
+      start_year = parseDate(start_year-4);
     }
     else {
       //padding
-      start_year = new Date(start_year.getFullYear()-1,  0, 1);;
+      start_year = new Date(start_year.getFullYear()-4,  0, 1);;
 
     };
 
     if (typeof end_year === 'number') {
-      end_year = parseDate(end_year+1);
+      end_year = parseDate(end_year+4);
     }
     else {
       //padding
-      end_year = new Date(end_year.getFullYear()+1,  0, 1);
+      end_year = new Date(end_year.getFullYear()+4,  0, 1);
 
     }
 

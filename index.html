@@ -294,8 +294,9 @@ Correlate with Performance</h1>
                   <button id="zoom-out">-</button>
                 </span> 
             </div>
-            </div> 
-            <div id="shared-dropdowns">
+          </div> 
+          
+          <div id="shared-dropdowns">
               <select id='Year'>
                 <option value="1988">1988</option>
                 <option value="1992">1992</option>
@@ -316,6 +317,7 @@ Correlate with Performance</h1>
               <option value="all-medal">All medalists</option>
               <option value="all-gold">Gold-medalists only</option>
             </select>
+            <p style="font-size: small;">Note: there is no Winter Olympics in 1990</p>
           </div>
           
             <div id="income-plot"></div>
@@ -330,7 +332,24 @@ Correlate with Performance</h1>
         </svg></a></span></h1>
 
         <div id="main-4">
-          Here is a prediction tool
+          <p>Try our prediction tool! How likely is an athlete going to win an Olympic medal?</p>
+          <div class="dropdowns">
+            <select id='Season2'>
+            </select>
+            <select id='Sport2'></select>
+            <select id='Gender'>
+              <option selected=selected value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+            <select id='Income'>
+              <option selected=selected value="H">High-income Countries</option>
+              <option value="UM">Upper-middle income Countries</option>
+              <option value="LM">Low-middle income Countries</option>
+              <option value="L">Low income Countries</option>
+            </select>
+          </div>
+          <div id="age-slider" style="font-size: small;"></div>
+          <div id="pie-chart"></div>
         </div>
 
 
@@ -351,14 +370,17 @@ Correlate with Performance</h1>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="./d3/d3-legend.min.js"></script>
     <!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>-->
-    <!-- <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script> -->
+    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
     <!-- <script src="https://unpkg.com/d3-simple-slider"></script> -->
     <script src="./d3/d3-tip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+    <!-- <script src="https://unpkg.com/d3-simple-slider@0.1.2/build/d3-simple-slider.js"></script> -->
     <!-- <script src="https://d3js.org/d3-fetch.v2.min.js"></script> -->
     <!-- our scripts-->
     <!-- <script type="module" src="./boxPlot/index.js"></script> -->
     <script src="./auxforBoxPlots.js"></script>
     <script src="./map.js"></script>
-    <script src="tornadoPlots.js"></script>
+    <script src="./tornadoPlots.js"></script>
+    <script src="./prediction.js"></script>
   </body>
 </html>

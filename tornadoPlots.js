@@ -165,6 +165,16 @@ function tornadoChart(age_group, income_label) {
             .attr('class', 'label')
             .attr('transform','translate(30, 580)')
             .text('Number of Athletes');
+        
+        svg.append('text')
+            .attr('class', 'label')
+            .attr('transform','translate(120, 530)')
+            .text('Male');
+    
+        svg.append('text')
+            .attr('class', 'label')
+            .attr('transform','translate(20, 530)')
+            .text('Female');
     
         //y label
         if (income_label === 'L') {
