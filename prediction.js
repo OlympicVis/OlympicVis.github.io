@@ -1,5 +1,5 @@
 //create year slider
-/*
+
 Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
 var yearData = Array.range(12, 60);
 
@@ -19,7 +19,7 @@ var sliderg = d3.select("#age-slider").append("svg")
 
 sliderg.call(slider);
 
-
+/*
 window.onload = function() {
   d3.queue()  
     .defer(d3.json, 'data/all_selection_list2.json')
