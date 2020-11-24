@@ -1,3 +1,4 @@
+//console.log('in aux for box plots');
 window.onload = function() {
     d3.queue()  
       .defer(d3.json, 'data/all_selection_list.json')
@@ -9,6 +10,7 @@ window.onload = function() {
       }
         else {
           //console.log(ageData);
+          //console.log(selectorData);
           //selectSeason = $('#Season'),
           var selectSeason = document.querySelector('#Season')
           var selectSport = document.querySelector('#Sport');

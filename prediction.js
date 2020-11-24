@@ -1,4 +1,5 @@
 //create year slider
+/*
 Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
 var yearData = Array.range(12, 60);
 
@@ -18,21 +19,23 @@ var sliderg = d3.select("#age-slider").append("svg")
 
 sliderg.call(slider);
 
+
 window.onload = function() {
   d3.queue()  
-    .defer(d3.json, 'data/all_selection_list.json')
+    .defer(d3.json, 'data/all_selection_list2.json')
     .defer(d3.json, 'data/athlete_medal_probabilities.json')
     .await(function(error, selectorData, probData) {
       probData = JSON.parse(probData);
-      var selectSeason = document.querySelector('#Season2')
-      var selectSport = document.querySelector('#Sport2');
+      var selectSeason2 = document.querySelector('#Season2')
+      var selectSport2 = document.querySelector('#Sport2');
       var selectGender = document.querySelector('#Gender');
       var selectIncome = document.querySelector('#Income');
       //var selectAge = document
       
         // populate drop-downs
-        setOptions(selectSeason, Object.keys(selectorData));
-        setOptions(selectSport, Object.keys(selectorData[selectSeason.value]));
+        /*
+        setOptions(selectSeason2, Object.keys(selectorData));
+        setOptions(selectSport2, Object.keys(selectorData[selectSeason2.value]));
         
         function setOptions(dropDown, options) {
           //sort alphabetically
@@ -53,31 +56,38 @@ window.onload = function() {
           });
 
         }
+        
         // Create dummy data
         var data = {'Gold': 0.05, 'Silver': 0.15, 'Bronze':0.3, 'None':0.5};
         updatePie(data);
 
-        selectSeason.addEventListener('change', function() {
-          setOptions(selectSport, Object.keys(selectorData[selectSeason.value]));
-          pieData = probData[selectSeason.value][selectSport.value][selectGender.value][selectIncome.value][selectAge.value];
+        
+        selectSeason2.addEventListener('change', function() {
+          setOptions(selectSport2, Object.keys(selectorData[selectSeason2.value]));
+          pieData = probData[selectSeason2.value][selectSport2.value][selectGender.value][selectIncome.value][selectAge.value];
           updatePie(pieData);
         });
 
-        selectSport.addEventListener('change', function() {
-          pieData = probData[selectSeason.value][selectSport.value][selectGender.value][selectIncome.value][selectAge.value];
+        selectSport2.addEventListener('change', function() {
+          pieData = probData[selectSeason2.value][selectSport2.value][selectGender.value][selectIncome.value][selectAge.value];
           updatePie(pieData);
           
         });
 
         selectGender.addEventListener('change', function() {
-          pieData = probData[selectSeason.value][selectSport.value][selectGender.value][selectIncome.value][selectAge.value];
+          pieData = probData[selectSeason2.value][selectSport2.value][selectGender.value][selectIncome.value][selectAge.value];
           updatePie(pieData);
         });
+        
 
         //sliderAge
 
     }
 )};
+*/
+
+var data = {'Gold': 0.05, 'Silver': 0.15, 'Bronze':0.3, 'None':0.5};
+        updatePie(data);
 
 
 function updatePie(data) {
