@@ -59,6 +59,7 @@ svg.call(tip);
 
  
 function updateChart(jsonFeature, getData, selectYear) {
+	console.log(jsonFeature);
 	//convert string to number
 	selectYear = parseInt(selectYear);
 	//console.log(selectYear);
@@ -77,7 +78,7 @@ function updateChart(jsonFeature, getData, selectYear) {
 	Scheme.attr("fill",  function(d){
 		tmpData = [];
 		//start from 1987
-		tmpData = getData[selectYear-1988].values.filter(function (countries) {
+		tmpData = getData[selectYear-1992].values.filter(function (countries) {
 			return countries.Country == d.properties.name;
 		});
 		//default color
@@ -168,7 +169,7 @@ d3.csv("data/processed_income_data.csv", function(data) {
 		    	  .text(function(d) { return d; });
 
 		//default year 1988
-		updateChart(json.features, getData, 1988);
+		updateChart(json.features, getData, 1992);
 
 		//update chart
 		selectBtn = document.querySelector('#Year');

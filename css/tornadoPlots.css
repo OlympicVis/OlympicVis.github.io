@@ -1,3 +1,13 @@
+.newbar--positive {
+  fill: steelblue;
+
+}
+
+.newbar--negative {
+  fill: brown;
+}
+
+
 .bar--positive {
     fill: #9BCCF5;
   }

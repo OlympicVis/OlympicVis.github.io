@@ -2,15 +2,15 @@ import pandas as pd
 income_df = pd.read_csv('../data/processed_income_data.csv')
 all_df = pd.read_csv('../data/all_slim_athlete_events.csv')
 all_df = all_df[all_df['Year']>1987]
+# all athletes
+sele_df = all_df[['Year', 'Team', 'NOC', 'Age', 'Sex']]
+# all medalists
+#all_df = all_df[all_df['Medal'] != 'N']
+#sele_df = all_df[['Year', 'Team', 'NOC', 'Age', 'Sex']]
 
-#print(income_df)
-#print(all_df)
-sele_df = all_df[['Season', 'Year', 'Sport', 'Medal', 'Team', 'NOC', 'Age', 'Sex']]
+
 cnt_df = sele_df.groupby(sele_df.columns.tolist()).size().reset_index().\
     rename(columns={0:'Records'})
-#print(cnt_df)
-#income dict
-#{"Year": [{"countryName": "L"}]}
 
 year_ls = list(set(income_df['Year']))
 #only keep years could be divided by 2
@@ -52,4 +52,11 @@ def getIncome(row):
         return defaultIncome
 
 cnt_df['Income'] = cnt_df.apply(lambda row: getIncome(row), axis=1)
-cnt_df.to_csv('../data/all_tornado_by_country.csv', index=None)
+cnt_df = cnt_df[cnt_df['Income'] != 'NA']
+
+
+#check line 5
+#all athletes
+cnt_df.to_csv('../data/all_athletes_tornado_by_country.csv', index=None)
+#all medalists
+#cnt_df.to_csv('../data/all_medalists_tornado_by_country.csv', index=None)

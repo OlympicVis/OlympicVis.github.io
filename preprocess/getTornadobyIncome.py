@@ -2,10 +2,12 @@ import pandas as pd
 income_df = pd.read_csv('../data/processed_income_data.csv')
 all_df = pd.read_csv('../data/all_slim_athlete_events.csv')
 all_df = all_df[all_df['Year']>1987]
+#all athletes
+sele_df = all_df[['Year', 'Team', 'NOC', 'Age', 'Sex']]
+#all medalists
+#all_df = all_df[all_df['Medal'] != 'N']
+#sele_df = all_df[['Year', 'Team', 'NOC', 'Age', 'Sex']]
 
-#print(income_df)
-#print(all_df)
-sele_df = all_df[['Season', 'Year', 'Sport', 'Medal', 'Team', 'NOC', 'Age', 'Sex']]
 
 #print(sele_df)
 #income dict
@@ -51,8 +53,12 @@ def getIncome(row):
         return defaultIncome
 
 sele_df['Income'] = sele_df.apply(lambda row: getIncome(row), axis=1)
-# drop team and NOC
+# drop team and NOC and Sports
 sele_df = sele_df.drop(['Team', 'NOC'], axis=1)
 cnt_df = sele_df.groupby(sele_df.columns.tolist()).size().reset_index().\
     rename(columns={0:'Records'})
-cnt_df.to_csv('../data/all_tornado_by_income.csv', index=None)
+
+cnt_df = cnt_df[cnt_df['Income'] != 'NA']
+cnt_df.to_csv('../data/all_athletes_tornado_by_income.csv', index=None)
+
+#cnt_df.to_csv('../data/all_medalists_tornado_by_income.csv', index=None)
