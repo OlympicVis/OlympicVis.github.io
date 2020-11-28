@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,20 +6,108 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="./boxPlot/style.css">
+        <!-- link rel="stylesheet" href="./boxPlot/style.css"> -->
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/map.css">
+        <link rel="stylesheet" href="./css/tornadoPlots.css">
+        <link rel="stylesheet" href="./css/auxforBoxPlots.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Special+Elite&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <div id='medal-vis'></div>
+        <div id='header-photo'>
+            <img src="img/fivering.png" width="700" height="400">
+            <img src="img/stadium.jpg" width="700" height="400">
+        </div>
+        <div id="open-text">
+          <h1 style="font-size:300%;text-align:center;font-family: 'Bitter';color: steelblue;">Time Waits for No One:<br>
+          How Olympic Athletes’ Ages 
+Correlate with Performance</h1>
+            <h2 style="text-align: center;font-family:'Special Elite';">
+              <span style="color: orange;">Yuexi (Tracy) Chen, </span> 
+              <span >Hana Hailu, </span> 
+              <span style="color: green;">Joshua McCurry, </span>
+              <span style="color: red;">Junran Yang</span>
+              </h2>
+              <h3 style="text-align:center;font-family: 'Bitter';">Email: {ychen151, hhailu, jmccurry, jryang}@umd.edu</h3>
+        </div>
+        <h1 style="text-align: center";>
+        <span style="font-size:200%;font-family: Special Elite;">Click <a href="#main-1">
+          <svg height="68" width="68">
+              <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+              <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+          </svg></a> to begin!</span></h1>
+        </div>
+
+        <div id="main-1">
+        <div class="scrollytelling-text" style="margin-left:50px">
+          <div class="special empty"></div>
+          <div class="intro">
+            <h2>Motivation: Time waits for no one</h2>
+            <p>The 2020 Tokyo Olympics was postponed, obviously, every athlete will be one-year older next year. For athletes,
+              one year could make a big difference. On this website, we are going to show you how athletes' performance 
+              correlate with ages in different sports, genders and countries, and also the trend in the modern Olympics history.
+            </p>
+          </div>
+
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="small empty"></div>
+          <div class="intro">
+            <h2>Dataset: 120-year Olympics history</h2>
+            <p>The first modern summer Olympic Games was held in 1896 (the first winter Olympics was in 1924), 
+              and was held every four years since then. <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results" >Our dataset</a> contains 260k+ athletes'
+              information (name, age, gender, nationality, medal, etc) from 1896 to 2016. 
+            </p>
+          </div>
+
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="small empty"></div>
+          <div class="intro">
+            <h2>Background: sports</h2>
+            <p> 
+              Some sports appear in every summer Olympic Games, e.g. athletics, swimming, fencing, etc., 
+              while some sports appear only recently, e.g. badminton (since 1992), Triathlon (since 2000).
+              Similary, sports like Figure skating, Ice hockey and Ski jumping appear in every winter Olympics, while 
+              some sports appear only recently, e.g. short track speed skating (since 1992), snowboarding (since 1998). 
+            </p>
+          </div>
+
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="small empty"></div>
+          <div class="exploration">
+            <h2>Exploration: how athletes' performance correlate with ages in different sports</h2>
+            <p> 
+              Take a guess! Which sport is relatively insensitive for ages? 
+              Which sport is strictly for athletes in early 20s? 
+              Test your hypothesis! <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="30,20 30,56 55,38" style="fill:white;stroke:white;stroke-width:1" />
+            </svg>
+            </p>
+          </div>
+
+        
+
+
+
+        </div>
 
         <div class="sticky">
+          
+
+          
             <table style="border:0;">
               <tr>
                 <td >
                   <div id="freq-plot-sticky">
-                    <svg class="box-plot" width="850" height="750">
-                    </svg>  
+                    <img src="img/violin.jpeg" alt="disabled" height="400" width="800">
+                    <!-- <svg class="box-plot" width="650" height="550">
+                    </svg>  -->
                   </div>
                 </td>
                 <td valign="top">
@@ -34,7 +118,7 @@
                     <form class="sortForm" id="sortForm" style="margin-left:7%;">
                       <fieldset>
                         <div>
-                          <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> alphabetical</label>
+                          <!-- <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> alphabetical</label> -->
                         </div>
   
   
@@ -111,12 +195,12 @@
                   <table cellpadding="0" class="toggleSwitchTable">
                     <tr>
                       <td>
-                        On&nbsp&nbsp
+                        <!-- On&nbsp&nbsp -->
                       </td>
                       <td width="20px" align="center">
                         <div class="countryLabelsToggleContainer">
-                          <div class="layer1">
-                            <img src="boxPlot/icons/disabledImg.png" alt="disabled" height="35px" width="62px" id="disabledImg" style="opacity: 0.5;">
+                          <div class="layer1"> 
+                           <!-- <img src="boxPlot/icons/disabledImg.png" alt="disabled" height="35px" width="62px" id="disabledImg" style="opacity: 0.5;"> -->
                           </div>
                           <div class="layer2">
                             <label class="switch">
@@ -127,23 +211,23 @@
                         </div> 
                       </td>
                       <td width="70px">
-                        &nbsp&nbspOff
+                       <!--  &nbsp&nbspOff -->
                       </td>
                       <td width="200px" align="center">
-                        <img src="boxPlot/icons/dotPlot.png" alt="dot-plot" height="20" width="60">
+                        <!-- <img src="boxPlot/icons/dotPlot.png" alt="dot-plot" height="20" width="60"> -->
                         <label class="switch">
                           <input type="checkbox" id="switchModeCheckbox">
                           <span class="slider round" id="switchModeSwitch"></span>
                         </label>
-                        <img src="boxPlot/icons/bNwPlot.png" alt="box-and-whisker-plot" height="20" width="42">
+                        <!-- <img src="boxPlot/icons/bNwPlot.png" alt="box-and-whisker-plot" height="20" width="42"> -->
                       </td>
                     </tr>
                     <tr>
                       <td align="left" valign="top" colspan=3>
-                        &nbsp&nbspCountry labels
+                        <!-- &nbsp&nbspCountry labels -->
                       </td>
                       <td align="center" valign="top">
-                        Mode
+                        <!-- Mode -->
                       </td>
                     </tr>
                   </table>
@@ -155,26 +239,146 @@
               </tr>
             </table>
           </div>
-    </body>
+        </div>
 
-          <!--  above will change -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <div class="small empty"></div>
+        <h1 style="text-align: center";>
+          <span style="font-size:200%;font-family: Special Elite;">Next: the trend <a href="#main-2">
+            <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+            </svg></a></span></h1>
+        
+        <div id="main-2">
+        <div class="normal-text">
+                <h2>Exploration: how does the age vs performance changes in history?</h2>
+                <p> The world has an aging population, are Olympic athletes also older than their peers
+                  in the past? Does one-year older influence medals a lot?
+                </p>
+                <p>
+                  <ul>
+                    <li>On the left is a stacked bar chart of medals of all time </li>
+                  <li>On the right is a dot-line chart across years,
+                  of which the black line represents ages of non-medalists, and the position of gold/silver/bronze medals 
+                  represents the age of medalists.</li>
+                </ul>
+                </p>
+        </div>
+        <div class="dropdowns">
+            <select id='Season'></select>
+            <select id='Sport'></select>
+            <select id='Event'></select>
+        </div>
+        <div id="float-container">
+            <div id="stackedBar" class="float-child">
+            </div>
+            <div id="ageDotLine" class="float-child">
+            </div>
+        </div>
+        <div id="year-slider"></div>
+        </div>
+
+       
+        <div class="small empty"></div>
+        <h1 style="text-align: center";>
+          <span style="font-size:200%;font-family: Special Elite;">Next: the economy factor <a href="#main-3">
+            <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+            </svg></a></span></h1>
+        
+          <div id="main-3">  
+            <div id="map">
+                <div class="header"><h1>World Income Groups</h1></div>
+                <span>
+                  <button id="zoom-in">+</button>
+                  <button id="zoom-out">-</button>
+                </span> 
+            </div>
+          </div> 
+          
+          <div id="shared-dropdowns">
+              <select id='Year'>
+                <option value="1992">1992</option>
+                <option value="1996">1996</option>
+                <option value="2000">2000</option>
+                <option value="2004">2004</option>
+                <option value="2008">2008</option>
+                <option value="2012">2012</option>
+                <option value="2016">2016</option>
+              </select>
+            <select id="Medal">
+              <option value="all-athletes">All athletes</option>
+              <option value="all-medal">All medalists</option>
+            </select>
+            <p style="font-size: small;">Note: only for summer Olympics as much fewer countries participate in winter Olympics</p>
+          </div>
+          
+            <div id="income-plot"></div>
+        </div>
+
+        <div class="small empty"></div>
+        <h1 style="text-align: center";>
+          <span style="font-size:200%;font-family: Special Elite;">Finally: the prediction <a href="#main-4">
+            <svg height="68" width="68">
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
+        </svg></a></span></h1>
+
+        <div id="main-4">
+          <p>Try our prediction tool! How likely is an athlete going to win an Olympic medal?</p>
+          <div class="dropdowns">
+            <select id='Season2'>
+              <option value="Summer">Summer</option>
+            </select>
+            <select id='Sport2'>
+              <option value="Basketball">Basketball</option>
+            </select>
+            <select id='Gender'>
+              <option selected=selected value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+            <select id='Income'>
+              <option selected=selected value="H">High-income Countries</option>
+              <option value="UM">Upper-middle income Countries</option>
+              <option value="LM">Low-middle income Countries</option>
+              <option value="L">Low income Countries</option>
+            </select>
+          </div>
+          <div id="age-slider" style="font-size: small;"></div>
+          <div id="pie-chart"></div>
+        </div>
 
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+        
+        
+
+    <!--  above will change -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
-    <script src="https://unpkg.com/d3-simple-slider"></script>
-    <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <!-- <script src="./d3/d3-legend.min.js"></script> -->
+    <!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>-->
+    <!-- <script src="./node_modules/d3-simple-slider/dist/d3-simple-slider.js"></script>-->
+    <!-- <script src="https://unpkg.com/d3-simple-slider"></script> -->
     <script src="./d3/d3-tip.js"></script>
-    <script type="module" src="./boxPlot/index.js"></script>
-
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
-    <script src="test.js"></script>
+    <script src="./d3/d3-simple-slider.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/d3-simple-slider@0.1.2/build/d3-simple-slider.js"></script> -->
+    <!-- <script src="https://d3js.org/d3-fetch.v2.min.js"></script> -->
+    <!-- our scripts-->
+    <!-- <script type="module" src="./boxPlot/index.js"></script> -->
+    <script src="./auxforBoxPlots.js"></script>
+    <script src="./map.js"></script>
+    <script src="./tornadoPlots.js"></script>
+    <!-- <script src="./prediction.js"></script> -->
+  </body>
 </html>

@@ -1,14 +1,7 @@
 import pandas as pd
 import json
-import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-dt', '--data_type', help='5k or all')
-args = parser.parse_args()
-data_type = args.data_type
-
-print("Preparing %s dataset..."%data_type)
-df = pd.read_csv('../data/%s_slim_athlete_events.csv'%data_type)
+df = pd.read_csv('../data/all_slim_athlete_events.csv')
 # drop non-medalists
 df = df[df['Medal']!='N']
 
@@ -31,15 +24,19 @@ for sl in season_ls:
             age_dict_ls = []
             for nal in now_age_ls:
                 age_df = event_df[event_df['Age'] == nal]
-                gold_cnt = len(age_df[age_df['Medal']=='Gold'].index)
-                silver_cnt = len(age_df[age_df['Medal']=='Silver'].index)
-                bronze_cnt = len(age_df[age_df['Medal']=='Bronze'].index)
-                tmp_age_dict = {
-                    "Age": nal, "Gold": gold_cnt, "Silver": silver_cnt, "Bronze": bronze_cnt
+                year_ls = list(set(age_df['Year']))
+                for yl in year_ls:
+                    year_df = age_df[age_df['Year'] == yl]
+                    gold_cnt = len(year_df[year_df['Medal']=='Gold'].index)
+                    silver_cnt = len(year_df[year_df['Medal']=='Silver'].index)
+                    bronze_cnt = len(year_df[year_df['Medal']=='Bronze'].index)
+                    tmp_age_dict = {
+                    "Year": yl, "Age": nal, "Gold": gold_cnt, "Silver": silver_cnt, "Bronze": bronze_cnt
                 }
-                age_dict_ls.append(tmp_age_dict)
+                    age_dict_ls.append(tmp_age_dict)
             stackedBarDict[sl][ssl][nel] = age_dict_ls
-with open('../data/%s_medal_stacked_bar.json'%data_type, 'w') as out_f:
+print(stackedBarDict['Summer']['Basketball']["Men's Basketball"])
+with open('../data/all_medal_stacked_bar_by_year.json', 'w') as out_f:
     json.dump(stackedBarDict, out_f)
 
 #print(stackedBarDict['Winter'])
