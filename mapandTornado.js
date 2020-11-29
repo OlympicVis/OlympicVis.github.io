@@ -18,12 +18,12 @@ d3.queue()
 					.key(function(d){return d.Year;})
                     .entries(incomeData);
             //default year 1992
-            updateMap(json.features, getData, 1992);
+            updateMap(json.features, getData, medalCountryData, allCountryData, 1992, 'all-athletes');
             //update chart
             selectBtnYear.addEventListener('change', function() {
                 d3.select("#mapsvg").remove();
                 d3.selectAll(".legend").remove();
-                updateMap(json.features, getData, selectBtnYear.value);
+                updateMap(json.features, getData, medalCountryData, allCountryData, selectBtnYear.value, selectBtnMedal.value);
         });
 
             //tornado plots
@@ -102,12 +102,5 @@ d3.queue()
                 
             });
             //suppose the selected country is Australia
-            selectCountry = 'United States';
-            if (selectBtnMedal.value === 'all-athletes') {
-                plotCountryBar(medalCountryData, selectCountry, selectBtnYear.value, selectBtnMedal.value);
-            }
-            else {
-                plotCountryBar(allCountryData, selectCountry, selectBtnYear.value, selectBtnMedal.value);
-            }
         }
     });

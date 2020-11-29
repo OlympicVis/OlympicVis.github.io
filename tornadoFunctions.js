@@ -12,6 +12,7 @@ function plotTornado(data, selectYear, selectMedal) {
     Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
     age_range = Array.range(Math.min.apply(null, age_group),Math.max.apply(null, age_group));
     income_ls = ["L", "LM", "UM", "H"];
+    xScaleDict = {"L": null, "LM":null, "UM":null, "H":null};
     for (var i in income_ls) {
         levelData = newdata.filter(function (elem) {
             return (elem.Income === income_ls[i])
@@ -41,6 +42,8 @@ function tornadoChart(age_group, income_label) {
   
     x = d3.scaleLinear()
         .range([0, width]);
+    //save it
+    xScaleDict[income_label] = x;
   
     y = d3.scaleBand()
           .range([0, height])
@@ -55,7 +58,7 @@ function tornadoChart(age_group, income_label) {
         });
   
     yAxis = d3.axisLeft(y)
-        .tickSize(0)
+        .tickSize(0);
   
     svg = d3.select("#income-plot").append("svg")
         .attr("class", "tornado-svg")
@@ -155,20 +158,24 @@ function tornadoChart(age_group, income_label) {
     newCountry = countryData.filter(function (elem) {
         return  (elem.Year=== parseInt(selectYear) && elem.Team === selectCountry);
     });
-    //console.log(newCountry);
-    //locate the figure
-    var newbar = d3.select("#" + newCountry[0].Income).selectAll(".newbar")
+    
+    if (newCountry.length === 0) {
+        return (`Sorry, we don't have the Olympic data of ${selectCountry} at year ${selectYear}`);
+    }
+    else {
+        var newbar = d3.select("#" + newCountry[0].Income).selectAll(".newbar")
     .data(newCountry);
 
      //tooltips for the new bar
      var newtooltip = d3.tip()
      .attr("class", "newbar-d3-tip-tornado")
      .html(function(d) {
-         return d.Sex === 'M'? "<div style='background-color:steelblue'>Country: "+ d.Team +"<br>Year:"+ d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>": 
-                   "<div style='background-color:brown'>Country: "+ d.Team +"<br>Year:" + d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>"
+         return d.Sex === 'M'? "<div style='background-color:steelblue; color:white'>Country: "+ d.Team +"<br>Year:"+ d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>": 
+                   "<div style='background-color:brown; color:white'>Country: "+ d.Team +"<br>Year:" + d.Year + "<br>Gender: " + d.Sex + "<br>Age: " + d.Age + "<br>Medals: " + Math.abs(d.Records) + "</div>"
      });
 
     svg.call(newtooltip);
+    x = xScaleDict[newCountry[0].Income];
 
     newbar.enter().append("rect")
     .attr("class", function(d) { return "newbar newbar--" + (d.Records < 0 ? "negative" : "positive"); })
@@ -178,10 +185,22 @@ function tornadoChart(age_group, income_label) {
     .attr("height", y.bandwidth())
     .on("mouseover", newtooltip.show)
     .on("mouseout", newtooltip.hide);;
+
     //if don't call the axis again, bars will be connected
+    
+    purey = d3.scaleBand()
+        .range([0, height])
+        .padding(0.1)
+        .round(0.1);
+    
+    pureyAxis = d3.axisLeft(purey)
+        .tickSize(0);
+
     d3.select("#" + newCountry[0].Income).append("g")
             .attr("class", "newbar-tornado-y-axis")
             .attr("transform", "translate(" + x(0) + ",0)")
-            .call(yAxis);
+            .call(pureyAxis);
+        return true;
+    }   
   }
   

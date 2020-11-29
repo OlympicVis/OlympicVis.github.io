@@ -1,4 +1,4 @@
-function updateMap(jsonFeature, getData, selectYear) {
+function updateMap(jsonFeature, getData, medalCountryData, allCountryData, selectYear, selectMedal) {
     //init
     var format = d3.format(",");
     var margin = {top: 0, right: 0, bottom: 0, left: 0},
@@ -54,11 +54,18 @@ function updateMap(jsonFeature, getData, selectYear) {
 	var tip = d3.tip().attr('class','d3-tip-map')
 			.offset([-10, 0])
 			.html(function(d){
-  		return "<h5>"+d.properties.name+"</h5>"
+  		return d.properties.name
   //return "<span style='background-color: gainsboro'> <strong> Country: </strong> <span <strong>" +d.properties.name+ "</strong> </span></span>";
 	});
+	//if no results
+	var errortip = d3.tip().attr('class','d3-tip-map')
+			.offset([-10, 0])
+			.html(function(d){
+		  return "Sorry, we don't have Olympics data of " + d.properties.name
+			});
 
 	svg.call(tip);
+	svg.call(errortip);
 
 	var zoom = d3.zoom()
 		.on('zoom', function() {
@@ -102,15 +109,32 @@ function updateMap(jsonFeature, getData, selectYear) {
         .style('stroke-width', 0.3)
         .on('mouseover',function(d){
           tip.show(d);
-
           d3.select(this)
             .style("opacity", 1)
             .style("stroke","white")
-            .style("stroke-width",3);
-        })
+			.style("stroke-width",3);
+		 
+		})
+		.on('click', function(d){
+			//plot darker bars
+			//tip.hide(d);
+			if (selectMedal === 'all-athletes') {
+				barorNot = plotCountryBar(allCountryData, d.properties.name, selectYear, selectMedal);
+		  	}
+		  	else {
+				barorNot = plotCountryBar(medalCountryData, d.properties.name, selectYear, selectMedal);
+			}
+			if (barorNot !== true) {
+				errortip.show(d);
+				d3.select(this)
+				.style("opacity", 1)
+				.style("stroke","white")
+				.style("stroke-width",3);
+			}
+		})
         .on('mouseout', function(d){
+		  errortip.hide(d);
           tip.hide(d);
-
           d3.select(this)
             .style("opacity", 0.8)
             .style("stroke","white")
