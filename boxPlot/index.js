@@ -47,12 +47,14 @@ d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
     frequencyPlot.processed["sports"] = d3.nest() // nest function allows to group the calculation per level of a factor
     .key(function(d) { return d.sports;})
     .rollup(function(d) {
+      var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
       var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
       var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
       var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
       var interQuantileRange = q3 - q1
-      var min = q1 - 1.5 * interQuantileRange
-      var max = q3 + 1.5 * interQuantileRange
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
       return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
     })
     .entries(dataset)
@@ -60,12 +62,14 @@ d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
     frequencyPlot.processed["country"] = d3.nest() // nest function allows to group the calculation per level of a factor
     .key(function(d) { return d.country;})
     .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+        var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
       var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
       var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
       var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
       var interQuantileRange = q3 - q1
-      var min = q1 - 1.5 * interQuantileRange
-      var max = q3 + 1.5 * interQuantileRange
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
       return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
     })
     .entries(dataset)
@@ -73,12 +77,14 @@ d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
     frequencyPlot.processed["gender"] = d3.nest() // nest function allows to group the calculation per level of a factor
     .key(function(d) { return d.gender;})
     .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
       var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
       var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
       var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
       var interQuantileRange = q3 - q1
-      var min = q1 - 1.5 * interQuantileRange
-      var max = q3 + 1.5 * interQuantileRange
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
       return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
     })
     .entries(dataset)
@@ -86,12 +92,14 @@ d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
     frequencyPlot.processed["year"] = d3.nest() // nest function allows to group the calculation per level of a factor
     .key(function(d) { return d.year;})
     .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
       var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
       var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
       var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
       var interQuantileRange = q3 - q1
-      var min = q1 - 1.5 * interQuantileRange
-      var max = q3 + 1.5 * interQuantileRange
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
       return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
     })
     .entries(dataset)
