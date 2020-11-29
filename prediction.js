@@ -94,16 +94,17 @@ function updatePeople(data) {
   //circle size
   r = 5;
   peopleData = {};
-  uncertainCnt = numVis - Math.floor(numVis * data.Accuracy);
   //console.log(peopleData);
   sureCnt = Math.floor(numVis * data.Accuracy);
   peopleData = {'Gold': Math.floor(sureCnt*data.Gold), 
   'Silver': Math.floor(sureCnt*data.Silver),
   'Bronze': Math.floor(sureCnt*data.Bronze),
   'None': Math.floor(sureCnt*data.None),
-  'Uncertain': uncertainCnt
+  'Uncertain': 0
 };
-  console.log(peopleData);
+  peopleData.Uncertain = numVis - peopleData.Gold - peopleData.Silver - peopleData.Bronze - peopleData.None;
+  
+  
 
   medalType = ['Gold', 'Silver', 'Bronze', 'None', 'Uncertain'];
   goldArr = [];
@@ -144,6 +145,8 @@ function updatePeople(data) {
   for (var i in medalType) {
         if (medalType[i] === 'Gold') {
           if (goldArr.length > 0) {
+
+
           medalContainer = d3.select("#unit-vis")
             .append("svg")
             .attr("id", 'gold')
@@ -155,12 +158,15 @@ function updatePeople(data) {
             .append("circle")
             .attr("cy", height/2)
             .attr("cx", function(d, i) {
-                return (i+r)*2*r
+                return (i+10+r)*2*r
             })
             .attr("r", r)
             .style("fill", d=>d);
           }
           medalContainer.append("text")
+            .attr('class', 'label')
+            .attr('transform','translate(0, 15)')
+            .text("Gold: "+ goldArr.length + "/100");
         }
         else if (medalType[i] === 'Silver') {
           if (silverArr.length > 0) {
@@ -175,11 +181,16 @@ function updatePeople(data) {
             .append("circle")
             .attr("cy", height/2)
             .attr("cx", function(d, i) {
-                return (i+r)*2*r
+                return (i+10+r)*2*r
             })
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d =>d);
+          
+          medalContainer.append("text")
+            .attr('class', 'label')
+            .attr('transform','translate(0, 15)')
+            .text("Silver: "+ silverArr.length + "/100");
           }
         }
         else if (medalType[i] === 'Bronze') {
@@ -195,11 +206,16 @@ function updatePeople(data) {
             .append("circle")
             .attr("cy", height/2)
             .attr("cx", function(d, i) {
-                return (i+r)*2*r
+                return (i+r+10)*2*r
             })
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d=>d);
+
+          medalContainer.append("text")
+          .attr('class', 'label')
+          .attr('transform','translate(0, 15)')
+          .text("Bronze: "+ bronzeArr.length + "/100");
           }
         }
         else if (medalType[i] === 'None') {
@@ -215,11 +231,15 @@ function updatePeople(data) {
             .append("circle")
             .attr("cy", height/2)
             .attr("cx", function(d, i) {
-                return (i+r)*2*r
+                return (i+r+10)*2*r
             })
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d=>d);
+          medalContainer.append("text")
+          .attr('class', 'label')
+          .attr('transform','translate(0, 15)')
+          .text("None: "+ noneArr.length + "/100");
           }
         }
         else if (medalType[i] === 'Uncertain') {
@@ -236,13 +256,19 @@ function updatePeople(data) {
             .attr("class", 'uncertain')
             .attr("cy", height/2)
             .attr("cx", function(d, i) {
-                return (i+r)*2*r
+                return (i+r+20)*2*r
             })
             .attr("r", r)
             .style("stroke", 'black')
             .style("fill", d => d);
+
+          medalContainer.append("text")
+          .attr('class', 'label')
+          .style('fill', 'red')
+          .attr('transform','translate(0, 15)')
+          .text("When the model goes wrong: "+ uncertainArr.length + "/100");
+          }
         }
       }
-    }
 
 }
