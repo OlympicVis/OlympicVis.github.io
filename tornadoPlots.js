@@ -61,12 +61,13 @@ d3.queue()
             });
 
 
-            //default, 1988, all athletes
-            drawChart(allIncomeData, 1988, 'all-athletes');
+            //default, 1992, all athletes
+            drawChart(allIncomeData, 1992, 'all-athletes');
         
             //update chart based on user selection
             selectBtnYear = document.querySelector('#Year');
             selectBtnYear.addEventListener('change', function() {
+                    console.log('in tornado');
                     d3.selectAll(".tornado-svg").remove();
                     if (selectBtnMedal.value === 'all-athletes') {
                         drawChart(allIncomeData, selectBtnYear.value, selectBtnMedal.value);
@@ -133,14 +134,17 @@ function drawChart(data, selectYear, selectMedal) {
 
 //here we use the same x and y axis to draw different income-level countries
 function tornadoChart(age_group, income_label) {
-    //var tooltip = d3.select("#income-plot")
-    //.append("div")
-    //.attr("class", "toolTip")
-    //.attr("id", income_label);
-
-    var margin = {top: 20, right: 30, bottom: 40, left: 100},
-      width = 360 - margin.left - margin.right,
-      height = 600 - margin.top - margin.bottom;
+    
+    //the first figure
+    if (income_label === 'L') {
+        var margin = {top: 20, right: 10, bottom: 40, left: 50}
+    }
+    else {
+        var margin = {top: 20, right: 10, bottom: 40, left: 20}
+    }
+    
+    width = 350 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
   
     x = d3.scaleLinear()
         .range([0, width]);
@@ -234,28 +238,15 @@ function tornadoChart(age_group, income_label) {
             .attr('class', 'label')
             .attr('transform','translate(30, 580)')
             .text('Number of Athletes');
-        
-        /*
-        svg.append('text')
-            .attr('class', 'label')
-            .attr('transform','translate(120, 530)')
-            .text('Male');
-    
-        svg.append('text')
-            .attr('class', 'label')
-            .attr('transform','translate(20, 530)')
-            .text('Female');
-            */
     
         //y label
         if (income_label === 'L') {
             svg.append('text')
                 .attr('class', 'label')
-                .attr('transform','translate(-40,200) rotate(270)')
+                .attr('transform','translate(-30,200) rotate(270)')
                 .text('Age');
 
         }
-
 
 
       });

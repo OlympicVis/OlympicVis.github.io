@@ -1,7 +1,7 @@
 var format = d3.format(",");
 var margin = {top: 0, right: 0, bottom: 0, left: 0},
-width = 860 - margin.left - margin.right,
-height = 250 - margin.top - margin.bottom;
+width = 1000 - margin.left - margin.right,
+height = 280 - margin.top - margin.bottom;
 scale0 = (width - 1) / 2 / Math.PI, active = d3.select(null);
 
 
@@ -27,31 +27,6 @@ var color = d3.scaleOrdinal()
 			  .domain(numSubgroups)
 			  .range(["rgb(215, 25, 28)","rgb(253,174,97)","rgb(254,224,139)","rgb(171,221,164)" , "rgb(0,0,0)"]);
 
-
-/*
-var svg = d3.select("body")
-      		.append("svg")
-			.attr("width", width)
-			.attr("height", height)
-			.append('g')
-			.attr('class', 'map'); */
-var svg = d3.select("#map")
-			.append("svg")
-			.attr("width", width)
-			.attr("height", height)
-			.append('g');
-
-
-var tip = d3.tip().attr('class','d3-tip-map')
-			.offset([-10, 0])
-			.html(function(d){
-  return "<h5>"+d.properties.name+"</h5>"
-  //return "<span style='background-color: gainsboro'> <strong> Country: </strong> <span <strong>" +d.properties.name+ "</strong> </span></span>";
-});
-
-svg.call(tip);
-
-
  
 function updateChart(jsonFeature, getData, selectYear) {
 	//convert string to number
@@ -59,6 +34,23 @@ function updateChart(jsonFeature, getData, selectYear) {
 	//console.log(selectYear);
 	//remove previous color
 	//d3.selectAll('.path').remove();
+	width = 1000 - margin.left - margin.right,
+	height = 280 - margin.top - margin.bottom;
+	var svg = d3.select("#map")
+			.append("svg")
+			.attr("id", "mapsvg")
+			.attr("width", width)
+			.attr("height", height);
+
+
+	var tip = d3.tip().attr('class','d3-tip-map')
+			.offset([-10, 0])
+			.html(function(d){
+  		return "<h5>"+d.properties.name+"</h5>"
+  //return "<span style='background-color: gainsboro'> <strong> Country: </strong> <span <strong>" +d.properties.name+ "</strong> </span></span>";
+	});
+
+	svg.call(tip);
 
 	var zoom = d3.zoom()
 		.on('zoom', function() {
@@ -161,48 +153,6 @@ d3.csv("data/processed_income_data.csv", function(data) {
 					  // .key(function(d){ if (d.Year % 2 == 0) {return d.Year; } 
 					  // 	else{ return d.Year % 2 == 0;}})
 					  .entries(data);
-					
-		//console.log(getData);
-		/*var yearMenu = d3.select("#yearDropdown");
-		  yearMenu
-		  	.selectAll("option")
-		      .data(getData)
-		      .enter()
-		      .append("option")
-		      .attr("value", function(d){
-		      	 //return d.key ;
-		      	if (d.key % 2 == 0){
-		         	return d.key ;
-		      	 }
-		      })
-		      .text(function(d){
-		       if (d.key % 2 == 0){
-		          return d.key ;
-		      	}
-		      });
-		      */
-		  // var zoom = d3.zoom()
-		  //     .scaleExtent([1, scale0])
-		  //     .on("zoom", zoomed);
-
-		  // svg.call(zoom);
-
-		  // function zoomed() {
-		  //   var transform = d3.event.transform; 
-
-		  //   svg.style("stroke-width", 1.5 / transform.k + "px");
-		  //   svg.attr("transform", transform);
-		  // }
-
-		  // d3.select('#zoom-in').on('click', function() {
-		  //   // Smooth zooming
-		  // 	zoom.scaleBy(svg.transition().duration(750), 1.3);
-		  // });
-
-		  // d3.select('#zoom-out').on('click', function() {
-		  //   // Ordinal zooming
-		  //   zoom.scaleBy(svg, 1 / 1.3);
-		  // });
 
 		var legend = d3.select("#map").append("svg")
 		      			.attr("class", "legend")
@@ -233,8 +183,8 @@ d3.csv("data/processed_income_data.csv", function(data) {
 		selectBtn = document.querySelector('#Year');
 		selectBtn.addEventListener('change', function() {
 			//console.log('selectbtn', selectBtn.value);
-			d3.selectAll(".path").remove();
-			console.log('once');
+			console.log('in map');
+			d3.selectAll("#mapsvg").remove();
 			updateChart(json.features, getData, selectBtn.value);
 	});
 });

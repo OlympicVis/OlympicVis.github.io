@@ -1,5 +1,6 @@
 #map {
-  float: left;
+  top: 50%;
+  left: 50%;
 }
 /*body {
     font-family: "Open Sans", sans-serif;
@@ -57,14 +58,7 @@ legend{
     top: 100%;
     left: 0;
   }
-  #yearDropdown{
-    position: absolute;
-    font-size: 18px;
-    top: 150px;
-    left: 200px;
-    right: 20px;
-  
-  }
+
   label{
     position: absolute;
     font-size: 18px;
