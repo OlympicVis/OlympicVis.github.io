@@ -63,7 +63,7 @@ d3.queue()
         selectAge = 20;
         //create year slider
         Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
-        var yearData = Array.range(12, 60);
+        var yearData = Array.range(15, 60);
         var slider = d3.sliderHorizontal()
           .domain(d3.extent(yearData))
           .width(900)
@@ -154,10 +154,10 @@ function updatePeople(data) {
   peopleData = {'Gold': Math.floor(sureCnt*data.Gold), 
   'Silver': Math.floor(sureCnt*data.Silver),
   'Bronze': Math.floor(sureCnt*data.Bronze),
-  'None': Math.floor(sureCnt*data.None),
-  'Uncertain': 0
+  'None': 0,
+  'Uncertain': numVis - sureCnt
 };
-  peopleData.Uncertain = numVis - peopleData.Gold - peopleData.Silver - peopleData.Bronze - peopleData.None;
+  peopleData.None = numVis - peopleData.Gold - peopleData.Silver - peopleData.Bronze - peopleData.Uncertain;
   
   
 
