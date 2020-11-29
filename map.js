@@ -1,6 +1,9 @@
-var width = 900,
-    height = 700, scale0 = (width - 1) / 2 / Math.PI;
 var format = d3.format(",");
+var margin = {top: 0, right: 0, bottom: 0, left: 0},
+width = 1000 - margin.left - margin.right,
+height = 280 - margin.top - margin.bottom;
+scale0 = (width - 1) / 2 / Math.PI, active = d3.select(null);
+
 
 var projection = d3.geoMercator()
                   .translate([width / 1.8, height / 1.5])
@@ -24,61 +27,55 @@ var color = d3.scaleOrdinal()
 			  .domain(numSubgroups)
 			  .range(["rgb(215, 25, 28)","rgb(253,174,97)","rgb(254,224,139)","rgb(171,221,164)" , "rgb(0,0,0)"]);
 
-			  /*
-var svgBox = d3.select("#map")
-      		.append("svg")
-			.attr("width", width)
-			.attr("height", height)
-			.attr("border", 10);
-
-var borderPath = svgBox.append("rect")
-			.attr("x", 0)
-			.attr("y", 0)
-			.attr("height", height)
-			.attr("width", width)
-			.style("stroke", "black")
-			.style("fill", "none")
-			.style("stroke-width", 10);
-			*/
-
-var svg = d3.select("#map")
-			.append("svg")
-		  .attr("width", width)
-		  .attr("height", height)
-		  .attr("border", 10);
-
-
-var tip = d3.tip().attr('class','d3-tip-map')
-.html(function(d){
-  return "<h5>"+d.properties.name+"</h5>"
-  //return "<span style='background-color: gainsboro'> <strong> Country: </strong> <span <strong>" +d.properties.name+ "</strong> </span></span>";
-});
-
-svg.call(tip);
-
-
  
 function updateChart(jsonFeature, getData, selectYear) {
-	console.log(jsonFeature);
 	//convert string to number
 	selectYear = parseInt(selectYear);
 	//console.log(selectYear);
 	//remove previous color
-	d3.selectAll('.path').remove();
+	//d3.selectAll('.path').remove();
+	width = 1000 - margin.left - margin.right,
+	height = 280 - margin.top - margin.bottom;
+	var svg = d3.select("#map")
+			.append("svg")
+			.attr("id", "mapsvg")
+			.attr("width", width)
+			.attr("height", height);
+
+
+	var tip = d3.tip().attr('class','d3-tip-map')
+			.offset([-10, 0])
+			.html(function(d){
+  		return "<h5>"+d.properties.name+"</h5>"
+  //return "<span style='background-color: gainsboro'> <strong> Country: </strong> <span <strong>" +d.properties.name+ "</strong> </span></span>";
+	});
+
+	svg.call(tip);
+
+	var zoom = d3.zoom()
+		.on('zoom', function() {
+	    Scheme.attr('transform', d3.event.transform);
+	  })
+
 	//recolor
-	var Scheme = svg.selectAll("path")
-	.data(jsonFeature)
-	.enter()
-	.append("path")
-	.attr('class', 'path')
-	.attr("d", path)
-	.style("stroke", "#fff")
-	.style("stroke-width", "1");
+	var Scheme =   svg.append("g")
+					    .attr("class", "countries")
+					    .selectAll("path")
+						.data(jsonFeature)
+						.enter()
+						.append("path")
+						.attr('class', 'path')
+						.attr("d", path)
+						.on("click", reset)
+						.call(zoom)
+						.style("stroke", "#fff")
+						.style("stroke-width", "1")
+	//console.log(Scheme);
 
 	Scheme.attr("fill",  function(d){
 		tmpData = [];
 		//start from 1987
-		tmpData = getData[selectYear-1992].values.filter(function (countries) {
+		tmpData = getData[selectYear-1987].values.filter(function (countries) {
 			return countries.Country == d.properties.name;
 		});
 		//default color
@@ -90,8 +87,60 @@ function updateChart(jsonFeature, getData, selectYear) {
 		return nowColor;
 		
 	})
-		.on('mouseover', tip.show)
-		.on('mouseout', tip.hide);
+		.style('stroke', 'white')
+		.style('stroke-width', 1.5)
+		.style("opacity",0.8)
+		.style("stroke","white")
+        .style('stroke-width', 0.3)
+        .on('mouseover',function(d){
+          tip.show(d);
+
+          d3.select(this)
+            .style("opacity", 1)
+            .style("stroke","white")
+            .style("stroke-width",3);
+        })
+        .on('mouseout', function(d){
+          tip.hide(d);
+
+          d3.select(this)
+            .style("opacity", 0.8)
+            .style("stroke","white")
+            .style("stroke-width",0.3);
+        });
+
+
+
+        d3.select('#zoom-in').on('click', function() {
+          // Smooth zooming
+        	zoom.scaleBy(svg.transition().duration(750), 1.3);
+        });
+
+        d3.select('#zoom-out').on('click', function() {
+          // Ordinal zooming
+          zoom.scaleBy(svg, 1 / 1.3);
+        });
+        //reset zooming
+        d3.select('#reset').on("click", reset);
+		// .on('mouseover', tip.show)
+		// .on('mouseout', tip.hide);
+		function reset() {
+		  active.classed("active", false);
+		  active = d3.select(null);
+
+		  svg.transition()
+		      .duration(300)
+		      // .call( zoom.transform, d3.zoomIdentity.translate(0, 0).scale(1) ); // not in d3 v4
+		      .call( zoom.transform, d3.zoomIdentity ); // updated for d3 v4
+		}
+		// zoom reset for function
+		function reseted() {
+		  svg.transition().duration(750).call(
+		    zoom.transform,
+		    d3.zoomIdentity,
+		    d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
+		  );
+		}
 
 	   
 }
@@ -104,48 +153,6 @@ d3.csv("data/processed_income_data.csv", function(data) {
 					  // .key(function(d){ if (d.Year % 2 == 0) {return d.Year; } 
 					  // 	else{ return d.Year % 2 == 0;}})
 					  .entries(data);
-					
-		//console.log(getData);
-		/*var yearMenu = d3.select("#yearDropdown");
-		  yearMenu
-		  	.selectAll("option")
-		      .data(getData)
-		      .enter()
-		      .append("option")
-		      .attr("value", function(d){
-		      	 //return d.key ;
-		      	if (d.key % 2 == 0){
-		         	return d.key ;
-		      	 }
-		      })
-		      .text(function(d){
-		       if (d.key % 2 == 0){
-		          return d.key ;
-		      	}
-		      });
-		      */
-		  var zoom = d3.zoom()
-		      .scaleExtent([1, scale0])
-		      .on("zoom", zoomed);
-
-		  svg.call(zoom);
-
-		  function zoomed() {
-		    var transform = d3.event.transform; 
-
-		    svg.style("stroke-width", 1.5 / transform.k + "px");
-		    svg.attr("transform", transform);
-		  }
-
-		  d3.select('#zoom-in').on('click', function() {
-		    // Smooth zooming
-		  	zoom.scaleBy(svg.transition().duration(750), 1.3);
-		  });
-
-		  d3.select('#zoom-out').on('click', function() {
-		    // Ordinal zooming
-		    zoom.scaleBy(svg, 1 / 1.3);
-		  });
 
 		var legend = d3.select("#map").append("svg")
 		      			.attr("class", "legend")
@@ -168,15 +175,18 @@ d3.csv("data/processed_income_data.csv", function(data) {
 		    	  .attr("dy", ".35em")
 		    	  .text(function(d) { return d; });
 
-		//default year 1988
+		//default year 1992
+		
 		updateChart(json.features, getData, 1992);
 
 		//update chart
 		selectBtn = document.querySelector('#Year');
 		selectBtn.addEventListener('change', function() {
+			//console.log('selectbtn', selectBtn.value);
+			console.log('in map');
+			d3.selectAll("#mapsvg").remove();
 			updateChart(json.features, getData, selectBtn.value);
 	});
-	});
-
+});
 });
 
