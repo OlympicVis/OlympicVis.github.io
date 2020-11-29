@@ -1,7 +1,5 @@
 // function to create frequencyPlot variables - to export
 
-import { FileWriter } from "istanbul-lib-report";
-
 function frequencyPlot(selection, transition_time, useYAxis, dotRadius, dotColor, dotOpacity, dotColorSelected, dotOpacitySelected, mode) {
     console.log("Creating frequency plot");
     // specify logistical variables
@@ -331,28 +329,52 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
 
     // Show the median
+    var w = y.bandwidth()
     var medians = freqPlot.chartG.selectAll('.medians')
         .data(freqPlot.rankings)
     var mediansEnter = medians.enter()
         .append('g')
         .attr('class', 'medians')
-    mediansEnter.append('line')
+    mediansEnter.append('rect')
+        .attr('width', 1)
+        .attr('height', w);
+        
     
 
-    freqPlot.chartG.selectAll(".median line")
-    .data(freqPlot.rankings)
-    .transition()
-    .duration(freqPlot.transition_time)
-        .attr("y1", function(d){return(y(d.key))})
-        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
-        .attr("x1", function(d){return(x(d.value.median))})
-        .attr("x2", function(d){return(x(d.value.median))})
+    medians.merge(mediansEnter)
+        .data(freqPlot.rankings)
+        .transition()
+        .duration(freqPlot.transition_time)
+        .attr('transform', function(d, i) {
+            var tx = x(d.value.median);
+            var ty = y(d.key)
+            return 'translate('+[tx,ty]+')';
+        })
+        // .attr("y1", function(d){return(y(d.key))})
+        // .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+        // .attr("x1", function(d){return(x(d.value.median))})
+        // .attr("x2", function(d){return(x(d.value.median))})
         .attr("stroke", "black")
-        .style("width", 80)
         .style('opacity', function(d) {
             if (freqPlot.mode === "bnw") { return 1; }
             else { return 0; }
         });
+
+        //medians.exit().remove()
+    // freqPlot.chartG.selectAll(".median line")
+    // .data(freqPlot.rankings)
+    // .transition()
+    // .duration(freqPlot.transition_time)
+    //     .attr("y1", function(d){return(y(d.key))})
+    //     .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+    //     .attr("x1", function(d){return(x(d.value.median))})
+    //     .attr("x2", function(d){return(x(d.value.median))})
+    //     .attr("stroke", "black")
+    //     .style("width", 80)
+    //     .style('opacity', function(d) {
+    //         if (freqPlot.mode === "bnw") { return 1; }
+    //         else { return 0; }
+    //     });
 
 
     // create a tooltip
