@@ -287,17 +287,8 @@ Correlate with Performance</h1>
                 <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
             </svg></a></span></h1>
         
-          <div id="main-3">  
-            <div id="map">
-                <div class="header"><h1>World Income Groups</h1></div>
-                <span>
-                  <button id="zoom-in">+</button>
-                  <button id="zoom-out">-</button>
-                </span> 
-            </div>
-          </div> 
-          
-          <div id="shared-dropdowns">
+          <div id="main-3"> 
+            <div id="shared-dropdowns">
               <select id='Year'>
                 <option value="1992">1992</option>
                 <option value="1996">1996</option>
@@ -307,15 +298,21 @@ Correlate with Performance</h1>
                 <option value="2012">2012</option>
                 <option value="2016">2016</option>
               </select>
-            <select id="Medal">
-              <option value="all-athletes">All athletes</option>
-              <option value="all-medal">All medalists</option>
-            </select>
-            <p style="font-size: small;">Note: only for summer Olympics as much fewer countries participate in winter Olympics</p>
-          </div>
-          
-            <div id="income-plot"></div>
-        </div>
+              <select id="Medal">
+                <option value="all-athletes">All athletes</option>
+                <option value="all-medal">All medalists</option>
+              </select>
+              <p style="font-size: small;">Note: only for summer Olympics as much fewer countries participate in winter Olympics</p>
+            </div>
+
+            <div id="map">
+                <div class="header"><h1>World Income Groups</h1></div>
+                  <button id="zoom-in">Zoom in</button>
+                  <button id="zoom-out">Zoom out</button>
+                  <button id="reset">Reset</button>
+            </div>
+          <div id="income-plot"></div>
+        </div> 
 
         <div class="small empty"></div>
         <h1 style="text-align: center";>

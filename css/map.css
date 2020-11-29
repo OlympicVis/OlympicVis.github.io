@@ -1,3 +1,6 @@
+#map {
+  float: left;
+}
 /*body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -73,14 +76,14 @@ legend{
   }
   #zoom-in{
       position: relative;
-      top: -600px;
-      left: 980px;
+      top: -310px;
+      left: 0px;
       z-index: 600;
-      font-size: 40px;
+      font-size: 12px;
       color:gray;
       background: #eeeeee;
       height:40px;
-      width:40px;
+      width:60px;
       display: table-cell;
       vertical-align: middle;
       margin: 0 auto;
@@ -88,19 +91,35 @@ legend{
   }
   #zoom-out {
       position: relative;
-      top: -600px;
-      left: 980px;
-      font-size: 40px;
+      top: -310px;
+      left: 0px;
+      font-size: 12px;
       z-index: 600;
       color: gray;
       background: #eeeeee;
       height:40px;
-      width:40px;
+      width:60px;
       display: table-cell;
       vertical-align: middle;
       margin: 0 auto;
       padding: 0px;
       
+  }
+
+  #reset {
+    position: relative;
+    top: -310px;
+    left: 0px;
+    font-size: 12px;
+    z-index: 600;
+    color: gray;
+    background: #eeeeee;
+    height:40px;
+    width:60px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0px;
   }
   /* Tooltip CSS */
     /*  .d3-tip {

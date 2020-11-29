@@ -139,7 +139,7 @@ function tornadoChart(age_group, income_label) {
     //.attr("id", income_label);
 
     var margin = {top: 20, right: 30, bottom: 40, left: 100},
-      width = 700 - margin.left - margin.right,
+      width = 360 - margin.left - margin.right,
       height = 600 - margin.top - margin.bottom;
   
     x = d3.scaleLinear()
@@ -271,7 +271,7 @@ function tornadoChart(age_group, income_label) {
     newCountry = countryData.filter(function (elem) {
         return  (elem.Year=== parseInt(selectYear) && elem.Team === selectCountry);
     });
-    console.log(newCountry);
+    //console.log(newCountry);
     //locate the figure
     var newbar = d3.select("#" + newCountry[0].Income).selectAll(".newbar")
     .data(newCountry);
