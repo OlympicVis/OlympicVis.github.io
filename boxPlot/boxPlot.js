@@ -111,7 +111,7 @@ function frequencyPlot(selection, transition_time, useYAxis, dotRadius, dotColor
     var svgWidth = +this.svg.attr('width');
     var svgHeight = +this.svg.attr('height');
 
-    this.padding = {t: 40, r: 60, b: 50, l: 140, 
+    this.padding = {t: 41, r: 60, b: 50, l: 140, 
                     x_r: 145, 
                     y_countries_b: 0, x_countries_r: 20, 
                     x_axis_b: 20};
@@ -134,6 +134,9 @@ function frequencyPlot(selection, transition_time, useYAxis, dotRadius, dotColor
     this.xAxisG = this.chartG.append('g')
         .attr('class', 'x axis')
         .attr('transform', 'translate('+[0, this.chartHeight-10]+')');
+    this.yAxisG = this.chartG.append('g')
+        .attr('class', 'y axis')
+        //.attr('transform', 'translate('+[0, this.chartHeight-10]+')');
     
     var freqPlot = this;
 
@@ -247,14 +250,16 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     .padding(.2);
     // console.log(keys)
 
-    svg.append("g")
+    freqPlot.yAxisG
+    .transition()
+    .duration(freqPlot.transition_time)
     .call(d3.axisLeft(this.yScale).tickSize(0))
-    .select(".domain").remove()
+    //.select(".domain").remove()
 
     // Show the X scale
     this.xScale = d3.scaleLinear()
     .range([0, this.chartWidth-this.padding.x_r])
-    .domain([-10,80])
+    .domain([0,80])
 
     var y = this.yScale;
     var x = this.xScale;
@@ -267,22 +272,32 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     .interpolator(d3.interpolateInferno)
     .domain([10,60])
 
-    svg = svg.selectAll('.bnw')
+    var bnw = freqPlot.chartG.selectAll('.vertLines')
     .data(freqPlot.rankings)
-    .enter()
-    .append('g');
+
+    var bnwEnter = bnw.enter()
+    .append('g')
+    .attr('class', 'vertLines');
+
+    bnwEnter.append('line')
+    .attr('width', 40)
+    .attr('fill-opacity', 0);
+
+    // bnw.merge(bnwEnter)
+    //     .transition();
+
     // Show the main vertical line
-    svg
-    .selectAll("vertLines")
+    freqPlot.chartG
+    .selectAll(".vertLines line")
     .data(freqPlot.rankings)
-    .enter()
-    .append("line")
+    .transition()
+    .duration(freqPlot.transition_time)
         .attr("x1", function(d){return(x(d.value.min))})
         .attr("x2", function(d){return(x(d.value.max))})
         .attr("y1", function(d){return(y(d.key) + y.bandwidth()/2)})
         .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
         .attr("stroke", "black")
-        .style("width", 40)
+        .attr("width", 40)
         .style('opacity', function(d) {
             if (freqPlot.mode === "bnw") { return 1; }
             else { return 0; }
@@ -290,11 +305,17 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
 
     // rectangle for the main box
-    svg
-    .selectAll("boxes")
+    var box = freqPlot.chartG.selectAll('.boxes')
+        .data(freqPlot.rankings)
+    var boxEnter = box.enter()
+        .append('g')
+        .attr('class', 'boxes')
+    boxEnter.append('rect')
+
+    freqPlot.chartG.selectAll('.boxes rect')
     .data(freqPlot.rankings)
-    .enter()
-    .append("rect")
+    .transition()
+    .duration(freqPlot.transition_time)
         .attr("x", function(d){return(x(d.value.q1))}) // console.log(x(d.value.q1)) ;
         .attr("width", function(d){ ; return(x(d.value.q3)-x(d.value.q1))}) //console.log(x(d.value.q3)-x(d.value.q1))
         .attr("y", function(d) { return y(d.key); })
@@ -308,21 +329,52 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
 
     // Show the median
-    svg
-    .selectAll("medianLines")
-    .data(freqPlot.rankings)
-    .enter()
-    .append("line")
-        .attr("y1", function(d){return(y(d.key))})
-        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
-        .attr("x1", function(d){return(x(d.value.median))})
-        .attr("x2", function(d){return(x(d.value.median))})
+    var w = y.bandwidth()
+    var medians = freqPlot.chartG.selectAll('.medians')
+        .data(freqPlot.rankings)
+    var mediansEnter = medians.enter()
+        .append('g')
+        .attr('class', 'medians')
+    mediansEnter.append('rect')
+        .attr('width', 1)
+        .attr('height', w);
+        
+    
+
+    medians.merge(mediansEnter)
+        .data(freqPlot.rankings)
+        .transition()
+        .duration(freqPlot.transition_time)
+        .attr('transform', function(d, i) {
+            var tx = x(d.value.median);
+            var ty = y(d.key)
+            return 'translate('+[tx,ty]+')';
+        })
+        // .attr("y1", function(d){return(y(d.key))})
+        // .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+        // .attr("x1", function(d){return(x(d.value.median))})
+        // .attr("x2", function(d){return(x(d.value.median))})
         .attr("stroke", "black")
-        .style("width", 80)
         .style('opacity', function(d) {
             if (freqPlot.mode === "bnw") { return 1; }
             else { return 0; }
         });
+
+        //medians.exit().remove()
+    // freqPlot.chartG.selectAll(".median line")
+    // .data(freqPlot.rankings)
+    // .transition()
+    // .duration(freqPlot.transition_time)
+    //     .attr("y1", function(d){return(y(d.key))})
+    //     .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+    //     .attr("x1", function(d){return(x(d.value.median))})
+    //     .attr("x2", function(d){return(x(d.value.median))})
+    //     .attr("stroke", "black")
+    //     .style("width", 80)
+    //     .style('opacity', function(d) {
+    //         if (freqPlot.mode === "bnw") { return 1; }
+    //         else { return 0; }
+    //     });
 
 
     // create a tooltip
@@ -355,24 +407,38 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     }
 
     // Add individual points with jitter
-    var jitterWidth = 10
-    var dots = this.chartG
-    .selectAll(".indPoints")
-    .data(dataset)
-    .enter()
-    .append("circle")
-        .attr("cx", function(d){ return(x(d.Age))})
-        .attr("cy", function(d){ return( y(d[freqPlot.selection]) + (y.bandwidth()/2) - jitterWidth/2 + Math.random()*jitterWidth )})
+    var jitterWidth = y.bandwidth() * 0.7
+    var dots = this.chartG.selectAll(".dot")
+    .data(dataset);
+
+    var dotsEnter = dots.enter()
+    .append('g') // create a g element
+    .attr('class', 'dot'); // assign a class ID of dot to the element
+
+    dotsEnter.append("circle")
+        //.attr("cx", function(d){ return(x(d.Age))})
+        //.attr("cy", function(d){ return( y(d[freqPlot.selection]) + (y.bandwidth()/2) - jitterWidth/2 + Math.random()*jitterWidth )})
         .style("fill", function(d){ return(myColor(+d.Age)) })
         .attr('r', freqPlot.dotRadius)
         .style('opacity', function() {
             if (freqPlot.mode === "bnw") { return 0; }
                 return freqPlot.dotOpacity; 
         })
-        .on("mouseover", mouseover)
-        .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave)
+        //.on("mouseover", mouseover)
+        //.on("mousemove", mousemove)
+        //.on("mouseleave", mouseleave)
 
+    dots.merge(dotsEnter)
+        .transition()
+        .attr('transform', function(d) {
+            var tx = x(d.Age);
+            //console.log(d.rank);
+            var ty = y(d[freqPlot.selection]) + (y.bandwidth()/2) - jitterWidth/2 + Math.random()*jitterWidth;
+            //console.log(ty);
+            return 'translate('+[tx,ty]+')';
+        });
+
+    dots.exit().remove();
 
 
    
