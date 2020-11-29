@@ -1,6 +1,5 @@
 //console.log('in aux for box plots');
-window.onload = function() {
-    d3.queue()  
+d3.queue()  
       .defer(d3.json, 'data/all_selection_list.json')
       .defer(d3.json, 'data/all_medal_stacked_bar_by_year.json')
       .defer(d3.json, 'data/all_age_error_bar.json')
@@ -204,8 +203,7 @@ window.onload = function() {
           });
 
         }
-})
-};
+});
 
 
 
