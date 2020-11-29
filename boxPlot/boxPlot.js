@@ -274,115 +274,115 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     .interpolator(d3.interpolateInferno)
     .domain([10,60])
 
-    // var bnw = freqPlot.chartG.selectAll('.vertLines')
-    // .data(freqPlot.rankings)
+    var bnw = freqPlot.chartG.selectAll('.vertLines')
+    .data(freqPlot.rankings)
 
-    // var bnwEnter = bnw.enter()
-    // .append('g')
-    // .attr('class', 'vertLines');
+    var bnwEnter = bnw.enter()
+    .append('g')
+    .attr('class', 'vertLines');
 
-    // bnwEnter.append('line')
-    // .attr('width', 40)
-    // .attr('fill-opacity', 0);
+    bnwEnter.append('line')
+    .attr('width', 40)
+    .attr('fill-opacity', 0);
 
-    // // bnw.merge(bnwEnter)
-    // //     .transition();
+    // bnw.merge(bnwEnter)
+    //     .transition();
 
-    // // Show the main vertical line
-    // freqPlot.chartG
-    // .selectAll(".vertLines line")
-    // .data(freqPlot.rankings)
-    // .transition()
-    // .duration(freqPlot.transition_time)
-    //     .attr("x1", function(d){return(x(d.value.min))})
-    //     .attr("x2", function(d){return(x(d.value.max))})
-    //     .attr("y1", function(d){return(y(d.key) + y.bandwidth()/2)})
-    //     .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
-    //     .attr("stroke", "black")
-    //     .attr("width", 40)
-    //     .style('opacity', function(d) {
-    //         if (freqPlot.mode === "bnw") { return 1; }
-    //         else { return 0; }
-    //     });
-
-
-    // // rectangle for the main box
-    // var box = freqPlot.chartG.selectAll('.boxes')
-    //     .data(freqPlot.rankings)
-    // var boxEnter = box.enter()
-    //     .append('g')
-    //     .attr('class', 'boxes')
-    // boxEnter.append('rect')
-
-    // freqPlot.chartG.selectAll('.boxes rect')
-    // .data(freqPlot.rankings)
-    // .transition()
-    // .duration(freqPlot.transition_time)
-    //     .attr("x", function(d){return(x(d.value.q1))}) // console.log(x(d.value.q1)) ;
-    //     .attr("width", function(d){ ; return(x(d.value.q3)-x(d.value.q1))}) //console.log(x(d.value.q3)-x(d.value.q1))
-    //     .attr("y", function(d) { return y(d.key); })
-    //     .attr("height", y.bandwidth() )
-    //     .attr("stroke", "black")
-    //     .style("fill", "#69b3a2")
-    //     .style('opacity', function(d) {
-    //         if (freqPlot.mode === "bnw") { return 1; }
-    //         else { return 0; }
-    //     });
+    // Show the main vertical line
+    freqPlot.chartG
+    .selectAll(".vertLines line")
+    .data(freqPlot.rankings)
+    .transition()
+    .duration(freqPlot.transition_time)
+        .attr("x1", function(d){return(x(d.value.min))})
+        .attr("x2", function(d){return(x(d.value.max))})
+        .attr("y1", function(d){return(y(d.key) + y.bandwidth()/2)})
+        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+        .attr("stroke", "black")
+        .attr("width", 40)
+        .style('opacity', function(d) {
+            if (freqPlot.mode === "bnw") { return 1; }
+            else { return 0; }
+        });
 
 
-    // // Show the median
-    // var medians = freqPlot.chartG.selectAll('.medians')
-    //     .data(freqPlot.rankings)
-    // var mediansEnter = medians.enter()
-    //     .append('g')
-    //     .attr('class', 'medians')
-    // mediansEnter.append('line')
+    // rectangle for the main box
+    var box = freqPlot.chartG.selectAll('.boxes')
+        .data(freqPlot.rankings)
+    var boxEnter = box.enter()
+        .append('g')
+        .attr('class', 'boxes')
+    boxEnter.append('rect')
+
+    freqPlot.chartG.selectAll('.boxes rect')
+    .data(freqPlot.rankings)
+    .transition()
+    .duration(freqPlot.transition_time)
+        .attr("x", function(d){return(x(d.value.q1))}) // console.log(x(d.value.q1)) ;
+        .attr("width", function(d){ ; return(x(d.value.q3)-x(d.value.q1))}) //console.log(x(d.value.q3)-x(d.value.q1))
+        .attr("y", function(d) { return y(d.key); })
+        .attr("height", y.bandwidth() )
+        .attr("stroke", "black")
+        .style("fill", "#69b3a2")
+        .style('opacity', function(d) {
+            if (freqPlot.mode === "bnw") { return 1; }
+            else { return 0; }
+        });
+
+
+    // Show the median
+    var medians = freqPlot.chartG.selectAll('.medians')
+        .data(freqPlot.rankings)
+    var mediansEnter = medians.enter()
+        .append('g')
+        .attr('class', 'medians')
+    mediansEnter.append('line')
     
 
-    // freqPlot.chartG.selectAll(".median line")
-    // .data(freqPlot.rankings)
-    // .transition()
-    // .duration(freqPlot.transition_time)
-    //     .attr("y1", function(d){return(y(d.key))})
-    //     .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
-    //     .attr("x1", function(d){return(x(d.value.median))})
-    //     .attr("x2", function(d){return(x(d.value.median))})
-    //     .attr("stroke", "black")
-    //     .style("width", 80)
-    //     .style('opacity', function(d) {
-    //         if (freqPlot.mode === "bnw") { return 1; }
-    //         else { return 0; }
-    //     });
+    freqPlot.chartG.selectAll(".median line")
+    .data(freqPlot.rankings)
+    .transition()
+    .duration(freqPlot.transition_time)
+        .attr("y1", function(d){return(y(d.key))})
+        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+        .attr("x1", function(d){return(x(d.value.median))})
+        .attr("x2", function(d){return(x(d.value.median))})
+        .attr("stroke", "black")
+        .style("width", 80)
+        .style('opacity', function(d) {
+            if (freqPlot.mode === "bnw") { return 1; }
+            else { return 0; }
+        });
 
 
-    // // create a tooltip
-    // var tooltip = d3.select("svg.box-plot")
-    // .append("div")
-    //     .style("opacity", 0)
-    //     .attr("class", "tooltip")
-    //     .style("font-size", "16px")
-    // // Three function that change the tooltip when user hover / move / leave a cell
-    // var mouseover = function(d) {
-    // tooltip
-    //     .transition()
-    //     .duration(200)
-    //     .style("opacity", 1)
-    // tooltip
-    //     .html("<span style='color:grey'>Age: </span>" + d.Age) // + d.Prior_disorder + "<br>" + "HR: " +  d.HR)
-    //     .style("left", (d3.mouse(this)[0]+30) + "px")
-    //     .style("top", (d3.mouse(this)[1]+30) + "px")
-    // }
-    // var mousemove = function(d) {
-    // tooltip
-    //     .style("left", (d3.mouse(this)[0]+30) + "px")
-    //     .style("top", (d3.mouse(this)[1]+30) + "px")
-    // }
-    // var mouseleave = function(d) {
-    // tooltip
-    //     .transition()
-    //     .duration(200)
-    //     .style("opacity", 0)
-    // }
+    // create a tooltip
+    var tooltip = d3.select("svg.box-plot")
+    .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("font-size", "16px")
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+    tooltip
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+    tooltip
+        .html("<span style='color:grey'>Age: </span>" + d.Age) // + d.Prior_disorder + "<br>" + "HR: " +  d.HR)
+        .style("left", (d3.mouse(this)[0]+30) + "px")
+        .style("top", (d3.mouse(this)[1]+30) + "px")
+    }
+    var mousemove = function(d) {
+    tooltip
+        .style("left", (d3.mouse(this)[0]+30) + "px")
+        .style("top", (d3.mouse(this)[1]+30) + "px")
+    }
+    var mouseleave = function(d) {
+    tooltip
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    }
 
     // Add individual points with jitter
     var jitterWidth = y.bandwidth() * 0.7
