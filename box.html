@@ -102,7 +102,7 @@
             <tr>
               <td >
                 <div id="freq-plot-sticky">
-                  <svg class="box-plot" width="1050" height="1100">
+                  <svg class="box-plot" width="850" height="850">
                   </svg>  
                 </div>
               </td>
@@ -144,7 +144,7 @@
                   </br></br>
                   Filter by:
 
-                  <form class="filterForm" id="filterForm" style="margin-left:10%;">
+                  <form class="filterForm" id="filterForm" style="margin-left:7%;">
                     <fieldset>
                       <div>
                           <input type="radio" name="optradio" value="season" class="optradio" id="season" disabled> Seasons
@@ -184,16 +184,12 @@
                   <a href="#st_year" class="year">Year</a>
                   <a href="#st_gender" class="gender">Gender</a>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <table cellpadding="0" class="toggleSwitchTable">
+
+                </br></br>
+                <div>
+                <table cellpadding="0" class="toggleSwitchTable" style="margin-left:7%;">
                   <tr>
-                    <td width="70px">
-                      &nbsp&nbspOff
-                    </td>
-                    <td width="200px" align="center">
+                    <td width="200px" align="left">
                       <img src="boxPlot/icons/dotPlot.png" alt="dot-plot" height="20" width="60">
                       <label class="switch">
                         <input type="checkbox" id="switchModeCheckbox">
@@ -208,6 +204,11 @@
                     </td>
                   </tr>
                 </table>
+              </div>
+              </td>
+
+              <td>
+                
                 
               </td>
             </tr>
@@ -224,7 +225,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
@@ -232,6 +233,5 @@
     <script src="./d3/d3-tip.js"></script>
     <script type="module" src="./boxPlot/index.js"></script>
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
 </html>
