@@ -191,7 +191,7 @@ function updatePeople(data) {
   //console.log(goldArr, silverArr, bronzeArr, noneArr, uncertainArr);
   
 
-  var width = 900;
+  var width = 1200;
     height = 20;
     margin = 0;
 
