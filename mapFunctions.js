@@ -81,7 +81,7 @@ function updateMap(jsonFeature, getData, medalCountryData, allCountryData, selec
 						.append("path")
 						.attr('class', 'path')
 						.attr("d", path)
-						.on("click", reset)
+						//.on("click", reset)
 						.call(zoom)
 						.style("stroke", "#fff")
 						.style("stroke-width", "1")
@@ -150,27 +150,36 @@ function updateMap(jsonFeature, getData, medalCountryData, allCountryData, selec
 
         d3.select('#zoom-out').on('click', function() {
           // Ordinal zooming
-          zoom.scaleBy(svg, 1 / 1.3);
-        });
-        //reset zooming
-        d3.select('#reset').on("click", reset);
-		// .on('mouseover', tip.show)
-		// .on('mouseout', tip.hide);
-		function reset() {
+		  zoom.scaleBy(svg, 1 / 1.3);
+		  console.log("we are in zoom out");
+		});
+		
+		//reset zooming
+		//console.log(d3.select('#zoom-in'));
+		//console.log(d3.select('#zoom-out'));
+		//console.log(d3.select('#reset'));
+		
+
+		d3.select('#resetMap').on('click', function() {
+			active.classed("active", false);
+			active = d3.select(null);
+			svg.transition()
+				.duration(300)
+				// .call( zoom.transform, d3.zoomIdentity.translate(0, 0).scale(1) ); // not in d3 v4
+				.call( zoom.transform, d3.zoomIdentity ); // updated for d3 v4	
+		});
+
+
+		
+		/*
+        d3.select('#reset').on('click', function() {
 		  active.classed("active", false);
 		  active = d3.select(null);
-
+		  console.log("we are in reset func");
 		  svg.transition()
 		      .duration(300)
 		      // .call( zoom.transform, d3.zoomIdentity.translate(0, 0).scale(1) ); // not in d3 v4
 		      .call( zoom.transform, d3.zoomIdentity ); // updated for d3 v4
-		}
-		// zoom reset for function
-		function reseted() {
-		  svg.transition().duration(750).call(
-		    zoom.transform,
-		    d3.zoomIdentity,
-		    d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
-		  );
-		}
+		});
+		*/
 }

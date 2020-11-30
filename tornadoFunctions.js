@@ -8,6 +8,7 @@ function plotTornado(data, selectYear, selectMedal) {
         age_group_ls.push(d.Age);
     });
     var age_group = [...new Set(age_group_ls)].sort();
+    console.log(age_group);
     //instead of using explicity ages, use range
     Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
     age_range = Array.range(Math.min.apply(null, age_group),Math.max.apply(null, age_group));
@@ -96,7 +97,7 @@ function tornadoChart(age_group, income_label) {
         .text(income_dict[income_label]);
 
 
-        y.domain(age_group);
+        y.domain(age_range);
   
         var minRecords = Math.min.apply(Math, data.map(function(o){return o.Records;}))
 

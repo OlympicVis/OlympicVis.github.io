@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/map.css">
         <link rel="stylesheet" href="./css/tornadoPlots.css">
         <link rel="stylesheet" href="./css/auxforBoxPlots.css">
+        <link rel="stylesheet" href="./css/unitvis.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Special+Elite&display=swap" rel="stylesheet">
@@ -292,7 +293,7 @@ Correlate with Performance</h1>
                 <div class="header"><h1>World Income Groups</h1></div>
                   <button id="zoom-in">Zoom in</button>
                   <button id="zoom-out">Zoom out</button>
-                  <button id="reset">Reset</button>
+                  <button id="resetMap">Reset</button>
             </div>
 
             <div id="shared-dropdowns">
@@ -325,26 +326,19 @@ Correlate with Performance</h1>
 
         <div id="main-4">
           <p>Try our prediction tool! How likely is an athlete going to win an Olympic medal?</p>
-          <div class="dropdowns">
+          <div class="dropdown2">
             <select id='Season2'>
-              <option value="Summer">Summer</option>
             </select>
             <select id='Sport2'>
-              <option value="Basketball">Basketball</option>
             </select>
-            <select id='Gender'>
-              <option selected=selected value="Female">Female</option>
-              <option value="Male">Male</option>
+            <select id='Gender2'>
             </select>
-            <select id='Income'>
-              <option selected=selected value="H">High-income Countries</option>
-              <option value="UM">Upper-middle income Countries</option>
-              <option value="LM">Low-middle income Countries</option>
-              <option value="L">Low income Countries</option>
+            <select id='Income2'>
             </select>
           </div>
           <div id="age-slider" style="font-size: small;"></div>
-          <div id="pie-chart"></div>
+          <p>For every 100 such athletes, our model predicts</p>
+          <div id="unit-vis"></div>
         </div>
 
 
@@ -378,6 +372,6 @@ Correlate with Performance</h1>
     <script src="./tornadoFunctions.js"></script>
     <script src="./mapFunctions.js"></script>
     <script src="./mapandTornado.js"></script>
-    <!-- <script src="./prediction.js"></script> -->
+    <script src="./prediction.js"></script>
   </body>
 </html>
