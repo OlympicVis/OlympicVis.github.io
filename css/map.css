@@ -1,7 +1,3 @@
-#map {
-  top: 50%;
-  left: 50%;
-}
 /*body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -100,7 +96,7 @@ legend{
       
   }
 
-  #reset {
+  #resetMap {
     position: relative;
     top: -310px;
     left: 0px;
