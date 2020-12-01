@@ -116,8 +116,12 @@
                       <div>
                         <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> alphabetical</label>
                       </div>
+                      </br>
+                      <div>
+                        <label><input type="radio" name="optradio" value="num" class="optradio" id="num"> Number of athletes</label>
+                      </div>
 
-
+                      </br>
                       <table style="border:0; border-spacing: 0; border-collapse: collapse; width: 225px;" cellspacing="0" cellpadding="0">
                         <tr>
                           <td>
@@ -140,44 +144,103 @@
                       </table>
                     </fieldset>
                   </form>
-
+                </div>
+                <div>
                   </br></br>
-                  Filter by:
+                  Color by:
 
                   <form class="filterForm" id="filterForm" style="margin-left:7%;">
                     <fieldset>
-                      <div>
-                          <input type="radio" name="optradio" value="season" class="optradio" id="season" disabled> Seasons
-                          <div class="check">
-                              <div class="winter">
-                                <input checked="checked" class="winter_check" id="winter" name="optcheck" type="checkbox" disabled/>  Winter
+                      
+                      
+                        <div>
+                          <label><input type="radio" name="optradio" value="season" class="optradio" id="season" checked="checked"> Seasons</label>
+                        </div>
+                          </br>
+                          <form class="seasonForm" id="seasonForm">
+                            <fieldset>
+                              
+                              Filter by: 
+                              <div class="check">
+                                <div>
+                                  <label class="checkbox" style="--color: #fbb22e;">
+                                    <span class="checkbox__input">
+                                      <input type="checkbox"  class="summer_check" id="summer" name="optcheck" checked>
+                                      <span class="checkbox__control">
+                                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                                          <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                                      </span>
+                                    </span>
+                                    <span class="radio__label">Summer</span>
+                                  </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox" style="--color: #0286c3;">
+                                    <span class="checkbox__input">
+                                      <input type="checkbox" class="winter_check" id="winter" name="optcheck" checked  >
+                                      <span class="checkbox__control">
+                                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                                          <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                                      </span>
+                                    </span>
+                                    <span class="radio__label">Winter</span>
+                                  </label>
+                                </div>
+          
+                                
                               </div>
-                              <div class="enriched">
-                                <input checked="checked" class="summer_check" id="summer" name="optcheck" type="checkbox"  disabled/>  Summer
-                              </div>
+                            </fieldset>
+                          </form>
+                          
+                        </br></br>
+                      
+                        <div>
+                          <label><input type="radio" name="optradio" value="gender" class="optradio" id="gender" > Gender</label>
+                        </div>
+                          </br>
+                          <form class="genderForm" id="genderForm">
+                            <fieldset>
                             
-                          </div>
-                      </div>
-                      <div>
-                          <input type="radio" name="optradio" value="gender" class="optradio" id="gender" disabled> Gender
-                          <div class="check">
-                              <div class="winter">
-                                <input checked="checked" class="female_check" id="female" name="optcheck" type="checkbox" disabled/>  Female
+                            Filter by: 
+                              <div class="check">
+                                <div>
+                                  <label class="checkbox" style="--color: #168c39;">
+                                    <span class="checkbox__input">
+                                      <input type="checkbox" class="female_check" id="female" name="optcheck" disabled checked>
+                                      <span class="checkbox__control">
+                                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                                          <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                                      </span>
+                                    </span>
+                                    <span class="radio__label">Female</span>
+                                  </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox" style="--color: #ee2f4d;">
+                                    <span class="checkbox__input">
+                                      <input type="checkbox" class="male_check" id="male" name="optcheck" disabled checked>
+                                      <span class="checkbox__control">
+                                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                                          <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+                                      </span>
+                                    </span>
+                                    <span class="radio__label">Male</span>
+                                  </label>
+                                </div>
+          
+                                
                               </div>
-                              <div class="enriched">
-                                <input checked="checked" class="male_check" id="male" name="optcheck" type="checkbox"  disabled/>  Male
-                              </div>
-                            
-                          </div>
-                      </div>
+                            </fieldset>
+                          </form>
+                          
+                      
                       
                     </fieldset>
                   </form>
-                  </br></br>
                 </div>
 
                 </br></br>
-                y-axis:
+                Choose Y-axis Attribute:
                 <div select class="sidenav small" id="xScaleSelect">
                   <a href="#st_sports" class="sports">Sports</a>
                   <a href="#st_country" class="country">Country</a>
@@ -205,8 +268,13 @@
                   </tr>
                 </table>
               </div>
+
+              </br></br>
+              <b><i>Scroll inside the plot to zoom and pan!</i></b>
+
               </td>
 
+              
               <td>
                 
                 
