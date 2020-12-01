@@ -118,15 +118,11 @@ function drawTimeLine(activeYears, ageData, medalData) {
             var smargin = 30,
             swidth = 1200 - smargin * 2,
             sheight = 60;
-            var sx = d3.scaleTime()
-                .domain([start_year,end_year])
-                .range([0, swidth]);
-
             d3.select("#timeLinesvg").remove();
             [start_year, end_year] = d3.extent(activeYears);
             //in case start and end year is the same
-            end_year = parseDate(Math.max(end_year, start_year+3));
-            start_year = parseDate(start_year);
+            end_year = parseDate(end_year+3);
+            start_year = parseDate(start_year-3);
             //timeline
             var sx = d3.scaleTime()
             .domain([start_year,end_year])
@@ -137,7 +133,7 @@ function drawTimeLine(activeYears, ageData, medalData) {
             //num of ticks
             var tmpNumTicks =  Math.floor((end_year.getFullYear()-start_year.getFullYear())/2);
             var numTicks = tmpNumTicks>50?Math.floor(tmpNumTicks/2):tmpNumTicks;
-            console.log(tmpNumTicks, numTicks);
+            //console.log(tmpNumTicks, numTicks);
             var svg = d3.select("#year-slider").append("svg")
               .attr("id", "timeLinesvg")
                 .attr("width", swidth + smargin * 2)
@@ -166,14 +162,39 @@ function drawTimeLine(activeYears, ageData, medalData) {
 
             var brushg = svg.append("g")
               .attr("class", "brush")
-              .call(brush)
+              .call(brush);
+
+            // https://github.com/crossfilter/crossfilter/blob/gh-pages/index.html#L466
+            var brushResizePath = function(d) {
+              var e = +(d.type == "e"),
+                  x = e ? 1 : -1,
+                  y = sheight / 2;
+              return "M" + (.5 * x) + "," + y + "A6,6 0 0 " + e + " " + (6.5 * x) + "," + (y + 6) + "V" + (2 * y - 6) + "A6,6 0 0 " + e + " " + (.5 * x) + "," + (2 * y) + "Z" + "M" + (2.5 * x) + "," + (y + 8) + "V" + (2 * y - 8) + "M" + (4.5 * x) + "," + (y + 8) + "V" + (2 * y - 8);
+            }
+
+            var handle = brushg.selectAll(".handle--custom")
+                            .data([{type: "w"}, {type: "e"}])
+                            .enter().append("path")
+                              .attr("class", "handle--custom")
+                              .attr("stroke", "#000")
+                              .attr("cursor", "ew-resize")
+                              .attr("d", brushResizePath);
+
             brushg.selectAll("rect")
               .attr("height", sheight);
+
             function brushed() {
-                var range = d3.brushSelection(this).map(sx.invert);
-                //redraw plots according to brushing
-                ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
-                stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
+                var s = d3.event.selection;
+                if (s === null) {
+                  handle.attr("display", "none");
+                }
+                else {
+                  var range = d3.brushSelection(this).map(sx.invert);
+                  //redraw plots according to brushing
+                  ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
+                  stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
+                  handle.attr("display", null).attr("transform", function(d, i) { return "translate(" + [ s[i], - sheight / 4] + ")"; });
+                }
             }
             brush.move(brushg, [start_year, end_year].map(sx));
 
