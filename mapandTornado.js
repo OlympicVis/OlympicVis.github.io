@@ -60,19 +60,35 @@ d3.queue()
                     d.Records = -1 * d.Records;
                 }
             });
-            //dropdown menu
-            selectBtnYear = document.querySelector('#Year');
-            selectBtnMedal = document.querySelector('#Medal');
+            
             //map
             var getData = d3.nest()
 					.key(function(d){return d.Year;})
                     .entries(incomeData);
+
             //default year 1992
             mapSelectYear = 1988;
-            //create the slider
+            mapSelectAthlete = 'all-athletes';
+            console.log(document.querySelector("#athleteType").athleteTypeRadio);
+            mapSelectAthleteBtn = document.querySelector("#athleteType").athleteTypeRadio;
+            //take the radio button value
+            for (var i = 0; i < mapSelectAthleteBtn.length; i++) {
+                mapSelectAthleteBtn[i].addEventListener('change', function() {
+                    mapSelectAthlete = this.value;
+                    if (mapSelectAthlete === 'all-athletes') {
+                        console.log('all athlete');
+                        plotTornado(allIncomeData, mapSelectYear, mapSelectAthlete);
+                    }
+                    else {
+                        plotTornado(medalIncomeData, mapSelectYear, mapSelectAthlete);
+                    }
+                });
+            }
+
+            //create the year slider
             Array.range = (start, end) => Array.from({length: (end - start)}, (v, k) => k + start);
             var mapYearData = Array.range(1988, 2018);
-            var mapslider = d3.sliderHorizontal()
+            var mapSlider = d3.sliderHorizontal()
             .domain(d3.extent(mapYearData))
             .width(700)
             .tickFormat(d3.format('d'))
@@ -82,13 +98,13 @@ d3.queue()
             .on('onchange', val => {
                 //assign to global var
                 mapSelectYear = val;
-                updateMap(json.features, getData, medalCountryData, allCountryData, mapSelectYear, selectBtnMedal.value);
-                if (selectBtnMedal.value === 'all-athletes') {
+                updateMap(json.features, getData, medalCountryData, allCountryData, mapSelectYear, mapSelectAthlete);
+                if (mapSelectAthlete === 'all-athletes') {
                     console.log('all athlete');
-                    plotTornado(allIncomeData, mapSelectYear, selectBtnMedal.value);
+                    plotTornado(allIncomeData, mapSelectYear, mapSelectAthlete);
                 }
                 else {
-                    plotTornado(medalIncomeData, mapSelectYear, selectBtnMedal.value);
+                    plotTornado(medalIncomeData, mapSelectYear, mapSelectAthlete);
                 }
             });;
             var mapsliderg = d3.select("#mapYearSlider").append("svg")
@@ -96,37 +112,12 @@ d3.queue()
             .attr("height", 100)
             .append("g")
             .attr("transform", "translate(30,30)");
-            mapsliderg.call(mapslider);
+            mapsliderg.call(mapSlider);
 
-
+             //default, 1992, all athletes
             updateMap(json.features, getData, medalCountryData, allCountryData, mapSelectYear, 'all-athletes');
-            //update chart
-            selectBtnYear.addEventListener('change', function() {
-                updateMap(json.features, getData, medalCountryData, allCountryData, selectBtnYear.value, selectBtnMedal.value);
-        });
-
-            //default, 1992, all athletes
             plotTornado(allIncomeData, mapSelectYear, 'all-athletes');
         
-            //update chart based on user selection
-            selectBtnYear.addEventListener('change', function() {
-                    if (selectBtnMedal.value === 'all-athletes') {
-                        plotTornado(allIncomeData, selectBtnYear.value, selectBtnMedal.value);
-                    }
-                    else {
-                        plotTornado(medalIncomeData, selectBtnYear.value, selectBtnMedal.value);
-                    }
-            });
             
-            selectBtnMedal.addEventListener('change', function() {
-                if (selectBtnMedal.value === 'all-athletes') {
-                    plotTornado(allIncomeData, selectBtnYear.value, selectBtnMedal.value);
-                }
-                else {
-                    plotTornado(medalIncomeData, selectBtnYear.value, selectBtnMedal.value);
-                }
-                
-            });
-            //suppose the selected country is Australia
         }
     });
