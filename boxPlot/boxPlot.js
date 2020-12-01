@@ -27,82 +27,23 @@ function frequencyPlot(selection, transition_time, useYAxis, dotRadius, dotColor
     this.bins = [];
     // specifies the order of the country indices based on this.selection
     this.rankings = [];
-
-    // specifies the max x value for each country bin, given the current attribute selected
-    // this.binsMaxX = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // // store information necessary to create a box-and-whisker plot
-    // this.binsMedianX = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // this.bins75perc = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // this.bins25perc = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // this.binsMinX = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // // specifies the max/min x values for each country bin, given the current attribute selected for sorting the countries
-    // this.binsMaxXSort = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // this.binsMinXSort = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // this.binsMedianXSort = {
-    //     "sports": this.bins.slice(0),
-    //     "country": this.bins.slice(0),
-    //     "year": this.bins.slice(0),
-    //     "gender": this.bins.slice(0)
-    // };
-    // data split into bins
     this.binned = [];
 
     // species the coffee IDs of those coffees that are currently selected
     this.selected = [];
-
-    this.sports;
-    this.country;
-    this.gender;
-    this.year;
-    this.sports_season;
-    this.sports_gender;
-    this.country_season;
-    this.country_gender;
+    this.checked = ['Summer', 'Winter'];
 
     this.processed = {
-        "sports": this.sports,
-        "country": this.country,
-        "year": this.gender,
-        "gender": this.year,
-        "sports_season": this.sports_season,
-        "sports_gender":this.sports_gender,
-        "country_season":this.country_season,
-        "country_gender":this.country_gender
+        "sports": null,
+        "country": null,
+        "year": null,
+        "gender": null,
+        "sports_season": null,
+        "sports_gender":null,
+        "country_season":null,
+        "country_gender":null,
+        "year_season": null,
+        "year_gender":null,
     };
 
     // create svg element
@@ -178,40 +119,51 @@ frequencyPlot.prototype.updateY = function(dataset, mode) {
     var freqPlot = this;
 
     var whichAttr = freqPlot.selection;
+
+    var toSort = freqPlot.processed[whichAttr];
     
-    if (freqPlot.sortAttr === "alphabetical") { whichAttr = freqPlot.selection; }
-    //if (freqPlot.freezeOrder !== true || freqPlot.setup) { whichAttr = freqPlot.sortAttr; }
+    if (freqPlot.checked.length == 1) {
+        if (freqPlot.checked[0] === "Summer" || freqPlot.checked[0] === "Winter") {
+            toSort = freqPlot.processed[whichAttr+'_season'].filter(d=> (d.key === freqPlot.checked[0])).map(d=> d.values)[0]
+        } else {
+            toSort = freqPlot.processed[whichAttr+'_gender'].filter(d=> (d.key === freqPlot.checked[0])).map(d=> d.values)[0]
+        }
+    }
+    // console.log(freqPlot.processed[whichAttr+'_season'].filter(d=> (d.key == freqPlot.checked[0])))
+    // console.log(freqPlot.processed[whichAttr+'_season'])
+    // console.log(toSort)
+
 
 
     // determine the rankings of each country
     if (true || freqPlot.freezeOrder !== true || freqPlot.setup == true) {
-        console.log(whichAttr);
         // console.log(freqPlot.processed);
         // console.log(freqPlot.processed[whichAttr]);
         
         // sort alphabetically
         if (mode === "alphabetical") {
 
-            var indices = freqPlot.processed[whichAttr].sort(function(x, y){return x.key > y.key ? 1 : x.key == y.key ? 0 : -1});
+            var indices = toSort.sort(function(x, y){return x.key > y.key ? 1 : x.key == y.key ? 0 : -1});
         }
         // sort by maximum value
         else if (mode === "max") {
             
-            var indices = freqPlot.processed[whichAttr].sort(function(x, y){return x.val.max > y.val.max ? 1 : x.val.max == y.val.max ? 0 : -1});
+            var indices = toSort.sort(function(x, y){return x.value.max > y.value.max ? 1 : x.value.max == y.value.max ? 0 : -1});
             indices = indices.reverse();
         }
         // sort by minimum value
         else if (mode === "min") {
-            var indices = freqPlot.processed[whichAttr].sort(function(x, y){return x.val.min > y.val.min ? 1 : x.val.min == y.val.min ? 0 : -1});
+            // console.log(freqPlot.processed[whichAttr])
+            var indices = toSort.sort(function(x, y){return x.value.min > y.value.min ? 1 : x.value.min == y.value.min ? 0 : -1});
         }
         // sort by median value
         else if (mode === "median") {
-            var indices = freqPlot.processed[whichAttr].sort(function(x, y){return x.val.median > y.val.median ? 1 : x.val.median == y.val.median ? 0 : -1});
+            var indices = toSort.sort(function(x, y){return x.value.median > y.value.median ? 1 : x.value.median == y.value.median ? 0 : -1});
             indices = indices.reverse();
         }
         // sort by number of athlete
         else if (mode === "num") {
-            var indices = freqPlot.processed[whichAttr].sort(function(x, y){return x.val.length > y.val.length ? 1 : x.val.length == y.val.length ? 0 : -1});
+            var indices = toSort.sort(function(x, y){return x.value.length > y.value.length ? 1 : x.value.length == y.value.length ? 0 : -1});
             indices = indices.reverse();
             //console.log(indices);
         }
@@ -225,7 +177,7 @@ frequencyPlot.prototype.updateY = function(dataset, mode) {
     //     d.rank = freqPlot.bins.length - freqPlot.rankings.indexOf(freqPlot.bins.indexOf(d.countryOfOrigin));
     // });
 
-    //console.log(dataset);
+    // console.log(freqPlot.rankings);
     return dataset;
 }
 
@@ -238,8 +190,9 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     **********************/
     var freqPlot = this;
     var dataset = freqPlot.updateY(dataset, freqPlot.sortMode)
+    // console.log(freqPlot.rankings, "ranked list")
     var keys = freqPlot.rankings.map(function(d){return d.key;});
-    
+    // console.log(keys)
 
     this.svg.call(zoom);
 
@@ -254,6 +207,8 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     .transition()
     .duration(freqPlot.transition_time)
     .call(d3.axisLeft(this.yScale).tickSize(0))
+    .selectAll('text')
+    .attr('font-size', Math.min(12, this.yScale.bandwidth() * 1))
 
     // Show the X scale
     this.xScale = d3.scaleLinear()
@@ -262,7 +217,8 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
     var y = this.yScale;
     var x = this.xScale;
-    freqPlot.xAxisG.transition()
+    freqPlot.xAxisG
+        .transition()
         .duration(freqPlot.transition_time)
         .call(d3.axisBottom(freqPlot.xScale));
 
@@ -289,12 +245,14 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     // bnw.merge(bnwEnter)
     //     .transition();
 
+    // console.log(freqPlot.rankings, "len")
+    // console.log(freqPlot.rankings.map(d=> d.value), "before viz")
     // Show the main vertical line
     freqPlot.chartG
     .selectAll(".vertLines line")
     .data(freqPlot.rankings)
-    //.transition()
-    //.duration(freqPlot.transition_time)
+    // .transition()
+    // .duration(freqPlot.transition_time)
         .attr("x1", function(d){return(x(d.value.min))})
         .attr("x2", function(d){return(x(d.value.max))})
         .attr("y1", function(d){return(y(d.key) + y.bandwidth()/2)})
@@ -317,14 +275,14 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
     freqPlot.chartG.selectAll('.boxes rect')
     .data(freqPlot.rankings)
-    //.transition()
-    //.duration(freqPlot.transition_time)
+    // .transition()
+    // .duration(freqPlot.transition_time)
         .attr("x", function(d){return(x(d.value.q1))}) // console.log(x(d.value.q1)) ;
         .attr("width", function(d){ ; return(x(d.value.q3)-x(d.value.q1))}) //console.log(x(d.value.q3)-x(d.value.q1))
         .attr("y", function(d) { return y(d.key); })
         .attr("height", y.bandwidth() )
         .attr("stroke", "black")
-        .style("fill", "#69b3a2")
+        .style("fill", "#F6DBA5")
         .style('opacity', function(d) {
             if (freqPlot.mode === "bnw") { return 1; }
             else { return 0; }
@@ -342,27 +300,6 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         .attr('width', 1)
         .attr('height', w);
         
-    
-
-    // medians.merge(mediansEnter)
-    //     .data(freqPlot.rankings)
-    //     //.transition()
-    //     //.duration(freqPlot.transition_time)
-    //     .attr('transform', function(d, i) {
-    //         var tx = x(d.value.median);
-    //         var ty = y(d.key)
-    //         return 'translate('+[tx,ty]+')';
-    //     })
-    //     // .attr("y1", function(d){return(y(d.key))})
-    //     // .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
-    //     // .attr("x1", function(d){return(x(d.value.median))})
-    //     // .attr("x2", function(d){return(x(d.value.median))})
-    //     .attr("stroke", "black")
-    //     .style('opacity', function(d) {
-    //         if (freqPlot.mode === "bnw") { return 1; }
-    //         else { return 0; }
-    //     });
-
         //medians.exit().remove()
     freqPlot.chartG.selectAll(".medians line")
         .attr("y1", function(d){return(y(d.key))})
@@ -420,7 +357,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         //.attr("cy", function(d){ return( y(d[freqPlot.selection]) + (y.bandwidth()/2) - jitterWidth/2 + Math.random()*jitterWidth )})
         //return(myColor(+d.Age))
         .style("fill", function(d){ 
-            if (d.season === 'Winter') {return 'teal'} else {return 'orange'} })
+            if (d.season === 'Winter') {return '#0286c3'} else {return '#fbb22e'} })
         .attr('r', freqPlot.dotRadius)
         .style('opacity', function() {
             if (freqPlot.mode === "bnw") { return 0; }
@@ -495,6 +432,9 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         freqPlot.yAxisG
             .call(d3.axisLeft(y).tickSize(0))
 
+        freqPlot.yAxisG.selectAll('text')
+            .attr('font-size', Math.min(12, y.bandwidth() * 1))
+
         //freqPlot.svg.selectAll(".y.axis").call(freqPlot.yAxisG);
     
         // update circle position
@@ -526,84 +466,235 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     // Set up evet handlers for each radio button 
     // Source: https://www.dyn-web.com/tutorials/forms/radio/onclick.php
     // get list of radio buttons with name 'optradio'
-    // var sz = document.forms['sortForm'].elements['optradio'];
-    // var sz2 = document.forms['fiterForm'].elements['optradio'];
+    var sz = document.forms['sortForm'].elements['optradio'];
+    // console.log(document.forms['filterForm'])
+    var sz2 = document.forms['filterForm'].elements['optradio'];
 
-    // // loop through list
-    // for (var i=0, len=sz.length; i<len; i++) {
-    //     sz[i].onclick = function() { // assign onclick handler function to each
+    // loop through list
+    for (var i=0, len=sz.length; i<len; i++) {
+        sz[i].onclick = function() { // assign onclick handler function to each
+            console.log("click")
 
-    //         // disable/enable dropdown, as appropriate
-    //         if (this.value=="attribute") {
-    //             //document.forms['sortAttr'].elements["dropdown"].disabled = false;
-    //             document.getElementById('attDropdown').disabled = false;
-    //             document.getElementById('max').disabled = false;
-    //             document.getElementById('min').disabled = false;
-    //             document.getElementById('median').disabled = false;
-    //             freqPlot.freezeOrder = false;
-    //             if (document.getElementById('max').checked) { freqPlot.sortMode = 'max'; }
-    //             else if (document.getElementById('min').checked) { freqPlot.sortMode = 'min'; }
-    //             else if (document.getElementById('median').checked) { freqPlot.sortMode = 'median'; }
+            // disable/enable dropdown, as appropriate
+            if (this.value=="age") {
+                document.getElementById('attDropdown').disabled = false;
 
-    //             var att = document.getElementById('attDropdown');
-    //             att = att.options[att.selectedIndex].value;
-    //             // specify attribute (flavor, aroma, etc.)
-    //             freqPlot.updateY(coffee, freqPlot.sortMode, att);
-    //             freqPlot.updateChart(coffee);
-    //             freqPlot.freezeOrder = true;
+                var att = document.getElementById('attDropdown');
+                att = att.options[att.selectedIndex].value;
+                // console.log(att)
+                freqPlot.updateY(dataset, att);
+                freqPlot.updateChart(dataset);
+                //freqPlot.freezeOrder = true;
                 
-    //         }
-    //         else { 
-    //             document.getElementById('attDropdown').disabled = true;
-    //             document.getElementById('max').disabled = true;
-    //             document.getElementById('min').disabled = true;
-    //             document.getElementById('median').disabled = true;
-    //             document.getElementById('max').checked = true;
-    //             document.getElementById('min').checked = false;
-    //             document.getElementById('median').checked = false;
+            }
+            else { 
+                document.getElementById('attDropdown').disabled = true;
 
-    //             if (this.value=="name" || this.value=="overall" || this.value=="num") {
-    //                 // put clicked radio button's value in total field
-    //                 freqPlot.freezeOrder = false;
-    //                 // specify mode (max, min, median, etc.)
-    //                 freqPlot.updateY(coffee, this.value, freqPlot.sortAttr);
-    //                 freqPlot.updateChart(coffee);
-    //                 freqPlot.freezeOrder = true;
-    //             }
-    //         }
-    //     };
-    // }
-    // for (var i=0, len=sz2.length; i<len; i++) {
-    //     sz2[i].onclick = function() {
-    //         if (this.value=="max" || this.value=="min" || this.value=="median") {
-    //             // put clicked radio button's value in total field
-    //             freqPlot.freezeOrder = false;
-    //             // specify mode (max, min, median, etc.)
-    //             freqPlot.updateY(coffee, this.value, freqPlot.sortAttr);
-    //             freqPlot.updateChart(coffee);
-    //             freqPlot.freezeOrder = true;
-    //         }
-    //     }
-    // }
-    // //document.forms['sortAttr'].elements['dropdown'].onchange = function(e) {
-    // document.getElementById('attDropdown').onchange = function(e) {
-    //     freqPlot.freezeOrder = false;
-    //     if (document.getElementById('max').checked) {
-    //         freqPlot.sortMode = 'max';
-    //     } else if (document.getElementById('min').checked) {
-    //         freqPlot.sortMode = 'min';
-    //     } else if (document.getElementById('median').checked) {
-    //         freqPlot.sortMode = 'median';
-    //     }
-    //     // specify attribute (flavor, aroma, etc.)
-    //     freqPlot.updateY(coffee, freqPlot.sortMode, this.value);
-    //     freqPlot.updateChart(coffee);
-    //     freqPlot.freezeOrder = true;
-    // }
+                if (this.value=="alphabetical" || this.value=="num") {
+
+                    freqPlot.updateY(dataset, this.value);
+                    freqPlot.updateChart(dataset);
+                }
+            }
+        };
+    }
+    for (var i=0, len=sz2.length; i<len; i++) {
+        sz2[i].onclick = function() {
+            if (this.value=="season") {
+                freqPlot.checked = ["Summer", "Winter"]
+                //document.getElementById('gender').disabled = true;
+                document.getElementById('summer').checked = "checked";
+                document.getElementById('winter').checked = "checked";
+                document.getElementById('female').checked = true;
+                document.getElementById('male').checked = true;
+                document.getElementById('female').disabled = true;
+                document.getElementById('male').disabled = true;
+                document.getElementById('summer').disabled = false;
+                document.getElementById('winter').disabled = false;
+                
+
+                freqPlot.updateChart(dataset)
+
+                freqPlot.chartG.selectAll('.dot circle')
+                .style("fill", function(d){ 
+                    if (d.season === 'Winter') {return '#0286c3'} else {return '#fbb22e'} 
+                })
+
+                
+                
+
+
+ 
+            } else {
+                freqPlot.checked = ["F", "M"]
+                //document.getElementById('season').disabled = true;
+                document.getElementById('female').checked = true;
+                document.getElementById('male').checked = true;
+                document.getElementById('summer').checked = true;
+                document.getElementById('winter').checked = true;
+                document.getElementById('summer').disabled = true;
+                document.getElementById('winter').disabled = true;
+                document.getElementById('female').disabled = false;
+                document.getElementById('male').disabled = false;
+                
+
+                freqPlot.updateChart(dataset)
+
+                freqPlot.chartG.selectAll('.dot circle')
+                .style("fill", function(d){ 
+                    if (d.gender == 'M') {return '#ee2f4d'} else {return '#168c39'} 
+                })
+                .style("opacity", freqPlot.dotOpacity)
+            }
+
+
+            if (freqPlot.mode == 'bnw') {
+                freqPlot.chartG.selectAll('.dot circle')
+                .style("opacity", 0)
+            }
+        }
+    }
+
+    //document.forms['sortAttr'].elements['dropdown'].onchange = function(e) {
+    document.getElementById('attDropdown').onchange = function(e) {
+        
+        freqPlot.updateY(dataset, this.value);
+        freqPlot.updateChart(dataset);
+    }
+
+    document.getElementById('summer').onclick = function() {
+        // update the checked list
+        if (this.checked) {
+            freqPlot.checked.push('Summer')
+        } else {
+            remove(freqPlot.checked, 'Summer')
+        }
+
+        if (freqPlot.mode === "d"){
+
+            if ( this.checked ) {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.season == 'Summer'
+                    })
+                    .style("opacity", freqPlot.dotOpacity)
+            } else {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.season == 'Summer'
+                    })
+                    .style("opacity", 0)
+            }
+        } else {
+            freqPlot.updateChart(dataset);
+        } 
+        
+    };
+
+    document.getElementById('winter').onclick = function() {
+        if (this.checked) {
+            freqPlot.checked.push('Winter')
+        } else {
+            remove(freqPlot.checked, 'Winter')
+        }
+
+        if (freqPlot.mode === "d") {
+            if ( this.checked ) {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.season == 'Winter'
+                    })
+                    .style("opacity", freqPlot.dotOpacity)
+            } else {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.season == 'Winter'
+                    })
+                    .style("opacity", 0)
+            }
+        } else {
+            //freqPlot.updateY(dataset, freqPlot.mode);
+            freqPlot.updateChart(dataset);
+        }
+        
+    };
+
+
+
+    document.getElementById('female').onclick = function() {
+        if (this.checked) {
+            freqPlot.checked.push('F')
+        } else {
+            remove(freqPlot.checked, 'F')
+        }
+
+        if (freqPlot.mode === "d") {
+            if ( this.checked ) {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.gender == 'F'
+                    })
+                    .style("opacity", freqPlot.dotOpacity)
+            } else {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.gender == 'F'
+                    })
+                    .style("opacity", 0)
+            }
+        } else {
+            freqPlot.updateChart(dataset);
+        }
+        
+    };
+
+
+    document.getElementById('male').onclick = function() {
+        if (this.checked) {
+            freqPlot.checked.push('M')
+        } else {
+            remove(freqPlot.checked, 'M')
+        }
+
+        if (freqPlot.mode === "d") {
+            if ( this.checked ) {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.gender == 'M'
+                    })
+                    .style("opacity", freqPlot.dotOpacity)
+            } else {
+                freqPlot.chartG.selectAll('.dot circle')
+                    .filter( function (d) {
+                        return d.gender == 'M'
+                    })
+                    .style("opacity", 0)
+            }
+        } else {
+            freqPlot.updateChart(dataset);
+        }
+        
+    };
+
+    if (freqPlot.checked.length == 0) {
+        var bnw = d3.selectAll('line');
+        bnw.style('opacity', 0);
+
+        var bnw = d3.selectAll('rect');
+        bnw.style('opacity', 0);
+    }
 }
 
-
-
+function remove(arr, el) {
+    for( var i = 0; i < arr.length; i++){ 
+    
+        if ( arr[i] === el) { 
+    
+            arr.splice(i, 1); 
+        }
+    
+    }
+}
 
 function switchMode(freqPlot, dataset) {
     //console.log("GOT HERE... switching");
@@ -611,6 +702,7 @@ function switchMode(freqPlot, dataset) {
     else { freqPlot.mode = 'd'; }
 
     console.log("Current mode: ",freqPlot.mode);
+    freqPlot.updateChart(dataset);
 
     if (freqPlot.mode == 'bnw') {
         // make the dots invisible
@@ -627,9 +719,19 @@ function switchMode(freqPlot, dataset) {
     }
     else {
         // make the dots visible
-        var dots = d3.selectAll('circle');
-            dots.style('opacity', freqPlot.dotOpacity)
+        console.log(freqPlot.checked)
+
+        var dots = d3.selectAll('circle')
+            
+            dots.style('opacity', function(d) {
+                if (freqPlot.checked.indexOf(d.season) != -1 || freqPlot.checked.indexOf(d.gender)!= -1){
+                    return freqPlot.dotOpacity
+                } else {
+                    return 0;
+                }
+            })
             .style('r', freqPlot.dotRadius);
+
 
         //make the box and whiskers invisible
         var bnw = d3.selectAll('line');

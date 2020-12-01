@@ -5,7 +5,7 @@ import * as freqVis from "./boxPlot.js"
 **********************/
 // selection, transition_time, useYAxis, dotRadius, dotColor, dotOpacity, dotColorSelected, dotOpacitySelected
 //var frequencyPlot = new freqVis.frequencyPlot("flavor",2000,false, 8, '#663300', 0.05, 'red', 1);
-var frequencyPlot = new freqVis.frequencyPlot("sports",2000,false, 2, '#663300', 0.2, 'red', 1);
+var frequencyPlot = new freqVis.frequencyPlot("sports",2000,false, 2, '#663300', 0.3, 'red', 1);
 
 /**********************
  Data preprocessing
@@ -18,8 +18,8 @@ function dataPreprocessorAthlete(row) {
         'Name': row['Name'],
         'gender': row['Sex'],
         'Age': +row['Age'],
-        'Team': row['Team'],
-        'country': row['NOC'],
+        'country': row['Team'],
+        'NOC': row['NOC'],
         'year': +row['Year'],
         'season': row['Season'],
         'sports': row['Sport'],
@@ -90,6 +90,102 @@ d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
     .entries(dataset)
 
     frequencyPlot.processed["year"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.year;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["sports_season"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.season;})
+    .key(function(d) { return d.sports;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["sports_gender"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.gender;})
+    .key(function(d) { return d.sports;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["country_season"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.season;})
+    .key(function(d) { return d.country;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["country_gender"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.gender;})
+    .key(function(d) { return d.country;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["year_season"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.season;})
+    .key(function(d) { return d.year;})
+    .rollup(function(d) {
+        var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
+      var max = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),1)
+      var q1 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.25)
+      var median = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.5)
+      var q3 = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),.75)
+      var interQuantileRange = q3 - q1
+      min = Math.max(min, q1 - 1.5 * interQuantileRange)
+      max = Math.min(max, q3 + 1.5 * interQuantileRange)
+      return({q1: q1, median: median, q3: q3, interQuantileRange: interQuantileRange, min: min, max: max, length: d.length})
+    })
+    .entries(dataset)
+
+    frequencyPlot.processed["year_gender"] = d3.nest() // nest function allows to group the calculation per level of a factor
+    .key(function(d) { return d.gender;})
     .key(function(d) { return d.year;})
     .rollup(function(d) {
         var min = d3.quantile(d.map(function(g) { return g.Age;}).sort(d3.ascending),0)
