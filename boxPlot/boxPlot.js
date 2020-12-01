@@ -53,7 +53,7 @@ function frequencyPlot(selection, transition_time, useYAxis, dotRadius, dotColor
     var svgHeight = +this.svg.attr('height');
 
     this.padding = {t: 41, r: 60, b: 50, l: 140, 
-                    x_r: 145, 
+                    x_r: 45, 
                     y_countries_b: 0, x_countries_r: 20, 
                     x_axis_b: 20};
 
@@ -284,7 +284,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         .attr("stroke", "black")
         .style("fill", "#F6DBA5")
         .style('opacity', function(d) {
-            if (freqPlot.mode === "bnw") { return 1; }
+            if (freqPlot.mode === "bnw") { return .5; }
             else { return 0; }
         });
 
@@ -303,11 +303,11 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         //medians.exit().remove()
     freqPlot.chartG.selectAll(".medians line")
         .attr("y1", function(d){return(y(d.key))})
-        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)})
+        .attr("y2", function(d){return(y(d.key) + y.bandwidth())})
         .attr("x1", function(d){return(x(d.value.median))})
         .attr("x2", function(d){return(x(d.value.median))})
         .attr("stroke", "black")
-        .style("width", 80)
+        .style("width", 120)
         .style('opacity', function(d) {
             if (freqPlot.mode === "bnw") { return 1; }
             else { return 0; }
@@ -343,6 +343,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         .style("opacity", 0)
     }
 
+    
     // Add individual points with jitter
     var jitterWidth = y.bandwidth() * 0.7
     var dots = this.chartG.selectAll(".dot")
@@ -357,7 +358,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         //.attr("cy", function(d){ return( y(d[freqPlot.selection]) + (y.bandwidth()/2) - jitterWidth/2 + Math.random()*jitterWidth )})
         //return(myColor(+d.Age))
         .style("fill", function(d){ 
-            if (d.season === 'Winter') {return '#0286c3'} else {return '#fbb22e'} })
+            if (d.season === 'Winter') {return '#0286c3'} else {return '#ee2f4d'} })
         .attr('r', freqPlot.dotRadius)
         .style('opacity', function() {
             if (freqPlot.mode === "bnw") { return 0; }
@@ -385,6 +386,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
             //console.log(ty);
             return 'translate('+[tx,ty]+')';
         });
+
 
     //dots.exit().remove();
 
@@ -427,7 +429,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
         freqPlot.chartG.selectAll(".medians line")
         .attr("y1", function(d){return(y(d.key))})
-        .attr("y2", function(d){return(y(d.key) + y.bandwidth()/2)});
+        .attr("y2", function(d){return(y(d.key) + y.bandwidth())});
 
         freqPlot.yAxisG
             .call(d3.axisLeft(y).tickSize(0))
@@ -517,11 +519,15 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
                 freqPlot.chartG.selectAll('.dot circle')
                 .style("fill", function(d){ 
-                    if (d.season === 'Winter') {return '#0286c3'} else {return '#fbb22e'} 
+                    if (d.season === 'Winter') {return '#0286c3'} else {return '#ee2f4d'} 
                 })
+                .style("opacity", freqPlot.dotOpacity)
 
                 
-                
+            if (freqPlot.mode == 'bnw') {
+                freqPlot.chartG.selectAll('.dot circle')
+                .style("opacity", 0.1)
+            }
 
 
  
@@ -542,7 +548,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
                 freqPlot.chartG.selectAll('.dot circle')
                 .style("fill", function(d){ 
-                    if (d.gender == 'M') {return '#ee2f4d'} else {return '#168c39'} 
+                    if (d.gender == 'M') {return '#fbb22e'} else {return '#168c39'} 
                 })
                 .style("opacity", freqPlot.dotOpacity)
             }
@@ -550,7 +556,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
 
             if (freqPlot.mode == 'bnw') {
                 freqPlot.chartG.selectAll('.dot circle')
-                .style("opacity", 0)
+                .style("opacity", 0.1)
             }
         }
     }
@@ -566,57 +572,51 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         // update the checked list
         if (this.checked) {
             freqPlot.checked.push('Summer')
+            freqPlot.updateChart(dataset);
         } else {
             remove(freqPlot.checked, 'Summer')
         }
 
-        if (freqPlot.mode === "d"){
-
-            if ( this.checked ) {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.season == 'Summer'
-                    })
-                    .style("opacity", freqPlot.dotOpacity)
-            } else {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.season == 'Summer'
-                    })
-                    .style("opacity", 0)
-            }
+        if ( this.checked ) {
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.season == 'Summer'
+                })
+                .style("opacity", freqPlot.dotOpacity)
         } else {
-            freqPlot.updateChart(dataset);
-        } 
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.season == 'Summer'
+                })
+                .style("opacity", 0)
+        }
+
+        freqPlot.updateChart(dataset);
         
     };
 
     document.getElementById('winter').onclick = function() {
         if (this.checked) {
             freqPlot.checked.push('Winter')
+            freqPlot.updateChart(dataset);
         } else {
             remove(freqPlot.checked, 'Winter')
         }
 
-        if (freqPlot.mode === "d") {
-            if ( this.checked ) {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.season == 'Winter'
-                    })
-                    .style("opacity", freqPlot.dotOpacity)
-            } else {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.season == 'Winter'
-                    })
-                    .style("opacity", 0)
-            }
+        if ( this.checked ) {
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.season == 'Winter'
+                })
+                .style("opacity", freqPlot.dotOpacity)
         } else {
-            //freqPlot.updateY(dataset, freqPlot.mode);
-            freqPlot.updateChart(dataset);
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.season == 'Winter'
+                })
+                .style("opacity", 0)
         }
-        
+        freqPlot.updateChart(dataset);
     };
 
 
@@ -624,27 +624,26 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     document.getElementById('female').onclick = function() {
         if (this.checked) {
             freqPlot.checked.push('F')
+            freqPlot.updateChart(dataset);
+
         } else {
             remove(freqPlot.checked, 'F')
         }
-
-        if (freqPlot.mode === "d") {
-            if ( this.checked ) {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.gender == 'F'
-                    })
-                    .style("opacity", freqPlot.dotOpacity)
-            } else {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.gender == 'F'
-                    })
-                    .style("opacity", 0)
-            }
+        if ( this.checked ) {
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.gender == 'F'
+                })
+                .style("opacity", freqPlot.dotOpacity)
         } else {
-            freqPlot.updateChart(dataset);
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.gender == 'F'
+                })
+                .style("opacity", 0)
         }
+
+        freqPlot.updateChart(dataset);
         
     };
 
@@ -652,38 +651,39 @@ frequencyPlot.prototype.updateChart = function(dataset) {
     document.getElementById('male').onclick = function() {
         if (this.checked) {
             freqPlot.checked.push('M')
+            freqPlot.updateChart(dataset);
+
         } else {
             remove(freqPlot.checked, 'M')
         }
 
-        if (freqPlot.mode === "d") {
-            if ( this.checked ) {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.gender == 'M'
-                    })
-                    .style("opacity", freqPlot.dotOpacity)
-            } else {
-                freqPlot.chartG.selectAll('.dot circle')
-                    .filter( function (d) {
-                        return d.gender == 'M'
-                    })
-                    .style("opacity", 0)
-            }
+        if ( this.checked ) {
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.gender == 'M'
+                })
+                .style("opacity", freqPlot.dotOpacity)
         } else {
-            freqPlot.updateChart(dataset);
+            freqPlot.chartG.selectAll('.dot circle')
+                .filter( function (d) {
+                    return d.gender == 'M'
+                })
+                .style("opacity", 0)
         }
+
+        freqPlot.updateChart(dataset);
         
     };
 
     if (freqPlot.checked.length == 0) {
         var bnw = d3.selectAll('line');
         bnw.style('opacity', 0);
-
+    
         var bnw = d3.selectAll('rect');
         bnw.style('opacity', 0);
     }
 }
+
 
 function remove(arr, el) {
     for( var i = 0; i < arr.length; i++){ 
@@ -705,17 +705,23 @@ function switchMode(freqPlot, dataset) {
     freqPlot.updateChart(dataset);
 
     if (freqPlot.mode == 'bnw') {
-        // make the dots invisible
-        var dots = d3.selectAll('circle');
-        dots.style('opacity', function(d) {
-            return 0;
-        });
 
         // make the box and whiskers visible
         var bnwMedians = d3.selectAll('line');
         bnwMedians.style('opacity', 1);
         bnwMedians = d3.selectAll('rect');
-        bnwMedians.style('opacity', 1);
+        bnwMedians.style('opacity', 0.5);
+
+        // make the filtered dots less visible
+        
+        var dots = d3.selectAll('circle')
+        dots.style('opacity', function(d) {
+            if (freqPlot.checked.indexOf(d.season) != -1 || freqPlot.checked.indexOf(d.gender)!= -1){
+                return 0.1
+            } else {
+                return 0;
+            }
+        })
     }
     else {
         // make the dots visible
@@ -742,6 +748,18 @@ function switchMode(freqPlot, dataset) {
     }
     freqPlot.switchingMode = true;
     //freqPlot.updateChart(dataset);
+    if (freqPlot.checked.length == 0) {
+        var bnw = d3.selectAll('line');
+        bnw.style('opacity', 0);
+    
+        var bnw = d3.selectAll('rect');
+        bnw.style('opacity', 0);
+
+        var dots = d3.selectAll('circle');
+        dots.style('opacity', function(d) {
+            return 0;
+        });
+    }
 }
 
 export { frequencyPlot };
