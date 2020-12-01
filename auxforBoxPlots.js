@@ -9,12 +9,9 @@ d3.queue()
           console.error('Something went wrong: ' + error);
       }
         else {
-          //console.log(ageData);
-          //console.log(selectorData);
-          //selectSeason = $('#Season'),
-          var selectSeason = document.querySelector('#Season')
-          var selectSport = document.querySelector('#Sport');
-          var selectEvent = document.querySelector('#Event');
+          selectSeason = document.querySelector('#Season')
+          selectSport = document.querySelector('#Sport');
+          selectEvent = document.querySelector('#Event');
         
           // populate drop-downs
           setOptions(selectSeason, Object.keys(selectorData));
@@ -24,12 +21,7 @@ d3.queue()
           function setOptions(dropDown, options) {
             //sort alphabetically
             options.sort();
-            //console.log(options);
-            // clear out any existing values
             dropDown.innerHTML = '';
-            // insert the new options into the drop-down
-            // select the first one by default
-            //var i = 0;
             options.forEach(function(value) {
                   //change summer default to a sport with more medals
                   if (value == 'Summer') {
@@ -51,7 +43,7 @@ d3.queue()
           }
 
           //default
-          var parseDate =  d3.timeParse("%Y");
+          parseDate =  d3.timeParse("%Y");
           activeYears = yearData[selectSeason.value][selectSport.value][selectEvent.value];
           [start_year, end_year] = d3.extent(activeYears); 
           //in case start and end year is the same
@@ -59,16 +51,7 @@ d3.queue()
           start_year = parseDate(start_year);
           ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
           stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
-          //timeline
-          var smargin = 30,
-          swidth = 1200 - smargin * 2,
-          sheight = 60;
-          var sx = d3.scaleTime()
-              .domain([start_year,end_year])
-              .range([0, swidth]);
-          //console.log(yearData[selectSeason.value][selectSport.value][selectEvent.value]);
-          //console.log(sx(activeYears[0]));
-          //console.log(sx(new Date(activeYears[0])));
+          
           d3.select("#year-slider")
           .append("svg")
           .attr("id", "activeYears")
@@ -86,221 +69,122 @@ d3.queue()
           .attr("height", 30)
           .style("fill", 'green');
           
-          var brush = d3.brushX()
-              .extent([[0,0], [swidth,sheight]])
-              .on("brush", brushed);
-          var svg = d3.select("#year-slider").append("svg")
-            .attr("id", "timeLinesvg")
-              .attr("width", swidth + smargin * 2)
-              .attr("height", sheight + smargin)
-            .append("g")
-              .attr("transform", "translate(" + smargin + "," + smargin + ")")
-              .call(d3.axisBottom()
-                  .scale(sx)
-                  .ticks(Math.floor((end_year.getFullYear()-start_year.getFullYear())/2)));
-          
-          //add vertical lines for active years
-          var verg = d3.select("#timeLinesvg")
-                      .append("g")
-                      .attr("transform", "translate(" + smargin + "," + smargin + ")");
-
-          verg.selectAll("line")
-            .data(activeYears)
-            .enter()
-            .append("line")
-            .attr("x1", function(d) { return sx(new Date(d, 0, 0))})
-            .attr("x2", function(d) { return sx(new Date(d, 0, 0))})
-            .attr("y1", 20)
-            .attr("y2", sheight)
-            .style("stroke-width", 8)
-            .style("stroke", "green")
-            .style("fill", "none");
-
-
-          var brushg = svg.append("g")
-              .attr("class", "brush")
-              .call(brush)
-          brushg.selectAll("rect")
-              .attr("height", sheight);
-          function brushed() {
-            var range = d3.brushSelection(this).map(sx.invert);
-            //redraw plots according to brushing
-            ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
-            stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
-        }
-          brush.move(brushg, [start_year, end_year].map(sx));
-          //timeline ends
-          
+          drawTimeLine(activeYears, ageData, medalData);
           
           selectSeason.addEventListener('change', function() {
             setOptions(selectSport, Object.keys(selectorData[selectSeason.value]));
             setOptions(selectEvent, selectorData[selectSeason.value][selectSport.value]);
             activeYears = yearData[selectSeason.value][selectSport.value][selectEvent.value];
-            [start_year, end_year] = d3.extent(activeYears);
+            [start_year, end_year] = d3.extent(activeYears); 
             //in case start and end year is the same
             end_year = parseDate(Math.max(end_year, start_year+3));
-            start_year = parseDate(start_year); 
-         
-            //timeline
-            d3.select("#timeLinesvg").remove();
-            var sx = d3.scaleTime()
-            .domain([start_year,end_year])
-            .range([0, swidth]);
-            var brush = d3.brushX()
-                .extent([[0,0], [swidth,sheight]])
-                .on("brush", brushed);
-            var svg = d3.select("#year-slider").append("svg")
-              .attr("id", "timeLinesvg")
-                .attr("width", swidth + smargin * 2)
-                .attr("height", sheight + smargin)
-              .append("g")
-                .attr("transform", "translate(" + smargin + "," + smargin + ")")
-                .call(d3.axisBottom()
-                    .scale(sx)
-                    .ticks(Math.floor((end_year.getFullYear()-start_year.getFullYear())/2)));
-            var brushg = svg.append("g")
-                .attr("class", "brush")
-                .call(brush)
-            brushg.selectAll("rect")
-                .attr("height", sheight);
-            brush.move(brushg, [start_year, end_year].map(sx));
-            var verg = d3.select("#timeLinesvg")
-                      .append("g")
-                      .attr("transform", "translate(" + smargin + "," + smargin + ")");
-
-            verg.selectAll("line")
-              .data(activeYears)
-              .enter()
-              .append("line")
-              .attr("x1", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("x2", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("y1", 20)
-              .attr("y2", sheight)
-              .style("stroke-width", 8)
-              .style("stroke", "green")
-              .style("fill", "none");
-            //timeline ends    
+            start_year = parseDate(start_year);  
+            console.log(ageData[selectSeason.value][selectSport.value][selectEvent.value]);
             ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
             stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
+            drawTimeLine(activeYears, ageData, medalData);  
 
           });
 
           selectSport.addEventListener('change', function() {
             setOptions(selectEvent, selectorData[selectSeason.value][selectSport.value]);
             activeYears = yearData[selectSeason.value][selectSport.value][selectEvent.value];
-            [start_year, end_year] = d3.extent(activeYears);
+            [start_year, end_year] = d3.extent(activeYears); 
             //in case start and end year is the same
             end_year = parseDate(Math.max(end_year, start_year+3));
             start_year = parseDate(start_year);
-            //console.log(start_year, end_year);
-            //timeline
-            d3.select("#timeLinesvg").remove();
-            var sx = d3.scaleTime()
-            .domain([start_year,end_year])
-            .range([0, swidth]);
-            var brush = d3.brushX()
-                .extent([[0,0], [swidth,sheight]])
-                .on("brush", brushed);
-            var svg = d3.select("#year-slider").append("svg")
-              .attr("id", "timeLinesvg")
-                .attr("width", swidth + smargin * 2)
-                .attr("height", sheight + smargin)
-              .append("g")
-                .attr("transform", "translate(" + smargin + "," + smargin + ")")
-                .call(d3.axisBottom()
-                    .scale(sx)
-                    .ticks(Math.min(Math.floor((end_year.getFullYear()-start_year.getFullYear())/2), 20)));
-            var brushg = svg.append("g")
-                .attr("class", "brush")
-                .call(brush)
-            brushg.selectAll("rect")
-                .attr("height", sheight);
-            brush.move(brushg, [start_year, end_year].map(sx));
-            var verg = d3.select("#timeLinesvg")
-                      .append("g")
-                      .attr("transform", "translate(" + smargin + "," + smargin + ")");
-
-            verg.selectAll("line")
-              .data(activeYears)
-              .enter()
-              .append("line")
-              .attr("x1", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("x2", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("y1", 20)
-              .attr("y2", sheight)
-              .style("stroke-width", 8)
-              .style("stroke", "green")
-              .style("fill", "none");
-            //timeline ends
+            console.log(ageData[selectSeason.value][selectSport.value][selectEvent.value]);
             ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
             stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
-            //console.log(selectSeason.value, selectSport.value, selectEvent.value);
+            drawTimeLine(activeYears, ageData, medalData);
           })
 
           selectEvent.addEventListener('change', function() {
-            //console.log(selectSeason.value, selectSport.value, selectEvent.value);
-            //console.log(data[selectSeason.value][selectSport.value][selectEvent.value]);
-            //reset
+            //console.log(ageData[selectSeason.value][selectSport.value][selectEvent.value]);
             activeYears = yearData[selectSeason.value][selectSport.value][selectEvent.value];
-            [start_year, end_year] = d3.extent(activeYears);
-
+            [start_year, end_year] = d3.extent(activeYears); 
             //in case start and end year is the same
             end_year = parseDate(Math.max(end_year, start_year+3));
             start_year = parseDate(start_year);
-            //timeline
-            d3.select("#timeLinesvg").remove();
-            var sx = d3.scaleTime()
-            .domain([start_year,end_year])
-            .range([0, swidth]);
-            var brush = d3.brushX()
-                .extent([[0,0], [swidth,sheight]])
-                .on("brush", brushed);
-            var svg = d3.select("#year-slider").append("svg")
-              .attr("id", "timeLinesvg")
-                .attr("width", swidth + smargin * 2)
-                .attr("height", sheight + smargin)
-              .append("g")
-                .attr("transform", "translate(" + smargin + "," + smargin + ")")
-                .call(d3.axisBottom()
-                    .scale(sx)
-                    .ticks(Math.floor((end_year.getFullYear()-start_year.getFullYear())/2)));
-            var brushg = svg.append("g")
-                .attr("class", "brush")
-                .call(brush)
-            brushg.selectAll("rect")
-                .attr("height", sheight);
-            brush.move(brushg, [start_year, end_year].map(sx));
-            var verg = d3.select("#timeLinesvg")
-                      .append("g")
-                      .attr("transform", "translate(" + smargin + "," + smargin + ")");
-
-            verg.selectAll("line")
-              .data(activeYears)
-              .enter()
-              .append("line")
-              .attr("x1", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("x2", function(d) {console.log(sx(new Date(d, 0, 0))); return sx(new Date(d, 0, 0))})
-              .attr("y1", 20)
-              .attr("y2", sheight)
-              .style("stroke-width", 8)
-              .style("stroke", "green")
-              .style("fill", "none");
-            //timeline ends
             ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
             stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], start_year, end_year);
+            drawTimeLine(activeYears, ageData, medalData);
           });
         }
 });
 
+function drawTimeLine(activeYears, ageData, medalData) {
+            //timeline
+            var smargin = 30,
+            swidth = 1200 - smargin * 2,
+            sheight = 60;
+            var sx = d3.scaleTime()
+                .domain([start_year,end_year])
+                .range([0, swidth]);
+
+            d3.select("#timeLinesvg").remove();
+            [start_year, end_year] = d3.extent(activeYears);
+            //in case start and end year is the same
+            end_year = parseDate(Math.max(end_year, start_year+3));
+            start_year = parseDate(start_year);
+            //timeline
+            var sx = d3.scaleTime()
+            .domain([start_year,end_year])
+            .range([0, swidth]);
+            var brush = d3.brushX()
+                .extent([[0,0], [swidth,sheight]])
+                .on("brush", brushed);
+            //num of ticks
+            var tmpNumTicks =  Math.floor((end_year.getFullYear()-start_year.getFullYear())/2);
+            var numTicks = tmpNumTicks>50?Math.floor(tmpNumTicks/2):tmpNumTicks;
+            console.log(tmpNumTicks, numTicks);
+            var svg = d3.select("#year-slider").append("svg")
+              .attr("id", "timeLinesvg")
+                .attr("width", swidth + smargin * 2)
+                .attr("height", sheight + smargin)
+              .append("g")
+                .attr("transform", "translate(" + smargin + "," + smargin + ")")
+                .call(d3.axisBottom()
+                    .scale(sx)
+                    .ticks(numTicks));
+         
+            var verg = d3.select("#timeLinesvg")
+                      .append("g")
+                      .attr("transform", "translate(" + smargin + "," + smargin + ")");
+
+            verg.selectAll("line")
+              .data(activeYears)
+              .enter()
+              .append("line")
+              .attr("x1", function(d) { return sx(new Date(d, 0, 0))})
+              .attr("x2", function(d) { return sx(new Date(d, 0, 0))})
+              .attr("y1", 20)
+              .attr("y2", sheight)
+              .style("stroke-width", 8)
+              .style("stroke", "green")
+              .style("fill", "none");
+
+            var brushg = svg.append("g")
+              .attr("class", "brush")
+              .call(brush)
+            brushg.selectAll("rect")
+              .attr("height", sheight);
+            function brushed() {
+                var range = d3.brushSelection(this).map(sx.invert);
+                //redraw plots according to brushing
+                ageDotLine(ageData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
+                stackedBar(medalData[selectSeason.value][selectSport.value][selectEvent.value], range[0], range[1]);
+            }
+            brush.move(brushg, [start_year, end_year].map(sx));
+
+}
+
 
 
 function ageDotLine(data, start_year, end_year) {
+  
     d3.select("#ageDotLinesvg").remove();
     d3.selectAll(".ageDotToolTip").remove();
-    //console.log(data);
-    //e.g. [
-		//{"Year": 1996, "Medal": Gold, "minAge":17, "maxAge":31, "medianAge":21}, 
-    //{"Year": 2000, "Medal": Silver, "minAge":17, "maxAge":31, "medianAge":21}] 
     
     var margin = {top: 10, right: 30, bottom: 50, left: 50},
     width = 460 - margin.left - margin.right,
@@ -318,6 +202,7 @@ function ageDotLine(data, start_year, end_year) {
     //find y axis domain
     var maxAge = 0;
     var minAge = 1000;
+    //console.log(data);
     data.forEach((entry) => {
       if (entry["maxAge"] > maxAge) {
         maxAge = entry["maxAge"]
@@ -326,14 +211,6 @@ function ageDotLine(data, start_year, end_year) {
         minAge = entry["minAge"]
       }
     });
-    //filter data
-    data = data.filter((entry) => {
-      return entry['Year'] >= start_year && entry['Year'] <= end_year;
-    });
-    //console.log(data);
-
-
-
     var parseDate =  d3.timeParse("%Y");
     //parse year when necessary
     data.forEach((entry) => {
@@ -341,6 +218,12 @@ function ageDotLine(data, start_year, end_year) {
         entry["Year"] = parseDate(entry["Year"]);
       }
     });
+    //console.log(data);
+    //filter data
+    data = data.filter((entry) => {
+      return entry['Year'] >= start_year && entry['Year'] <= end_year;
+    });
+    //console.log(data);
 
 
     var tooltip = d3.tip()
