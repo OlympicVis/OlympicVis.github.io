@@ -1,4 +1,6 @@
 function updateMap(jsonFeature, getData, medalCountryData, allCountryData, selectYear, selectMedal) {
+	d3.select("#mapsvg").remove();
+	d3.selectAll(".legend").remove();
     //init
     var format = d3.format(",");
     var margin = {top: 0, right: 0, bottom: 0, left: 0},

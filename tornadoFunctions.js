@@ -1,4 +1,5 @@
 function plotTornado(data, selectYear, selectMedal) {
+    d3.selectAll(".tornado-svg").remove();
     newdata = data.filter(function (elem) {
             return elem.Year=== parseInt(selectYear); 
     });
