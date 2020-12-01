@@ -1,10 +1,10 @@
 //create year slider
 d3.queue()  
-    .defer(d3.json, 'data/all_prediction_selection_list.json')
+    //.defer(d3.json, 'data/all_prediction_selection_list.json')
     .defer(d3.json, 'data/athlete_medal_probabilities.json')
     .defer(d3.json, 'data/sports_classification_accuracy.json')
-    .await(function(error, preditorData, probData, accData) {
-      //console.log(preditorData);
+    .await(function(error, probData, accData) {
+      //console.log(probData);
       //console.log(probData);
       //console.log(accData);
       probData = JSON.parse(probData.replace(/\bNaN\b/g, "null"));
@@ -17,10 +17,10 @@ d3.queue()
       var selectIncome2 = document.querySelector('#Income2');
       
       //populate drop-downs
-      setPredOptions(selectSeason2, Object.keys(preditorData));
-      setPredOptions(selectSport2, Object.keys(preditorData[selectSeason2.value]));
-      setPredOptions(selectGender2, Object.keys(preditorData[selectSeason2.value][selectSport2.value]));
-      setPredOptions(selectIncome2, preditorData[selectSeason2.value][selectSport2.value][selectGender2.value]);
+      setPredOptions(selectSeason2, Object.keys(probData));
+      setPredOptions(selectSport2, Object.keys(probData[selectSeason2.value]));
+      setPredOptions(selectGender2, Object.keys(probData[selectSeason2.value][selectSport2.value]));
+      setPredOptions(selectIncome2, Object.keys(probData[selectSeason2.value][selectSport2.value][selectGender2.value]));
   
 
         
@@ -44,10 +44,10 @@ d3.queue()
                   dropDown.innerHTML += '<option selected=selected value="' + value + '">' + "High-income countries" + '</option>';
                 }
                 else if (value === "UM") {
-                  dropDown.innerHTML += '<option value="' + value + '">' + 'High-income countries' + '</option>';
+                  dropDown.innerHTML += '<option value="' + value + '">' + 'Upper-middle countries' + '</option>';
                 }
                 else if (value === "LM") {
-                  dropDown.innerHTML += '<option value="' + value + '">' + 'Upper-middle income countries' + '</option>';
+                  dropDown.innerHTML += '<option value="' + value + '">' + 'Lower-middle income countries' + '</option>';
                 }
                 else if (value === "L") {
                   dropDown.innerHTML += '<option value="' + value + '">' + 'Low-income countries' + '</option>';
@@ -99,7 +99,7 @@ d3.queue()
         selectSeason2.addEventListener('change', function() {
           //console.log(selectSeason2.value);
           removeAll();
-          setPredOptions(selectSport2, Object.keys(preditorData[selectSeason2.value]));
+          setPredOptions(selectSport2, Object.keys(probData[selectSeason2.value]));
           nowData = probData[selectSeason2.value][selectSport2.value][selectGender2.value][selectIncome2.value][selectAge];
           nowData["Accuracy"] = parseFloat(accData[selectSport2.value].Accuracy);
           //nowData = probData[selectSeason2.value][selectSport2.value][selectGender.value][selectIncome.value][selectAge.value];
@@ -150,10 +150,10 @@ function updatePeople(data) {
   r = 5;
   peopleData = {};
   //console.log(peopleData);
-  sureCnt = Math.floor(numVis * data.Accuracy);
-  peopleData = {'Gold': Math.floor(sureCnt*data.Gold), 
-  'Silver': Math.floor(sureCnt*data.Silver),
-  'Bronze': Math.floor(sureCnt*data.Bronze),
+  sureCnt = Math.ceil(numVis * data.Accuracy);
+  peopleData = {'Gold': Math.ceil(sureCnt*data.Gold), 
+  'Silver': Math.ceil(sureCnt*data.Silver),
+  'Bronze': Math.ceil(sureCnt*data.Bronze),
   'None': 0,
   'Uncertain': numVis - sureCnt
 };
@@ -199,12 +199,12 @@ function updatePeople(data) {
 
   for (var i in medalType) {
         if (medalType[i] === 'Gold') {
-          if (goldArr.length > 0) {
           medalContainer = d3.select("#unit-vis")
-            .append("svg")
-            .attr("id", 'gold')
-            .attr("width", width)
-            .attr("height", height);
+          .append("svg")
+          .attr("id", 'gold')
+          .attr("width", width)
+          .attr("height", height);
+          if (goldArr.length > 0) {
           medalContainer.selectAll("circle")
             .data(goldArr)
             .enter()
@@ -222,12 +222,12 @@ function updatePeople(data) {
             .text("Gold: "+ goldArr.length + "/100");
         }
         else if (medalType[i] === 'Silver') {
-          if (silverArr.length > 0) {
           medalContainer = d3.select("#unit-vis")
-            .append("svg")
-            .attr("id", 'silver')
-            .attr("width", width)
-            .attr("height", height);
+          .append("svg")
+          .attr("id", 'silver')
+          .attr("width", width)
+          .attr("height", height);
+          if (silverArr.length > 0) {
           medalContainer.selectAll("circle")
             .data(silverArr)
             .enter()
@@ -239,20 +239,19 @@ function updatePeople(data) {
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d =>d);
-          
-          medalContainer.append("text")
-            .attr('class', 'label')
-            .attr('transform','translate(0, 15)')
-            .text("Silver: "+ silverArr.length + "/100");
           }
+          medalContainer.append("text")
+          .attr('class', 'label')
+          .attr('transform','translate(0, 15)')
+          .text("Silver: "+ silverArr.length + "/100");
         }
         else if (medalType[i] === 'Bronze') {
-          if (bronzeArr.length > 0) {
           medalContainer = d3.select("#unit-vis")
-            .append("svg")
-            .attr("id", 'bronze')
-            .attr("width", width)
-            .attr("height", height);
+          .append("svg")
+          .attr("id", 'bronze')
+          .attr("width", width)
+          .attr("height", height);
+          if (bronzeArr.length > 0) {
           medalContainer.selectAll("circle")
             .data(bronzeArr)
             .enter()
@@ -264,20 +263,20 @@ function updatePeople(data) {
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d=>d);
+          }
 
           medalContainer.append("text")
           .attr('class', 'label')
           .attr('transform','translate(0, 15)')
           .text("Bronze: "+ bronzeArr.length + "/100");
-          }
         }
         else if (medalType[i] === 'None') {
-          if (noneArr.length > 0) {
           medalContainer = d3.select("#unit-vis")
-            .append("svg")
-            .attr("id", 'none')
-            .attr("width", width)
-            .attr("height", height);
+          .append("svg")
+          .attr("id", 'none')
+          .attr("width", width)
+          .attr("height", height);
+          if (noneArr.length > 0) {
           medalContainer.selectAll("circle")
             .data(noneArr)
             .enter()
@@ -289,19 +288,19 @@ function updatePeople(data) {
             .attr("r", r)
             //.style("stroke", 'black')
             .style("fill", d=>d);
+          }
           medalContainer.append("text")
           .attr('class', 'label')
           .attr('transform','translate(0, 15)')
           .text("No Medal: "+ noneArr.length + "/100");
-          }
         }
         else if (medalType[i] === 'Uncertain') {
-          if (uncertainArr.length > 0) {
           medalContainer = d3.select("#unit-vis")
-            .append("svg")
-            .attr("id", 'uncertain')
-            .attr("width", width)
-            .attr("height", height);
+          .append("svg")
+          .attr("id", 'uncertain')
+          .attr("width", width)
+          .attr("height", height);
+          if (uncertainArr.length > 0) {
           medalContainer.selectAll("circle")
             .data(uncertainArr)
             .enter()
@@ -314,13 +313,12 @@ function updatePeople(data) {
             .attr("r", r)
             .style("stroke", 'black')
             .style("fill", d => d);
-
+          }
           medalContainer.append("text")
           .attr('class', 'label')
           .style('fill', 'red')
           .attr('transform','translate(0, 15)')
           .text("When the model goes wrong: "+ uncertainArr.length + "/100");
-          }
         }
       }
 }
