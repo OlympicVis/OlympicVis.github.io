@@ -147,7 +147,7 @@ Correlate with Performance</h1>
                     <tr>
                       <td >
                         <div id="freq-plot-sticky">
-                          <svg class="box-plot" width="680" height="700">
+                          <svg class="box-plot" width="680" height="750">
                           </svg>  
                         </div>
                       </td>
@@ -423,7 +423,18 @@ Correlate with Performance</h1>
         </svg></a></span></h1>
 
         <div id="main-4" style="margin-left:50px">
-          <p>Try our prediction tool! How likely is an athlete going to win an Olympic medal?</p>
+          <h3><b>How to interact:</b></h3>
+          <p style="margin-right: 150px;">Users can select a season, sports, gender, income level of the home country from the 
+            dropdown menu, and drag the age slider to see probabilities of different medal types.
+          </p>
+          <p><b>How did we train the model</b></p>
+          <p style="margin-right: 150px;">Our prediction tool works by generating a random forest of several hundred decision 
+            trees based on seperate training data sets for each sport. The training data sets of 
+            athlete-events include age, gender and national income level as features, and the type 
+            of medal awarded (including no medal) as labels. After fitting the random forest to the 
+            training set, and calculating test scores, predictions are generated for hypothetical athletes 
+            of different income levels, gender, and ages. By calculating the relative ratio of trees that 
+            predict each medal type we can provide a rough estimate of medal probabilities.</p>
           <div class="dropdown2">
             <select id='Season2'>
             </select>
