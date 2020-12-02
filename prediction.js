@@ -219,6 +219,7 @@ function updatePeople(data) {
           medalContainer.append("text")
             .attr('class', 'label')
             .attr('transform','translate(0, 15)')
+            .style('fill', '#FFD700')
             .text("Gold: "+ goldArr.length + "/100");
         }
         else if (medalType[i] === 'Silver') {
@@ -243,6 +244,7 @@ function updatePeople(data) {
           medalContainer.append("text")
           .attr('class', 'label')
           .attr('transform','translate(0, 15)')
+          .style('fill', 'grey')
           .text("Silver: "+ silverArr.length + "/100");
         }
         else if (medalType[i] === 'Bronze') {
@@ -268,6 +270,7 @@ function updatePeople(data) {
           medalContainer.append("text")
           .attr('class', 'label')
           .attr('transform','translate(0, 15)')
+          .style('fill', '#ED9B4D')
           .text("Bronze: "+ bronzeArr.length + "/100");
         }
         else if (medalType[i] === 'None') {
@@ -292,6 +295,7 @@ function updatePeople(data) {
           medalContainer.append("text")
           .attr('class', 'label')
           .attr('transform','translate(0, 15)')
+          .style('fill', 'black')
           .text("No Medal: "+ noneArr.length + "/100");
         }
         else if (medalType[i] === 'Uncertain') {
@@ -311,7 +315,7 @@ function updatePeople(data) {
                 return (i+r+20)*2*r
             })
             .attr("r", r)
-            .style("stroke", 'black')
+            .style("stroke", 'red')
             .style("fill", d => d);
           }
           medalContainer.append("text")
