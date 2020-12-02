@@ -32,7 +32,7 @@ function dataPreprocessorAthlete(row) {
  Load the data
 **********************/
 var dataPath = {
-    athletePath: "data/5k_slim_athlete_events.csv"
+    athletePath: "15k.csv"
 };
 
 d3.csv(dataPath.athletePath, dataPreprocessorAthlete).then(function(dataset) {
