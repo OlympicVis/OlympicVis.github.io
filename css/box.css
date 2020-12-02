@@ -10,7 +10,7 @@ html {
 
 table {
 
-  color: #663300;
+  color: #000000;
 }
 
 .header {
@@ -22,10 +22,10 @@ table {
   color: white;
 }
 
-h2 { color: #5b0000 /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeueBd', sans-serif; font-size: 70px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
-h4 { color: #5b0000 /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeue', sans-serif; font-size: 70px; font-weight: 50; letter-spacing: -1px; line-height: 1; text-align: left; }
+h2 { color: steelblue /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeueBd', sans-serif; font-size: 30px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
+h4 { color: steelblue /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeue', sans-serif; font-size: 30px; font-weight: 50; letter-spacing: -1px; line-height: 1; text-align: left; }
 
-.para2 { color: #362e28; font-family: 'HelveticaNeue', sans-serif; font-size: 18px; font-weight: 100; line-height: 32px; margin: 0 0 72px; text-align: left; }
+.para2 { color: #000000; font-family: 'HelveticaNeue', sans-serif; font-size: 18px; font-weight: 100; line-height: 32px; margin: 0 0 72px; text-align: left; }
 
 .para2 strong {
   font-family: 'HelveticaNeueBd', sans-serif;
@@ -44,7 +44,7 @@ h4 { color: #5b0000 /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeue', 
 "name":"brown",
 "textColor":"black"},*/
 
- color: #bc8644 /*#c7821c#7c795d*/; font-family: 'Trocchi', serif; font-size: 30px; font-weight: normal; line-height: 48px; margin: 0; 
+ color: #000000 /*#c7821c#7c795d*/; font-family: 'HelveticaNeue', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0; 
 }
 .centered {
   position: absolute;
@@ -81,7 +81,7 @@ h4 { color: #5b0000 /*, 8e2921, 5b0000, 7B3A30*/; font-family: 'HelveticaNeue', 
 
 .scrollytelling-text {
   max-width: 480px;
-  /*border: 3px solid #663300;*/
+  /*border: 3px solid #000000;*/
   word-wrap: break-word;
   margin: 10px;
   padding: 40px 10px 40px 0px; /* top, right, bottom, left */
@@ -99,7 +99,7 @@ div.sticky {
 
 div #freq-plot-sticky {
   /*border: 3px solid green;*/
-  padding: 40px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 
 }
 
@@ -298,7 +298,7 @@ https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
   padding: 0px 8px 3px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: #8e2921/*663300*/;
+  color: #8e2921/*000000*/;
   display: block;
 
 }
@@ -321,7 +321,7 @@ Credit:
 Lab 6
 **********************/
 .dot circle {
-    fill: #663300;
+    fill: #000000;
 }
 
 .dot text {
@@ -341,8 +341,8 @@ Box-and-whisker formating
 **********************/
 
 svg .bnw {
-  fill: #663300;
-  stroke: #663300;
+  fill: #000000;
+  stroke: #000000;
 }
 
 /**********************
@@ -405,39 +405,39 @@ Freq plot x & y labels
 **********************/
 svg .x.axis text {
     font-size: 15px;
-    fill: #663300;
+    fill: #000000;
 }
 
 svg .x.axisLabel {
     /*font-family: sans-serif;*/
     font-size: 20px;
-    fill: #663300;
+    fill: #000000;
     text-anchor: middle;
 }
 
 svg .countries {
     /*font-family: sans-serif;*/
     font-size: 10px;
-    fill: #663300;
+    fill: #000000;
     text-anchor: left;
 }
 
 svg .y.axisLabel {
     font-size: 20px;
-    fill: #663300;
+    fill: #000000;
 }
 
 svg .x.label {
   /*font-family: sans-serif;*/
   font-size: 14px;
-  fill: #663300;
+  fill: #000000;
   text-anchor: middle;
 }
 
 svg .countries.y.label {
   /*font-family: sans-serif;*/
   font-size: 10px;
-  fill: #663300;
+  fill: #000000;
   text-anchor: left;
 }
 

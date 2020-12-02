@@ -37,79 +37,91 @@ Correlate with Performance</h1>
         <h1 style="text-align: center";>
         <span style="font-size:200%;font-family: Special Elite;">Click <a href="#main-1">
           <svg height="68" width="68">
-              <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+              <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="steelblue" />
               <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
           </svg></a> to begin!</span></h1>
         </div>
 
         <div id="main-1">
           <div class="scrollytelling-text" style="margin-left:50px">
+            <div class="intro">
+              <h2>Introduction: Time waits for no one</h2>
+              <p>The 2020 Tokyo Olympics was postponed => All Olympic athletes will be one-year older next year. 
+              The simple observation inspires us to explore the correlation between athletes’ ages and 
+              performance thoroughly.<p>
+            </div>
+            <div class="small empty"></div>
+            <div class="intro">
+             <p><a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results" target="_blank">We used a dataset</a> 
+              of 260k+ Olympic athletes' information (name, age, gender, nationality, medal, etc) from 1896 to 2016. 
+              We created following interactive data visualizations:<br>
+             <ol>
+              <li><b>Overview:</b> frequency plots (and box plots) for athletes of different ages, sports, Olympic years, and countries.[1]</li>
+              <li><b>Sports vs. age:</b> a stacked bar chart and a dot-line chart</li> 
+              <li><b>Country/gender vs. age:</b> based on athletes’ nationalities, we visualize athletes’ performance of different income-level country groups according to <a href=”https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups” target="_blank"> the World Bank’s report.</a></li>
+              <li><b>A prediction tool:</b> we trained a machine learning model to support real-time performance prediction based on the user input.</li>
+            </ol>
+              <p style="font-size: small;">[1] To reduce visual clutter and support smooth interactions, we sampled 5% of all datasets in part 1. </p>
+            </div>
             <div class="special empty"></div>
-            <div class="intro">
-              <h2>Motivation: Time waits for no one</h2>
-              <p>The 2020 Tokyo Olympics was postponed, obviously, every athlete will be one-year older next year. For athletes,
-              one year could make a big difference. On this website, we are going to show you how athletes' performance 
-              correlate with ages in different sports, genders and countries, and also the trend in the modern Olympics history.</p>
+            <div class="sports">
+                <h2>Part 1: Overview</h2>
+                <p> How to interact: </p>
+                <p>
+                  <ol>
+                    <li><b>Sort by:</b> sort the frequency plot by age, number of athletesor the alphabetical order</li>
+                    <li><b>Filter:</b> filter data points by season or gender</li>
+                    <li><b>Change y-axis:</b> the data could be aggregated by sports, country, year and gender</li>
+                    <li><b>Change mode:</b> toggle to show the density plot or the box plot</li>
+                    <li><span style="color: #0286c3;"><b>Animations:</b> scroll down and the y-axis will be updated automatically!</li></span>
+                  </ol>
+
+                </p>
+                <p> Try it yourself!<svg height="68" width="68">
+                  <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="steelblue" />
+                  <polygon points="30,20 30,56 55,38" style="fill:white;stroke:white;stroke-width:1" /></svg> </p>
             </div>
 
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="small empty"></div>
-            <div class="intro">
-              <h2>Dataset: 120-year Olympics history</h2>
-              <p>The first modern summer Olympic Games was held in 1896 (the first winter Olympics was in 1924), 
-              and was held every four years since then. <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results" >Our dataset</a> contains 260k+ athletes'
-              information (name, age, gender, nationality, medal, etc) from 1896 to 2016. </p>
-            </div>
-
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="small empty"></div>
-            <div class="intro">
-              <h2>Background: sports</h2>
-              <p> Some sports appear in every summer Olympic Games, e.g. athletics, swimming, fencing, etc., 
-              while some sports appear only recently, e.g. badminton (since 1992), Triathlon (since 2000).
-              Similary, sports like Figure skating, Ice hockey and Ski jumping appear in every winter Olympics, while 
-              some sports appear only recently, e.g. short track speed skating (since 1992), snowboarding (since 1998). </p>
-            </div>
-
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="small empty"></div>
-            <div class="exploration">
-              <h2>Exploration: how athletes' performance correlate with ages in different sports</h2>
-              <p> Take a guess! Which sport is relatively insensitive for ages? 
-              Which sport is strictly for athletes in early 20s? 
-              Test your hypothesis! <svg height="68" width="68">
-                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
-                <polygon points="30,20 30,56 55,38" style="fill:white;stroke:white;stroke-width:1" /></svg></p>
-            </div>
             
             <div class="special empty" id="st_sports"></div>
             <div class="sports">
                 <h2>Sports</h2>
-                <p class="para"> 
-                  which Sport has the youngest?
-                </p>
+                <p>Now the y-axis shows all the Olympic sports</p>
+                <p style="color: #0286c3;">Too small? Scroll inside the plot to zoom and pan! Or try the filter to see sports
+                of winter and summer Olympics</p>
+                <h3>Background knowledge</h3>
+                <p> Some sports appear in every summer Olympic Games, e.g. athletics, swimming, fencing, etc., 
+                  while some sports appear only recently, e.g. badminton (since 1992), Triathlon (since 2000).
+                  Similary, sports like Figure skating, Ice hockey and Ski jumping appear in every winter Olympics, while 
+                  some sports appear only recently, e.g. short track speed skating (since 1992), snowboarding (since 1998). </p>
             </div>
-        
+
+            <div class="empty"></div>
             <div class="empty"></div>
             <div class="empty" id="st_country"></div>
             <div class="small empty" id="fp_country"></div>
-            <div class="sports">
+            <div class="country">
               <h2>Country</h2>
+              <p>Now the y-axis shows all the nations and regions have participated in Olympics</p>
+              <p style="color:  #0286c3;">Too crowded? Don't panic! Scroll inside the plot to zoom and pan!</p>
               <p class="para">
-                Sort them by Country
+                
               </p>
             </div>
         
+            <div class="empty"></div>
             <div class="empty"></div>
             <div class="empty" id="st_year"></div>
             <div class="small empty" id="fp_year"></div>
             <div class="year">
               <h2>Year</h2>
+              <p>Now the y-axis shows all the Olympics years</p>
+              <p>Try to toggle the mode button <img src="boxPlot/icons/disabledImg.png" height="22" width="42"/> to see the distribution more clearly</p>
               <p class="para">
-                Sort them by year!
+              <h3>Background knowledge</h3>
+                <p>  Winter and summer Olympics used to be held in the same year. Since 1994, summer Olympics were 
+                  held in leap years, and winter Olympics were held between two leap years (still every 4 years).
+                </p>
               </p>
               
             </div>
@@ -119,11 +131,14 @@ Correlate with Performance</h1>
             <div class="small empty" id="fp_gender"></div>
             <div class="gender">
               <h2>Gender</h2>
-              <p class="para"> 
-                At beginning, no female athletes
-    
+              <p>Now the y-axis shows male and female athletes</p>
+              <h3>Background knowledge</h3>
+              <p> 
+                In the first modern Olympic games (1896), there were no female athletes. In 2016, 45% athletes are female.
               </p>
             </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
           </div>
         
           <div class="empty"></div>
@@ -132,7 +147,7 @@ Correlate with Performance</h1>
                     <tr>
                       <td >
                         <div id="freq-plot-sticky">
-                          <svg class="box-plot" width="680" height="850">
+                          <svg class="box-plot" width="680" height="700">
                           </svg>  
                         </div>
                       </td>
@@ -144,7 +159,7 @@ Correlate with Performance</h1>
                           <form class="sortForm" id="sortForm" style="margin-left:7%;">
                             <fieldset>
                               <div>
-                                <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> alphabetical</label>
+                                <label><input type="radio" name="optradio" value="alphabetical" class="optradio" id="alphabetical" checked> Alphabetical</label>
                               </div>
                               </br>
                               <div>
@@ -278,7 +293,6 @@ Correlate with Performance</h1>
                           <a href="#st_gender" class="gender">Gender</a>
                         </div>
         
-                        </br></br>
                         <div>
                         <table cellpadding="0" class="toggleSwitchTable" style="margin-left:7%;">
                           <tr>
@@ -300,7 +314,6 @@ Correlate with Performance</h1>
                       </div>
         
                       </br></br>
-                      <b><i>Scroll inside the plot to zoom and pan!</i></b>
         
                       </td>
         
@@ -320,26 +333,27 @@ Correlate with Performance</h1>
 
         <div class="small empty"></div>
         <h1 style="text-align: center";>
-          <span style="font-size:200%;font-family: Special Elite;">Next: the trend <a href="#main-2">
+          <span style="font-size:200%;font-family: Special Elite;">Part 2: Sports vs Age in details <a href="#main-2">
             <svg height="68" width="68">
-                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="steelblue" />
                 <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
             </svg></a></span></h1>
         
-        <div id="main-2">
+        <div id="main-2" style="margin-left:50px">
         <div class="normal-text">
-                <h2>Exploration: how does the age vs performance changes in history?</h2>
-                <p> The world has an aging population, are Olympic athletes also older than their peers
-                  in the past? Does one-year older influence medals a lot?
-                </p>
-                <p>
-                  <ul>
-                    <li>On the left is a stacked bar chart of medals of all time </li>
-                  <li>On the right is a dot-line chart across years,
-                  of which the black line represents ages of non-medalists, and the position of gold/silver/bronze medals 
-                  represents the age of medalists.</li>
-                </ul>
-                </p>
+                <p style="margin-right: 150px;"> The world has an aging population, are Olympic athletes also older than their peers
+                  in the past? Does one-year older influence medals a lot? In part 2, we provided two visualizations
+                  to facilitate insight discovery: on the left is a stacked bar chart of medals of all time, and
+                  on the right is a dot-line chart across years, of which the black line represents the age range of 
+                  non-medalists, and gold/silver/bronze represents the median age of corresponding medalists.</p>
+                <p><b>How to interact:</b></p>
+                <ol>
+                <li><b>Drop-down menu:</b></li> Users can select a season, sport and event.
+                <li><b>Tooltips:</b></li> Users can hover on the bars or dots to see the detailed information 
+                <li><b>Year slider:</b></li> Users can drag and move the year slider to see how the two plots change accordingly. 
+                (The green bars indicate active years of that sport/event)
+                </ol>
+                
         </div>
         <div class="dropdowns">
             <select id='Season'></select>
@@ -358,13 +372,27 @@ Correlate with Performance</h1>
        
         <div class="small empty"></div>
         <h1 style="text-align: center";>
-          <span style="font-size:200%;font-family: Special Elite;">Next: the economy factor <a href="#main-3">
+          <span style="font-size:200%;font-family: Special Elite;">Part 3: Country vs Age in details <a href="#main-3">
             <svg height="68" width="68">
-                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="steelblue" />
                 <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
             </svg></a></span></h1>
+
         
-          <div id="main-3"> 
+          <div id="main-3" style="margin-left:50px"> 
+            <p style="margin-right: 150px;">For this visualization we focused on giving insights about the total number of medals won by athletes and 
+              medalists with their corresponding age and gender.<a href="https://doi.org/10.3386/w7998" target="_blank"> Research shows</a> that higher income per capita hints 
+              higher medal totals. Here we allow users to observe additional insights by looking at both 
+              the income level groups and each countries.</p>
+              <p><b>How to interact:</b> 
+               <ol>
+                <li><b>The map: </b></li> Users can hover on the map to see country names, and also zoom and pan.<br> Users can click 
+                a country on the map, and the tornado chart will change to reflect the selected country in darker colors.
+                 <li><b>The slider: </b></li> Users can drag the year slider to see how both the map and bar charts changes.
+                 <li><b>The bar charts ("tornado charts"): </b></li> Users can hover on each bar to see details.<br> Users can
+                 choose to show "all-athletes" or "all-medalists" by the radio button.  
+               </ol> 
+               </p>
             <div id="map">
                 <div class="header"><h1>World Income Groups</h1></div>
                   <button id="zoom-in">Zoom in</button>
@@ -390,11 +418,11 @@ Correlate with Performance</h1>
         <h1 style="text-align: center";>
           <span style="font-size:200%;font-family: Special Elite;">Finally: the prediction <a href="#main-4">
             <svg height="68" width="68">
-                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="green" />
+                <circle cx="38" cy="38" r="30" stroke="white" stroke-width="1" fill="steelblue" />
                 <polygon points="19,30 57,30 38,55" style="fill:white;stroke:white;stroke-width:1" />
         </svg></a></span></h1>
 
-        <div id="main-4">
+        <div id="main-4" style="margin-left:50px">
           <p>Try our prediction tool! How likely is an athlete going to win an Olympic medal?</p>
           <div class="dropdown2">
             <select id='Season2'>
