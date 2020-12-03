@@ -12,8 +12,11 @@ Try Our
 ## Part 1: A Overview of Athletes' Ages
 How to interact:
 1. __Sort by__: sort the frequency plot by age, number of athletes or the alphabetical order
+
+   a. Sort by number of athletes
 ![Program Screenshot](Gifs/gif_2.gif)
-2. __Filter__: filter data points by season or gender
+
+   b. Sort by age(minimum & maximum value)
 ![Program Screenshot](Gifs/gif_3.gif)
 ![Program Screenshot](Gifs/sort_by_age_max.gif)
 3. __Change seasons__: data can be further filtered to show summer or winter season 
