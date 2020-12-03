@@ -144,6 +144,7 @@ frequencyPlot.prototype.updateY = function(dataset, mode) {
         if (mode === "alphabetical") {
 
             var indices = toSort.sort(function(x, y){return x.key > y.key ? 1 : x.key == y.key ? 0 : -1});
+            indices = indices.reverse();
         }
         // sort by maximum value
         else if (mode === "max") {
