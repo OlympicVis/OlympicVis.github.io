@@ -32,6 +32,7 @@ How to interact:
 ## Part 2: Sports vs Age in details
 How to interact:
 1. __Drop-down menu__: Users can select a season, sport and event
+
    a. Select Season
    ![Program Screenshot](Gifs/Season_change_stacked_barchart.gif)
 
