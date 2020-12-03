@@ -1,7 +1,7 @@
 # Time Waits for No One: How Olympic Athletes’ Ages Correlate with Performance
 ![](gif(1).gif)
 
-Try our website: 
+Try our 
 **Website:** https://olympicvis.github.io/
 ------
 ## Running the code locally
