@@ -42,10 +42,9 @@ How to interact:
    b. Select sport from dropdown
    ![Program Screenshot](Gifs/stacked_bar_sport_drop.gif)
 2. __Year slider__: Users can drag and move the year slider to see how the two plots change accordingly. (The green bars indicate active years of that sport/event)
-   ![Program Screenshot](Gifs/Stack_barchart_with_year_slider.gif)
-  
-3. __Tooltips__:Users can hover on the bars or dots to see the detailed information
-   ![Program Screenshot](Gifs/tooltip_tornadoplot.gif)
+   ![Program Screenshot](Gifs/Stack_barchart_with_year_slider.gif)  
+3. __Tooltips__: Users can hover on the bars or dots to see the detailed information
+   ![Program Screenshot](Gifs/Tooltip_stacked_barchart.gif)
 
 ## Part 3: Country vs Age in details 
 How to interact:
