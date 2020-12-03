@@ -33,12 +33,12 @@ How to interact:
 How to interact:
 1. __Drop-down menu__: Users can select a season, sport and event
    a. Select Season
-   ![Program Screenshot](Gifs/Season change_stacked barchart.gif)
+   ![Program Screenshot](Gifs/Season_change_stacked_barchart.gif)
 
    b. Select sport from dropdown
    ![Program Screenshot](Gifs/stacked_bar_sport_drop.gif)
 2. __Year slider__: Users can drag and move the year slider to see how the two plots change accordingly. (The green bars indicate active years of that sport/event)
-   ![Program Screenshot](Gifs/Stack barchart with year slider.gif)
+   ![Program Screenshot](Gifs/Stack_barchart_with_year_slider.gif)
   
 3. __Tooltips__:Users can hover on the bars or dots to see the detailed information
    ![Program Screenshot](Gifs/tooltip_tornadoplot.gif)
@@ -53,7 +53,7 @@ Users can click a country on the map, and the tornado chart will change to refle
    b. Click a country on the map, and the tornado chart will change to reflect the selected country in darker colors by using the income data provided.
    ![Program Screenshot](Gifs/tooltip_tornadoplot.gif)
    c. Filter the tornado plot based all athletes or only medalist
-   ![Program Screenshot](Gifs/filter athletes or only medalist.gif)
+   ![Program Screenshot](Gifs/filter_athletes_or_only_medalist.gif)
    
 ## Part 4: the prediction
 How to interact:
