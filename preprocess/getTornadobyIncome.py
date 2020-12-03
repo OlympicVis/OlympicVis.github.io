@@ -2,6 +2,7 @@ import pandas as pd
 income_df = pd.read_csv('../data/processed_income_data.csv')
 all_df = pd.read_csv('../data/all_slim_athlete_events.csv')
 all_df = all_df[all_df['Year']>1987]
+all_df = all_df[all_df['Season']=='Summer']
 #all athletes
 sele_df = all_df[['Year', 'Team', 'NOC', 'Age', 'Sex']]
 #all medalists

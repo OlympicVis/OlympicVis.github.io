@@ -401,7 +401,7 @@ frequencyPlot.prototype.updateChart = function(dataset) {
         const extent = [[0, 0], [freqPlot.chartWidth - freqPlot.padding.x_r, freqPlot.chartHeight -  freqPlot.padding.x_axis_b]]
         //const extent = [[freqPlot.padding.l, freqPlot.padding.t], [freqPlot.chartWidth + freqPlot.padding.l - freqPlot.padding.x_r, freqPlot.chartHeight + freqPlot.padding.t- freqPlot.padding.x_axis_b]]
         svg.call(d3.zoom()
-            .scaleExtent([1, 8])
+            .scaleExtent([1, 30])
             .translateExtent(extent)
             .extent(extent)
             .on("zoom", updateZoom));
@@ -702,7 +702,7 @@ function switchMode(freqPlot, dataset) {
     else { freqPlot.mode = 'd'; }
 
     console.log("Current mode: ",freqPlot.mode);
-    freqPlot.updateChart(dataset);
+    //freqPlot.updateChart(dataset);
 
     if (freqPlot.mode == 'bnw') {
 
