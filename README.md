@@ -27,7 +27,7 @@ How to interact:
 ![Program Screenshot](Gifs/yaxis_year_change.gif)
 
    c. Aggregate by Gender and change the mode toggle to show the density plot or the box plot
-![Program Screenshot](Gifs/Y-axis_Gender_change_mode.gif)
+![Program Screenshot](Gifs/Y_axis_Gender_change_mode.gif)
 
 ## Part 2: Sports vs Age in details
 How to interact:
